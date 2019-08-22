@@ -1,0 +1,59 @@
+{
+  "name": "test_robot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/bartcis/robot",
+  "author": "bartcis <cis.bart@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build --public-url ./dist/ src/index.html",
+    "format": "prettier \"src/**/*.{js,html}\" --write",
+    "lint": "tslint --project",
+    "dev": "parcel src/index.html",
+    "start": "npm -s run build && babel-node server/index.js",
+    "clear-build-cache": "rm -rf .cache/ dist/",
+    "typecheck": "tsc --noEmit",
+    "test": "jest",
+    "test:update": "jest -u",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@testing-library/react": "^8.0.7",
+    "@types/jest": "^24.0.15",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.5",
+    "@types/styled-components": "^4.1.18",
+    "jest": "^24.8.0",
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-static-files-copy": "^2.2.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "react": "^16.8.1",
+    "react-apollo": "^2.5.8",
+    "react-dom": "^16.8.0",
+    "styled-components": "^4.3.2"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 ChromeAndroid versions",
+    "last 2 Firefox versions",
+    "last 2 FirefoxAndroid versions",
+    "last 2 Safari versions",
+    "last 2 iOS versions",
+    "last 2 Edge versions",
+    "last 2 Opera versions",
+    "last 2 OperaMobile versions"
+  ]
+}
