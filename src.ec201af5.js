@@ -245,30 +245,22 @@ module.exports="robot.be549bab.png";
   text-align: center;
 `;
 },{"react":"1n8/","styled-components":"tFSs","./components/Table":"bwm5","./components/Controlers":"BejZ"}],"zo2T":[function(require,module,exports) {
-"use strict";var e=this&&this.__importStar||function(e){if(e&&e.__esModule)return e;var t={};if(null!=e)for(var o in e)Object.hasOwnProperty.call(e,o)&&(t[o]=e[o]);return t.default=e,t},t=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});const o=e(require("react")),r=require("react-dom"),n=require("styled-components"),l=require("styled-components"),a=require("./components/designSystem/ThemeExport"),u=t(require("./App")),s=t(require("./components/context/RobotContext"));function i(){const e=o.useState({visible:!1,xPosition:0,yPosition:0,direction:0});return o.default.createElement(o.default.StrictMode,null,o.default.createElement(l.ThemeProvider,{theme:a.styledTheme},o.default.createElement(s.default.Provider,{value:e},o.default.createElement(f,null),o.default.createElement(u.default,null))))}const f=n.createGlobalStyle`
-  @font-face {
-    font-family: 'nunito_sansregular';
-    src: url('/fonts/nunitosans-regular-webfont.woff2') format('woff2'),
-      url('/fonts/nunitosans-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-
+"use strict";var e=this&&this.__importStar||function(e){if(e&&e.__esModule)return e;var t={};if(null!=e)for(var r in e)Object.hasOwnProperty.call(e,r)&&(t[r]=e[r]);return t.default=e,t},t=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});const r=e(require("react")),o=require("react-dom"),l=require("styled-components"),n=require("styled-components"),u=require("./components/designSystem/ThemeExport"),a=t(require("./App")),i=t(require("./components/context/RobotContext"));function d(){const e=r.useState({visible:!1,xPosition:0,yPosition:0,direction:0});return r.default.createElement(r.default.StrictMode,null,r.default.createElement(n.ThemeProvider,{theme:u.styledTheme},r.default.createElement(i.default.Provider,{value:e},r.default.createElement(s,null),r.default.createElement(a.default,null))))}const s=l.createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background-color: ${()=>a.styledTheme.styles.colors.backgroundBody};
+    background-color: ${()=>u.styledTheme.styles.colors.backgroundBody};
     box-sizing: border-box;
   }
 
   h1, p, label {
-    color: ${()=>a.styledTheme.styles.colors.font};
-    font-family: 'nunito_sansregular';
+    color: ${()=>u.styledTheme.styles.colors.font};
+    font-family: 'verdana';
   }
 
   h1 {
     font-size: 1.5rem;
   }
-`;r.render(o.default.createElement(i,null),document.getElementById("root"));
+`;o.render(r.default.createElement(d,null),document.getElementById("root"));
 },{"react":"1n8/","react-dom":"NKHc","styled-components":"tFSs","./components/designSystem/ThemeExport":"xV3L","./App":"/NHn","./components/context/RobotContext":"Aqbr"}]},{},["zo2T"], null)
-//# sourceMappingURL=src.65dd2f49.js.map
+//# sourceMappingURL=src.ec201af5.js.map
