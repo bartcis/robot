@@ -9,7 +9,12 @@ import App from './App';
 import RobotContext from './components/context/RobotContext';
 
 function AppWrapper() {
-  const robotHook = useState({});
+  const robotHook = useState({
+    visible: false,
+    xPosition: 0,
+    yPosition: 0,
+    direction: 0,
+  });
 
   return (
     <React.StrictMode>
@@ -39,9 +44,12 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  h1 {
+  h1, p, label {
     color: ${() => styledTheme.styles.colors.font};
     font-family: 'nunito_sansregular';
+  }
+
+  h1 {
     font-size: 1.5rem;
   }
 `;

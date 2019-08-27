@@ -1,72 +1,58 @@
-import React, {
-  FunctionComponent,
-  useContext,
-  useEffect,
-  Suspense,
-} from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
+import { Stage, Sprite } from 'react-pixi-fiber';
 
-import { useMediaQuery } from './helpers/MediaQuery';
+import Robot from './Robot';
+import RobotContext from './context/RobotContext';
 
 interface IProps {
-  width: number;
-  height: number;
-}
-
-interface IStyles {
-  width: string;
-  height: string;
-  overflow: {
-    (options?: ScrollToOptions | undefined): void;
-    (x: number, y: number): void;
+  grid: {
+    width: number;
+    height: number;
+    unitSize: number;
   };
 }
 
-const Table = ({ width, height }: IProps) => {
-  const isMobile = useMediaQuery('(min-width: 600px)');
+const Table = ({ grid }: IProps) => {
+  const [robotState] = useContext(RobotContext);
+  const robotWrapper = (
+    <Robot
+      y={robotState.xPosition * grid.unitSize + grid.unitSize / 2}
+      x={robotState.yPosition * grid.unitSize + grid.unitSize / 2}
+      rotation={robotState.rotation}
+    />
+  );
 
-  const buildTable = (xDimension: number, yDimension: number) => {
-    let gridArray = [];
-
-    for (let i = 0; i < xDimension * yDimension; i++) {
-      gridArray.push(i);
-    }
-    return gridArray;
-  };
-
-  const inlineStyles = {
-    table: (isMobile: IStyles) => ({
-      width: isMobile ? `${width * 100}px` : `${width * 50}px`,
-      height: isMobile ? `${height * 100}px` : `${width * 50}px`,
-      overflow: scroll,
-    }),
-  };
+  const placeholderWrapper = <Sprite />;
 
   return (
-    <Container style={inlineStyles.table(isMobile)}>
-      {buildTable(width, height).map(field => (
-        <Element key={field} />
-      ))}
-    </Container>
+    <Wrapper
+      style={{
+        width: `${grid.width * grid.unitSize}px`,
+        height: `${grid.height * grid.unitSize}px`,
+      }}
+    >
+      <Stage
+        width={grid.width * grid.unitSize}
+        height={grid.height * grid.unitSize}
+        options={{ backgroundColor: 0xffffff }}
+      >
+        {robotState.visible === true ? robotWrapper : placeholderWrapper}
+      </Stage>
+    </Wrapper>
   );
 };
 
 export default Table;
 
-const Element = styled.div`
-  width: 50px;
-  height: 50px;
+const Wrapper = styled.section`
   border: 1px solid ${({ theme }) => theme.styles.colors.leadColorLight};
-  box-sizing: border-box;
-  @media (min-width: 600px) {
-    width: 100px;
-    height: 100px;
-  }
-`;
-
-const Container = styled.section`
-  display: flex;
-  flex-wrap: wrap;
+  border-radius: 5px;
   margin: auto;
-  border: 1px solid ${({ theme }) => theme.styles.colors.leadColorDark};
+  overflow: scroll;
+  transform-origin: center;
+  transform: rotate(-90deg);
+  @media (min-width: 600px) {
+    overflow: hidden;
+  }
 `;

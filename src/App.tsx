@@ -2,13 +2,19 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import Table from './components/Table';
+import Controlers from './components/Controlers';
 
 const App = () => {
-  const [grid] = useState({ width: 3, height: 3 });
+  const [grid] = useState({
+    width: 5,
+    height: 5,
+    unitSize: 100,
+  });
 
   return (
     <Layout>
-      <Table width={grid.width} height={grid.height} />
+      <Table grid={grid} />
+      <Controlers grid={grid} />
     </Layout>
   );
 };

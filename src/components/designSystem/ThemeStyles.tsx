@@ -4,23 +4,19 @@ export const styles: ITypes = {
     leadColorMid: '#58bdfc',
     leadColorLight: '#a2e0f9',
     backgroundBody: '#fafbfd',
-    backgroundHeader: '#fff',
-    backgroundFooter: '#fff',
-    backgroundSide: '#fff',
+    backgroundButon: '#fff',
     unactive: '#a6b5c6',
     border: '#eaeef1',
-    shadow: '#dddddd',
+    error: '#FF3333',
     font: '#141414',
     contrast1: '#80e30e',
     contrast2: '#fdc935',
   },
   boxModel: {
-    paddingFull: '1rem',
-    paddingVertical: '1rem 0',
-    paddingHorizontal: '0 1rem',
-    marginFull: '1rem',
-    marginVertical: '1rem 0',
-    marginHorizontal: '0 1rem',
+    full: '1rem',
+    vertical: '1rem 0',
+    horizontal: '0 1rem',
+    center: '1rem auto',
   },
 };
 
@@ -30,22 +26,18 @@ interface ITypes {
     leadColorMid: string;
     leadColorLight: string;
     backgroundBody: string;
-    backgroundHeader: string;
-    backgroundFooter: string;
-    backgroundSide: string;
+    backgroundButon: string;
     unactive: string;
     border: string;
-    shadow: string;
+    error: string;
     font: string;
     contrast1: string;
     contrast2: string;
   };
   boxModel: {
-    paddingFull: string;
-    paddingVertical: string;
-    paddingHorizontal: string;
-    marginFull: string;
-    marginVertical: string;
-    marginHorizontal: string;
+    full: string;
+    vertical: string;
+    horizontal: string;
+    center: string;
   };
 }
