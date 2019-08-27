@@ -5,8 +5,9 @@
   "repository": "https://github.com/bartcis/robot",
   "author": "bartcis <cis.bart@gmail.com>",
   "license": "MIT",
+  "homepage": "https://bartcis.github.io/robot",
   "scripts": {
-    "build": "parcel build --public-url ./dist/ src/index.html",
+    "build": "parcel build --public-url ./ src/index.html",
     "format": "prettier \"src/**/*.{js,html}\" --write",
     "lint": "tslint --project",
     "dev": "parcel src/index.html",
@@ -16,7 +17,9 @@
     "test": "jest",
     "test:update": "jest -u",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -30,9 +33,9 @@
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.5",
     "@types/styled-components": "^4.1.18",
+    "gh-pages": "^2.1.1",
     "jest": "^24.8.0",
     "parcel-bundler": "^1.12.3",
-    "parcel-plugin-static-files-copy": "^2.2.0",
     "pixi.js": "^5.1.2",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",

@@ -29,14 +29,6 @@ function AppWrapper() {
 }
 
 const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: 'nunito_sansregular';
-    src: url('/fonts/nunitosans-regular-webfont.woff2') format('woff2'),
-      url('/fonts/nunitosans-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-
   body {
     margin: 0;
     padding: 0;
@@ -46,7 +38,7 @@ const GlobalStyle = createGlobalStyle`
 
   h1, p, label {
     color: ${() => styledTheme.styles.colors.font};
-    font-family: 'nunito_sansregular';
+    font-family: 'verdana';
   }
 
   h1 {

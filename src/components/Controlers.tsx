@@ -30,7 +30,6 @@ const Controlers = ({ grid }: IProps) => {
   });
 
   const move = () => {
-    console.log(robotState.direction);
     switch (robotState.direction) {
       case 'N':
         if (robotState.yPosition < grid.height - 1) {
