@@ -1,7 +1,7 @@
 import React from 'react';
 import { Sprite, withApp } from 'react-pixi-fiber';
-import robot from './robot.png';
-import * as PIXI from 'pixi.js';
+import RobotIcon from './robot.png';
+import * as PIXI from 'pixi.js-legacy';
 
 interface IProps {
   app: object;
@@ -12,11 +12,11 @@ interface IProps {
 
 const centerAnchor = new PIXI.Point(0.5, 0.5);
 
-const Robot = (props: IProps) => {
+const Robot: React.ComponentType<any> = (props: IProps) => {
   return (
     <Sprite
       {...props}
-      texture={PIXI.Texture.from(robot)}
+      texture={PIXI.Texture.from(RobotIcon)}
       anchor={centerAnchor}
       width={70}
       height={50}
