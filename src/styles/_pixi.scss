@@ -1,0 +1,11 @@
+.stage-wrapper {
+  border: 1px solid $leadColorMid;
+  border-radius: 5px;
+  margin: auto;
+  overflow: scroll;
+  transform-origin: center;
+  transform: rotate(-90deg);
+  @media (min-width: 600px) {
+    overflow: hidden;
+  }
+}

@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import styled from 'styled-components';
 import { Stage, Sprite } from 'react-pixi-fiber';
 
 import Robot from './Robot';
@@ -26,7 +25,8 @@ const Table = ({ grid }: IProps) => {
   const placeholderWrapper = <Sprite />;
 
   return (
-    <Wrapper
+    <section
+      className="stage-wrapper"
       style={{
         width: `${grid.width * grid.unitSize}px`,
         height: `${grid.height * grid.unitSize}px`,
@@ -39,20 +39,8 @@ const Table = ({ grid }: IProps) => {
       >
         {robotState.visible === true ? robotWrapper : placeholderWrapper}
       </Stage>
-    </Wrapper>
+    </section>
   );
 };
 
 export default Table;
-
-const Wrapper = styled.section`
-  border: 1px solid ${({ theme }) => theme.styles.colors.leadColorLight};
-  border-radius: 5px;
-  margin: auto;
-  overflow: scroll;
-  transform-origin: center;
-  transform: rotate(-90deg);
-  @media (min-width: 600px) {
-    overflow: hidden;
-  }
-`;

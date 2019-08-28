@@ -1,5 +1,4 @@
 import React, { useContext, useState } from 'react';
-import styled from 'styled-components';
 import RobotContext from './context/RobotContext';
 import Report from './Report';
 
@@ -185,20 +184,27 @@ const Controlers = ({ grid }: IProps) => {
   };
 
   const controlersWrapper = (
-    <ButtonsWrapper>
-      <button onClick={() => rotate('left')}>Left (A)</button>
-      <button onClick={move}>Move (W)</button>
-      <button onClick={() => rotate('right')}>Right (D)</button>
-    </ButtonsWrapper>
+    <div className="wrapper--buttons">
+      <button className="button" onClick={() => rotate('left')}>
+        Left (A)
+      </button>
+      <button className="button" onClick={move}>
+        Move (W)
+      </button>
+      <button className="button" onClick={() => rotate('right')}>
+        Right (D)
+      </button>
+    </div>
   );
 
   return (
-    <Container onKeyUp={e => keyControlers(e.key)}>
+    <aside className="layout--controlers" onKeyUp={e => keyControlers(e.key)}>
       <section>
-        <InputsWrapper>
+        <div>
           <label>
             Provide X coordinate
             <input
+              className="input"
               value={position.setX}
               name="x_value"
               placeholder={`Integer from 0 to ${grid.width - 1}`}
@@ -208,6 +214,7 @@ const Controlers = ({ grid }: IProps) => {
           <label>
             Provide Y coordinate
             <input
+              className="input"
               value={position.setY}
               name="y_value"
               type="number"
@@ -218,65 +225,27 @@ const Controlers = ({ grid }: IProps) => {
           <label>
             Provide Direction
             <input
+              className="input"
               value={position.setDirection}
               name="direction"
               placeholder="N, E, W or S"
               onChange={e => validateInputs(e.currentTarget)}
             />
           </label>
-        </InputsWrapper>
+        </div>
         {error === true ? (
-          <StyledError>Value/s you provided are not correct</StyledError>
+          <p className="error">Value/s you provided are not correct</p>
         ) : (
           ''
         )}
-        <button onClick={placeRobot}>Place</button>
+        <button className="button" onClick={placeRobot}>
+          Place
+        </button>
       </section>
       {controlers === true ? controlersWrapper : ''}
       {controlers === true ? <Report /> : ''}
-    </Container>
+    </aside>
   );
 };
 
 export default Controlers;
-
-const StyledError = styled.p`
-  color: ${({ theme }) => theme.styles.colors.error};
-  margin: 0 1rem 1rem;
-`;
-
-const ButtonsWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  margin: ${({ theme }) => theme.styles.boxModel.vertical};
-`;
-const InputsWrapper = styled.div`
-  input {
-    width: 80%;
-    padding: ${({ theme }) => theme.styles.boxModel.full};
-    border: 1px solid ${({ theme }) => theme.styles.colors.leadColorDark};
-    background-color: ${({ theme }) => theme.styles.colors.backgroundButon};
-    border-radius: 5px;
-    margin: ${({ theme }) => theme.styles.boxModel.vertical};
-  }
-`;
-
-const Container = styled.section`
-  width: 300px;
-  min-height: 100vh;
-  padding: ${({ theme }) => theme.styles.boxModel.full};
-  border-right: 1px solid ${({ theme }) => theme.styles.colors.leadColorDark};
-  button {
-    width: 150px;
-    padding: ${({ theme }) => theme.styles.boxModel.full};
-    border: 1px solid ${({ theme }) => theme.styles.colors.leadColorDark};
-    background-color: ${({ theme }) => theme.styles.colors.leadColorLight};
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    :hover {
-      background-color: ${({ theme }) => theme.styles.colors.contrast1};
-      border: 1px solid ${({ theme }) => theme.styles.colors.contrast2};
-    }
-  }
-`;

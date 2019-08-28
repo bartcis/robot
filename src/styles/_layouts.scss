@@ -1,0 +1,26 @@
+.layout {
+  &--main {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  &--controlers {
+    width: 300px;
+    min-height: 100vh;
+    padding: 1rem;
+    border-right: 1px solid $leadColorDark;
+  }
+}
+
+.wrapper {
+  &--report {
+    width: 200px;
+    margin: 1rem;
+  }
+  &--buttons {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+}

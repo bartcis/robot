@@ -1,0 +1,27 @@
+@import 'colors';
+@import 'layouts';
+@import 'pixi';
+@import 'forms';
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $backgroundBody;
+  box-sizing: border-box;
+}
+
+h1,
+p,
+label {
+  color: $font;
+  font-family: 'verdana';
+}
+
+p,
+label {
+  font-size: 0.8rem;
+}
+
+h1 {
+  font-size: 1rem;
+}

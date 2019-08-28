@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
 
 import Table from './components/Table';
 import Controlers from './components/Controlers';
@@ -12,18 +11,11 @@ const App = () => {
   });
 
   return (
-    <Layout>
+    <section className="layout--main">
       <Controlers grid={grid} />
       <Table grid={grid} />
-    </Layout>
+    </section>
   );
 };
 
 export default App;
-
-const Layout = styled.section`
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  text-align: center;
-`;
