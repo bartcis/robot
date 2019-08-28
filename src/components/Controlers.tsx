@@ -199,49 +199,47 @@ const Controlers = ({ grid }: IProps) => {
 
   return (
     <aside className="layout--controlers" onKeyUp={e => keyControlers(e.key)}>
-      <section>
-        <div>
-          <label>
-            Provide X coordinate
-            <input
-              className="input"
-              value={position.setX}
-              name="x_value"
-              placeholder={`Integer from 0 to ${grid.width - 1}`}
-              onChange={e => validateInputs(e.currentTarget)}
-            />
-          </label>
-          <label>
-            Provide Y coordinate
-            <input
-              className="input"
-              value={position.setY}
-              name="y_value"
-              type="number"
-              placeholder={`Integer from 0 to ${grid.height - 1}`}
-              onChange={e => validateInputs(e.currentTarget)}
-            />
-          </label>
-          <label>
-            Provide Direction
-            <input
-              className="input"
-              value={position.setDirection}
-              name="direction"
-              placeholder="N, E, W or S"
-              onChange={e => validateInputs(e.currentTarget)}
-            />
-          </label>
-        </div>
-        {error === true ? (
-          <p className="error">Value/s you provided are not correct</p>
-        ) : (
-          ''
-        )}
-        <button className="button" onClick={placeRobot}>
-          Place
-        </button>
-      </section>
+      <label>
+        Provide X coordinate
+        <input
+          className="input"
+          value={position.setX}
+          name="x_value"
+          type="number"
+          placeholder={`Integer from 0 to ${grid.width - 1}`}
+          onChange={e => validateInputs(e.currentTarget)}
+        />
+      </label>
+      <label>
+        Provide Y coordinate
+        <input
+          className="input"
+          value={position.setY}
+          name="y_value"
+          type="number"
+          placeholder={`Integer from 0 to ${grid.height - 1}`}
+          onChange={e => validateInputs(e.currentTarget)}
+        />
+      </label>
+      <label>
+        Provide Direction
+        <input
+          className="input"
+          value={position.setDirection}
+          name="direction"
+          type="text"
+          placeholder="N, E, W or S"
+          onChange={e => validateInputs(e.currentTarget)}
+        />
+      </label>
+      {error === true ? (
+        <p className="error">Value/s you provided are not correct</p>
+      ) : (
+        ''
+      )}
+      <button className="button" onClick={placeRobot}>
+        Place
+      </button>
       {controlers === true ? controlersWrapper : ''}
       {controlers === true ? <Report /> : ''}
     </aside>

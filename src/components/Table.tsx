@@ -25,13 +25,7 @@ const Table = ({ grid }: IProps) => {
   const placeholderWrapper = <Sprite />;
 
   return (
-    <section
-      className="stage-wrapper"
-      style={{
-        width: `${grid.width * grid.unitSize}px`,
-        height: `${grid.height * grid.unitSize}px`,
-      }}
-    >
+    <section className="stage-wrapper">
       <Stage
         width={grid.width * grid.unitSize}
         height={grid.height * grid.unitSize}

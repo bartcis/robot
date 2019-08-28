@@ -3,11 +3,14 @@
 @import 'pixi';
 @import 'forms';
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: $backgroundBody;
-  box-sizing: border-box;
 }
 
 h1,
