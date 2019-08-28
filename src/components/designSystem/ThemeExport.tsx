@@ -1,5 +1,7 @@
 import { styles } from './ThemeStyles';
 
-export const styledTheme: any = {
+const styledTheme: any = {
   styles,
 };
+
+export default styledTheme;
