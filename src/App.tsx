@@ -13,8 +13,8 @@ const App = () => {
 
   return (
     <Layout>
-      <Table grid={grid} />
       <Controlers grid={grid} />
+      <Table grid={grid} />
     </Layout>
   );
 };
@@ -22,8 +22,8 @@ const App = () => {
 export default App;
 
 const Layout = styled.section`
-  max-width: 900px;
-  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
   box-sizing: border-box;
   text-align: center;
 `;

@@ -4,16 +4,15 @@ import robot from './robot.png';
 import * as PIXI from 'pixi.js';
 
 interface IProps {
-  grid: {
-    width: number;
-    height: number;
-    unitSize: number;
-  };
+  app: object;
+  y: number;
+  x: number;
+  rotation: any;
 }
 
 const centerAnchor = new PIXI.Point(0.5, 0.5);
 
-const Robot = props => {
+const Robot = (props: IProps) => {
   return (
     <Sprite
       {...props}

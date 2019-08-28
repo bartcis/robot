@@ -1,12 +1,4 @@
-import React, {
-  FunctionComponent,
-  useContext,
-  useEffect,
-  Suspense,
-  useState,
-  useReducer,
-} from 'react';
-
+import React, { useContext, useState } from 'react';
 import styled from 'styled-components';
 import RobotContext from './context/RobotContext';
 import Report from './Report';
@@ -68,8 +60,8 @@ const Controlers = ({ grid }: IProps) => {
     }
   };
 
-  const rotate = direction => {
-    const currentDirection = {
+  const rotate = (direction: string) => {
+    const currentDirection: any = {
       N: {
         left: 'W',
         right: 'E',
@@ -102,7 +94,7 @@ const Controlers = ({ grid }: IProps) => {
     }
   };
 
-  const convertDirection = latinValue => {
+  const convertDirection = (latinValue: string) => {
     switch (latinValue) {
       case 'N':
         return 1.569;
@@ -133,7 +125,7 @@ const Controlers = ({ grid }: IProps) => {
     }
   };
 
-  const validateInputs = field => {
+  const validateInputs = (field: any) => {
     const value = Number(field.value);
     const xReg = RegExp(`[0-${grid.width - 1}]`);
     const yReg = RegExp(`[0-${grid.height - 1}]`);
@@ -176,7 +168,7 @@ const Controlers = ({ grid }: IProps) => {
     }
   };
 
-  const keyControlers = key => {
+  const keyControlers = (key: string) => {
     switch (key) {
       case 'w':
         move();
@@ -202,47 +194,45 @@ const Controlers = ({ grid }: IProps) => {
 
   return (
     <Container onKeyUp={e => keyControlers(e.key)}>
-      <div>
-        <Place>
-          <InputsWrapper>
-            <label>
-              Provide X coordinate
-              <input
-                value={position.setX}
-                name="x_value"
-                placeholder={`Integer from 0 to ${grid.width - 1}`}
-                onChange={e => validateInputs(e.currentTarget)}
-              />
-            </label>
-            <label>
-              Provide Y coordinate
-              <input
-                value={position.setY}
-                name="y_value"
-                type="number"
-                placeholder={`Integer from 0 to ${grid.height - 1}`}
-                onChange={e => validateInputs(e.currentTarget)}
-              />
-            </label>
-            <label>
-              Provide Direction
-              <input
-                value={position.setDirection}
-                name="direction"
-                placeholder="N, E, W or S"
-                onChange={e => validateInputs(e.currentTarget)}
-              />
-            </label>
-          </InputsWrapper>
-          {error === true ? (
-            <StyledError>Value/s you provided are not correct</StyledError>
-          ) : (
-            ''
-          )}
-          <button onClick={placeRobot}>Place</button>
-        </Place>
-        {controlers === true ? controlersWrapper : ''}
-      </div>
+      <section>
+        <InputsWrapper>
+          <label>
+            Provide X coordinate
+            <input
+              value={position.setX}
+              name="x_value"
+              placeholder={`Integer from 0 to ${grid.width - 1}`}
+              onChange={e => validateInputs(e.currentTarget)}
+            />
+          </label>
+          <label>
+            Provide Y coordinate
+            <input
+              value={position.setY}
+              name="y_value"
+              type="number"
+              placeholder={`Integer from 0 to ${grid.height - 1}`}
+              onChange={e => validateInputs(e.currentTarget)}
+            />
+          </label>
+          <label>
+            Provide Direction
+            <input
+              value={position.setDirection}
+              name="direction"
+              placeholder="N, E, W or S"
+              onChange={e => validateInputs(e.currentTarget)}
+            />
+          </label>
+        </InputsWrapper>
+        {error === true ? (
+          <StyledError>Value/s you provided are not correct</StyledError>
+        ) : (
+          ''
+        )}
+        <button onClick={placeRobot}>Place</button>
+      </section>
+      {controlers === true ? controlersWrapper : ''}
       {controlers === true ? <Report /> : ''}
     </Container>
   );
@@ -257,37 +247,25 @@ const StyledError = styled.p`
 
 const ButtonsWrapper = styled.div`
   display: flex;
-  align-items: flex-end;
-  height: 100px;
   justify-content: center;
-  button:nth-child(2) {
-    align-self: flex-start;
-  }
+  margin: ${({ theme }) => theme.styles.boxModel.vertical};
 `;
 const InputsWrapper = styled.div`
-  display: flex;
-  width: 100%;
   input {
+    width: 80%;
     padding: ${({ theme }) => theme.styles.boxModel.full};
     border: 1px solid ${({ theme }) => theme.styles.colors.leadColorDark};
     background-color: ${({ theme }) => theme.styles.colors.backgroundButon};
     border-radius: 5px;
     margin: ${({ theme }) => theme.styles.boxModel.vertical};
-    width: 70%;
-  }
-`;
-
-const Place = styled.div`
-  margin: ${({ theme }) => theme.styles.boxModel.full};
-  button {
-    width: 100%;
   }
 `;
 
 const Container = styled.section`
-  max-width: 600px;
-  margin: ${({ theme }) => theme.styles.boxModel.center};
-  display: flex;
+  width: 300px;
+  min-height: 100vh;
+  padding: ${({ theme }) => theme.styles.boxModel.full};
+  border-right: 1px solid ${({ theme }) => theme.styles.colors.leadColorDark};
   button {
     width: 150px;
     padding: ${({ theme }) => theme.styles.boxModel.full};

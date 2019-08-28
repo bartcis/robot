@@ -1,6 +1,14 @@
 import { createContext } from 'react';
 
-const RobotContext = createContext<[any, (context: object) => void]>([
+interface IProps {
+  visible: boolean;
+  xPosition: number;
+  yPosition: number;
+  direction: string;
+  rotation: number;
+}
+
+const RobotContext = createContext<[any, (context: IProps) => void]>([
   {
     visible: false,
     xPosition: 0,

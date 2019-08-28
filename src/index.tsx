@@ -13,7 +13,7 @@ function AppWrapper() {
     visible: false,
     xPosition: 0,
     yPosition: 0,
-    direction: 0,
+    rotation: 0,
   });
 
   return (
@@ -41,9 +41,14 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'verdana';
   }
 
-  h1 {
-    font-size: 1.5rem;
+  p,label {
+    font-size: .8rem;
   }
+
+  h1 {
+    font-size: 1rem;
+  }
+
 `;
 
 render(<AppWrapper />, document.getElementById('root'));
