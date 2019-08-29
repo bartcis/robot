@@ -1,0 +1,149 @@
+.layout--main {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: column-reverse;
+}
+@media (min-width: 800px) {
+  .layout--main {
+    flex-direction: row;
+  }
+}
+.layout--controlers {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+}
+@media (min-width: 800px) {
+  .layout--controlers {
+    width: 250px;
+    border-right: 1px solid #0295ff;
+  }
+}
+.layout--controlers label {
+  display: block;
+}
+
+.wrapper--report {
+  margin: 1rem;
+}
+@media (min-width: 800px) {
+  .wrapper--report {
+    width: 200px;
+  }
+}
+.wrapper--buttons {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.wrapper--selects {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stage-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stage-wrapper canvas {
+  border: 1px solid #58bdfc;
+  border-radius: 5px;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  overflow: scroll;
+  margin: 1rem;
+  height: 300px;
+  max-width: 600px;
+}
+@media (min-width: 400px) {
+  .stage-wrapper canvas {
+    height: 380px;
+  }
+}
+@media (min-width: 450px) {
+  .stage-wrapper canvas {
+    height: 430px;
+  }
+}
+@media (min-width: 500px) {
+  .stage-wrapper canvas {
+    height: 500px;
+  }
+}
+@media (min-width: 600px) {
+  .stage-wrapper {
+    overflow: hidden;
+  }
+}
+
+.button {
+  width: 150px;
+  padding: 0.5rem 1rem;
+  border: 1px solid #0295ff;
+  background-color: #a2e0f9;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.button:hover {
+  background-color: #80e30e;
+  border: 1px solid #fdc935;
+}
+
+.input {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.5rem 1rem;
+  border: 1px solid #0295ff;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+}
+@media (min-width: 600px) {
+  .input {
+    margin: 0.5rem 1rem;
+  }
+}
+@media (min-width: 800px) {
+  .input {
+    margin: 0.5rem 0;
+  }
+}
+
+.error {
+  color: #ff3333;
+  margin: 0 1rem 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafbfd;
+}
+
+h1,
+p,
+label {
+  color: #141414;
+  font-family: "verdana";
+}
+
+p,
+label {
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=/main.48b3db1d.css.map */

@@ -30609,119 +30609,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"../node_modules/stylis/stylis.min.js":[function(require,module,exports) {
-var define;
-!function(e){"object"==typeof exports&&"undefined"!=typeof module?module.exports=e(null):"function"==typeof define&&define.amd?define(e(null)):window.stylis=e(null)}(function e(a){"use strict";var r=/^\0+/g,c=/[\0\r\f]/g,s=/: */g,t=/zoo|gra/,i=/([,: ])(transform)/g,f=/,+\s*(?![^(]*[)])/g,n=/ +\s*(?![^(]*[)])/g,l=/ *[\0] */g,o=/,\r+?/g,h=/([\t\r\n ])*\f?&/g,u=/:global\(((?:[^\(\)\[\]]*|\[.*\]|\([^\(\)]*\))*)\)/g,d=/\W+/g,b=/@(k\w+)\s*(\S*)\s*/,p=/::(place)/g,k=/:(read-only)/g,g=/\s+(?=[{\];=:>])/g,A=/([[}=:>])\s+/g,C=/(\{[^{]+?);(?=\})/g,w=/\s{2,}/g,v=/([^\(])(:+) */g,m=/[svh]\w+-[tblr]{2}/,x=/\(\s*(.*)\s*\)/g,$=/([\s\S]*?);/g,y=/-self|flex-/g,O=/[^]*?(:[rp][el]a[\w-]+)[^]*/,j=/stretch|:\s*\w+\-(?:conte|avail)/,z=/([^-])(image-set\()/,N="-webkit-",S="-moz-",F="-ms-",W=59,q=125,B=123,D=40,E=41,G=91,H=93,I=10,J=13,K=9,L=64,M=32,P=38,Q=45,R=95,T=42,U=44,V=58,X=39,Y=34,Z=47,_=62,ee=43,ae=126,re=0,ce=12,se=11,te=107,ie=109,fe=115,ne=112,le=111,oe=105,he=99,ue=100,de=112,be=1,pe=1,ke=0,ge=1,Ae=1,Ce=1,we=0,ve=0,me=0,xe=[],$e=[],ye=0,Oe=null,je=-2,ze=-1,Ne=0,Se=1,Fe=2,We=3,qe=0,Be=1,De="",Ee="",Ge="";function He(e,a,s,t,i){for(var f,n,o=0,h=0,u=0,d=0,g=0,A=0,C=0,w=0,m=0,$=0,y=0,O=0,j=0,z=0,R=0,we=0,$e=0,Oe=0,je=0,ze=s.length,Je=ze-1,Re="",Te="",Ue="",Ve="",Xe="",Ye="";R<ze;){if(C=s.charCodeAt(R),R===Je)if(h+d+u+o!==0){if(0!==h)C=h===Z?I:Z;d=u=o=0,ze++,Je++}if(h+d+u+o===0){if(R===Je){if(we>0)Te=Te.replace(c,"");if(Te.trim().length>0){switch(C){case M:case K:case W:case J:case I:break;default:Te+=s.charAt(R)}C=W}}if(1===$e)switch(C){case B:case q:case W:case Y:case X:case D:case E:case U:$e=0;case K:case J:case I:case M:break;default:for($e=0,je=R,g=C,R--,C=W;je<ze;)switch(s.charCodeAt(je++)){case I:case J:case W:++R,C=g,je=ze;break;case V:if(we>0)++R,C=g;case B:je=ze}}switch(C){case B:for(g=(Te=Te.trim()).charCodeAt(0),y=1,je=++R;R<ze;){switch(C=s.charCodeAt(R)){case B:y++;break;case q:y--;break;case Z:switch(A=s.charCodeAt(R+1)){case T:case Z:R=Qe(A,R,Je,s)}break;case G:C++;case D:C++;case Y:case X:for(;R++<Je&&s.charCodeAt(R)!==C;);}if(0===y)break;R++}if(Ue=s.substring(je,R),g===re)g=(Te=Te.replace(r,"").trim()).charCodeAt(0);switch(g){case L:if(we>0)Te=Te.replace(c,"");switch(A=Te.charCodeAt(1)){case ue:case ie:case fe:case Q:f=a;break;default:f=xe}if(je=(Ue=He(a,f,Ue,A,i+1)).length,me>0&&0===je)je=Te.length;if(ye>0)if(f=Ie(xe,Te,Oe),n=Pe(We,Ue,f,a,pe,be,je,A,i,t),Te=f.join(""),void 0!==n)if(0===(je=(Ue=n.trim()).length))A=0,Ue="";if(je>0)switch(A){case fe:Te=Te.replace(x,Me);case ue:case ie:case Q:Ue=Te+"{"+Ue+"}";break;case te:if(Ue=(Te=Te.replace(b,"$1 $2"+(Be>0?De:"")))+"{"+Ue+"}",1===Ae||2===Ae&&Le("@"+Ue,3))Ue="@"+N+Ue+"@"+Ue;else Ue="@"+Ue;break;default:if(Ue=Te+Ue,t===de)Ve+=Ue,Ue=""}else Ue="";break;default:Ue=He(a,Ie(a,Te,Oe),Ue,t,i+1)}Xe+=Ue,O=0,$e=0,z=0,we=0,Oe=0,j=0,Te="",Ue="",C=s.charCodeAt(++R);break;case q:case W:if((je=(Te=(we>0?Te.replace(c,""):Te).trim()).length)>1){if(0===z)if((g=Te.charCodeAt(0))===Q||g>96&&g<123)je=(Te=Te.replace(" ",":")).length;if(ye>0)if(void 0!==(n=Pe(Se,Te,a,e,pe,be,Ve.length,t,i,t)))if(0===(je=(Te=n.trim()).length))Te="\0\0";switch(g=Te.charCodeAt(0),A=Te.charCodeAt(1),g){case re:break;case L:if(A===oe||A===he){Ye+=Te+s.charAt(R);break}default:if(Te.charCodeAt(je-1)===V)break;Ve+=Ke(Te,g,A,Te.charCodeAt(2))}}O=0,$e=0,z=0,we=0,Oe=0,Te="",C=s.charCodeAt(++R)}}switch(C){case J:case I:if(h+d+u+o+ve===0)switch($){case E:case X:case Y:case L:case ae:case _:case T:case ee:case Z:case Q:case V:case U:case W:case B:case q:break;default:if(z>0)$e=1}if(h===Z)h=0;else if(ge+O===0&&t!==te&&Te.length>0)we=1,Te+="\0";if(ye*qe>0)Pe(Ne,Te,a,e,pe,be,Ve.length,t,i,t);be=1,pe++;break;case W:case q:if(h+d+u+o===0){be++;break}default:switch(be++,Re=s.charAt(R),C){case K:case M:if(d+o+h===0)switch(w){case U:case V:case K:case M:Re="";break;default:if(C!==M)Re=" "}break;case re:Re="\\0";break;case ce:Re="\\f";break;case se:Re="\\v";break;case P:if(d+h+o===0&&ge>0)Oe=1,we=1,Re="\f"+Re;break;case 108:if(d+h+o+ke===0&&z>0)switch(R-z){case 2:if(w===ne&&s.charCodeAt(R-3)===V)ke=w;case 8:if(m===le)ke=m}break;case V:if(d+h+o===0)z=R;break;case U:if(h+u+d+o===0)we=1,Re+="\r";break;case Y:case X:if(0===h)d=d===C?0:0===d?C:d;break;case G:if(d+h+u===0)o++;break;case H:if(d+h+u===0)o--;break;case E:if(d+h+o===0)u--;break;case D:if(d+h+o===0){if(0===O)switch(2*w+3*m){case 533:break;default:y=0,O=1}u++}break;case L:if(h+u+d+o+z+j===0)j=1;break;case T:case Z:if(d+o+u>0)break;switch(h){case 0:switch(2*C+3*s.charCodeAt(R+1)){case 235:h=Z;break;case 220:je=R,h=T}break;case T:if(C===Z&&w===T&&je+2!==R){if(33===s.charCodeAt(je+2))Ve+=s.substring(je,R+1);Re="",h=0}}}if(0===h){if(ge+d+o+j===0&&t!==te&&C!==W)switch(C){case U:case ae:case _:case ee:case E:case D:if(0===O){switch(w){case K:case M:case I:case J:Re+="\0";break;default:Re="\0"+Re+(C===U?"":"\0")}we=1}else switch(C){case D:if(z+7===R&&108===w)z=0;O=++y;break;case E:if(0==(O=--y))we=1,Re+="\0"}break;case K:case M:switch(w){case re:case B:case q:case W:case U:case ce:case K:case M:case I:case J:break;default:if(0===O)we=1,Re+="\0"}}if(Te+=Re,C!==M&&C!==K)$=C}}m=w,w=C,R++}if(je=Ve.length,me>0)if(0===je&&0===Xe.length&&0===a[0].length==false)if(t!==ie||1===a.length&&(ge>0?Ee:Ge)===a[0])je=a.join(",").length+2;if(je>0){if(f=0===ge&&t!==te?function(e){for(var a,r,s=0,t=e.length,i=Array(t);s<t;++s){for(var f=e[s].split(l),n="",o=0,h=0,u=0,d=0,b=f.length;o<b;++o){if(0===(h=(r=f[o]).length)&&b>1)continue;if(u=n.charCodeAt(n.length-1),d=r.charCodeAt(0),a="",0!==o)switch(u){case T:case ae:case _:case ee:case M:case D:break;default:a=" "}switch(d){case P:r=a+Ee;case ae:case _:case ee:case M:case E:case D:break;case G:r=a+r+Ee;break;case V:switch(2*r.charCodeAt(1)+3*r.charCodeAt(2)){case 530:if(Ce>0){r=a+r.substring(8,h-1);break}default:if(o<1||f[o-1].length<1)r=a+Ee+r}break;case U:a="";default:if(h>1&&r.indexOf(":")>0)r=a+r.replace(v,"$1"+Ee+"$2");else r=a+r+Ee}n+=r}i[s]=n.replace(c,"").trim()}return i}(a):a,ye>0)if(void 0!==(n=Pe(Fe,Ve,f,e,pe,be,je,t,i,t))&&0===(Ve=n).length)return Ye+Ve+Xe;if(Ve=f.join(",")+"{"+Ve+"}",Ae*ke!=0){if(2===Ae&&!Le(Ve,2))ke=0;switch(ke){case le:Ve=Ve.replace(k,":"+S+"$1")+Ve;break;case ne:Ve=Ve.replace(p,"::"+N+"input-$1")+Ve.replace(p,"::"+S+"$1")+Ve.replace(p,":"+F+"input-$1")+Ve}ke=0}}return Ye+Ve+Xe}function Ie(e,a,r){var c=a.trim().split(o),s=c,t=c.length,i=e.length;switch(i){case 0:case 1:for(var f=0,n=0===i?"":e[0]+" ";f<t;++f)s[f]=Je(n,s[f],r,i).trim();break;default:f=0;var l=0;for(s=[];f<t;++f)for(var h=0;h<i;++h)s[l++]=Je(e[h]+" ",c[f],r,i).trim()}return s}function Je(e,a,r,c){var s=a,t=s.charCodeAt(0);if(t<33)t=(s=s.trim()).charCodeAt(0);switch(t){case P:switch(ge+c){case 0:case 1:if(0===e.trim().length)break;default:return s.replace(h,"$1"+e.trim())}break;case V:switch(s.charCodeAt(1)){case 103:if(Ce>0&&ge>0)return s.replace(u,"$1").replace(h,"$1"+Ge);break;default:return e.trim()+s.replace(h,"$1"+e.trim())}default:if(r*ge>0&&s.indexOf("\f")>0)return s.replace(h,(e.charCodeAt(0)===V?"":"$1")+e.trim())}return e+s}function Ke(e,a,r,c){var l,o=0,h=e+";",u=2*a+3*r+4*c;if(944===u)return function(e){var a=e.length,r=e.indexOf(":",9)+1,c=e.substring(0,r).trim(),s=e.substring(r,a-1).trim();switch(e.charCodeAt(9)*Be){case 0:break;case Q:if(110!==e.charCodeAt(10))break;default:for(var t=s.split((s="",f)),i=0,r=0,a=t.length;i<a;r=0,++i){for(var l=t[i],o=l.split(n);l=o[r];){var h=l.charCodeAt(0);if(1===Be&&(h>L&&h<90||h>96&&h<123||h===R||h===Q&&l.charCodeAt(1)!==Q))switch(isNaN(parseFloat(l))+(-1!==l.indexOf("("))){case 1:switch(l){case"infinite":case"alternate":case"backwards":case"running":case"normal":case"forwards":case"both":case"none":case"linear":case"ease":case"ease-in":case"ease-out":case"ease-in-out":case"paused":case"reverse":case"alternate-reverse":case"inherit":case"initial":case"unset":case"step-start":case"step-end":break;default:l+=De}}o[r++]=l}s+=(0===i?"":",")+o.join(" ")}}if(s=c+s+";",1===Ae||2===Ae&&Le(s,1))return N+s+s;return s}(h);else if(0===Ae||2===Ae&&!Le(h,1))return h;switch(u){case 1015:return 97===h.charCodeAt(10)?N+h+h:h;case 951:return 116===h.charCodeAt(3)?N+h+h:h;case 963:return 110===h.charCodeAt(5)?N+h+h:h;case 1009:if(100!==h.charCodeAt(4))break;case 969:case 942:return N+h+h;case 978:return N+h+S+h+h;case 1019:case 983:return N+h+S+h+F+h+h;case 883:if(h.charCodeAt(8)===Q)return N+h+h;if(h.indexOf("image-set(",11)>0)return h.replace(z,"$1"+N+"$2")+h;return h;case 932:if(h.charCodeAt(4)===Q)switch(h.charCodeAt(5)){case 103:return N+"box-"+h.replace("-grow","")+N+h+F+h.replace("grow","positive")+h;case 115:return N+h+F+h.replace("shrink","negative")+h;case 98:return N+h+F+h.replace("basis","preferred-size")+h}return N+h+F+h+h;case 964:return N+h+F+"flex-"+h+h;case 1023:if(99!==h.charCodeAt(8))break;return l=h.substring(h.indexOf(":",15)).replace("flex-","").replace("space-between","justify"),N+"box-pack"+l+N+h+F+"flex-pack"+l+h;case 1005:return t.test(h)?h.replace(s,":"+N)+h.replace(s,":"+S)+h:h;case 1e3:switch(o=(l=h.substring(13).trim()).indexOf("-")+1,l.charCodeAt(0)+l.charCodeAt(o)){case 226:l=h.replace(m,"tb");break;case 232:l=h.replace(m,"tb-rl");break;case 220:l=h.replace(m,"lr");break;default:return h}return N+h+F+l+h;case 1017:if(-1===h.indexOf("sticky",9))return h;case 975:switch(o=(h=e).length-10,u=(l=(33===h.charCodeAt(o)?h.substring(0,o):h).substring(e.indexOf(":",7)+1).trim()).charCodeAt(0)+(0|l.charCodeAt(7))){case 203:if(l.charCodeAt(8)<111)break;case 115:h=h.replace(l,N+l)+";"+h;break;case 207:case 102:h=h.replace(l,N+(u>102?"inline-":"")+"box")+";"+h.replace(l,N+l)+";"+h.replace(l,F+l+"box")+";"+h}return h+";";case 938:if(h.charCodeAt(5)===Q)switch(h.charCodeAt(6)){case 105:return l=h.replace("-items",""),N+h+N+"box-"+l+F+"flex-"+l+h;case 115:return N+h+F+"flex-item-"+h.replace(y,"")+h;default:return N+h+F+"flex-line-pack"+h.replace("align-content","").replace(y,"")+h}break;case 973:case 989:if(h.charCodeAt(3)!==Q||122===h.charCodeAt(4))break;case 931:case 953:if(true===j.test(e))if(115===(l=e.substring(e.indexOf(":")+1)).charCodeAt(0))return Ke(e.replace("stretch","fill-available"),a,r,c).replace(":fill-available",":stretch");else return h.replace(l,N+l)+h.replace(l,S+l.replace("fill-",""))+h;break;case 962:if(h=N+h+(102===h.charCodeAt(5)?F+h:"")+h,r+c===211&&105===h.charCodeAt(13)&&h.indexOf("transform",10)>0)return h.substring(0,h.indexOf(";",27)+1).replace(i,"$1"+N+"$2")+h}return h}function Le(e,a){var r=e.indexOf(1===a?":":"{"),c=e.substring(0,3!==a?r:10),s=e.substring(r+1,e.length-1);return Oe(2!==a?c:c.replace(O,"$1"),s,a)}function Me(e,a){var r=Ke(a,a.charCodeAt(0),a.charCodeAt(1),a.charCodeAt(2));return r!==a+";"?r.replace($," or ($1)").substring(4):"("+a+")"}function Pe(e,a,r,c,s,t,i,f,n,l){for(var o,h=0,u=a;h<ye;++h)switch(o=$e[h].call(Te,e,u,r,c,s,t,i,f,n,l)){case void 0:case false:case true:case null:break;default:u=o}if(u!==a)return u}function Qe(e,a,r,c){for(var s=a+1;s<r;++s)switch(c.charCodeAt(s)){case Z:if(e===T)if(c.charCodeAt(s-1)===T&&a+2!==s)return s+1;break;case I:if(e===Z)return s+1}return s}function Re(e){for(var a in e){var r=e[a];switch(a){case"keyframe":Be=0|r;break;case"global":Ce=0|r;break;case"cascade":ge=0|r;break;case"compress":we=0|r;break;case"semicolon":ve=0|r;break;case"preserve":me=0|r;break;case"prefix":if(Oe=null,!r)Ae=0;else if("function"!=typeof r)Ae=1;else Ae=2,Oe=r}}return Re}function Te(a,r){if(void 0!==this&&this.constructor===Te)return e(a);var s=a,t=s.charCodeAt(0);if(t<33)t=(s=s.trim()).charCodeAt(0);if(Be>0)De=s.replace(d,t===G?"":"-");if(t=1,1===ge)Ge=s;else Ee=s;var i,f=[Ge];if(ye>0)if(void 0!==(i=Pe(ze,r,f,f,pe,be,0,0,0,0))&&"string"==typeof i)r=i;var n=He(xe,f,r,0,0);if(ye>0)if(void 0!==(i=Pe(je,n,f,f,pe,be,n.length,0,0,0))&&"string"!=typeof(n=i))t=0;return De="",Ge="",Ee="",ke=0,pe=1,be=1,we*t==0?n:n.replace(c,"").replace(g,"").replace(A,"$1").replace(C,"$1").replace(w," ")}if(Te.use=function e(a){switch(a){case void 0:case null:ye=$e.length=0;break;default:if("function"==typeof a)$e[ye++]=a;else if("object"==typeof a)for(var r=0,c=a.length;r<c;++r)e(a[r]);else qe=0|!!a}return e},Te.set=Re,void 0!==a)Re(a);return Te});
-
-},{}],"../node_modules/stylis-rule-sheet/index.js":[function(require,module,exports) {
-var define;
-(function (factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? (module['exports'] = factory()) :
-		typeof define === 'function' && define['amd'] ? define(factory()) :
-			(window['stylisRuleSheet'] = factory())
-}(function () {
-
-	'use strict'
-
-	return function (insertRule) {
-		var delimiter = '/*|*/'
-		var needle = delimiter+'}'
-
-		function toSheet (block) {
-			if (block)
-				try {
-					insertRule(block + '}')
-				} catch (e) {}
-		}
-
-		return function ruleSheet (context, content, selectors, parents, line, column, length, ns, depth, at) {
-			switch (context) {
-				// property
-				case 1:
-					// @import
-					if (depth === 0 && content.charCodeAt(0) === 64)
-						return insertRule(content+';'), ''
-					break
-				// selector
-				case 2:
-					if (ns === 0)
-						return content + delimiter
-					break
-				// at-rule
-				case 3:
-					switch (ns) {
-						// @font-face, @page
-						case 102:
-						case 112:
-							return insertRule(selectors[0]+content), ''
-						default:
-							return content + (at === 0 ? delimiter : '')
-					}
-				case -2:
-					content.split(needle).forEach(toSheet)
-			}
-		}
-	}
-}))
-
-},{}],"../node_modules/@emotion/unitless/dist/unitless.browser.esm.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var unitlessKeys = {
-  animationIterationCount: 1,
-  borderImageOutset: 1,
-  borderImageSlice: 1,
-  borderImageWidth: 1,
-  boxFlex: 1,
-  boxFlexGroup: 1,
-  boxOrdinalGroup: 1,
-  columnCount: 1,
-  columns: 1,
-  flex: 1,
-  flexGrow: 1,
-  flexPositive: 1,
-  flexShrink: 1,
-  flexNegative: 1,
-  flexOrder: 1,
-  gridRow: 1,
-  gridRowEnd: 1,
-  gridRowSpan: 1,
-  gridRowStart: 1,
-  gridColumn: 1,
-  gridColumnEnd: 1,
-  gridColumnSpan: 1,
-  gridColumnStart: 1,
-  msGridRow: 1,
-  msGridRowSpan: 1,
-  msGridColumn: 1,
-  msGridColumnSpan: 1,
-  fontWeight: 1,
-  lineHeight: 1,
-  opacity: 1,
-  order: 1,
-  orphans: 1,
-  tabSize: 1,
-  widows: 1,
-  zIndex: 1,
-  zoom: 1,
-  WebkitLineClamp: 1,
-  // SVG-related properties
-  fillOpacity: 1,
-  floodOpacity: 1,
-  stopOpacity: 1,
-  strokeDasharray: 1,
-  strokeDashoffset: 1,
-  strokeMiterlimit: 1,
-  strokeOpacity: 1,
-  strokeWidth: 1
-};
-var _default = unitlessKeys;
-exports.default = _default;
-},{}],"../node_modules/react-is/cjs/react-is.development.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"../node_modules/react-is/cjs/react-is.development.js":[function(require,module,exports) {
 /** @license React v16.9.0
  * react-is.development.js
  *
@@ -30975,62 +30863,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-is.development.js');
 }
-},{"./cjs/react-is.development.js":"../node_modules/react-is/cjs/react-is.development.js"}],"../node_modules/memoize-one/dist/memoize-one.esm.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-function areInputsEqual(newInputs, lastInputs) {
-  if (newInputs.length !== lastInputs.length) {
-    return false;
-  }
-
-  for (var i = 0; i < newInputs.length; i++) {
-    if (newInputs[i] !== lastInputs[i]) {
-      return false;
-    }
-  }
-
-  return true;
-}
-
-function memoizeOne(resultFn, isEqual) {
-  if (isEqual === void 0) {
-    isEqual = areInputsEqual;
-  }
-
-  var lastThis;
-  var lastArgs = [];
-  var lastResult;
-  var calledOnce = false;
-
-  function memoized() {
-    var newArgs = [];
-
-    for (var _i = 0; _i < arguments.length; _i++) {
-      newArgs[_i] = arguments[_i];
-    }
-
-    if (calledOnce && lastThis === this && isEqual(newArgs, lastArgs)) {
-      return lastResult;
-    }
-
-    lastResult = resultFn.apply(this, newArgs);
-    calledOnce = true;
-    lastThis = this;
-    lastArgs = newArgs;
-    return lastResult;
-  }
-
-  return memoized;
-}
-
-var _default = memoizeOne;
-exports.default = _default;
-},{}],"../node_modules/prop-types/factoryWithTypeCheckers.js":[function(require,module,exports) {
+},{"./cjs/react-is.development.js":"../node_modules/react-is/cjs/react-is.development.js"}],"../node_modules/prop-types/factoryWithTypeCheckers.js":[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -31693,3072 +31526,7 @@ if ("development" !== 'production') {
   // http://fb.me/prop-types-in-prod
   module.exports = require('./factoryWithThrowingShims')();
 }
-},{"react-is":"../node_modules/react-is/index.js","./factoryWithTypeCheckers":"../node_modules/prop-types/factoryWithTypeCheckers.js"}],"../node_modules/@emotion/memoize/dist/memoize.browser.esm.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-function memoize(fn) {
-  var cache = {};
-  return function (arg) {
-    if (cache[arg] === undefined) cache[arg] = fn(arg);
-    return cache[arg];
-  };
-}
-
-var _default = memoize;
-exports.default = _default;
-},{}],"../node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _memoize = _interopRequireDefault(require("@emotion/memoize"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var reactPropsRegex = /^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|download|draggable|encType|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|itemProp|itemScope|itemType|itemID|itemRef|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/; // https://esbench.com/bench/5bfee68a4cd7e6009ef61d23
-
-var index = (0, _memoize.default)(function (prop) {
-  return reactPropsRegex.test(prop) || prop.charCodeAt(0) === 111
-  /* o */
-  && prop.charCodeAt(1) === 110
-  /* n */
-  && prop.charCodeAt(2) < 91;
-}
-/* Z+1 */
-);
-var _default = index;
-exports.default = _default;
-},{"@emotion/memoize":"../node_modules/@emotion/memoize/dist/memoize.browser.esm.js"}],"../node_modules/is-what/dist/index.esm.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.getType = getType;
-exports.isUndefined = isUndefined;
-exports.isNull = isNull;
-exports.isPlainObject = isPlainObject;
-exports.isObject = isObject;
-exports.isAnyObject = isAnyObject;
-exports.isObjectLike = isObjectLike;
-exports.isFunction = isFunction;
-exports.isArray = isArray;
-exports.isString = isString;
-exports.isFullString = isFullString;
-exports.isEmptyString = isEmptyString;
-exports.isNumber = isNumber;
-exports.isBoolean = isBoolean;
-exports.isRegExp = isRegExp;
-exports.isDate = isDate;
-exports.isSymbol = isSymbol;
-exports.isPrimitive = isPrimitive;
-exports.isType = isType;
-
-/**
- * Returns the object type of the given payload
- *
- * @param {*} payload
- * @returns {string}
- */
-function getType(payload) {
-  return Object.prototype.toString.call(payload).slice(8, -1);
-}
-/**
- * Returns whether the payload is undefined
- *
- * @param {*} payload
- * @returns {payload is undefined}
- */
-
-
-function isUndefined(payload) {
-  return getType(payload) === 'Undefined';
-}
-/**
- * Returns whether the payload is null
- *
- * @param {*} payload
- * @returns {payload is null}
- */
-
-
-function isNull(payload) {
-  return getType(payload) === 'Null';
-}
-/**
- * Returns whether the payload is a plain JavaScript object (excluding special classes or objects with other prototypes)
- *
- * @param {*} payload
- * @returns {payload is {[key: string]: any}}
- */
-
-
-function isPlainObject(payload) {
-  if (getType(payload) !== 'Object') return false;
-  return payload.constructor === Object && Object.getPrototypeOf(payload) === Object.prototype;
-}
-/**
- * Returns whether the payload is a plain JavaScript object (excluding special classes or objects with other prototypes)
- *
- * @param {*} payload
- * @returns {payload is {[key: string]: any}}
- */
-
-
-function isObject(payload) {
-  return isPlainObject(payload);
-}
-/**
- * Returns whether the payload is an any kind of object (including special classes or objects with different prototypes)
- *
- * @param {*} payload
- * @returns {payload is {[key: string]: any}}
- */
-
-
-function isAnyObject(payload) {
-  return getType(payload) === 'Object';
-}
-/**
- * Returns whether the payload is an object like a type passed in < >
- *
- * Usage: isObjectLike<{id: any}>(payload) // will make sure it's an object and has an `id` prop.
- *
- * @template T this must be passed in < >
- * @param {*} payload
- * @returns {payload is T}
- */
-
-
-function isObjectLike(payload) {
-  return isAnyObject(payload);
-}
-/**
- * Returns whether the payload is a function
- *
- * @param {*} payload
- * @returns {payload is Function}
- */
-
-
-function isFunction(payload) {
-  return getType(payload) === 'Function';
-}
-/**
- * Returns whether the payload is an array
- *
- * @param {*} payload
- * @returns {payload is undefined}
- */
-
-
-function isArray(payload) {
-  return getType(payload) === 'Array';
-}
-/**
- * Returns whether the payload is a string
- *
- * @param {*} payload
- * @returns {payload is string}
- */
-
-
-function isString(payload) {
-  return getType(payload) === 'String';
-}
-/**
- * Returns whether the payload is a string, BUT returns false for ''
- *
- * @param {*} payload
- * @returns {payload is string}
- */
-
-
-function isFullString(payload) {
-  return isString(payload) && payload !== '';
-}
-/**
- * Returns whether the payload is ''
- *
- * @param {*} payload
- * @returns {payload is string}
- */
-
-
-function isEmptyString(payload) {
-  return payload === '';
-}
-/**
- * Returns whether the payload is a number
- *
- * This will return false for NaN
- *
- * @param {*} payload
- * @returns {payload is number}
- */
-
-
-function isNumber(payload) {
-  return getType(payload) === 'Number' && !isNaN(payload);
-}
-/**
- * Returns whether the payload is a boolean
- *
- * @param {*} payload
- * @returns {payload is boolean}
- */
-
-
-function isBoolean(payload) {
-  return getType(payload) === 'Boolean';
-}
-/**
- * Returns whether the payload is a regular expression
- *
- * @param {*} payload
- * @returns {payload is RegExp}
- */
-
-
-function isRegExp(payload) {
-  return getType(payload) === 'RegExp';
-}
-/**
- * Returns whether the payload is a date, and that the date is Valid
- *
- * @param {*} payload
- * @returns {payload is Date}
- */
-
-
-function isDate(payload) {
-  return getType(payload) === 'Date' && !isNaN(payload);
-}
-/**
- * Returns whether the payload is a Symbol
- *
- * @param {*} payload
- * @returns {payload is symbol}
- */
-
-
-function isSymbol(payload) {
-  return getType(payload) === 'Symbol';
-}
-/**
- * Returns whether the payload is a primitive type (eg. Boolean | Null | Undefined | Number | String | Symbol)
- *
- * @param {*} payload
- * @returns {(payload is boolean | null | undefined | number | string | symbol)}
- */
-
-
-function isPrimitive(payload) {
-  return isBoolean(payload) || isNull(payload) || isUndefined(payload) || isNumber(payload) || isString(payload) || isSymbol(payload);
-}
-/**
- * Does a generic check to check that the given payload is of a given type.
- * In cases like Number, it will return true for NaN as NaN is a Number (thanks javascript!);
- * It will, however, differentiate between object and null
- *
- * @template T
- * @param {*} payload
- * @param {T} type
- * @throws {TypeError} Will throw type error if type is an invalid type
- * @returns {payload is T}
- */
-
-
-function isType(payload, type) {
-  if (!(type instanceof Function)) {
-    throw new TypeError('Type must be a function');
-  }
-
-  if (!type.hasOwnProperty('prototype')) {
-    throw new TypeError('Type is not a class');
-  } // Classes usually have names (as functions usually have names)
-
-
-  var name = type.name;
-  return getType(payload) === name || Boolean(payload && payload.constructor === type);
-}
-},{}],"../node_modules/merge-anything/dist/index.esm.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.merge = merge;
-exports.concatArrays = concatArrays;
-exports.default = void 0;
-
-var _isWhat = require("is-what");
-
-function assignProp(carry, key, newVal, originalObject) {
-  var propType = originalObject.propertyIsEnumerable(key) ? 'enumerable' : 'nonenumerable';
-  if (propType === 'enumerable') carry[key] = newVal;
-
-  if (propType === 'nonenumerable') {
-    Object.defineProperty(carry, key, {
-      value: newVal,
-      enumerable: false,
-      writable: true,
-      configurable: true
-    });
-  }
-}
-
-function mergeRecursively(origin, newComer, extensions) {
-  // work directly on newComer if its not an object
-  if (!(0, _isWhat.isPlainObject)(newComer)) {
-    // extend merge rules
-    if (extensions && (0, _isWhat.isArray)(extensions)) {
-      extensions.forEach(function (extend) {
-        newComer = extend(origin, newComer);
-      });
-    }
-
-    return newComer;
-  } // define newObject to merge all values upon
-
-
-  var newObject = {};
-
-  if ((0, _isWhat.isPlainObject)(origin)) {
-    var props_1 = Object.getOwnPropertyNames(origin);
-    var symbols_1 = Object.getOwnPropertySymbols(origin);
-    newObject = props_1.concat(symbols_1).reduce(function (carry, key) {
-      // @ts-ignore
-      var targetVal = origin[key];
-
-      if (!(0, _isWhat.isSymbol)(key) && !Object.getOwnPropertyNames(newComer).includes(key) || (0, _isWhat.isSymbol)(key) && !Object.getOwnPropertySymbols(newComer).includes(key)) {
-        assignProp(carry, key, targetVal, origin);
-      }
-
-      return carry;
-    }, {});
-  }
-
-  var props = Object.getOwnPropertyNames(newComer);
-  var symbols = Object.getOwnPropertySymbols(newComer);
-  var result = props.concat(symbols).reduce(function (carry, key) {
-    // re-define the origin and newComer as targetVal and newVal
-    var newVal = newComer[key];
-    var targetVal = (0, _isWhat.isPlainObject)(origin) ? // @ts-ignore
-    origin[key] : undefined; // extend merge rules
-
-    if (extensions && (0, _isWhat.isArray)(extensions)) {
-      extensions.forEach(function (extend) {
-        newVal = extend(targetVal, newVal);
-      });
-    } // When newVal is an object do the merge recursively
-
-
-    if (targetVal !== undefined && (0, _isWhat.isPlainObject)(newVal)) {
-      newVal = mergeRecursively(targetVal, newVal, extensions);
-    }
-
-    assignProp(carry, key, newVal, newComer);
-    return carry;
-  }, newObject);
-  return result;
-}
-/**
- * Merge anything recursively.
- * Objects get merged, special objects (classes etc.) are re-assigned "as is".
- * Basic types overwrite objects or other basic types.
- *
- * @param {(IConfig | any)} origin
- * @param {...any[]} newComers
- * @returns the result
- */
-
-
-function merge(origin) {
-  var newComers = [];
-
-  for (var _i = 1; _i < arguments.length; _i++) {
-    newComers[_i - 1] = arguments[_i];
-  }
-
-  var extensions = null;
-  var base = origin;
-
-  if ((0, _isWhat.isPlainObject)(origin) && origin.extensions && Object.keys(origin).length === 1) {
-    base = {};
-    extensions = origin.extensions;
-  }
-
-  return newComers.reduce(function (result, newComer) {
-    return mergeRecursively(result, newComer, extensions);
-  }, base);
-}
-
-function concatArrays(originVal, newVal) {
-  if ((0, _isWhat.isArray)(originVal) && (0, _isWhat.isArray)(newVal)) {
-    // concat logic
-    return originVal.concat(newVal);
-  }
-
-  return newVal; // always return newVal as fallback!!
-}
-
-var _default = merge;
-exports.default = _default;
-},{"is-what":"../node_modules/is-what/dist/index.esm.js"}],"../node_modules/process/browser.js":[function(require,module,exports) {
-
-// shim for using process in browser
-var process = module.exports = {}; // cached from whatever global is present so that test runners that stub it
-// don't break things.  But we need to wrap it in a try catch in case it is
-// wrapped in strict mode code which doesn't define any globals.  It's inside a
-// function because try/catches deoptimize in certain engines.
-
-var cachedSetTimeout;
-var cachedClearTimeout;
-
-function defaultSetTimout() {
-  throw new Error('setTimeout has not been defined');
-}
-
-function defaultClearTimeout() {
-  throw new Error('clearTimeout has not been defined');
-}
-
-(function () {
-  try {
-    if (typeof setTimeout === 'function') {
-      cachedSetTimeout = setTimeout;
-    } else {
-      cachedSetTimeout = defaultSetTimout;
-    }
-  } catch (e) {
-    cachedSetTimeout = defaultSetTimout;
-  }
-
-  try {
-    if (typeof clearTimeout === 'function') {
-      cachedClearTimeout = clearTimeout;
-    } else {
-      cachedClearTimeout = defaultClearTimeout;
-    }
-  } catch (e) {
-    cachedClearTimeout = defaultClearTimeout;
-  }
-})();
-
-function runTimeout(fun) {
-  if (cachedSetTimeout === setTimeout) {
-    //normal enviroments in sane situations
-    return setTimeout(fun, 0);
-  } // if setTimeout wasn't available but was latter defined
-
-
-  if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
-    cachedSetTimeout = setTimeout;
-    return setTimeout(fun, 0);
-  }
-
-  try {
-    // when when somebody has screwed with setTimeout but no I.E. maddness
-    return cachedSetTimeout(fun, 0);
-  } catch (e) {
-    try {
-      // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
-      return cachedSetTimeout.call(null, fun, 0);
-    } catch (e) {
-      // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
-      return cachedSetTimeout.call(this, fun, 0);
-    }
-  }
-}
-
-function runClearTimeout(marker) {
-  if (cachedClearTimeout === clearTimeout) {
-    //normal enviroments in sane situations
-    return clearTimeout(marker);
-  } // if clearTimeout wasn't available but was latter defined
-
-
-  if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
-    cachedClearTimeout = clearTimeout;
-    return clearTimeout(marker);
-  }
-
-  try {
-    // when when somebody has screwed with setTimeout but no I.E. maddness
-    return cachedClearTimeout(marker);
-  } catch (e) {
-    try {
-      // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
-      return cachedClearTimeout.call(null, marker);
-    } catch (e) {
-      // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
-      // Some versions of I.E. have different rules for clearTimeout vs setTimeout
-      return cachedClearTimeout.call(this, marker);
-    }
-  }
-}
-
-var queue = [];
-var draining = false;
-var currentQueue;
-var queueIndex = -1;
-
-function cleanUpNextTick() {
-  if (!draining || !currentQueue) {
-    return;
-  }
-
-  draining = false;
-
-  if (currentQueue.length) {
-    queue = currentQueue.concat(queue);
-  } else {
-    queueIndex = -1;
-  }
-
-  if (queue.length) {
-    drainQueue();
-  }
-}
-
-function drainQueue() {
-  if (draining) {
-    return;
-  }
-
-  var timeout = runTimeout(cleanUpNextTick);
-  draining = true;
-  var len = queue.length;
-
-  while (len) {
-    currentQueue = queue;
-    queue = [];
-
-    while (++queueIndex < len) {
-      if (currentQueue) {
-        currentQueue[queueIndex].run();
-      }
-    }
-
-    queueIndex = -1;
-    len = queue.length;
-  }
-
-  currentQueue = null;
-  draining = false;
-  runClearTimeout(timeout);
-}
-
-process.nextTick = function (fun) {
-  var args = new Array(arguments.length - 1);
-
-  if (arguments.length > 1) {
-    for (var i = 1; i < arguments.length; i++) {
-      args[i - 1] = arguments[i];
-    }
-  }
-
-  queue.push(new Item(fun, args));
-
-  if (queue.length === 1 && !draining) {
-    runTimeout(drainQueue);
-  }
-}; // v8 likes predictible objects
-
-
-function Item(fun, array) {
-  this.fun = fun;
-  this.array = array;
-}
-
-Item.prototype.run = function () {
-  this.fun.apply(null, this.array);
-};
-
-process.title = 'browser';
-process.env = {};
-process.argv = [];
-process.version = ''; // empty string to avoid regexp issues
-
-process.versions = {};
-
-function noop() {}
-
-process.on = noop;
-process.addListener = noop;
-process.once = noop;
-process.off = noop;
-process.removeListener = noop;
-process.removeAllListeners = noop;
-process.emit = noop;
-process.prependListener = noop;
-process.prependOnceListener = noop;
-
-process.listeners = function (name) {
-  return [];
-};
-
-process.binding = function (name) {
-  throw new Error('process.binding is not supported');
-};
-
-process.cwd = function () {
-  return '/';
-};
-
-process.chdir = function (dir) {
-  throw new Error('process.chdir is not supported');
-};
-
-process.umask = function () {
-  return 0;
-};
-},{}],"../node_modules/styled-components/dist/styled-components.browser.esm.js":[function(require,module,exports) {
-var process = require("process");
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.createGlobalStyle = createGlobalStyle;
-exports.css = css;
-exports.isStyledComponent = isStyledComponent;
-exports.keyframes = keyframes;
-exports.__DO_NOT_USE_OR_YOU_WILL_BE_HAUNTED_BY_SPOOKY_GHOSTS = exports.withTheme = exports.ThemeProvider = exports.ThemeContext = exports.ThemeConsumer = exports.StyleSheetManager = exports.StyleSheetContext = exports.StyleSheetConsumer = exports.ServerStyleSheet = exports.default = void 0;
-
-var _stylis = _interopRequireDefault(require("stylis/stylis.min"));
-
-var _stylisRuleSheet = _interopRequireDefault(require("stylis-rule-sheet"));
-
-var _react = _interopRequireWildcard(require("react"));
-
-var _unitless = _interopRequireDefault(require("@emotion/unitless"));
-
-var _reactIs = require("react-is");
-
-var _memoizeOne = _interopRequireDefault(require("memoize-one"));
-
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
-var _isPropValid = _interopRequireDefault(require("@emotion/is-prop-valid"));
-
-var _mergeAnything = _interopRequireDefault(require("merge-anything"));
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-// 
-var interleave = function (strings, interpolations) {
-  var result = [strings[0]];
-
-  for (var i = 0, len = interpolations.length; i < len; i += 1) {
-    result.push(interpolations[i], strings[i + 1]);
-  }
-
-  return result;
-};
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
-  return typeof obj;
-} : function (obj) {
-  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-};
-
-var classCallCheck = function (instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-};
-
-var createClass = function () {
-  function defineProperties(target, props) {
-    for (var i = 0; i < props.length; i++) {
-      var descriptor = props[i];
-      descriptor.enumerable = descriptor.enumerable || false;
-      descriptor.configurable = true;
-      if ("value" in descriptor) descriptor.writable = true;
-      Object.defineProperty(target, descriptor.key, descriptor);
-    }
-  }
-
-  return function (Constructor, protoProps, staticProps) {
-    if (protoProps) defineProperties(Constructor.prototype, protoProps);
-    if (staticProps) defineProperties(Constructor, staticProps);
-    return Constructor;
-  };
-}();
-
-var _extends = Object.assign || function (target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i];
-
-    for (var key in source) {
-      if (Object.prototype.hasOwnProperty.call(source, key)) {
-        target[key] = source[key];
-      }
-    }
-  }
-
-  return target;
-};
-
-var inherits = function (subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      enumerable: false,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-};
-
-var objectWithoutProperties = function (obj, keys) {
-  var target = {};
-
-  for (var i in obj) {
-    if (keys.indexOf(i) >= 0) continue;
-    if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
-    target[i] = obj[i];
-  }
-
-  return target;
-};
-
-var possibleConstructorReturn = function (self, call) {
-  if (!self) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return call && (typeof call === "object" || typeof call === "function") ? call : self;
-}; // 
-
-
-var isPlainObject = function (x) {
-  return (typeof x === 'undefined' ? 'undefined' : _typeof(x)) === 'object' && x.constructor === Object;
-}; // 
-
-
-var EMPTY_ARRAY = Object.freeze([]);
-var EMPTY_OBJECT = Object.freeze({}); // 
-
-function isFunction(test) {
-  return typeof test === 'function';
-} // 
-
-
-function getComponentName(target) {
-  return ("development" !== 'production' ? typeof target === 'string' && target : false) || target.displayName || target.name || 'Component';
-} // 
-
-
-function isStatelessFunction(test) {
-  return typeof test === 'function' && !(test.prototype && test.prototype.isReactComponent);
-} // 
-
-
-function isStyledComponent(target) {
-  return target && typeof target.styledComponentId === 'string';
-} // 
-
-
-var SC_ATTR = typeof process !== 'undefined' && (undefined || undefined) || 'data-styled';
-var SC_VERSION_ATTR = 'data-styled-version';
-var SC_STREAM_ATTR = 'data-styled-streamed';
-var IS_BROWSER = typeof window !== 'undefined' && 'HTMLElement' in window;
-var DISABLE_SPEEDY = typeof SC_DISABLE_SPEEDY === 'boolean' && SC_DISABLE_SPEEDY || typeof process !== 'undefined' && (undefined || undefined) || "development" !== 'production'; // Shared empty execution context when generating static styles
-
-var STATIC_EXECUTION_CONTEXT = {}; // 
-
-/**
- * Parse errors.md and turn it into a simple hash of code: message
- */
-
-var ERRORS = "development" !== 'production' ? {
-  "1": "Cannot create styled-component for component: %s.\n\n",
-  "2": "Can't collect styles once you've consumed a `ServerStyleSheet`'s styles! `ServerStyleSheet` is a one off instance for each server-side render cycle.\n\n- Are you trying to reuse it across renders?\n- Are you accidentally calling collectStyles twice?\n\n",
-  "3": "Streaming SSR is only supported in a Node.js environment; Please do not try to call this method in the browser.\n\n",
-  "4": "The `StyleSheetManager` expects a valid target or sheet prop!\n\n- Does this error occur on the client and is your target falsy?\n- Does this error occur on the server and is the sheet falsy?\n\n",
-  "5": "The clone method cannot be used on the client!\n\n- Are you running in a client-like environment on the server?\n- Are you trying to run SSR on the client?\n\n",
-  "6": "Trying to insert a new style tag, but the given Node is unmounted!\n\n- Are you using a custom target that isn't mounted?\n- Does your document not have a valid head element?\n- Have you accidentally removed a style tag manually?\n\n",
-  "7": "ThemeProvider: Please return an object from your \"theme\" prop function, e.g.\n\n```js\ntheme={() => ({})}\n```\n\n",
-  "8": "ThemeProvider: Please make your \"theme\" prop an object.\n\n",
-  "9": "Missing document `<head>`\n\n",
-  "10": "Cannot find a StyleSheet instance. Usually this happens if there are multiple copies of styled-components loaded at once. Check out this issue for how to troubleshoot and fix the common cases where this situation can happen: https://github.com/styled-components/styled-components/issues/1941#issuecomment-417862021\n\n",
-  "11": "_This error was replaced with a dev-time warning, it will be deleted for v4 final._ [createGlobalStyle] received children which will not be rendered. Please use the component without passing children elements.\n\n",
-  "12": "It seems you are interpolating a keyframe declaration (%s) into an untagged string. This was supported in styled-components v3, but is not longer supported in v4 as keyframes are now injected on-demand. Please wrap your string in the css\\`\\` helper (see https://www.styled-components.com/docs/api#css), which ensures the styles are injected correctly.\n\n",
-  "13": "%s is not a styled component and cannot be referred to via component selector. See https://www.styled-components.com/docs/advanced#referring-to-other-components for more details.\n"
-} : {};
-/**
- * super basic version of sprintf
- */
-
-function format() {
-  var a = arguments.length <= 0 ? undefined : arguments[0];
-  var b = [];
-
-  for (var c = 1, len = arguments.length; c < len; c += 1) {
-    b.push(arguments.length <= c ? undefined : arguments[c]);
-  }
-
-  b.forEach(function (d) {
-    a = a.replace(/%[a-z]/, d);
-  });
-  return a;
-}
-/**
- * Create an error file out of errors.md for development and a simple web link to the full errors
- * in production mode.
- */
-
-
-var StyledComponentsError = function (_Error) {
-  inherits(StyledComponentsError, _Error);
-
-  function StyledComponentsError(code) {
-    classCallCheck(this, StyledComponentsError);
-
-    for (var _len = arguments.length, interpolations = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-      interpolations[_key - 1] = arguments[_key];
-    }
-
-    if ("development" === 'production') {
-      var _this = possibleConstructorReturn(this, _Error.call(this, 'An error occurred. See https://github.com/styled-components/styled-components/blob/master/packages/styled-components/src/utils/errors.md#' + code + ' for more information.' + (interpolations.length > 0 ? ' Additional arguments: ' + interpolations.join(', ') : '')));
-    } else {
-      var _this = possibleConstructorReturn(this, _Error.call(this, format.apply(undefined, [ERRORS[code]].concat(interpolations)).trim()));
-    }
-
-    return possibleConstructorReturn(_this);
-  }
-
-  return StyledComponentsError;
-}(Error); // 
-
-
-var SC_COMPONENT_ID = /^[^\S\n]*?\/\* sc-component-id:\s*(\S+)\s+\*\//gm;
-
-var extractComps = function (maybeCSS) {
-  var css = '' + (maybeCSS || ''); // Definitely a string, and a clone
-
-  var existingComponents = [];
-  css.replace(SC_COMPONENT_ID, function (match, componentId, matchIndex) {
-    existingComponents.push({
-      componentId: componentId,
-      matchIndex: matchIndex
-    });
-    return match;
-  });
-  return existingComponents.map(function (_ref, i) {
-    var componentId = _ref.componentId,
-        matchIndex = _ref.matchIndex;
-    var nextComp = existingComponents[i + 1];
-    var cssFromDOM = nextComp ? css.slice(matchIndex, nextComp.matchIndex) : css.slice(matchIndex);
-    return {
-      componentId: componentId,
-      cssFromDOM: cssFromDOM
-    };
-  });
-}; // 
-
-
-var COMMENT_REGEX = /^\s*\/\/.*$/gm; // NOTE: This stylis instance is only used to split rules from SSR'd style tags
-
-var stylisSplitter = new _stylis.default({
-  global: false,
-  cascade: true,
-  keyframe: false,
-  prefix: false,
-  compress: false,
-  semicolon: true
-});
-var stylis = new _stylis.default({
-  global: false,
-  cascade: true,
-  keyframe: false,
-  prefix: true,
-  compress: false,
-  semicolon: false // NOTE: This means "autocomplete missing semicolons"
-
-}); // Wrap `insertRulePlugin to build a list of rules,
-// and then make our own plugin to return the rules. This
-// makes it easier to hook into the existing SSR architecture
-
-var parsingRules = []; // eslint-disable-next-line consistent-return
-
-var returnRulesPlugin = function returnRulesPlugin(context) {
-  if (context === -2) {
-    var parsedRules = parsingRules;
-    parsingRules = [];
-    return parsedRules;
-  }
-};
-
-var parseRulesPlugin = (0, _stylisRuleSheet.default)(function (rule) {
-  parsingRules.push(rule);
-});
-
-var _componentId = void 0;
-
-var _selector = void 0;
-
-var _selectorRegexp = void 0;
-
-var selfReferenceReplacer = function selfReferenceReplacer(match, offset, string) {
-  if ( // the first self-ref is always untouched
-  offset > 0 && // there should be at least two self-refs to do a replacement (.b > .b)
-  string.slice(0, offset).indexOf(_selector) !== -1 && // no consecutive self refs (.b.b); that is a precedence boost and treated differently
-  string.slice(offset - _selector.length, offset) !== _selector) {
-    return '.' + _componentId;
-  }
-
-  return match;
-};
-/**
- * When writing a style like
- *
- * & + & {
- *   color: red;
- * }
- *
- * The second ampersand should be a reference to the static component class. stylis
- * has no knowledge of static class so we have to intelligently replace the base selector.
- */
-
-
-var selfReferenceReplacementPlugin = function selfReferenceReplacementPlugin(context, _, selectors) {
-  if (context === 2 && selectors.length && selectors[0].lastIndexOf(_selector) > 0) {
-    // eslint-disable-next-line no-param-reassign
-    selectors[0] = selectors[0].replace(_selectorRegexp, selfReferenceReplacer);
-  }
-};
-
-stylis.use([selfReferenceReplacementPlugin, parseRulesPlugin, returnRulesPlugin]);
-stylisSplitter.use([parseRulesPlugin, returnRulesPlugin]);
-
-var splitByRules = function splitByRules(css) {
-  return stylisSplitter('', css);
-};
-
-function stringifyRules(rules, selector, prefix) {
-  var componentId = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : '&';
-  var flatCSS = rules.join('').replace(COMMENT_REGEX, ''); // replace JS comments
-
-  var cssStr = selector && prefix ? prefix + ' ' + selector + ' { ' + flatCSS + ' }' : flatCSS; // stylis has no concept of state to be passed to plugins
-  // but since JS is single=threaded, we can rely on that to ensure
-  // these properties stay in sync with the current stylis run
-
-  _componentId = componentId;
-  _selector = selector;
-  _selectorRegexp = new RegExp('\\' + _selector + '\\b', 'g');
-  return stylis(prefix || !selector ? '' : selector, cssStr);
-} // 
-
-/* eslint-disable camelcase, no-undef */
-
-
-var getNonce = function () {
-  return typeof __webpack_nonce__ !== 'undefined' ? __webpack_nonce__ : null;
-}; // 
-
-/* These are helpers for the StyleTags to keep track of the injected
- * rule names for each (component) ID that they're keeping track of.
- * They're crucial for detecting whether a name has already been
- * injected.
- * (This excludes rehydrated names) */
-
-/* adds a new ID:name pairing to a names dictionary */
-
-
-var addNameForId = function addNameForId(names, id, name) {
-  if (name) {
-    // eslint-disable-next-line no-param-reassign
-    var namesForId = names[id] || (names[id] = Object.create(null));
-    namesForId[name] = true;
-  }
-};
-/* resets an ID entirely by overwriting it in the dictionary */
-
-
-var resetIdNames = function resetIdNames(names, id) {
-  // eslint-disable-next-line no-param-reassign
-  names[id] = Object.create(null);
-};
-/* factory for a names dictionary checking the existance of an ID:name pairing */
-
-
-var hasNameForId = function hasNameForId(names) {
-  return function (id, name) {
-    return names[id] !== undefined && names[id][name];
-  };
-};
-/* stringifies names for the html/element output */
-
-
-var stringifyNames = function stringifyNames(names) {
-  var str = ''; // eslint-disable-next-line guard-for-in
-
-  for (var id in names) {
-    str += Object.keys(names[id]).join(' ') + ' ';
-  }
-
-  return str.trim();
-};
-/* clones the nested names dictionary */
-
-
-var cloneNames = function cloneNames(names) {
-  var clone = Object.create(null); // eslint-disable-next-line guard-for-in
-
-  for (var id in names) {
-    clone[id] = _extends({}, names[id]);
-  }
-
-  return clone;
-}; // 
-
-/* These are helpers that deal with the insertRule (aka speedy) API
- * They are used in the StyleTags and specifically the speedy tag
- */
-
-/* retrieve a sheet for a given style tag */
-
-
-var sheetForTag = function sheetForTag(tag) {
-  // $FlowFixMe
-  if (tag.sheet) return tag.sheet;
-  /* Firefox quirk requires us to step through all stylesheets to find one owned by the given tag */
-
-  var size = document.styleSheets.length;
-
-  for (var i = 0; i < size; i += 1) {
-    var sheet = document.styleSheets[i]; // $FlowFixMe
-
-    if (sheet.ownerNode === tag) return sheet;
-  }
-  /* we should always be able to find a tag */
-
-
-  throw new StyledComponentsError(10);
-};
-/* insert a rule safely and return whether it was actually injected */
-
-
-var safeInsertRule = function safeInsertRule(sheet, cssRule, index) {
-  /* abort early if cssRule string is falsy */
-  if (!cssRule) return false;
-  var maxIndex = sheet.cssRules.length;
-
-  try {
-    /* use insertRule and cap passed index with maxIndex (no of cssRules) */
-    sheet.insertRule(cssRule, index <= maxIndex ? index : maxIndex);
-  } catch (err) {
-    /* any error indicates an invalid rule */
-    return false;
-  }
-
-  return true;
-};
-/* deletes `size` rules starting from `removalIndex` */
-
-
-var deleteRules = function deleteRules(sheet, removalIndex, size) {
-  var lowerBound = removalIndex - size;
-
-  for (var i = removalIndex; i > lowerBound; i -= 1) {
-    sheet.deleteRule(i);
-  }
-}; // 
-
-/* this marker separates component styles and is important for rehydration */
-
-
-var makeTextMarker = function makeTextMarker(id) {
-  return '\n/* sc-component-id: ' + id + ' */\n';
-};
-/* add up all numbers in array up until and including the index */
-
-
-var addUpUntilIndex = function addUpUntilIndex(sizes, index) {
-  var totalUpToIndex = 0;
-
-  for (var i = 0; i <= index; i += 1) {
-    totalUpToIndex += sizes[i];
-  }
-
-  return totalUpToIndex;
-};
-/* create a new style tag after lastEl */
-
-
-var makeStyleTag = function makeStyleTag(target, tagEl, insertBefore) {
-  var el = document.createElement('style');
-  el.setAttribute(SC_ATTR, '');
-  el.setAttribute(SC_VERSION_ATTR, "4.3.2");
-  var nonce = getNonce();
-
-  if (nonce) {
-    el.setAttribute('nonce', nonce);
-  }
-  /* Work around insertRule quirk in EdgeHTML */
-
-
-  el.appendChild(document.createTextNode(''));
-
-  if (target && !tagEl) {
-    /* Append to target when no previous element was passed */
-    target.appendChild(el);
-  } else {
-    if (!tagEl || !target || !tagEl.parentNode) {
-      throw new StyledComponentsError(6);
-    }
-    /* Insert new style tag after the previous one */
-
-
-    tagEl.parentNode.insertBefore(el, insertBefore ? tagEl : tagEl.nextSibling);
-  }
-
-  return el;
-};
-/* takes a css factory function and outputs an html styled tag factory */
-
-
-var wrapAsHtmlTag = function wrapAsHtmlTag(css, names) {
-  return function (additionalAttrs) {
-    var nonce = getNonce();
-    var attrs = [nonce && 'nonce="' + nonce + '"', SC_ATTR + '="' + stringifyNames(names) + '"', SC_VERSION_ATTR + '="' + "4.3.2" + '"', additionalAttrs];
-    var htmlAttr = attrs.filter(Boolean).join(' ');
-    return '<style ' + htmlAttr + '>' + css() + '</style>';
-  };
-};
-/* takes a css factory function and outputs an element factory */
-
-
-var wrapAsElement = function wrapAsElement(css, names) {
-  return function () {
-    var _props;
-
-    var props = (_props = {}, _props[SC_ATTR] = stringifyNames(names), _props[SC_VERSION_ATTR] = "4.3.2", _props);
-    var nonce = getNonce();
-
-    if (nonce) {
-      // $FlowFixMe
-      props.nonce = nonce;
-    } // eslint-disable-next-line react/no-danger
-
-
-    return _react.default.createElement('style', _extends({}, props, {
-      dangerouslySetInnerHTML: {
-        __html: css()
-      }
-    }));
-  };
-};
-
-var getIdsFromMarkersFactory = function getIdsFromMarkersFactory(markers) {
-  return function () {
-    return Object.keys(markers);
-  };
-};
-/* speedy tags utilise insertRule */
-
-
-var makeSpeedyTag = function makeSpeedyTag(el, getImportRuleTag) {
-  var names = Object.create(null);
-  var markers = Object.create(null);
-  var sizes = [];
-  var extractImport = getImportRuleTag !== undefined;
-  /* indicates whether getImportRuleTag was called */
-
-  var usedImportRuleTag = false;
-
-  var insertMarker = function insertMarker(id) {
-    var prev = markers[id];
-
-    if (prev !== undefined) {
-      return prev;
-    }
-
-    markers[id] = sizes.length;
-    sizes.push(0);
-    resetIdNames(names, id);
-    return markers[id];
-  };
-
-  var insertRules = function insertRules(id, cssRules, name) {
-    var marker = insertMarker(id);
-    var sheet = sheetForTag(el);
-    var insertIndex = addUpUntilIndex(sizes, marker);
-    var injectedRules = 0;
-    var importRules = [];
-    var cssRulesSize = cssRules.length;
-
-    for (var i = 0; i < cssRulesSize; i += 1) {
-      var cssRule = cssRules[i];
-      var mayHaveImport = extractImport;
-      /* @import rules are reordered to appear first */
-
-      if (mayHaveImport && cssRule.indexOf('@import') !== -1) {
-        importRules.push(cssRule);
-      } else if (safeInsertRule(sheet, cssRule, insertIndex + injectedRules)) {
-        mayHaveImport = false;
-        injectedRules += 1;
-      }
-    }
-
-    if (extractImport && importRules.length > 0) {
-      usedImportRuleTag = true; // $FlowFixMe
-
-      getImportRuleTag().insertRules(id + '-import', importRules);
-    }
-
-    sizes[marker] += injectedRules;
-    /* add up no of injected rules */
-
-    addNameForId(names, id, name);
-  };
-
-  var removeRules = function removeRules(id) {
-    var marker = markers[id];
-    if (marker === undefined) return;
-    var size = sizes[marker];
-    var sheet = sheetForTag(el);
-    var removalIndex = addUpUntilIndex(sizes, marker) - 1;
-    deleteRules(sheet, removalIndex, size);
-    sizes[marker] = 0;
-    resetIdNames(names, id);
-
-    if (extractImport && usedImportRuleTag) {
-      // $FlowFixMe
-      getImportRuleTag().removeRules(id + '-import');
-    }
-  };
-
-  var css = function css() {
-    var _sheetForTag = sheetForTag(el),
-        cssRules = _sheetForTag.cssRules;
-
-    var str = ''; // eslint-disable-next-line guard-for-in
-
-    for (var id in markers) {
-      str += makeTextMarker(id);
-      var marker = markers[id];
-      var end = addUpUntilIndex(sizes, marker);
-      var size = sizes[marker];
-
-      for (var i = end - size; i < end; i += 1) {
-        var rule = cssRules[i];
-
-        if (rule !== undefined) {
-          str += rule.cssText;
-        }
-      }
-    }
-
-    return str;
-  };
-
-  return {
-    clone: function clone() {
-      throw new StyledComponentsError(5);
-    },
-    css: css,
-    getIds: getIdsFromMarkersFactory(markers),
-    hasNameForId: hasNameForId(names),
-    insertMarker: insertMarker,
-    insertRules: insertRules,
-    removeRules: removeRules,
-    sealed: false,
-    styleTag: el,
-    toElement: wrapAsElement(css, names),
-    toHTML: wrapAsHtmlTag(css, names)
-  };
-};
-
-var makeTextNode = function makeTextNode(id) {
-  return document.createTextNode(makeTextMarker(id));
-};
-
-var makeBrowserTag = function makeBrowserTag(el, getImportRuleTag) {
-  var names = Object.create(null);
-  var markers = Object.create(null);
-  var extractImport = getImportRuleTag !== undefined;
-  /* indicates whether getImportRuleTag was called */
-
-  var usedImportRuleTag = false;
-
-  var insertMarker = function insertMarker(id) {
-    var prev = markers[id];
-
-    if (prev !== undefined) {
-      return prev;
-    }
-
-    markers[id] = makeTextNode(id);
-    el.appendChild(markers[id]);
-    names[id] = Object.create(null);
-    return markers[id];
-  };
-
-  var insertRules = function insertRules(id, cssRules, name) {
-    var marker = insertMarker(id);
-    var importRules = [];
-    var cssRulesSize = cssRules.length;
-
-    for (var i = 0; i < cssRulesSize; i += 1) {
-      var rule = cssRules[i];
-      var mayHaveImport = extractImport;
-
-      if (mayHaveImport && rule.indexOf('@import') !== -1) {
-        importRules.push(rule);
-      } else {
-        mayHaveImport = false;
-        var separator = i === cssRulesSize - 1 ? '' : ' ';
-        marker.appendData('' + rule + separator);
-      }
-    }
-
-    addNameForId(names, id, name);
-
-    if (extractImport && importRules.length > 0) {
-      usedImportRuleTag = true; // $FlowFixMe
-
-      getImportRuleTag().insertRules(id + '-import', importRules);
-    }
-  };
-
-  var removeRules = function removeRules(id) {
-    var marker = markers[id];
-    if (marker === undefined) return;
-    /* create new empty text node and replace the current one */
-
-    var newMarker = makeTextNode(id);
-    el.replaceChild(newMarker, marker);
-    markers[id] = newMarker;
-    resetIdNames(names, id);
-
-    if (extractImport && usedImportRuleTag) {
-      // $FlowFixMe
-      getImportRuleTag().removeRules(id + '-import');
-    }
-  };
-
-  var css = function css() {
-    var str = ''; // eslint-disable-next-line guard-for-in
-
-    for (var id in markers) {
-      str += markers[id].data;
-    }
-
-    return str;
-  };
-
-  return {
-    clone: function clone() {
-      throw new StyledComponentsError(5);
-    },
-    css: css,
-    getIds: getIdsFromMarkersFactory(markers),
-    hasNameForId: hasNameForId(names),
-    insertMarker: insertMarker,
-    insertRules: insertRules,
-    removeRules: removeRules,
-    sealed: false,
-    styleTag: el,
-    toElement: wrapAsElement(css, names),
-    toHTML: wrapAsHtmlTag(css, names)
-  };
-};
-
-var makeServerTag = function makeServerTag(namesArg, markersArg) {
-  var names = namesArg === undefined ? Object.create(null) : namesArg;
-  var markers = markersArg === undefined ? Object.create(null) : markersArg;
-
-  var insertMarker = function insertMarker(id) {
-    var prev = markers[id];
-
-    if (prev !== undefined) {
-      return prev;
-    }
-
-    return markers[id] = [''];
-  };
-
-  var insertRules = function insertRules(id, cssRules, name) {
-    var marker = insertMarker(id);
-    marker[0] += cssRules.join(' ');
-    addNameForId(names, id, name);
-  };
-
-  var removeRules = function removeRules(id) {
-    var marker = markers[id];
-    if (marker === undefined) return;
-    marker[0] = '';
-    resetIdNames(names, id);
-  };
-
-  var css = function css() {
-    var str = ''; // eslint-disable-next-line guard-for-in
-
-    for (var id in markers) {
-      var cssForId = markers[id][0];
-
-      if (cssForId) {
-        str += makeTextMarker(id) + cssForId;
-      }
-    }
-
-    return str;
-  };
-
-  var clone = function clone() {
-    var namesClone = cloneNames(names);
-    var markersClone = Object.create(null); // eslint-disable-next-line guard-for-in
-
-    for (var id in markers) {
-      markersClone[id] = [markers[id][0]];
-    }
-
-    return makeServerTag(namesClone, markersClone);
-  };
-
-  var tag = {
-    clone: clone,
-    css: css,
-    getIds: getIdsFromMarkersFactory(markers),
-    hasNameForId: hasNameForId(names),
-    insertMarker: insertMarker,
-    insertRules: insertRules,
-    removeRules: removeRules,
-    sealed: false,
-    styleTag: null,
-    toElement: wrapAsElement(css, names),
-    toHTML: wrapAsHtmlTag(css, names)
-  };
-  return tag;
-};
-
-var makeTag = function makeTag(target, tagEl, forceServer, insertBefore, getImportRuleTag) {
-  if (IS_BROWSER && !forceServer) {
-    var el = makeStyleTag(target, tagEl, insertBefore);
-
-    if (DISABLE_SPEEDY) {
-      return makeBrowserTag(el, getImportRuleTag);
-    } else {
-      return makeSpeedyTag(el, getImportRuleTag);
-    }
-  }
-
-  return makeServerTag();
-};
-
-var rehydrate = function rehydrate(tag, els, extracted) {
-  /* add all extracted components to the new tag */
-  for (var i = 0, len = extracted.length; i < len; i += 1) {
-    var _extracted$i = extracted[i],
-        componentId = _extracted$i.componentId,
-        cssFromDOM = _extracted$i.cssFromDOM;
-    var cssRules = splitByRules(cssFromDOM);
-    tag.insertRules(componentId, cssRules);
-  }
-  /* remove old HTMLStyleElements, since they have been rehydrated */
-
-
-  for (var _i = 0, _len = els.length; _i < _len; _i += 1) {
-    var el = els[_i];
-
-    if (el.parentNode) {
-      el.parentNode.removeChild(el);
-    }
-  }
-}; // 
-
-
-var SPLIT_REGEX = /\s+/;
-/* determine the maximum number of components before tags are sharded */
-
-var MAX_SIZE = void 0;
-
-if (IS_BROWSER) {
-  /* in speedy mode we can keep a lot more rules in a sheet before a slowdown can be expected */
-  MAX_SIZE = DISABLE_SPEEDY ? 40 : 1000;
-} else {
-  /* for servers we do not need to shard at all */
-  MAX_SIZE = -1;
-}
-
-var sheetRunningId = 0;
-var master = void 0;
-
-var StyleSheet = function () {
-  /* a map from ids to tags */
-
-  /* deferred rules for a given id */
-
-  /* this is used for not reinjecting rules via hasNameForId() */
-
-  /* when rules for an id are removed using remove() we have to ignore rehydratedNames for it */
-
-  /* a list of tags belonging to this StyleSheet */
-
-  /* a tag for import rules */
-
-  /* current capacity until a new tag must be created */
-
-  /* children (aka clones) of this StyleSheet inheriting all and future injections */
-  function StyleSheet() {
-    var _this = this;
-
-    var target = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : IS_BROWSER ? document.head : null;
-    var forceServer = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-    classCallCheck(this, StyleSheet);
-
-    this.getImportRuleTag = function () {
-      var importRuleTag = _this.importRuleTag;
-
-      if (importRuleTag !== undefined) {
-        return importRuleTag;
-      }
-
-      var firstTag = _this.tags[0];
-      var insertBefore = true;
-      return _this.importRuleTag = makeTag(_this.target, firstTag ? firstTag.styleTag : null, _this.forceServer, insertBefore);
-    };
-
-    sheetRunningId += 1;
-    this.id = sheetRunningId;
-    this.forceServer = forceServer;
-    this.target = forceServer ? null : target;
-    this.tagMap = {};
-    this.deferred = {};
-    this.rehydratedNames = {};
-    this.ignoreRehydratedNames = {};
-    this.tags = [];
-    this.capacity = 1;
-    this.clones = [];
-  }
-  /* rehydrate all SSR'd style tags */
-
-
-  StyleSheet.prototype.rehydrate = function rehydrate$$1() {
-    if (!IS_BROWSER || this.forceServer) return this;
-    var els = [];
-    var extracted = [];
-    var isStreamed = false;
-    /* retrieve all of our SSR style elements from the DOM */
-
-    var nodes = document.querySelectorAll('style[' + SC_ATTR + '][' + SC_VERSION_ATTR + '="' + "4.3.2" + '"]');
-    var nodesSize = nodes.length;
-    /* abort rehydration if no previous style tags were found */
-
-    if (!nodesSize) return this;
-
-    for (var i = 0; i < nodesSize; i += 1) {
-      var el = nodes[i];
-      /* check if style tag is a streamed tag */
-
-      if (!isStreamed) isStreamed = !!el.getAttribute(SC_STREAM_ATTR);
-      /* retrieve all component names */
-
-      var elNames = (el.getAttribute(SC_ATTR) || '').trim().split(SPLIT_REGEX);
-      var elNamesSize = elNames.length;
-
-      for (var j = 0, name; j < elNamesSize; j += 1) {
-        name = elNames[j];
-        /* add rehydrated name to sheet to avoid re-adding styles */
-
-        this.rehydratedNames[name] = true;
-      }
-      /* extract all components and their CSS */
-
-
-      extracted.push.apply(extracted, extractComps(el.textContent));
-      /* store original HTMLStyleElement */
-
-      els.push(el);
-    }
-    /* abort rehydration if nothing was extracted */
-
-
-    var extractedSize = extracted.length;
-    if (!extractedSize) return this;
-    /* create a tag to be used for rehydration */
-
-    var tag = this.makeTag(null);
-    rehydrate(tag, els, extracted);
-    /* reset capacity and adjust MAX_SIZE by the initial size of the rehydration */
-
-    this.capacity = Math.max(1, MAX_SIZE - extractedSize);
-    this.tags.push(tag);
-    /* retrieve all component ids */
-
-    for (var _j = 0; _j < extractedSize; _j += 1) {
-      this.tagMap[extracted[_j].componentId] = tag;
-    }
-
-    return this;
-  };
-  /* retrieve a "master" instance of StyleSheet which is typically used when no other is available
-   * The master StyleSheet is targeted by createGlobalStyle, keyframes, and components outside of any
-    * StyleSheetManager's context */
-
-  /* reset the internal "master" instance */
-
-
-  StyleSheet.reset = function reset() {
-    var forceServer = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-    master = new StyleSheet(undefined, forceServer).rehydrate();
-  };
-  /* adds "children" to the StyleSheet that inherit all of the parents' rules
-   * while their own rules do not affect the parent */
-
-
-  StyleSheet.prototype.clone = function clone() {
-    var sheet = new StyleSheet(this.target, this.forceServer);
-    /* add to clone array */
-
-    this.clones.push(sheet);
-    /* clone all tags */
-
-    sheet.tags = this.tags.map(function (tag) {
-      var ids = tag.getIds();
-      var newTag = tag.clone();
-      /* reconstruct tagMap */
-
-      for (var i = 0; i < ids.length; i += 1) {
-        sheet.tagMap[ids[i]] = newTag;
-      }
-
-      return newTag;
-    });
-    /* clone other maps */
-
-    sheet.rehydratedNames = _extends({}, this.rehydratedNames);
-    sheet.deferred = _extends({}, this.deferred);
-    return sheet;
-  };
-  /* force StyleSheet to create a new tag on the next injection */
-
-
-  StyleSheet.prototype.sealAllTags = function sealAllTags() {
-    this.capacity = 1;
-    this.tags.forEach(function (tag) {
-      // eslint-disable-next-line no-param-reassign
-      tag.sealed = true;
-    });
-  };
-
-  StyleSheet.prototype.makeTag = function makeTag$$1(tag) {
-    var lastEl = tag ? tag.styleTag : null;
-    var insertBefore = false;
-    return makeTag(this.target, lastEl, this.forceServer, insertBefore, this.getImportRuleTag);
-  };
-  /* get a tag for a given componentId, assign the componentId to one, or shard */
-
-
-  StyleSheet.prototype.getTagForId = function getTagForId(id) {
-    /* simply return a tag, when the componentId was already assigned one */
-    var prev = this.tagMap[id];
-
-    if (prev !== undefined && !prev.sealed) {
-      return prev;
-    }
-
-    var tag = this.tags[this.tags.length - 1];
-    /* shard (create a new tag) if the tag is exhausted (See MAX_SIZE) */
-
-    this.capacity -= 1;
-
-    if (this.capacity === 0) {
-      this.capacity = MAX_SIZE;
-      tag = this.makeTag(tag);
-      this.tags.push(tag);
-    }
-
-    return this.tagMap[id] = tag;
-  };
-  /* mainly for createGlobalStyle to check for its id */
-
-
-  StyleSheet.prototype.hasId = function hasId(id) {
-    return this.tagMap[id] !== undefined;
-  };
-  /* caching layer checking id+name to already have a corresponding tag and injected rules */
-
-
-  StyleSheet.prototype.hasNameForId = function hasNameForId(id, name) {
-    /* exception for rehydrated names which are checked separately */
-    if (this.ignoreRehydratedNames[id] === undefined && this.rehydratedNames[name]) {
-      return true;
-    }
-
-    var tag = this.tagMap[id];
-    return tag !== undefined && tag.hasNameForId(id, name);
-  };
-  /* registers a componentId and registers it on its tag */
-
-
-  StyleSheet.prototype.deferredInject = function deferredInject(id, cssRules) {
-    /* don't inject when the id is already registered */
-    if (this.tagMap[id] !== undefined) return;
-    var clones = this.clones;
-
-    for (var i = 0; i < clones.length; i += 1) {
-      clones[i].deferredInject(id, cssRules);
-    }
-
-    this.getTagForId(id).insertMarker(id);
-    this.deferred[id] = cssRules;
-  };
-  /* injects rules for a given id with a name that will need to be cached */
-
-
-  StyleSheet.prototype.inject = function inject(id, cssRules, name) {
-    var clones = this.clones;
-
-    for (var i = 0; i < clones.length; i += 1) {
-      clones[i].inject(id, cssRules, name);
-    }
-
-    var tag = this.getTagForId(id);
-    /* add deferred rules for component */
-
-    if (this.deferred[id] !== undefined) {
-      // Combine passed cssRules with previously deferred CSS rules
-      // NOTE: We cannot mutate the deferred array itself as all clones
-      // do the same (see clones[i].inject)
-      var rules = this.deferred[id].concat(cssRules);
-      tag.insertRules(id, rules, name);
-      this.deferred[id] = undefined;
-    } else {
-      tag.insertRules(id, cssRules, name);
-    }
-  };
-  /* removes all rules for a given id, which doesn't remove its marker but resets it */
-
-
-  StyleSheet.prototype.remove = function remove(id) {
-    var tag = this.tagMap[id];
-    if (tag === undefined) return;
-    var clones = this.clones;
-
-    for (var i = 0; i < clones.length; i += 1) {
-      clones[i].remove(id);
-    }
-    /* remove all rules from the tag */
-
-
-    tag.removeRules(id);
-    /* ignore possible rehydrated names */
-
-    this.ignoreRehydratedNames[id] = true;
-    /* delete possible deferred rules */
-
-    this.deferred[id] = undefined;
-  };
-
-  StyleSheet.prototype.toHTML = function toHTML() {
-    return this.tags.map(function (tag) {
-      return tag.toHTML();
-    }).join('');
-  };
-
-  StyleSheet.prototype.toReactElements = function toReactElements() {
-    var id = this.id;
-    return this.tags.map(function (tag, i) {
-      var key = 'sc-' + id + '-' + i;
-      return (0, _react.cloneElement)(tag.toElement(), {
-        key: key
-      });
-    });
-  };
-
-  createClass(StyleSheet, null, [{
-    key: 'master',
-    get: function get$$1() {
-      return master || (master = new StyleSheet().rehydrate());
-    }
-    /* NOTE: This is just for backwards-compatibility with jest-styled-components */
-
-  }, {
-    key: 'instance',
-    get: function get$$1() {
-      return StyleSheet.master;
-    }
-  }]);
-  return StyleSheet;
-}(); // 
-
-
-var Keyframes = function () {
-  function Keyframes(name, rules) {
-    var _this = this;
-
-    classCallCheck(this, Keyframes);
-
-    this.inject = function (styleSheet) {
-      if (!styleSheet.hasNameForId(_this.id, _this.name)) {
-        styleSheet.inject(_this.id, _this.rules, _this.name);
-      }
-    };
-
-    this.toString = function () {
-      throw new StyledComponentsError(12, String(_this.name));
-    };
-
-    this.name = name;
-    this.rules = rules;
-    this.id = 'sc-keyframes-' + name;
-  }
-
-  Keyframes.prototype.getName = function getName() {
-    return this.name;
-  };
-
-  return Keyframes;
-}(); // 
-
-/**
- * inlined version of
- * https://github.com/facebook/fbjs/blob/master/packages/fbjs/src/core/hyphenateStyleName.js
- */
-
-
-var uppercasePattern = /([A-Z])/g;
-var msPattern = /^ms-/;
-/**
- * Hyphenates a camelcased CSS property name, for example:
- *
- *   > hyphenateStyleName('backgroundColor')
- *   < "background-color"
- *   > hyphenateStyleName('MozTransition')
- *   < "-moz-transition"
- *   > hyphenateStyleName('msTransition')
- *   < "-ms-transition"
- *
- * As Modernizr suggests (http://modernizr.com/docs/#prefixed), an `ms` prefix
- * is converted to `-ms-`.
- *
- * @param {string} string
- * @return {string}
- */
-
-function hyphenateStyleName(string) {
-  return string.replace(uppercasePattern, '-$1').toLowerCase().replace(msPattern, '-ms-');
-} // 
-// Taken from https://github.com/facebook/react/blob/b87aabdfe1b7461e7331abb3601d9e6bb27544bc/packages/react-dom/src/shared/dangerousStyleValue.js
-
-
-function addUnitIfNeeded(name, value) {
-  // https://github.com/amilajack/eslint-plugin-flowtype-errors/issues/133
-  // $FlowFixMe
-  if (value == null || typeof value === 'boolean' || value === '') {
-    return '';
-  }
-
-  if (typeof value === 'number' && value !== 0 && !(name in _unitless.default)) {
-    return value + 'px'; // Presumes implicit 'px' suffix for unitless numbers
-  }
-
-  return String(value).trim();
-} // 
-
-/**
- * It's falsish not falsy because 0 is allowed.
- */
-
-
-var isFalsish = function isFalsish(chunk) {
-  return chunk === undefined || chunk === null || chunk === false || chunk === '';
-};
-
-var objToCssArray = function objToCssArray(obj, prevKey) {
-  var rules = [];
-  var keys = Object.keys(obj);
-  keys.forEach(function (key) {
-    if (!isFalsish(obj[key])) {
-      if (isPlainObject(obj[key])) {
-        rules.push.apply(rules, objToCssArray(obj[key], key));
-        return rules;
-      } else if (isFunction(obj[key])) {
-        rules.push(hyphenateStyleName(key) + ':', obj[key], ';');
-        return rules;
-      }
-
-      rules.push(hyphenateStyleName(key) + ': ' + addUnitIfNeeded(key, obj[key]) + ';');
-    }
-
-    return rules;
-  });
-  return prevKey ? [prevKey + ' {'].concat(rules, ['}']) : rules;
-};
-
-function flatten(chunk, executionContext, styleSheet) {
-  if (Array.isArray(chunk)) {
-    var ruleSet = [];
-
-    for (var i = 0, len = chunk.length, result; i < len; i += 1) {
-      result = flatten(chunk[i], executionContext, styleSheet);
-      if (result === null) continue;else if (Array.isArray(result)) ruleSet.push.apply(ruleSet, result);else ruleSet.push(result);
-    }
-
-    return ruleSet;
-  }
-
-  if (isFalsish(chunk)) {
-    return null;
-  }
-  /* Handle other components */
-
-
-  if (isStyledComponent(chunk)) {
-    return '.' + chunk.styledComponentId;
-  }
-  /* Either execute or defer the function */
-
-
-  if (isFunction(chunk)) {
-    if (isStatelessFunction(chunk) && executionContext) {
-      var _result = chunk(executionContext);
-
-      if ("development" !== 'production' && (0, _reactIs.isElement)(_result)) {
-        // eslint-disable-next-line no-console
-        console.warn(getComponentName(chunk) + ' is not a styled component and cannot be referred to via component selector. See https://www.styled-components.com/docs/advanced#referring-to-other-components for more details.');
-      }
-
-      return flatten(_result, executionContext, styleSheet);
-    } else return chunk;
-  }
-
-  if (chunk instanceof Keyframes) {
-    if (styleSheet) {
-      chunk.inject(styleSheet);
-      return chunk.getName();
-    } else return chunk;
-  }
-  /* Handle objects */
-
-
-  return isPlainObject(chunk) ? objToCssArray(chunk) : chunk.toString();
-} // 
-
-
-function css(styles) {
-  for (var _len = arguments.length, interpolations = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    interpolations[_key - 1] = arguments[_key];
-  }
-
-  if (isFunction(styles) || isPlainObject(styles)) {
-    // $FlowFixMe
-    return flatten(interleave(EMPTY_ARRAY, [styles].concat(interpolations)));
-  } // $FlowFixMe
-
-
-  return flatten(interleave(styles, interpolations));
-} // 
-
-
-function constructWithOptions(componentConstructor, tag) {
-  var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : EMPTY_OBJECT;
-
-  if (!(0, _reactIs.isValidElementType)(tag)) {
-    throw new StyledComponentsError(1, String(tag));
-  }
-  /* This is callable directly as a template function */
-  // $FlowFixMe: Not typed to avoid destructuring arguments
-
-
-  var templateFunction = function templateFunction() {
-    return componentConstructor(tag, options, css.apply(undefined, arguments));
-  };
-  /* If config methods are called, wrap up a new template function and merge options */
-
-
-  templateFunction.withConfig = function (config) {
-    return constructWithOptions(componentConstructor, tag, _extends({}, options, config));
-  };
-  /* Modify/inject new props at runtime */
-
-
-  templateFunction.attrs = function (attrs) {
-    return constructWithOptions(componentConstructor, tag, _extends({}, options, {
-      attrs: Array.prototype.concat(options.attrs, attrs).filter(Boolean)
-    }));
-  };
-
-  return templateFunction;
-} // 
-// Source: https://github.com/garycourt/murmurhash-js/blob/master/murmurhash2_gc.js
-
-
-function murmurhash(c) {
-  for (var e = c.length | 0, a = e | 0, d = 0, b; e >= 4;) {
-    b = c.charCodeAt(d) & 255 | (c.charCodeAt(++d) & 255) << 8 | (c.charCodeAt(++d) & 255) << 16 | (c.charCodeAt(++d) & 255) << 24, b = 1540483477 * (b & 65535) + ((1540483477 * (b >>> 16) & 65535) << 16), b ^= b >>> 24, b = 1540483477 * (b & 65535) + ((1540483477 * (b >>> 16) & 65535) << 16), a = 1540483477 * (a & 65535) + ((1540483477 * (a >>> 16) & 65535) << 16) ^ b, e -= 4, ++d;
-  }
-
-  switch (e) {
-    case 3:
-      a ^= (c.charCodeAt(d + 2) & 255) << 16;
-
-    case 2:
-      a ^= (c.charCodeAt(d + 1) & 255) << 8;
-
-    case 1:
-      a ^= c.charCodeAt(d) & 255, a = 1540483477 * (a & 65535) + ((1540483477 * (a >>> 16) & 65535) << 16);
-  }
-
-  a ^= a >>> 13;
-  a = 1540483477 * (a & 65535) + ((1540483477 * (a >>> 16) & 65535) << 16);
-  return (a ^ a >>> 15) >>> 0;
-} // 
-
-/* eslint-disable no-bitwise */
-
-/* This is the "capacity" of our alphabet i.e. 2x26 for all letters plus their capitalised
- * counterparts */
-
-
-var charsLength = 52;
-/* start at 75 for 'a' until 'z' (25) and then start at 65 for capitalised letters */
-
-var getAlphabeticChar = function getAlphabeticChar(code) {
-  return String.fromCharCode(code + (code > 25 ? 39 : 97));
-};
-/* input a number, usually a hash and convert it to base-52 */
-
-
-function generateAlphabeticName(code) {
-  var name = '';
-  var x = void 0;
-  /* get a char and divide by alphabet-length */
-
-  for (x = code; x > charsLength; x = Math.floor(x / charsLength)) {
-    name = getAlphabeticChar(x % charsLength) + name;
-  }
-
-  return getAlphabeticChar(x % charsLength) + name;
-} // 
-
-
-function hasFunctionObjectKey(obj) {
-  // eslint-disable-next-line guard-for-in, no-restricted-syntax
-  for (var key in obj) {
-    if (isFunction(obj[key])) {
-      return true;
-    }
-  }
-
-  return false;
-}
-
-function isStaticRules(rules, attrs) {
-  for (var i = 0; i < rules.length; i += 1) {
-    var rule = rules[i]; // recursive case
-
-    if (Array.isArray(rule) && !isStaticRules(rule, attrs)) {
-      return false;
-    } else if (isFunction(rule) && !isStyledComponent(rule)) {
-      // functions are allowed to be static if they're just being
-      // used to get the classname of a nested styled component
-      return false;
-    }
-  }
-
-  if (attrs.some(function (x) {
-    return isFunction(x) || hasFunctionObjectKey(x);
-  })) return false;
-  return true;
-} // 
-
-
-var isHMREnabled = "development" !== 'production' && typeof module !== 'undefined' && module.hot;
-/* combines hashStr (murmurhash) and nameGenerator for convenience */
-
-var hasher = function hasher(str) {
-  return generateAlphabeticName(murmurhash(str));
-};
-/*
- ComponentStyle is all the CSS-specific stuff, not
- the React-specific stuff.
- */
-
-
-var ComponentStyle = function () {
-  function ComponentStyle(rules, attrs, componentId) {
-    classCallCheck(this, ComponentStyle);
-    this.rules = rules;
-    this.isStatic = !isHMREnabled && isStaticRules(rules, attrs);
-    this.componentId = componentId;
-
-    if (!StyleSheet.master.hasId(componentId)) {
-      StyleSheet.master.deferredInject(componentId, []);
-    }
-  }
-  /*
-     * Flattens a rule set into valid CSS
-     * Hashes it, wraps the whole chunk in a .hash1234 {}
-     * Returns the hash to be injected on render()
-     * */
-
-
-  ComponentStyle.prototype.generateAndInjectStyles = function generateAndInjectStyles(executionContext, styleSheet) {
-    var isStatic = this.isStatic,
-        componentId = this.componentId,
-        lastClassName = this.lastClassName;
-
-    if (IS_BROWSER && isStatic && typeof lastClassName === 'string' && styleSheet.hasNameForId(componentId, lastClassName)) {
-      return lastClassName;
-    }
-
-    var flatCSS = flatten(this.rules, executionContext, styleSheet);
-    var name = hasher(this.componentId + flatCSS.join(''));
-
-    if (!styleSheet.hasNameForId(componentId, name)) {
-      styleSheet.inject(this.componentId, stringifyRules(flatCSS, '.' + name, undefined, componentId), name);
-    }
-
-    this.lastClassName = name;
-    return name;
-  };
-
-  ComponentStyle.generateName = function generateName(str) {
-    return hasher(str);
-  };
-
-  return ComponentStyle;
-}(); // 
-
-
-var LIMIT = 200;
-
-var createWarnTooManyClasses = function (displayName) {
-  var generatedClasses = {};
-  var warningSeen = false;
-  return function (className) {
-    if (!warningSeen) {
-      generatedClasses[className] = true;
-
-      if (Object.keys(generatedClasses).length >= LIMIT) {
-        // Unable to find latestRule in test environment.
-
-        /* eslint-disable no-console, prefer-template */
-        console.warn('Over ' + LIMIT + ' classes were generated for component ' + displayName + '. \n' + 'Consider using the attrs method, together with a style object for frequently changed styles.\n' + 'Example:\n' + '  const Component = styled.div.attrs({\n' + '    style: ({ background }) => ({\n' + '      background,\n' + '    }),\n' + '  })`width: 100%;`\n\n' + '  <Component />');
-        warningSeen = true;
-        generatedClasses = {};
-      }
-    }
-  };
-}; // 
-
-
-var determineTheme = function (props, fallbackTheme) {
-  var defaultProps = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : EMPTY_OBJECT; // Props should take precedence over ThemeProvider, which should take precedence over
-  // defaultProps, but React automatically puts defaultProps on props.
-
-  /* eslint-disable react/prop-types, flowtype-errors/show-errors */
-
-  var isDefaultTheme = defaultProps ? props.theme === defaultProps.theme : false;
-  var theme = props.theme && !isDefaultTheme ? props.theme : fallbackTheme || defaultProps.theme;
-  /* eslint-enable */
-
-  return theme;
-}; // 
-
-
-var escapeRegex = /[[\].#*$><+~=|^:(),"'`-]+/g;
-var dashesAtEnds = /(^-|-$)/g;
-/**
- * TODO: Explore using CSS.escape when it becomes more available
- * in evergreen browsers.
- */
-
-function escape(str) {
-  return str // Replace all possible CSS selectors
-  .replace(escapeRegex, '-') // Remove extraneous hyphens at the start and end
-  .replace(dashesAtEnds, '');
-} // 
-
-
-function isTag(target) {
-  return typeof target === 'string' && ("development" !== 'production' ? target.charAt(0) === target.charAt(0).toLowerCase() : true);
-} // 
-
-
-function generateDisplayName(target) {
-  // $FlowFixMe
-  return isTag(target) ? 'styled.' + target : 'Styled(' + getComponentName(target) + ')';
-}
-
-var _TYPE_STATICS;
-
-var REACT_STATICS = {
-  childContextTypes: true,
-  contextTypes: true,
-  defaultProps: true,
-  displayName: true,
-  getDerivedStateFromProps: true,
-  propTypes: true,
-  type: true
-};
-var KNOWN_STATICS = {
-  name: true,
-  length: true,
-  prototype: true,
-  caller: true,
-  callee: true,
-  arguments: true,
-  arity: true
-};
-var TYPE_STATICS = (_TYPE_STATICS = {}, _TYPE_STATICS[_reactIs.ForwardRef] = {
-  $$typeof: true,
-  render: true
-}, _TYPE_STATICS);
-var defineProperty$1 = Object.defineProperty,
-    getOwnPropertyNames = Object.getOwnPropertyNames,
-    _Object$getOwnPropert = Object.getOwnPropertySymbols,
-    getOwnPropertySymbols = _Object$getOwnPropert === undefined ? function () {
-  return [];
-} : _Object$getOwnPropert,
-    getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor,
-    getPrototypeOf = Object.getPrototypeOf,
-    objectPrototype = Object.prototype;
-var arrayPrototype = Array.prototype;
-
-function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
-  if (typeof sourceComponent !== 'string') {
-    // don't hoist over string (html) components
-    var inheritedComponent = getPrototypeOf(sourceComponent);
-
-    if (inheritedComponent && inheritedComponent !== objectPrototype) {
-      hoistNonReactStatics(targetComponent, inheritedComponent, blacklist);
-    }
-
-    var keys = arrayPrototype.concat(getOwnPropertyNames(sourceComponent), // $FlowFixMe
-    getOwnPropertySymbols(sourceComponent));
-    var targetStatics = TYPE_STATICS[targetComponent.$$typeof] || REACT_STATICS;
-    var sourceStatics = TYPE_STATICS[sourceComponent.$$typeof] || REACT_STATICS;
-    var i = keys.length;
-    var descriptor = void 0;
-    var key = void 0; // eslint-disable-next-line no-plusplus
-
-    while (i--) {
-      key = keys[i];
-
-      if ( // $FlowFixMe
-      !KNOWN_STATICS[key] && !(blacklist && blacklist[key]) && !(sourceStatics && sourceStatics[key]) && // $FlowFixMe
-      !(targetStatics && targetStatics[key])) {
-        descriptor = getOwnPropertyDescriptor(sourceComponent, key);
-
-        if (descriptor) {
-          try {
-            // Avoid failures from read-only properties
-            defineProperty$1(targetComponent, key, descriptor);
-          } catch (e) {
-            /* fail silently */
-          }
-        }
-      }
-    }
-
-    return targetComponent;
-  }
-
-  return targetComponent;
-} // 
-
-
-function isDerivedReactComponent(fn) {
-  return !!(fn && fn.prototype && fn.prototype.isReactComponent);
-} // 
-// Helper to call a given function, only once
-
-
-var once = function (cb) {
-  var called = false;
-  return function () {
-    if (!called) {
-      called = true;
-      cb.apply(undefined, arguments);
-    }
-  };
-}; // 
-
-
-var ThemeContext = (0, _react.createContext)();
-exports.ThemeContext = ThemeContext;
-var ThemeConsumer = ThemeContext.Consumer;
-/**
- * Provide a theme to an entire react component tree via context
- */
-
-exports.ThemeConsumer = ThemeConsumer;
-
-var ThemeProvider = function (_Component) {
-  inherits(ThemeProvider, _Component);
-
-  function ThemeProvider(props) {
-    classCallCheck(this, ThemeProvider);
-
-    var _this = possibleConstructorReturn(this, _Component.call(this, props));
-
-    _this.getContext = (0, _memoizeOne.default)(_this.getContext.bind(_this));
-    _this.renderInner = _this.renderInner.bind(_this);
-    return _this;
-  }
-
-  ThemeProvider.prototype.render = function render() {
-    if (!this.props.children) return null;
-    return _react.default.createElement(ThemeContext.Consumer, null, this.renderInner);
-  };
-
-  ThemeProvider.prototype.renderInner = function renderInner(outerTheme) {
-    var context = this.getContext(this.props.theme, outerTheme);
-    return _react.default.createElement(ThemeContext.Provider, {
-      value: context
-    }, _react.default.Children.only(this.props.children));
-  };
-  /**
-   * Get the theme from the props, supporting both (outerTheme) => {}
-   * as well as object notation
-   */
-
-
-  ThemeProvider.prototype.getTheme = function getTheme(theme, outerTheme) {
-    if (isFunction(theme)) {
-      var mergedTheme = theme(outerTheme);
-
-      if ("development" !== 'production' && (mergedTheme === null || Array.isArray(mergedTheme) || (typeof mergedTheme === 'undefined' ? 'undefined' : _typeof(mergedTheme)) !== 'object')) {
-        throw new StyledComponentsError(7);
-      }
-
-      return mergedTheme;
-    }
-
-    if (theme === null || Array.isArray(theme) || (typeof theme === 'undefined' ? 'undefined' : _typeof(theme)) !== 'object') {
-      throw new StyledComponentsError(8);
-    }
-
-    return _extends({}, outerTheme, theme);
-  };
-
-  ThemeProvider.prototype.getContext = function getContext(theme, outerTheme) {
-    return this.getTheme(theme, outerTheme);
-  };
-
-  return ThemeProvider;
-}(_react.Component); // 
-
-
-exports.ThemeProvider = ThemeProvider;
-var CLOSING_TAG_R = /^\s*<\/[a-z]/i;
-
-var ServerStyleSheet = function () {
-  function ServerStyleSheet() {
-    classCallCheck(this, ServerStyleSheet);
-    /* The master sheet might be reset, so keep a reference here */
-
-    this.masterSheet = StyleSheet.master;
-    this.instance = this.masterSheet.clone();
-    this.sealed = false;
-  }
-  /**
-   * Mark the ServerStyleSheet as being fully emitted and manually GC it from the
-   * StyleSheet singleton.
-   */
-
-
-  ServerStyleSheet.prototype.seal = function seal() {
-    if (!this.sealed) {
-      /* Remove sealed StyleSheets from the master sheet */
-      var index = this.masterSheet.clones.indexOf(this.instance);
-      this.masterSheet.clones.splice(index, 1);
-      this.sealed = true;
-    }
-  };
-
-  ServerStyleSheet.prototype.collectStyles = function collectStyles(children) {
-    if (this.sealed) {
-      throw new StyledComponentsError(2);
-    }
-
-    return _react.default.createElement(StyleSheetManager, {
-      sheet: this.instance
-    }, children);
-  };
-
-  ServerStyleSheet.prototype.getStyleTags = function getStyleTags() {
-    this.seal();
-    return this.instance.toHTML();
-  };
-
-  ServerStyleSheet.prototype.getStyleElement = function getStyleElement() {
-    this.seal();
-    return this.instance.toReactElements();
-  };
-
-  ServerStyleSheet.prototype.interleaveWithNodeStream = function interleaveWithNodeStream(readableStream) {
-    var _this = this;
-
-    {
-      throw new StyledComponentsError(3);
-    }
-    /* the tag index keeps track of which tags have already been emitted */
-
-    var instance = this.instance;
-    var instanceTagIndex = 0;
-    var streamAttr = SC_STREAM_ATTR + '="true"';
-    var transformer = new stream.Transform({
-      transform: function appendStyleChunks(chunk,
-      /* encoding */
-      _, callback) {
-        var tags = instance.tags;
-        var html = '';
-        /* retrieve html for each new style tag */
-
-        for (; instanceTagIndex < tags.length; instanceTagIndex += 1) {
-          var tag = tags[instanceTagIndex];
-          html += tag.toHTML(streamAttr);
-        }
-        /* force our StyleSheets to emit entirely new tags */
-
-
-        instance.sealAllTags();
-        var renderedHtml = chunk.toString();
-        /* prepend style html to chunk, unless the start of the chunk is a closing tag in which case append right after that */
-
-        if (CLOSING_TAG_R.test(renderedHtml)) {
-          var endOfClosingTag = renderedHtml.indexOf('>');
-          this.push(renderedHtml.slice(0, endOfClosingTag + 1) + html + renderedHtml.slice(endOfClosingTag + 1));
-        } else this.push(html + renderedHtml);
-
-        callback();
-      }
-    });
-    readableStream.on('end', function () {
-      return _this.seal();
-    });
-    readableStream.on('error', function (err) {
-      _this.seal(); // forward the error to the transform stream
-
-
-      transformer.emit('error', err);
-    });
-    return readableStream.pipe(transformer);
-  };
-
-  return ServerStyleSheet;
-}(); // 
-
-
-exports.ServerStyleSheet = ServerStyleSheet;
-var StyleSheetContext = (0, _react.createContext)();
-exports.StyleSheetContext = StyleSheetContext;
-var StyleSheetConsumer = StyleSheetContext.Consumer;
-exports.StyleSheetConsumer = StyleSheetConsumer;
-
-var StyleSheetManager = function (_Component) {
-  inherits(StyleSheetManager, _Component);
-
-  function StyleSheetManager(props) {
-    classCallCheck(this, StyleSheetManager);
-
-    var _this = possibleConstructorReturn(this, _Component.call(this, props));
-
-    _this.getContext = (0, _memoizeOne.default)(_this.getContext);
-    return _this;
-  }
-
-  StyleSheetManager.prototype.getContext = function getContext(sheet, target) {
-    if (sheet) {
-      return sheet;
-    } else if (target) {
-      return new StyleSheet(target);
-    } else {
-      throw new StyledComponentsError(4);
-    }
-  };
-
-  StyleSheetManager.prototype.render = function render() {
-    var _props = this.props,
-        children = _props.children,
-        sheet = _props.sheet,
-        target = _props.target;
-    return _react.default.createElement(StyleSheetContext.Provider, {
-      value: this.getContext(sheet, target)
-    }, "development" !== 'production' ? _react.default.Children.only(children) : children);
-  };
-
-  return StyleSheetManager;
-}(_react.Component);
-
-exports.StyleSheetManager = StyleSheetManager;
-"development" !== "production" ? StyleSheetManager.propTypes = {
-  sheet: _propTypes.default.oneOfType([_propTypes.default.instanceOf(StyleSheet), _propTypes.default.instanceOf(ServerStyleSheet)]),
-  target: _propTypes.default.shape({
-    appendChild: _propTypes.default.func.isRequired
-  })
-} : void 0; // 
-
-var identifiers = {};
-/* We depend on components having unique IDs */
-
-function generateId(_ComponentStyle, _displayName, parentComponentId) {
-  var displayName = typeof _displayName !== 'string' ? 'sc' : escape(_displayName);
-  /**
-   * This ensures uniqueness if two components happen to share
-   * the same displayName.
-   */
-
-  var nr = (identifiers[displayName] || 0) + 1;
-  identifiers[displayName] = nr;
-
-  var componentId = displayName + '-' + _ComponentStyle.generateName(displayName + nr);
-
-  return parentComponentId ? parentComponentId + '-' + componentId : componentId;
-} // $FlowFixMe
-
-
-var StyledComponent = function (_Component) {
-  inherits(StyledComponent, _Component);
-
-  function StyledComponent() {
-    classCallCheck(this, StyledComponent);
-
-    var _this = possibleConstructorReturn(this, _Component.call(this));
-
-    _this.attrs = {};
-    _this.renderOuter = _this.renderOuter.bind(_this);
-    _this.renderInner = _this.renderInner.bind(_this);
-
-    if ("development" !== 'production') {
-      _this.warnInnerRef = once(function (displayName) {
-        return (// eslint-disable-next-line no-console
-          console.warn('The "innerRef" API has been removed in styled-components v4 in favor of React 16 ref forwarding, use "ref" instead like a typical component. "innerRef" was detected on component "' + displayName + '".')
-        );
-      });
-      _this.warnAttrsFnObjectKeyDeprecated = once(function (key, displayName) {
-        return (// eslint-disable-next-line no-console
-          console.warn('Functions as object-form attrs({}) keys are now deprecated and will be removed in a future version of styled-components. Switch to the new attrs(props => ({})) syntax instead for easier and more powerful composition. The attrs key in question is "' + key + '" on component "' + displayName + '".', '\n ' + new Error().stack)
-        );
-      });
-      _this.warnNonStyledComponentAttrsObjectKey = once(function (key, displayName) {
-        return (// eslint-disable-next-line no-console
-          console.warn('It looks like you\'ve used a non styled-component as the value for the "' + key + '" prop in an object-form attrs constructor of "' + displayName + '".\n' + 'You should use the new function-form attrs constructor which avoids this issue: attrs(props => ({ yourStuff }))\n' + "To continue using the deprecated object syntax, you'll need to wrap your component prop in a function to make it available inside the styled component (you'll still get the deprecation warning though.)\n" + ('For example, { ' + key + ': () => InnerComponent } instead of { ' + key + ': InnerComponent }'))
-        );
-      });
-    }
-
-    return _this;
-  }
-
-  StyledComponent.prototype.render = function render() {
-    return _react.default.createElement(StyleSheetConsumer, null, this.renderOuter);
-  };
-
-  StyledComponent.prototype.renderOuter = function renderOuter() {
-    var styleSheet = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : StyleSheet.master;
-    this.styleSheet = styleSheet; // No need to subscribe a static component to theme changes, it won't change anything
-
-    if (this.props.forwardedComponent.componentStyle.isStatic) return this.renderInner();
-    return _react.default.createElement(ThemeConsumer, null, this.renderInner);
-  };
-
-  StyledComponent.prototype.renderInner = function renderInner(theme) {
-    var _props$forwardedCompo = this.props.forwardedComponent,
-        componentStyle = _props$forwardedCompo.componentStyle,
-        defaultProps = _props$forwardedCompo.defaultProps,
-        displayName = _props$forwardedCompo.displayName,
-        foldedComponentIds = _props$forwardedCompo.foldedComponentIds,
-        styledComponentId = _props$forwardedCompo.styledComponentId,
-        target = _props$forwardedCompo.target;
-    var generatedClassName = void 0;
-
-    if (componentStyle.isStatic) {
-      generatedClassName = this.generateAndInjectStyles(EMPTY_OBJECT, this.props);
-    } else {
-      generatedClassName = this.generateAndInjectStyles(determineTheme(this.props, theme, defaultProps) || EMPTY_OBJECT, this.props);
-    }
-
-    var elementToBeCreated = this.props.as || this.attrs.as || target;
-    var isTargetTag = isTag(elementToBeCreated);
-    var propsForElement = {};
-
-    var computedProps = _extends({}, this.attrs, this.props);
-
-    var key = void 0; // eslint-disable-next-line guard-for-in
-
-    for (key in computedProps) {
-      if ("development" !== 'production' && key === 'innerRef' && isTargetTag) {
-        this.warnInnerRef(displayName);
-      }
-
-      if (key === 'forwardedComponent' || key === 'as') {
-        continue;
-      } else if (key === 'forwardedRef') propsForElement.ref = computedProps[key];else if (key === 'forwardedAs') propsForElement.as = computedProps[key];else if (!isTargetTag || (0, _isPropValid.default)(key)) {
-        // Don't pass through non HTML tags through to HTML elements
-        propsForElement[key] = computedProps[key];
-      }
-    }
-
-    if (this.props.style && this.attrs.style) {
-      propsForElement.style = _extends({}, this.attrs.style, this.props.style);
-    }
-
-    propsForElement.className = Array.prototype.concat(foldedComponentIds, this.props.className, styledComponentId, this.attrs.className, generatedClassName).filter(Boolean).join(' ');
-    return (0, _react.createElement)(elementToBeCreated, propsForElement);
-  };
-
-  StyledComponent.prototype.buildExecutionContext = function buildExecutionContext(theme, props, attrs) {
-    var _this2 = this;
-
-    var context = _extends({}, props, {
-      theme: theme
-    });
-
-    if (!attrs.length) return context;
-    this.attrs = {};
-    attrs.forEach(function (attrDef) {
-      var resolvedAttrDef = attrDef;
-      var attrDefWasFn = false;
-      var attr = void 0;
-      var key = void 0;
-
-      if (isFunction(resolvedAttrDef)) {
-        // $FlowFixMe
-        resolvedAttrDef = resolvedAttrDef(context);
-        attrDefWasFn = true;
-      }
-      /* eslint-disable guard-for-in */
-      // $FlowFixMe
-
-
-      for (key in resolvedAttrDef) {
-        attr = resolvedAttrDef[key];
-
-        if (!attrDefWasFn) {
-          if (isFunction(attr) && !isDerivedReactComponent(attr) && !isStyledComponent(attr)) {
-            if ("development" !== 'production') {
-              _this2.warnAttrsFnObjectKeyDeprecated(key, props.forwardedComponent.displayName);
-            }
-
-            attr = attr(context);
-
-            if ("development" !== 'production' && _react.default.isValidElement(attr)) {
-              _this2.warnNonStyledComponentAttrsObjectKey(key, props.forwardedComponent.displayName);
-            }
-          }
-        }
-
-        _this2.attrs[key] = attr;
-        context[key] = attr;
-      }
-      /* eslint-enable */
-
-    });
-    return context;
-  };
-
-  StyledComponent.prototype.generateAndInjectStyles = function generateAndInjectStyles(theme, props) {
-    var _props$forwardedCompo2 = props.forwardedComponent,
-        attrs = _props$forwardedCompo2.attrs,
-        componentStyle = _props$forwardedCompo2.componentStyle,
-        warnTooManyClasses = _props$forwardedCompo2.warnTooManyClasses; // statically styled-components don't need to build an execution context object,
-    // and shouldn't be increasing the number of class names
-
-    if (componentStyle.isStatic && !attrs.length) {
-      return componentStyle.generateAndInjectStyles(EMPTY_OBJECT, this.styleSheet);
-    }
-
-    var className = componentStyle.generateAndInjectStyles(this.buildExecutionContext(theme, props, attrs), this.styleSheet);
-    if ("development" !== 'production' && warnTooManyClasses) warnTooManyClasses(className);
-    return className;
-  };
-
-  return StyledComponent;
-}(_react.Component);
-
-function createStyledComponent(target, options, rules) {
-  var isTargetStyledComp = isStyledComponent(target);
-  var isClass = !isTag(target);
-  var _options$displayName = options.displayName,
-      displayName = _options$displayName === undefined ? generateDisplayName(target) : _options$displayName,
-      _options$componentId = options.componentId,
-      componentId = _options$componentId === undefined ? generateId(ComponentStyle, options.displayName, options.parentComponentId) : _options$componentId,
-      _options$ParentCompon = options.ParentComponent,
-      ParentComponent = _options$ParentCompon === undefined ? StyledComponent : _options$ParentCompon,
-      _options$attrs = options.attrs,
-      attrs = _options$attrs === undefined ? EMPTY_ARRAY : _options$attrs;
-  var styledComponentId = options.displayName && options.componentId ? escape(options.displayName) + '-' + options.componentId : options.componentId || componentId; // fold the underlying StyledComponent attrs up (implicit extend)
-
-  var finalAttrs = // $FlowFixMe
-  isTargetStyledComp && target.attrs ? Array.prototype.concat(target.attrs, attrs).filter(Boolean) : attrs;
-  var componentStyle = new ComponentStyle(isTargetStyledComp ? // fold the underlying StyledComponent rules up (implicit extend)
-  // $FlowFixMe
-  target.componentStyle.rules.concat(rules) : rules, finalAttrs, styledComponentId);
-  /**
-   * forwardRef creates a new interim component, which we'll take advantage of
-   * instead of extending ParentComponent to create _another_ interim class
-   */
-
-  var WrappedStyledComponent = void 0;
-
-  var forwardRef = function forwardRef(props, ref) {
-    return _react.default.createElement(ParentComponent, _extends({}, props, {
-      forwardedComponent: WrappedStyledComponent,
-      forwardedRef: ref
-    }));
-  };
-
-  forwardRef.displayName = displayName;
-  WrappedStyledComponent = _react.default.forwardRef(forwardRef);
-  WrappedStyledComponent.displayName = displayName; // $FlowFixMe
-
-  WrappedStyledComponent.attrs = finalAttrs; // $FlowFixMe
-
-  WrappedStyledComponent.componentStyle = componentStyle; // $FlowFixMe
-
-  WrappedStyledComponent.foldedComponentIds = isTargetStyledComp ? // $FlowFixMe
-  Array.prototype.concat(target.foldedComponentIds, target.styledComponentId) : EMPTY_ARRAY; // $FlowFixMe
-
-  WrappedStyledComponent.styledComponentId = styledComponentId; // fold the underlying StyledComponent target up since we folded the styles
-  // $FlowFixMe
-
-  WrappedStyledComponent.target = isTargetStyledComp ? target.target : target; // $FlowFixMe
-
-  WrappedStyledComponent.withComponent = function withComponent(tag) {
-    var previousComponentId = options.componentId,
-        optionsToCopy = objectWithoutProperties(options, ['componentId']);
-    var newComponentId = previousComponentId && previousComponentId + '-' + (isTag(tag) ? tag : escape(getComponentName(tag)));
-
-    var newOptions = _extends({}, optionsToCopy, {
-      attrs: finalAttrs,
-      componentId: newComponentId,
-      ParentComponent: ParentComponent
-    });
-
-    return createStyledComponent(tag, newOptions, rules);
-  }; // $FlowFixMe
-
-
-  Object.defineProperty(WrappedStyledComponent, 'defaultProps', {
-    get: function get$$1() {
-      return this._foldedDefaultProps;
-    },
-    set: function set$$1(obj) {
-      // $FlowFixMe
-      this._foldedDefaultProps = isTargetStyledComp ? (0, _mergeAnything.default)(target.defaultProps, obj) : obj;
-    }
-  });
-
-  if ("development" !== 'production') {
-    // $FlowFixMe
-    WrappedStyledComponent.warnTooManyClasses = createWarnTooManyClasses(displayName);
-  } // $FlowFixMe
-
-
-  WrappedStyledComponent.toString = function () {
-    return '.' + WrappedStyledComponent.styledComponentId;
-  };
-
-  if (isClass) {
-    hoistNonReactStatics(WrappedStyledComponent, target, {
-      // all SC-specific things should not be hoisted
-      attrs: true,
-      componentStyle: true,
-      displayName: true,
-      foldedComponentIds: true,
-      styledComponentId: true,
-      target: true,
-      withComponent: true
-    });
-  }
-
-  return WrappedStyledComponent;
-} // 
-// Thanks to ReactDOMFactories for this handy list!
-
-
-var domElements = ['a', 'abbr', 'address', 'area', 'article', 'aside', 'audio', 'b', 'base', 'bdi', 'bdo', 'big', 'blockquote', 'body', 'br', 'button', 'canvas', 'caption', 'cite', 'code', 'col', 'colgroup', 'data', 'datalist', 'dd', 'del', 'details', 'dfn', 'dialog', 'div', 'dl', 'dt', 'em', 'embed', 'fieldset', 'figcaption', 'figure', 'footer', 'form', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'head', 'header', 'hgroup', 'hr', 'html', 'i', 'iframe', 'img', 'input', 'ins', 'kbd', 'keygen', 'label', 'legend', 'li', 'link', 'main', 'map', 'mark', 'marquee', 'menu', 'menuitem', 'meta', 'meter', 'nav', 'noscript', 'object', 'ol', 'optgroup', 'option', 'output', 'p', 'param', 'picture', 'pre', 'progress', 'q', 'rp', 'rt', 'ruby', 's', 'samp', 'script', 'section', 'select', 'small', 'source', 'span', 'strong', 'style', 'sub', 'summary', 'sup', 'table', 'tbody', 'td', 'textarea', 'tfoot', 'th', 'thead', 'time', 'title', 'tr', 'track', 'u', 'ul', 'var', 'video', 'wbr', // SVG
-'circle', 'clipPath', 'defs', 'ellipse', 'foreignObject', 'g', 'image', 'line', 'linearGradient', 'marker', 'mask', 'path', 'pattern', 'polygon', 'polyline', 'radialGradient', 'rect', 'stop', 'svg', 'text', 'tspan']; // 
-
-var styled = function styled(tag) {
-  return constructWithOptions(createStyledComponent, tag);
-}; // Shorthands for all valid HTML Elements
-
-
-domElements.forEach(function (domElement) {
-  styled[domElement] = styled(domElement);
-}); // 
-
-var GlobalStyle = function () {
-  function GlobalStyle(rules, componentId) {
-    classCallCheck(this, GlobalStyle);
-    this.rules = rules;
-    this.componentId = componentId;
-    this.isStatic = isStaticRules(rules, EMPTY_ARRAY);
-
-    if (!StyleSheet.master.hasId(componentId)) {
-      StyleSheet.master.deferredInject(componentId, []);
-    }
-  }
-
-  GlobalStyle.prototype.createStyles = function createStyles(executionContext, styleSheet) {
-    var flatCSS = flatten(this.rules, executionContext, styleSheet);
-    var css = stringifyRules(flatCSS, '');
-    styleSheet.inject(this.componentId, css);
-  };
-
-  GlobalStyle.prototype.removeStyles = function removeStyles(styleSheet) {
-    var componentId = this.componentId;
-
-    if (styleSheet.hasId(componentId)) {
-      styleSheet.remove(componentId);
-    }
-  }; // TODO: overwrite in-place instead of remove+create?
-
-
-  GlobalStyle.prototype.renderStyles = function renderStyles(executionContext, styleSheet) {
-    this.removeStyles(styleSheet);
-    this.createStyles(executionContext, styleSheet);
-  };
-
-  return GlobalStyle;
-}(); // 
-// place our cache into shared context so it'll persist between HMRs
-
-
-if (IS_BROWSER) {
-  window.scCGSHMRCache = {};
-}
-
-function createGlobalStyle(strings) {
-  for (var _len = arguments.length, interpolations = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    interpolations[_key - 1] = arguments[_key];
-  }
-
-  var rules = css.apply(undefined, [strings].concat(interpolations));
-  var id = 'sc-global-' + murmurhash(JSON.stringify(rules));
-  var style = new GlobalStyle(rules, id);
-
-  var GlobalStyleComponent = function (_React$Component) {
-    inherits(GlobalStyleComponent, _React$Component);
-
-    function GlobalStyleComponent(props) {
-      classCallCheck(this, GlobalStyleComponent);
-
-      var _this = possibleConstructorReturn(this, _React$Component.call(this, props));
-
-      var _this$constructor = _this.constructor,
-          globalStyle = _this$constructor.globalStyle,
-          styledComponentId = _this$constructor.styledComponentId;
-
-      if (IS_BROWSER) {
-        window.scCGSHMRCache[styledComponentId] = (window.scCGSHMRCache[styledComponentId] || 0) + 1;
-      }
-      /**
-       * This fixes HMR compatibility. Don't ask me why, but this combination of
-       * caching the closure variables via statics and then persisting the statics in
-       * state works across HMR where no other combination did. ¯\_(ツ)_/¯
-       */
-
-
-      _this.state = {
-        globalStyle: globalStyle,
-        styledComponentId: styledComponentId
-      };
-      return _this;
-    }
-
-    GlobalStyleComponent.prototype.componentWillUnmount = function componentWillUnmount() {
-      if (window.scCGSHMRCache[this.state.styledComponentId]) {
-        window.scCGSHMRCache[this.state.styledComponentId] -= 1;
-      }
-      /**
-       * Depending on the order "render" is called this can cause the styles to be lost
-       * until the next render pass of the remaining instance, which may
-       * not be immediate.
-       */
-
-
-      if (window.scCGSHMRCache[this.state.styledComponentId] === 0) {
-        this.state.globalStyle.removeStyles(this.styleSheet);
-      }
-    };
-
-    GlobalStyleComponent.prototype.render = function render() {
-      var _this2 = this;
-
-      if ("development" !== 'production' && _react.default.Children.count(this.props.children)) {
-        // eslint-disable-next-line no-console
-        console.warn('The global style component ' + this.state.styledComponentId + ' was given child JSX. createGlobalStyle does not render children.');
-      }
-
-      return _react.default.createElement(StyleSheetConsumer, null, function (styleSheet) {
-        _this2.styleSheet = styleSheet || StyleSheet.master;
-        var globalStyle = _this2.state.globalStyle;
-
-        if (globalStyle.isStatic) {
-          globalStyle.renderStyles(STATIC_EXECUTION_CONTEXT, _this2.styleSheet);
-          return null;
-        } else {
-          return _react.default.createElement(ThemeConsumer, null, function (theme) {
-            // $FlowFixMe
-            var defaultProps = _this2.constructor.defaultProps;
-
-            var context = _extends({}, _this2.props);
-
-            if (typeof theme !== 'undefined') {
-              context.theme = determineTheme(_this2.props, theme, defaultProps);
-            }
-
-            globalStyle.renderStyles(context, _this2.styleSheet);
-            return null;
-          });
-        }
-      });
-    };
-
-    return GlobalStyleComponent;
-  }(_react.default.Component);
-
-  GlobalStyleComponent.globalStyle = style;
-  GlobalStyleComponent.styledComponentId = id;
-  return GlobalStyleComponent;
-} // 
-
-
-var replaceWhitespace = function replaceWhitespace(str) {
-  return str.replace(/\s|\\n/g, '');
-};
-
-function keyframes(strings) {
-  /* Warning if you've used keyframes on React Native */
-  if ("development" !== 'production' && typeof navigator !== 'undefined' && navigator.product === 'ReactNative') {
-    // eslint-disable-next-line no-console
-    console.warn('`keyframes` cannot be used on ReactNative, only on the web. To do animation in ReactNative please use Animated.');
-  }
-
-  for (var _len = arguments.length, interpolations = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    interpolations[_key - 1] = arguments[_key];
-  }
-
-  var rules = css.apply(undefined, [strings].concat(interpolations));
-  var name = generateAlphabeticName(murmurhash(replaceWhitespace(JSON.stringify(rules))));
-  return new Keyframes(name, stringifyRules(rules, name, '@keyframes'));
-} // 
-
-
-var withTheme = function (Component$$1) {
-  var WithTheme = _react.default.forwardRef(function (props, ref) {
-    return _react.default.createElement(ThemeConsumer, null, function (theme) {
-      // $FlowFixMe
-      var defaultProps = Component$$1.defaultProps;
-      var themeProp = determineTheme(props, theme, defaultProps);
-
-      if ("development" !== 'production' && themeProp === undefined) {
-        // eslint-disable-next-line no-console
-        console.warn('[withTheme] You are not using a ThemeProvider nor passing a theme prop or a theme in defaultProps in component class "' + getComponentName(Component$$1) + '"');
-      }
-
-      return _react.default.createElement(Component$$1, _extends({}, props, {
-        theme: themeProp,
-        ref: ref
-      }));
-    });
-  });
-
-  hoistNonReactStatics(WithTheme, Component$$1);
-  WithTheme.displayName = 'WithTheme(' + getComponentName(Component$$1) + ')';
-  return WithTheme;
-}; // 
-
-/* eslint-disable */
-
-
-exports.withTheme = withTheme;
-var __DO_NOT_USE_OR_YOU_WILL_BE_HAUNTED_BY_SPOOKY_GHOSTS = {
-  StyleSheet: StyleSheet
-}; // 
-
-/* Warning if you've imported this file on React Native */
-
-exports.__DO_NOT_USE_OR_YOU_WILL_BE_HAUNTED_BY_SPOOKY_GHOSTS = __DO_NOT_USE_OR_YOU_WILL_BE_HAUNTED_BY_SPOOKY_GHOSTS;
-
-if ("development" !== 'production' && typeof navigator !== 'undefined' && navigator.product === 'ReactNative') {
-  // eslint-disable-next-line no-console
-  console.warn("It looks like you've imported 'styled-components' on React Native.\n" + "Perhaps you're looking to import 'styled-components/native'?\n" + 'Read more about this at https://www.styled-components.com/docs/basics#react-native');
-}
-/* Warning if there are several instances of styled-components */
-
-
-if ("development" !== 'production' && "development" !== 'test' && typeof window !== 'undefined' && typeof navigator !== 'undefined' && typeof navigator.userAgent === 'string' && navigator.userAgent.indexOf('Node.js') === -1 && navigator.userAgent.indexOf('jsdom') === -1) {
-  window['__styled-components-init__'] = window['__styled-components-init__'] || 0;
-
-  if (window['__styled-components-init__'] === 1) {
-    // eslint-disable-next-line no-console
-    console.warn("It looks like there are several instances of 'styled-components' initialized in this application. " + 'This may cause dynamic styles not rendering properly, errors happening during rehydration process ' + 'and makes your application bigger without a good reason.\n\n' + 'See https://s-c.sh/2BAXzed for more info.');
-  }
-
-  window['__styled-components-init__'] += 1;
-} //
-
-
-var _default = styled;
-exports.default = _default;
-},{"stylis/stylis.min":"../node_modules/stylis/stylis.min.js","stylis-rule-sheet":"../node_modules/stylis-rule-sheet/index.js","react":"../node_modules/react/index.js","@emotion/unitless":"../node_modules/@emotion/unitless/dist/unitless.browser.esm.js","react-is":"../node_modules/react-is/index.js","memoize-one":"../node_modules/memoize-one/dist/memoize-one.esm.js","prop-types":"../node_modules/prop-types/index.js","@emotion/is-prop-valid":"../node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js","merge-anything":"../node_modules/merge-anything/dist/index.esm.js","process":"../node_modules/process/browser.js"}],"components/designSystem/ThemeStyles.tsx":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.styles = {
-  colors: {
-    leadColorDark: '#0295ff',
-    leadColorMid: '#58bdfc',
-    leadColorLight: '#a2e0f9',
-    backgroundBody: '#fafbfd',
-    backgroundButon: '#fff',
-    unactive: '#a6b5c6',
-    border: '#eaeef1',
-    error: '#FF3333',
-    font: '#141414',
-    contrast1: '#80e30e',
-    contrast2: '#fdc935'
-  },
-  boxModel: {
-    full: '1rem',
-    vertical: '1rem 0',
-    horizontal: '0 1rem',
-    center: '1rem auto'
-  }
-};
-},{}],"components/designSystem/ThemeExport.tsx":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-const ThemeStyles_1 = require("./ThemeStyles");
-
-exports.styledTheme = {
-  styles: ThemeStyles_1.styles
-};
-},{"./ThemeStyles":"components/designSystem/ThemeStyles.tsx"}],"../node_modules/es6-promise-polyfill/promise.js":[function(require,module,exports) {
+},{"react-is":"../node_modules/react-is/index.js","./factoryWithTypeCheckers":"../node_modules/prop-types/factoryWithTypeCheckers.js"}],"../node_modules/es6-promise-polyfill/promise.js":[function(require,module,exports) {
 var global = arguments[3];
 var define;
 (function(global){
@@ -90858,9 +87626,2434 @@ if ("development" === "production") {
 } else {
   module.exports = require("./cjs/react-pixi-fiber.development.js");
 }
-},{"./cjs/react-pixi-fiber.development.js":"../node_modules/react-pixi-fiber/cjs/react-pixi-fiber.development.js"}],"components/robot.png":[function(require,module,exports) {
-module.exports = "/robot.ead2cd11.png";
-},{}],"components/Robot.tsx":[function(require,module,exports) {
+},{"./cjs/react-pixi-fiber.development.js":"../node_modules/react-pixi-fiber/cjs/react-pixi-fiber.development.js"}],"components/assets/robot.png":[function(require,module,exports) {
+module.exports = "/robot.8de528cf.png";
+},{}],"../node_modules/@pixi/canvas-renderer/lib/canvas-renderer.es.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.canUseNewCanvasBlendModes = canUseNewCanvasBlendModes;
+exports.CanvasTinter = exports.CanvasRenderer = void 0;
+
+var _core = require("@pixi/core");
+
+var _utils = require("@pixi/utils");
+
+var _math = require("@pixi/math");
+
+var _constants = require("@pixi/constants");
+
+var _settings = require("@pixi/settings");
+
+/*!
+ * @pixi/canvas-renderer - v5.1.2
+ * Compiled Sat, 24 Aug 2019 01:06:18 UTC
+ *
+ * @pixi/canvas-renderer is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+
+/**
+ * A set of functions used to handle masking.
+ *
+ * Sprite masking is not supported on the CanvasRenderer.
+ *
+ * @class
+ * @memberof PIXI
+ */
+var CanvasMaskManager = function CanvasMaskManager(renderer) {
+  this.renderer = renderer;
+};
+/**
+ * This method adds it to the current stack of masks.
+ *
+ * @param {object} maskData - the maskData that will be pushed
+ */
+
+
+CanvasMaskManager.prototype.pushMask = function pushMask(maskData) {
+  var renderer = this.renderer;
+  renderer.context.save();
+  var cacheAlpha = maskData.alpha;
+  var transform = maskData.transform.worldTransform;
+  var resolution = renderer.resolution;
+  renderer.context.setTransform(transform.a * resolution, transform.b * resolution, transform.c * resolution, transform.d * resolution, transform.tx * resolution, transform.ty * resolution); // TODO support sprite alpha masks??
+  // lots of effort required. If demand is great enough..
+
+  if (!maskData._texture) {
+    this.renderGraphicsShape(maskData);
+    renderer.context.clip();
+  }
+
+  maskData.worldAlpha = cacheAlpha;
+};
+/**
+ * Renders a PIXI.Graphics shape.
+ *
+ * @param {PIXI.Graphics} graphics - The object to render.
+ */
+
+
+CanvasMaskManager.prototype.renderGraphicsShape = function renderGraphicsShape(graphics) {
+  var context = this.renderer.context;
+  var graphicsData = graphics.geometry.graphicsData;
+  var len = graphicsData.length;
+
+  if (len === 0) {
+    return;
+  }
+
+  context.beginPath();
+
+  for (var i = 0; i < len; i++) {
+    var data = graphicsData[i];
+    var shape = data.shape;
+
+    if (data.type === _math.SHAPES.POLY) {
+      var points = shape.points;
+      context.moveTo(points[0], points[1]);
+
+      for (var j = 1; j < points.length / 2; j++) {
+        context.lineTo(points[j * 2], points[j * 2 + 1]);
+      } // if the first and last point are the same close the path - much neater :)
+
+
+      if (points[0] === points[points.length - 2] && points[1] === points[points.length - 1]) {
+        context.closePath();
+      }
+    } else if (data.type === _math.SHAPES.RECT) {
+      context.rect(shape.x, shape.y, shape.width, shape.height);
+      context.closePath();
+    } else if (data.type === _math.SHAPES.CIRC) {
+      // TODO - need to be Undefined!
+      context.arc(shape.x, shape.y, shape.radius, 0, 2 * Math.PI);
+      context.closePath();
+    } else if (data.type === _math.SHAPES.ELIP) {
+      // ellipse code taken from: http://stackoverflow.com/questions/2172798/how-to-draw-an-oval-in-html5-canvas
+      var w = shape.width * 2;
+      var h = shape.height * 2;
+      var x = shape.x - w / 2;
+      var y = shape.y - h / 2;
+      var kappa = 0.5522848;
+      var ox = w / 2 * kappa; // control point offset horizontal
+
+      var oy = h / 2 * kappa; // control point offset vertical
+
+      var xe = x + w; // x-end
+
+      var ye = y + h; // y-end
+
+      var xm = x + w / 2; // x-middle
+
+      var ym = y + h / 2; // y-middle
+
+      context.moveTo(x, ym);
+      context.bezierCurveTo(x, ym - oy, xm - ox, y, xm, y);
+      context.bezierCurveTo(xm + ox, y, xe, ym - oy, xe, ym);
+      context.bezierCurveTo(xe, ym + oy, xm + ox, ye, xm, ye);
+      context.bezierCurveTo(xm - ox, ye, x, ym + oy, x, ym);
+      context.closePath();
+    } else if (data.type === _math.SHAPES.RREC) {
+      var rx = shape.x;
+      var ry = shape.y;
+      var width = shape.width;
+      var height = shape.height;
+      var radius = shape.radius;
+      var maxRadius = Math.min(width, height) / 2 | 0;
+      radius = radius > maxRadius ? maxRadius : radius;
+      context.moveTo(rx, ry + radius);
+      context.lineTo(rx, ry + height - radius);
+      context.quadraticCurveTo(rx, ry + height, rx + radius, ry + height);
+      context.lineTo(rx + width - radius, ry + height);
+      context.quadraticCurveTo(rx + width, ry + height, rx + width, ry + height - radius);
+      context.lineTo(rx + width, ry + radius);
+      context.quadraticCurveTo(rx + width, ry, rx + width - radius, ry);
+      context.lineTo(rx + radius, ry);
+      context.quadraticCurveTo(rx, ry, rx, ry + radius);
+      context.closePath();
+    }
+  }
+};
+/**
+ * Restores the current drawing context to the state it was before the mask was applied.
+ *
+ * @param {PIXI.CanvasRenderer} renderer - The renderer context to use.
+ */
+
+
+CanvasMaskManager.prototype.popMask = function popMask(renderer) {
+  renderer.context.restore();
+  renderer.invalidateBlendMode();
+};
+/**
+ * Destroys this canvas mask manager.
+ *
+ */
+
+
+CanvasMaskManager.prototype.destroy = function destroy() {
+  /* empty */
+};
+/**
+ * Creates a little colored canvas
+ *
+ * @ignore
+ * @param {string} color - The color to make the canvas
+ * @return {canvas} a small canvas element
+ */
+
+
+function createColoredCanvas(color) {
+  var canvas = document.createElement('canvas');
+  canvas.width = 6;
+  canvas.height = 1;
+  var context = canvas.getContext('2d');
+  context.fillStyle = color;
+  context.fillRect(0, 0, 6, 1);
+  return canvas;
+}
+/**
+ * Checks whether the Canvas BlendModes are supported by the current browser
+ *
+ * @private
+ * @return {boolean} whether they are supported
+ */
+
+
+function canUseNewCanvasBlendModes() {
+  if (typeof document === 'undefined') {
+    return false;
+  }
+
+  var magenta = createColoredCanvas('#ff00ff');
+  var yellow = createColoredCanvas('#ffff00');
+  var canvas = document.createElement('canvas');
+  canvas.width = 6;
+  canvas.height = 1;
+  var context = canvas.getContext('2d');
+  context.globalCompositeOperation = 'multiply';
+  context.drawImage(magenta, 0, 0);
+  context.drawImage(yellow, 2, 0);
+  var imageData = context.getImageData(2, 0, 1, 1);
+
+  if (!imageData) {
+    return false;
+  }
+
+  var data = imageData.data;
+  return data[0] === 255 && data[1] === 0 && data[2] === 0;
+}
+/**
+ * Maps blend combinations to Canvas.
+ *
+ * @memberof PIXI
+ * @function mapCanvasBlendModesToPixi
+ * @private
+ * @param {string[]} [array=[]] - The array to output into.
+ * @return {string[]} Mapped modes.
+ */
+
+
+function mapCanvasBlendModesToPixi(array) {
+  if (array === void 0) array = [];
+
+  if (canUseNewCanvasBlendModes()) {
+    array[_constants.BLEND_MODES.NORMAL] = 'source-over';
+    array[_constants.BLEND_MODES.ADD] = 'lighter'; // IS THIS OK???
+
+    array[_constants.BLEND_MODES.MULTIPLY] = 'multiply';
+    array[_constants.BLEND_MODES.SCREEN] = 'screen';
+    array[_constants.BLEND_MODES.OVERLAY] = 'overlay';
+    array[_constants.BLEND_MODES.DARKEN] = 'darken';
+    array[_constants.BLEND_MODES.LIGHTEN] = 'lighten';
+    array[_constants.BLEND_MODES.COLOR_DODGE] = 'color-dodge';
+    array[_constants.BLEND_MODES.COLOR_BURN] = 'color-burn';
+    array[_constants.BLEND_MODES.HARD_LIGHT] = 'hard-light';
+    array[_constants.BLEND_MODES.SOFT_LIGHT] = 'soft-light';
+    array[_constants.BLEND_MODES.DIFFERENCE] = 'difference';
+    array[_constants.BLEND_MODES.EXCLUSION] = 'exclusion';
+    array[_constants.BLEND_MODES.HUE] = 'hue';
+    array[_constants.BLEND_MODES.SATURATION] = 'saturate';
+    array[_constants.BLEND_MODES.COLOR] = 'color';
+    array[_constants.BLEND_MODES.LUMINOSITY] = 'luminosity';
+  } else {
+    // this means that the browser does not support the cool new blend modes in canvas 'cough' ie 'cough'
+    array[_constants.BLEND_MODES.NORMAL] = 'source-over';
+    array[_constants.BLEND_MODES.ADD] = 'lighter'; // IS THIS OK???
+
+    array[_constants.BLEND_MODES.MULTIPLY] = 'source-over';
+    array[_constants.BLEND_MODES.SCREEN] = 'source-over';
+    array[_constants.BLEND_MODES.OVERLAY] = 'source-over';
+    array[_constants.BLEND_MODES.DARKEN] = 'source-over';
+    array[_constants.BLEND_MODES.LIGHTEN] = 'source-over';
+    array[_constants.BLEND_MODES.COLOR_DODGE] = 'source-over';
+    array[_constants.BLEND_MODES.COLOR_BURN] = 'source-over';
+    array[_constants.BLEND_MODES.HARD_LIGHT] = 'source-over';
+    array[_constants.BLEND_MODES.SOFT_LIGHT] = 'source-over';
+    array[_constants.BLEND_MODES.DIFFERENCE] = 'source-over';
+    array[_constants.BLEND_MODES.EXCLUSION] = 'source-over';
+    array[_constants.BLEND_MODES.HUE] = 'source-over';
+    array[_constants.BLEND_MODES.SATURATION] = 'source-over';
+    array[_constants.BLEND_MODES.COLOR] = 'source-over';
+    array[_constants.BLEND_MODES.LUMINOSITY] = 'source-over';
+  } // not-premultiplied, only for webgl
+
+
+  array[_constants.BLEND_MODES.NORMAL_NPM] = array[_constants.BLEND_MODES.NORMAL];
+  array[_constants.BLEND_MODES.ADD_NPM] = array[_constants.BLEND_MODES.ADD];
+  array[_constants.BLEND_MODES.SCREEN_NPM] = array[_constants.BLEND_MODES.SCREEN]; // composite operations
+
+  array[_constants.BLEND_MODES.SRC_IN] = 'source-in';
+  array[_constants.BLEND_MODES.SRC_OUT] = 'source-out';
+  array[_constants.BLEND_MODES.SRC_ATOP] = 'source-atop';
+  array[_constants.BLEND_MODES.DST_OVER] = 'destination-over';
+  array[_constants.BLEND_MODES.DST_IN] = 'destination-in';
+  array[_constants.BLEND_MODES.DST_OUT] = 'destination-out';
+  array[_constants.BLEND_MODES.DST_ATOP] = 'destination-atop'; // SUBTRACT from flash, does not exist in canvas
+
+  array[_constants.BLEND_MODES.SUBTRACT] = 'source-over';
+  return array;
+}
+/**
+ * The CanvasRenderer draws the scene and all its content onto a 2d canvas.
+ *
+ * This renderer should be used for browsers that do not support WebGL.
+ * Don't forget to add the CanvasRenderer.view to your DOM or you will not see anything!
+ *
+ * @class
+ * @memberof PIXI
+ * @extends PIXI.AbstractRenderer
+ */
+
+
+var CanvasRenderer =
+/*@__PURE__*/
+function (AbstractRenderer) {
+  function CanvasRenderer(options, arg2, arg3) {
+    AbstractRenderer.call(this, 'Canvas', options, arg2, arg3);
+    this.type = _constants.RENDERER_TYPE.CANVAS;
+    /**
+     * The root canvas 2d context that everything is drawn with.
+     *
+     * @member {CanvasRenderingContext2D}
+     */
+
+    this.rootContext = this.view.getContext('2d', {
+      alpha: this.transparent
+    });
+    /**
+     * The currently active canvas 2d context (could change with renderTextures)
+     *
+     * @member {CanvasRenderingContext2D}
+     */
+
+    this.context = this.rootContext;
+    /**
+     * Boolean flag controlling canvas refresh.
+     *
+     * @member {boolean}
+     */
+
+    this.refresh = true;
+    /**
+     * Instance of a CanvasMaskManager, handles masking when using the canvas renderer.
+     *
+     * @member {PIXI.CanvasMaskManager}
+     */
+
+    this.maskManager = new CanvasMaskManager(this);
+    /**
+     * The canvas property used to set the canvas smoothing property.
+     *
+     * @member {string}
+     */
+
+    this.smoothProperty = 'imageSmoothingEnabled';
+
+    if (!this.rootContext.imageSmoothingEnabled) {
+      if (this.rootContext.webkitImageSmoothingEnabled) {
+        this.smoothProperty = 'webkitImageSmoothingEnabled';
+      } else if (this.rootContext.mozImageSmoothingEnabled) {
+        this.smoothProperty = 'mozImageSmoothingEnabled';
+      } else if (this.rootContext.oImageSmoothingEnabled) {
+        this.smoothProperty = 'oImageSmoothingEnabled';
+      } else if (this.rootContext.msImageSmoothingEnabled) {
+        this.smoothProperty = 'msImageSmoothingEnabled';
+      }
+    }
+
+    this.initPlugins(CanvasRenderer.__plugins);
+    /**
+     * Tracks the blend modes useful for this renderer.
+     *
+     * @member {object<number, string>}
+     */
+
+    this.blendModes = mapCanvasBlendModesToPixi();
+    this._activeBlendMode = null;
+    this._outerBlend = false;
+    this.renderingToScreen = false;
+    (0, _utils.sayHello)('Canvas');
+    /**
+     * Fired after rendering finishes.
+     *
+     * @event PIXI.CanvasRenderer#postrender
+     */
+
+    /**
+     * Fired before rendering starts.
+     *
+     * @event PIXI.CanvasRenderer#prerender
+     */
+
+    this.resize(this.options.width, this.options.height);
+  }
+
+  if (AbstractRenderer) CanvasRenderer.__proto__ = AbstractRenderer;
+  CanvasRenderer.prototype = Object.create(AbstractRenderer && AbstractRenderer.prototype);
+  CanvasRenderer.prototype.constructor = CanvasRenderer;
+  /**
+   * Renders the object to this canvas view
+   *
+   * @param {PIXI.DisplayObject} displayObject - The object to be rendered
+   * @param {PIXI.RenderTexture} [renderTexture] - A render texture to be rendered to.
+   *  If unset, it will render to the root context.
+   * @param {boolean} [clear=false] - Whether to clear the canvas before drawing
+   * @param {PIXI.Matrix} [transform] - A transformation to be applied
+   * @param {boolean} [skipUpdateTransform=false] - Whether to skip the update transform
+   */
+
+  CanvasRenderer.prototype.render = function render(displayObject, renderTexture, clear, transform, skipUpdateTransform) {
+    if (!this.view) {
+      return;
+    } // can be handy to know!
+
+
+    this.renderingToScreen = !renderTexture;
+    this.emit('prerender');
+    var rootResolution = this.resolution;
+
+    if (renderTexture) {
+      renderTexture = renderTexture.baseTexture || renderTexture;
+
+      if (!renderTexture._canvasRenderTarget) {
+        renderTexture._canvasRenderTarget = new _utils.CanvasRenderTarget(renderTexture.width, renderTexture.height, renderTexture.resolution);
+        renderTexture.resource = new _core.resources.CanvasResource(renderTexture._canvasRenderTarget.canvas);
+        renderTexture.valid = true;
+      }
+
+      this.context = renderTexture._canvasRenderTarget.context;
+      this.resolution = renderTexture._canvasRenderTarget.resolution;
+    } else {
+      this.context = this.rootContext;
+    }
+
+    var context = this.context;
+
+    if (!renderTexture) {
+      this._lastObjectRendered = displayObject;
+    }
+
+    if (!skipUpdateTransform) {
+      // update the scene graph
+      var cacheParent = displayObject.parent;
+      var tempWt = this._tempDisplayObjectParent.transform.worldTransform;
+
+      if (transform) {
+        transform.copyTo(tempWt); // lets not forget to flag the parent transform as dirty...
+
+        this._tempDisplayObjectParent.transform._worldID = -1;
+      } else {
+        tempWt.identity();
+      }
+
+      displayObject.parent = this._tempDisplayObjectParent;
+      displayObject.updateTransform();
+      displayObject.parent = cacheParent; // displayObject.hitArea = //TODO add a temp hit area
+    }
+
+    context.save();
+    context.setTransform(1, 0, 0, 1, 0, 0);
+    context.globalAlpha = 1;
+    this._activeBlendMode = _constants.BLEND_MODES.NORMAL;
+    this._outerBlend = false;
+    context.globalCompositeOperation = this.blendModes[_constants.BLEND_MODES.NORMAL];
+
+    if (clear !== undefined ? clear : this.clearBeforeRender) {
+      if (this.renderingToScreen) {
+        if (this.transparent) {
+          context.clearRect(0, 0, this.width, this.height);
+        } else {
+          context.fillStyle = this._backgroundColorString;
+          context.fillRect(0, 0, this.width, this.height);
+        }
+      } // else {
+      // TODO: implement background for CanvasRenderTarget or RenderTexture?
+      // }
+
+    } // TODO RENDER TARGET STUFF HERE..
+
+
+    var tempContext = this.context;
+    this.context = context;
+    displayObject.renderCanvas(this);
+    this.context = tempContext;
+    context.restore();
+    this.resolution = rootResolution;
+    this.emit('postrender');
+  };
+  /**
+   * Clear the canvas of renderer.
+   *
+   * @param {string} [clearColor] - Clear the canvas with this color, except the canvas is transparent.
+   */
+
+
+  CanvasRenderer.prototype.clear = function clear(clearColor) {
+    var context = this.context;
+    clearColor = clearColor || this._backgroundColorString;
+
+    if (!this.transparent && clearColor) {
+      context.fillStyle = clearColor;
+      context.fillRect(0, 0, this.width, this.height);
+    } else {
+      context.clearRect(0, 0, this.width, this.height);
+    }
+  };
+  /**
+   * Sets the blend mode of the renderer.
+   *
+   * @param {number} blendMode - See {@link PIXI.BLEND_MODES} for valid values.
+   * @param {boolean} [readyForOuterBlend=false] - Some blendModes are dangerous, they affect outer space of sprite.
+   * Pass `true` only if you are ready to use them.
+   */
+
+
+  CanvasRenderer.prototype.setBlendMode = function setBlendMode(blendMode, readyForOuterBlend) {
+    var outerBlend = blendMode === _constants.BLEND_MODES.SRC_IN || blendMode === _constants.BLEND_MODES.SRC_OUT || blendMode === _constants.BLEND_MODES.DST_IN || blendMode === _constants.BLEND_MODES.DST_ATOP;
+
+    if (!readyForOuterBlend && outerBlend) {
+      blendMode = _constants.BLEND_MODES.NORMAL;
+    }
+
+    if (this._activeBlendMode === blendMode) {
+      return;
+    }
+
+    this._activeBlendMode = blendMode;
+    this._outerBlend = outerBlend;
+    this.context.globalCompositeOperation = this.blendModes[blendMode];
+  };
+  /**
+   * Removes everything from the renderer and optionally removes the Canvas DOM element.
+   *
+   * @param {boolean} [removeView=false] - Removes the Canvas element from the DOM.
+   */
+
+
+  CanvasRenderer.prototype.destroy = function destroy(removeView) {
+    // call the base destroy
+    AbstractRenderer.prototype.destroy.call(this, removeView);
+    this.context = null;
+    this.refresh = true;
+    this.maskManager.destroy();
+    this.maskManager = null;
+    this.smoothProperty = null;
+  };
+  /**
+   * Resizes the canvas view to the specified width and height.
+   *
+   * @extends PIXI.AbstractRenderer#resize
+   *
+   * @param {number} screenWidth - the new width of the screen
+   * @param {number} screenHeight - the new height of the screen
+   */
+
+
+  CanvasRenderer.prototype.resize = function resize(screenWidth, screenHeight) {
+    AbstractRenderer.prototype.resize.call(this, screenWidth, screenHeight); // reset the scale mode.. oddly this seems to be reset when the canvas is resized.
+    // surely a browser bug?? Let PixiJS fix that for you..
+
+    if (this.smoothProperty) {
+      this.rootContext[this.smoothProperty] = _settings.settings.SCALE_MODE === _constants.SCALE_MODES.LINEAR;
+    }
+  };
+  /**
+   * Checks if blend mode has changed.
+   */
+
+
+  CanvasRenderer.prototype.invalidateBlendMode = function invalidateBlendMode() {
+    this._activeBlendMode = this.blendModes.indexOf(this.context.globalCompositeOperation);
+  };
+  /**
+   * Collection of installed plugins. These are included by default in PIXI, but can be excluded
+   * by creating a custom build. Consult the README for more information about creating custom
+   * builds and excluding plugins.
+   * @name PIXI.CanvasRenderer#plugins
+   * @type {object}
+   * @readonly
+   * @property {PIXI.accessibility.AccessibilityManager} accessibility Support tabbing interactive elements.
+   * @property {PIXI.extract.CanvasExtract} extract Extract image data from renderer.
+   * @property {PIXI.interaction.InteractionManager} interaction Handles mouse, touch and pointer events.
+   * @property {PIXI.prepare.CanvasPrepare} prepare Pre-render display objects.
+   */
+
+  /**
+   * Adds a plugin to the renderer.
+   *
+   * @method
+   * @param {string} pluginName - The name of the plugin.
+   * @param {Function} ctor - The constructor function or class for the plugin.
+   */
+
+
+  CanvasRenderer.registerPlugin = function registerPlugin(pluginName, ctor) {
+    CanvasRenderer.__plugins = CanvasRenderer.__plugins || {};
+    CanvasRenderer.__plugins[pluginName] = ctor;
+  };
+
+  return CanvasRenderer;
+}(_core.AbstractRenderer);
+/**
+ * Utility methods for Sprite/Texture tinting.
+ *
+ * Tinting with the CanvasRenderer involves creating a new canvas to use as a texture,
+ * so be aware of the performance implications.
+ *
+ * @class
+ * @memberof PIXI
+ */
+
+
+exports.CanvasRenderer = CanvasRenderer;
+var CanvasTinter = {
+  /**
+   * Basically this method just needs a sprite and a color and tints the sprite with the given color.
+   *
+   * @memberof PIXI.CanvasTinter
+   * @param {PIXI.Sprite} sprite - the sprite to tint
+   * @param {number} color - the color to use to tint the sprite with
+   * @return {HTMLCanvasElement} The tinted canvas
+   */
+  getTintedCanvas: function (sprite, color) {
+    var texture = sprite.texture;
+    color = CanvasTinter.roundColor(color);
+    var stringColor = "#" + ("00000" + (color | 0).toString(16)).substr(-6);
+    texture.tintCache = texture.tintCache || {};
+    var cachedCanvas = texture.tintCache[stringColor];
+    var canvas;
+
+    if (cachedCanvas) {
+      if (cachedCanvas.tintId === texture._updateID) {
+        return texture.tintCache[stringColor];
+      }
+
+      canvas = texture.tintCache[stringColor];
+    } else {
+      canvas = CanvasTinter.canvas || document.createElement('canvas');
+    }
+
+    CanvasTinter.tintMethod(texture, color, canvas);
+    canvas.tintId = texture._updateID;
+
+    if (CanvasTinter.convertTintToImage) {
+      // is this better?
+      var tintImage = new Image();
+      tintImage.src = canvas.toDataURL();
+      texture.tintCache[stringColor] = tintImage;
+    } else {
+      texture.tintCache[stringColor] = canvas; // if we are not converting the texture to an image then we need to lose the reference to the canvas
+
+      CanvasTinter.canvas = null;
+    }
+
+    return canvas;
+  },
+
+  /**
+   * Tint a texture using the 'multiply' operation.
+   *
+   * @memberof PIXI.CanvasTinter
+   * @param {PIXI.Texture} texture - the texture to tint
+   * @param {number} color - the color to use to tint the sprite with
+   * @param {HTMLCanvasElement} canvas - the current canvas
+   */
+  tintWithMultiply: function (texture, color, canvas) {
+    var context = canvas.getContext('2d');
+
+    var crop = texture._frame.clone();
+
+    var resolution = texture.baseTexture.resolution;
+    crop.x *= resolution;
+    crop.y *= resolution;
+    crop.width *= resolution;
+    crop.height *= resolution;
+    canvas.width = Math.ceil(crop.width);
+    canvas.height = Math.ceil(crop.height);
+    context.save();
+    context.fillStyle = "#" + ("00000" + (color | 0).toString(16)).substr(-6);
+    context.fillRect(0, 0, crop.width, crop.height);
+    context.globalCompositeOperation = 'multiply';
+    var source = texture.baseTexture.getDrawableSource();
+    context.drawImage(source, crop.x, crop.y, crop.width, crop.height, 0, 0, crop.width, crop.height);
+    context.globalCompositeOperation = 'destination-atop';
+    context.drawImage(source, crop.x, crop.y, crop.width, crop.height, 0, 0, crop.width, crop.height);
+    context.restore();
+  },
+
+  /**
+   * Tint a texture using the 'overlay' operation.
+   *
+   * @memberof PIXI.CanvasTinter
+   * @param {PIXI.Texture} texture - the texture to tint
+   * @param {number} color - the color to use to tint the sprite with
+   * @param {HTMLCanvasElement} canvas - the current canvas
+   */
+  tintWithOverlay: function tintWithOverlay(texture, color, canvas) {
+    var context = canvas.getContext('2d');
+
+    var crop = texture._frame.clone();
+
+    var resolution = texture.baseTexture.resolution;
+    crop.x *= resolution;
+    crop.y *= resolution;
+    crop.width *= resolution;
+    crop.height *= resolution;
+    canvas.width = Math.ceil(crop.width);
+    canvas.height = Math.ceil(crop.height);
+    context.save();
+    context.globalCompositeOperation = 'copy';
+    context.fillStyle = "#" + ("00000" + (color | 0).toString(16)).substr(-6);
+    context.fillRect(0, 0, crop.width, crop.height);
+    context.globalCompositeOperation = 'destination-atop';
+    context.drawImage(texture.baseTexture.getDrawableSource(), crop.x, crop.y, crop.width, crop.height, 0, 0, crop.width, crop.height); // context.globalCompositeOperation = 'copy';
+
+    context.restore();
+  },
+
+  /**
+   * Tint a texture pixel per pixel.
+   *
+   * @memberof PIXI.CanvasTinter
+   * @param {PIXI.Texture} texture - the texture to tint
+   * @param {number} color - the color to use to tint the sprite with
+   * @param {HTMLCanvasElement} canvas - the current canvas
+   */
+  tintWithPerPixel: function (texture, color, canvas) {
+    var context = canvas.getContext('2d');
+
+    var crop = texture._frame.clone();
+
+    var resolution = texture.baseTexture.resolution;
+    crop.x *= resolution;
+    crop.y *= resolution;
+    crop.width *= resolution;
+    crop.height *= resolution;
+    canvas.width = Math.ceil(crop.width);
+    canvas.height = Math.ceil(crop.height);
+    context.save();
+    context.globalCompositeOperation = 'copy';
+    context.drawImage(texture.baseTexture.getDrawableSource(), crop.x, crop.y, crop.width, crop.height, 0, 0, crop.width, crop.height);
+    context.restore();
+    var rgbValues = (0, _utils.hex2rgb)(color);
+    var r = rgbValues[0];
+    var g = rgbValues[1];
+    var b = rgbValues[2];
+    var pixelData = context.getImageData(0, 0, crop.width, crop.height);
+    var pixels = pixelData.data;
+
+    for (var i = 0; i < pixels.length; i += 4) {
+      pixels[i + 0] *= r;
+      pixels[i + 1] *= g;
+      pixels[i + 2] *= b;
+    }
+
+    context.putImageData(pixelData, 0, 0);
+  },
+
+  /**
+   * Rounds the specified color according to the CanvasTinter.cacheStepsPerColorChannel.
+   *
+   * @memberof PIXI.CanvasTinter
+   * @param {number} color - the color to round, should be a hex color
+   * @return {number} The rounded color.
+   */
+  roundColor: function (color) {
+    var step = CanvasTinter.cacheStepsPerColorChannel;
+    var rgbValues = (0, _utils.hex2rgb)(color);
+    rgbValues[0] = Math.min(255, rgbValues[0] / step * step);
+    rgbValues[1] = Math.min(255, rgbValues[1] / step * step);
+    rgbValues[2] = Math.min(255, rgbValues[2] / step * step);
+    return (0, _utils.rgb2hex)(rgbValues);
+  },
+
+  /**
+   * Number of steps which will be used as a cap when rounding colors.
+   *
+   * @memberof PIXI.CanvasTinter
+   * @type {number}
+   */
+  cacheStepsPerColorChannel: 8,
+
+  /**
+   * Tint cache boolean flag.
+   *
+   * @memberof PIXI.CanvasTinter
+   * @type {boolean}
+   */
+  convertTintToImage: false,
+
+  /**
+   * Whether or not the Canvas BlendModes are supported, consequently the ability to tint using the multiply method.
+   *
+   * @memberof PIXI.CanvasTinter
+   * @type {boolean}
+   */
+  canUseMultiply: canUseNewCanvasBlendModes(),
+
+  /**
+   * The tinting method that will be used.
+   *
+   * @memberof PIXI.CanvasTinter
+   * @type {Function}
+   */
+  tintMethod: function () {// jslint-disable no-empty-function
+  }
+};
+exports.CanvasTinter = CanvasTinter;
+CanvasTinter.tintMethod = CanvasTinter.canUseMultiply ? CanvasTinter.tintWithMultiply : CanvasTinter.tintWithPerPixel; // Reference to Renderer.create static function
+
+var parentCreate = _core.Renderer.create;
+/**
+ * Override the Renderer.create to fallback to use CanvasRenderer.
+ * Also supports forceCanvas option with Application or autoDetectRenderer.
+ * @private
+ */
+
+_core.Renderer.create = function create(options) {
+  var forceCanvas = options && options.forceCanvas;
+
+  if (!forceCanvas) {
+    try {
+      return parentCreate(options);
+    } catch (err) {// swallow WebGL-unsupported error
+    }
+  }
+
+  return new CanvasRenderer(options);
+};
+/**
+ * Get the drawable source, such as HTMLCanvasElement or HTMLImageElement suitable
+ * for rendering with CanvasRenderer. Provided by **@pixi/canvas-renderer** package.
+ * @method getDrawableSource
+ * @memberof PIXI.BaseTexture#
+ * @return {PIXI.ICanvasImageSource} Source to render with CanvasRenderer
+ */
+
+
+_core.BaseTexture.prototype.getDrawableSource = function getDrawableSource() {
+  var resource = this.resource;
+  return resource ? resource.bitmap || resource.source : this.source;
+};
+},{"@pixi/core":"../node_modules/@pixi/core/lib/core.es.js","@pixi/utils":"../node_modules/@pixi/utils/lib/utils.es.js","@pixi/math":"../node_modules/@pixi/math/lib/math.es.js","@pixi/constants":"../node_modules/@pixi/constants/lib/constants.es.js","@pixi/settings":"../node_modules/@pixi/settings/lib/settings.es.js"}],"../node_modules/@pixi/canvas-mesh/lib/canvas-mesh.es.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.CanvasMeshRenderer = void 0;
+
+var _constants = require("@pixi/constants");
+
+var _settings = require("@pixi/settings");
+
+var _mesh = require("@pixi/mesh");
+
+var _canvasRenderer = require("@pixi/canvas-renderer");
+
+var _meshExtras = require("@pixi/mesh-extras");
+
+/*!
+ * @pixi/canvas-mesh - v5.1.2
+ * Compiled Sat, 24 Aug 2019 01:06:18 UTC
+ *
+ * @pixi/canvas-mesh is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+
+/**
+ * Renderer dedicated to meshes.
+ *
+ * @class
+ * @protected
+ * @memberof PIXI
+ */
+var CanvasMeshRenderer = function CanvasMeshRenderer(renderer) {
+  this.renderer = renderer;
+};
+/**
+ * Renders the Mesh
+ *
+ * @param {PIXI.Mesh} mesh - the Mesh to render
+ */
+
+
+exports.CanvasMeshRenderer = CanvasMeshRenderer;
+
+CanvasMeshRenderer.prototype.render = function render(mesh) {
+  var renderer = this.renderer;
+  var context = renderer.context;
+  var transform = mesh.worldTransform;
+  var res = renderer.resolution;
+
+  if (mesh.roundPixels) {
+    context.setTransform(transform.a * res, transform.b * res, transform.c * res, transform.d * res, transform.tx * res | 0, transform.ty * res | 0);
+  } else {
+    context.setTransform(transform.a * res, transform.b * res, transform.c * res, transform.d * res, transform.tx * res, transform.ty * res);
+  }
+
+  renderer.context.globalAlpha = mesh.worldAlpha;
+  renderer.setBlendMode(mesh.blendMode);
+
+  if (mesh.drawMode !== _constants.DRAW_MODES.TRIANGLES) {
+    this._renderTriangleMesh(mesh);
+  } else {
+    this._renderTriangles(mesh);
+  }
+};
+/**
+ * Draws the object in Triangle Mesh mode
+ *
+ * @private
+ * @param {PIXI.Mesh} mesh - the Mesh to render
+ */
+
+
+CanvasMeshRenderer.prototype._renderTriangleMesh = function _renderTriangleMesh(mesh) {
+  // draw triangles!!
+  var length = mesh.geometry.buffers[0].data.length;
+
+  for (var i = 0; i < length - 2; i++) {
+    // draw some triangles!
+    var index = i * 2;
+
+    this._renderDrawTriangle(mesh, index, index + 2, index + 4);
+  }
+};
+/**
+ * Draws the object in triangle mode using canvas
+ *
+ * @private
+ * @param {PIXI.Mesh} mesh - the current mesh
+ */
+
+
+CanvasMeshRenderer.prototype._renderTriangles = function _renderTriangles(mesh) {
+  // draw triangles!!
+  var indices = mesh.geometry.getIndex().data;
+  var length = indices.length;
+
+  for (var i = 0; i < length; i += 3) {
+    // draw some triangles!
+    var index0 = indices[i] * 2;
+    var index1 = indices[i + 1] * 2;
+    var index2 = indices[i + 2] * 2;
+
+    this._renderDrawTriangle(mesh, index0, index1, index2);
+  }
+};
+/**
+ * Draws one of the triangles that from the Mesh
+ *
+ * @private
+ * @param {PIXI.Mesh} mesh - the current mesh
+ * @param {number} index0 - the index of the first vertex
+ * @param {number} index1 - the index of the second vertex
+ * @param {number} index2 - the index of the third vertex
+ */
+
+
+CanvasMeshRenderer.prototype._renderDrawTriangle = function _renderDrawTriangle(mesh, index0, index1, index2) {
+  var context = this.renderer.context;
+  var vertices = mesh.geometry.buffers[0].data;
+  var uvs = mesh.uvs;
+  var texture = mesh.texture;
+
+  if (!texture.valid) {
+    return;
+  }
+
+  var base = texture.baseTexture;
+  var textureSource = base.getDrawableSource();
+  var textureWidth = base.width;
+  var textureHeight = base.height;
+  var u0 = uvs[index0] * base.width;
+  var u1 = uvs[index1] * base.width;
+  var u2 = uvs[index2] * base.width;
+  var v0 = uvs[index0 + 1] * base.height;
+  var v1 = uvs[index1 + 1] * base.height;
+  var v2 = uvs[index2 + 1] * base.height;
+  var x0 = vertices[index0];
+  var x1 = vertices[index1];
+  var x2 = vertices[index2];
+  var y0 = vertices[index0 + 1];
+  var y1 = vertices[index1 + 1];
+  var y2 = vertices[index2 + 1];
+  var canvasPadding = mesh.canvasPadding / this.renderer.resolution;
+
+  if (canvasPadding > 0) {
+    var paddingX = canvasPadding / Math.abs(mesh.worldTransform.a);
+    var paddingY = canvasPadding / Math.abs(mesh.worldTransform.d);
+    var centerX = (x0 + x1 + x2) / 3;
+    var centerY = (y0 + y1 + y2) / 3;
+    var normX = x0 - centerX;
+    var normY = y0 - centerY;
+    var dist = Math.sqrt(normX * normX + normY * normY);
+    x0 = centerX + normX / dist * (dist + paddingX);
+    y0 = centerY + normY / dist * (dist + paddingY); //
+
+    normX = x1 - centerX;
+    normY = y1 - centerY;
+    dist = Math.sqrt(normX * normX + normY * normY);
+    x1 = centerX + normX / dist * (dist + paddingX);
+    y1 = centerY + normY / dist * (dist + paddingY);
+    normX = x2 - centerX;
+    normY = y2 - centerY;
+    dist = Math.sqrt(normX * normX + normY * normY);
+    x2 = centerX + normX / dist * (dist + paddingX);
+    y2 = centerY + normY / dist * (dist + paddingY);
+  }
+
+  context.save();
+  context.beginPath();
+  context.moveTo(x0, y0);
+  context.lineTo(x1, y1);
+  context.lineTo(x2, y2);
+  context.closePath();
+  context.clip(); // Compute matrix transform
+
+  var delta = u0 * v1 + v0 * u2 + u1 * v2 - v1 * u2 - v0 * u1 - u0 * v2;
+  var deltaA = x0 * v1 + v0 * x2 + x1 * v2 - v1 * x2 - v0 * x1 - x0 * v2;
+  var deltaB = u0 * x1 + x0 * u2 + u1 * x2 - x1 * u2 - x0 * u1 - u0 * x2;
+  var deltaC = u0 * v1 * x2 + v0 * x1 * u2 + x0 * u1 * v2 - x0 * v1 * u2 - v0 * u1 * x2 - u0 * x1 * v2;
+  var deltaD = y0 * v1 + v0 * y2 + y1 * v2 - v1 * y2 - v0 * y1 - y0 * v2;
+  var deltaE = u0 * y1 + y0 * u2 + u1 * y2 - y1 * u2 - y0 * u1 - u0 * y2;
+  var deltaF = u0 * v1 * y2 + v0 * y1 * u2 + y0 * u1 * v2 - y0 * v1 * u2 - v0 * u1 * y2 - u0 * y1 * v2;
+  context.transform(deltaA / delta, deltaD / delta, deltaB / delta, deltaE / delta, deltaC / delta, deltaF / delta);
+  context.drawImage(textureSource, 0, 0, textureWidth * base.resolution, textureHeight * base.resolution, 0, 0, textureWidth, textureHeight);
+  context.restore();
+  this.renderer.invalidateBlendMode();
+};
+/**
+ * Renders a flat Mesh
+ *
+ * @private
+ * @param {PIXI.Mesh} mesh - The Mesh to render
+ */
+
+
+CanvasMeshRenderer.prototype.renderMeshFlat = function renderMeshFlat(mesh) {
+  var context = this.renderer.context;
+  var vertices = mesh.geometry.getBuffer('aVertexPosition').data;
+  var length = vertices.length / 2; // this.count++;
+
+  context.beginPath();
+
+  for (var i = 1; i < length - 2; ++i) {
+    // draw some triangles!
+    var index = i * 2;
+    var x0 = vertices[index];
+    var y0 = vertices[index + 1];
+    var x1 = vertices[index + 2];
+    var y1 = vertices[index + 3];
+    var x2 = vertices[index + 4];
+    var y2 = vertices[index + 5];
+    context.moveTo(x0, y0);
+    context.lineTo(x1, y1);
+    context.lineTo(x2, y2);
+  }
+
+  context.fillStyle = '#FF0000';
+  context.fill();
+  context.closePath();
+};
+/**
+ * destroy the the renderer.
+ *
+ */
+
+
+CanvasMeshRenderer.prototype.destroy = function destroy() {
+  this.renderer = null;
+};
+/**
+ * Default `canvasPadding` for canvas-based Mesh rendering.
+ *
+ * @see PIXI.Mesh2d#canvasPadding
+ * @static
+ * @name MESH_CANVAS_PADDING
+ * @memberof PIXI.settings
+ * @type {number}
+ * @default 0
+ */
+
+
+_settings.settings.MESH_CANVAS_PADDING = 0;
+/**
+ * Renders the mesh using the Canvas renderer
+ *
+ * @protected
+ * @method render
+ * @memberof PIXI.MeshMaterial#
+ * @param {PIXI.CanvasRenderer} renderer - The canvas renderer.
+ * @param {PIXI.Mesh} mesh - Mesh to render.
+ */
+
+_mesh.MeshMaterial.prototype._renderCanvas = function _renderCanvas(renderer, mesh) {
+  renderer.plugins.mesh.render(mesh);
+};
+/**
+ * Cached tint value so we can tell when the tint is changed.
+ * @memberof PIXI.NineSlicePlane#
+ * @member {number} _cachedTint
+ * @protected
+ */
+
+
+_meshExtras.NineSlicePlane.prototype._cachedTint = 0xFFFFFF;
+/**
+ * Cached tinted texture.
+ * @memberof PIXI.NineSlicePlane#
+ * @member {HTMLCanvasElement} _tintedCanvas
+ * @protected
+ */
+
+_meshExtras.NineSlicePlane.prototype._tintedCanvas = null;
+/**
+ * Temporary storage for canvas source coords
+ * @memberof PIXI.NineSlicePlane#
+ * @member {number[]} _canvasUvs
+ * @private
+ */
+
+_meshExtras.NineSlicePlane.prototype._canvasUvs = null;
+/**
+ * Renders the object using the Canvas renderer
+ *
+ * @private
+ * @method _renderCanvas
+ * @memberof PIXI.NineSlicePlane#
+ * @param {PIXI.CanvasRenderer} renderer - The canvas renderer to render with.
+ */
+
+_meshExtras.NineSlicePlane.prototype._renderCanvas = function _renderCanvas(renderer) {
+  var context = renderer.context;
+  var transform = this.worldTransform;
+  var res = renderer.resolution;
+  var isTinted = this.tint !== 0xFFFFFF;
+  var texture = this.texture; // Work out tinting
+
+  if (isTinted) {
+    if (this._cachedTint !== this.tint) {
+      // Tint has changed, need to update the tinted texture and use that instead
+      this._cachedTint = this.tint;
+      this._tintedCanvas = _canvasRenderer.CanvasTinter.getTintedCanvas(this, this.tint);
+    }
+  }
+
+  var textureSource = !isTinted ? texture.baseTexture.source : this._tintedCanvas;
+
+  if (!this._canvasUvs) {
+    this._canvasUvs = [0, 0, 0, 0, 0, 0, 0, 0];
+  }
+
+  var vertices = this.vertices;
+  var uvs = this._canvasUvs;
+  var u0 = isTinted ? 0 : texture.frame.x;
+  var v0 = isTinted ? 0 : texture.frame.y;
+  var u1 = u0 + texture.frame.width;
+  var v1 = v0 + texture.frame.height;
+  uvs[0] = u0;
+  uvs[1] = u0 + this._leftWidth;
+  uvs[2] = u1 - this._rightWidth;
+  uvs[3] = u1;
+  uvs[4] = v0;
+  uvs[5] = v0 + this._topHeight;
+  uvs[6] = v1 - this._bottomHeight;
+  uvs[7] = v1;
+
+  for (var i = 0; i < 8; i++) {
+    uvs[i] *= texture.baseTexture.resolution;
+  }
+
+  context.globalAlpha = this.worldAlpha;
+  renderer.setBlendMode(this.blendMode);
+
+  if (this.roundPixels) {
+    context.setTransform(transform.a * res, transform.b * res, transform.c * res, transform.d * res, transform.tx * res | 0, transform.ty * res | 0);
+  } else {
+    context.setTransform(transform.a * res, transform.b * res, transform.c * res, transform.d * res, transform.tx * res, transform.ty * res);
+  }
+
+  for (var row = 0; row < 3; row++) {
+    for (var col = 0; col < 3; col++) {
+      var ind = col * 2 + row * 8;
+      var sw = Math.max(1, uvs[col + 1] - uvs[col]);
+      var sh = Math.max(1, uvs[row + 5] - uvs[row + 4]);
+      var dw = Math.max(1, vertices[ind + 10] - vertices[ind]);
+      var dh = Math.max(1, vertices[ind + 11] - vertices[ind + 1]);
+      context.drawImage(textureSource, uvs[col], uvs[row + 4], sw, sh, vertices[ind], vertices[ind + 1], dw, dh);
+    }
+  }
+};
+/**
+ * Renders the object using the Canvas renderer
+ *
+ * @private
+ * @method _renderCanvas
+ * @memberof PIXI.Mesh#
+ * @param {PIXI.CanvasRenderer} renderer - The canvas renderer.
+ */
+
+
+_mesh.Mesh.prototype._renderCanvas = function _renderCanvas(renderer) {
+  if (this.shader.uvMatrix) {
+    this.shader.uvMatrix.update();
+    this.calculateUvs();
+  }
+
+  this.material._renderCanvas(renderer, this);
+}; // IMPORTANT: Please do NOT use this as a precedent to use `settings` after the object is created
+// this was merely created to completely decouple canvas from the base Mesh class and we are
+// unable to add `canvasPadding` in the constructor anymore, as the case was for PixiJS v4.
+
+/**
+ * Internal variable for `canvasPadding`.
+ *
+ * @private
+ * @memberof PIXI.Mesh
+ * @member {number}
+ * @default null
+ */
+
+
+_mesh.Mesh.prototype._canvasPadding = null;
+/**
+ * Triangles in canvas mode are automatically antialiased, use this value to force triangles
+ * to overlap a bit with each other. To set the global default, set {@link PIXI.settings.MESH_CANVAS_PADDING}
+ *
+ * @see PIXI.settings.MESH_CANVAS_PADDING
+ * @member {number} canvasPadding
+ * @memberof PIXI.SimpleMesh#
+ * @default 0
+ */
+
+Object.defineProperty(_mesh.Mesh.prototype, 'canvasPadding', {
+  get: function get() {
+    return this._canvasPadding !== null ? this._canvasPadding : _settings.settings.MESH_CANVAS_PADDING;
+  },
+  set: function set(value) {
+    this._canvasPadding = value;
+  }
+});
+/**
+ * Renders the object using the Canvas renderer
+ *
+ * @private
+ * @method _renderCanvas
+ * @memberof PIXI.Mesh#
+ * @param {PIXI.CanvasRenderer} renderer - The canvas renderer.
+ */
+
+_meshExtras.SimpleMesh.prototype._renderCanvas = function _renderCanvas(renderer) {
+  if (this.autoUpdate) {
+    this.geometry.getBuffer('aVertexPosition').update();
+  }
+
+  if (this.shader.update) {
+    this.shader.update();
+  }
+
+  this.calculateUvs();
+
+  this.material._renderCanvas(renderer, this);
+};
+/**
+ * Renders the object using the Canvas renderer
+ *
+ * @protected
+ * @method _renderCanvas
+ * @memberof PIXI.Mesh#
+ * @param {PIXI.CanvasRenderer} renderer - The canvas renderer.
+ */
+
+
+_meshExtras.SimpleRope.prototype._renderCanvas = function _renderCanvas(renderer) {
+  if (this.autoUpdate || this.geometry.width !== this.shader.texture.height) {
+    this.geometry.width = this.shader.texture.height;
+    this.geometry.update();
+  }
+
+  if (this.shader.update) {
+    this.shader.update();
+  }
+
+  this.calculateUvs();
+
+  this.material._renderCanvas(renderer, this);
+};
+},{"@pixi/constants":"../node_modules/@pixi/constants/lib/constants.es.js","@pixi/settings":"../node_modules/@pixi/settings/lib/settings.es.js","@pixi/mesh":"../node_modules/@pixi/mesh/lib/mesh.es.js","@pixi/canvas-renderer":"../node_modules/@pixi/canvas-renderer/lib/canvas-renderer.es.js","@pixi/mesh-extras":"../node_modules/@pixi/mesh-extras/lib/mesh-extras.es.js"}],"../node_modules/@pixi/canvas-graphics/lib/canvas-graphics.es.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.CanvasGraphicsRenderer = void 0;
+
+var _math = require("@pixi/math");
+
+var _graphics = require("@pixi/graphics");
+
+var _canvasRenderer = require("@pixi/canvas-renderer");
+
+var _core = require("@pixi/core");
+
+/*!
+ * @pixi/canvas-graphics - v5.1.2
+ * Compiled Sat, 24 Aug 2019 01:06:18 UTC
+ *
+ * @pixi/canvas-graphics is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+
+/**
+ * @author Mat Groves
+ *
+ * Big thanks to the very clever Matt DesLauriers <mattdesl> https://github.com/mattdesl/
+ * for creating the original PixiJS version!
+ * Also a thanks to https://github.com/bchevalier for tweaking the tint and alpha so that they
+ * now share 4 bytes on the vertex buffer
+ *
+ * Heavily inspired by LibGDX's CanvasGraphicsRenderer:
+ * https://github.com/libgdx/libgdx/blob/1.0.0/gdx/src/com/badlogic/gdx/graphics/glutils/ShapeRenderer.java
+ */
+
+/**
+ * Renderer dedicated to drawing and batching graphics objects.
+ *
+ * @class
+ * @protected
+ * @memberof PIXI
+ */
+var CanvasGraphicsRenderer = function CanvasGraphicsRenderer(renderer) {
+  this.renderer = renderer;
+};
+/**
+ * Renders a Graphics object to a canvas.
+ *
+ * @param {PIXI.Graphics} graphics - the actual graphics object to render
+ */
+
+
+exports.CanvasGraphicsRenderer = CanvasGraphicsRenderer;
+
+CanvasGraphicsRenderer.prototype.render = function render(graphics) {
+  var renderer = this.renderer;
+  var context = renderer.context;
+  var worldAlpha = graphics.worldAlpha;
+  var transform = graphics.transform.worldTransform;
+  var resolution = renderer.resolution;
+  context.setTransform(transform.a * resolution, transform.b * resolution, transform.c * resolution, transform.d * resolution, transform.tx * resolution, transform.ty * resolution); // update tint if graphics was dirty
+
+  if (graphics.canvasTintDirty !== graphics.geometry.dirty || graphics._prevTint !== graphics.tint) {
+    this.updateGraphicsTint(graphics);
+  }
+
+  renderer.setBlendMode(graphics.blendMode);
+  var graphicsData = graphics.geometry.graphicsData;
+
+  for (var i = 0; i < graphicsData.length; i++) {
+    var data = graphicsData[i];
+    var shape = data.shape;
+    var fillStyle = data.fillStyle;
+    var lineStyle = data.lineStyle;
+    var fillColor = data._fillTint;
+    var lineColor = data._lineTint;
+    context.lineWidth = lineStyle.width;
+
+    if (data.type === _math.SHAPES.POLY) {
+      context.beginPath();
+      var points = shape.points;
+      var holes = data.holes;
+      var outerArea = void 0;
+      var innerArea = void 0;
+      var px = void 0;
+      var py = void 0;
+      context.moveTo(points[0], points[1]);
+
+      for (var j = 2; j < points.length; j += 2) {
+        context.lineTo(points[j], points[j + 1]);
+      }
+
+      if (shape.closeStroke) {
+        context.closePath();
+      }
+
+      if (holes.length > 0) {
+        outerArea = 0;
+        px = points[0];
+        py = points[1];
+
+        for (var j$1 = 2; j$1 + 2 < points.length; j$1 += 2) {
+          outerArea += (points[j$1] - px) * (points[j$1 + 3] - py) - (points[j$1 + 2] - px) * (points[j$1 + 1] - py);
+        }
+
+        for (var k = 0; k < holes.length; k++) {
+          points = holes[k].shape.points;
+
+          if (!points) {
+            continue;
+          }
+
+          innerArea = 0;
+          px = points[0];
+          py = points[1];
+
+          for (var j$2 = 2; j$2 + 2 < points.length; j$2 += 2) {
+            innerArea += (points[j$2] - px) * (points[j$2 + 3] - py) - (points[j$2 + 2] - px) * (points[j$2 + 1] - py);
+          }
+
+          if (innerArea * outerArea < 0) {
+            context.moveTo(points[0], points[1]);
+
+            for (var j$3 = 2; j$3 < points.length; j$3 += 2) {
+              context.lineTo(points[j$3], points[j$3 + 1]);
+            }
+          } else {
+            context.moveTo(points[points.length - 2], points[points.length - 1]);
+
+            for (var j$4 = points.length - 4; j$4 >= 0; j$4 -= 2) {
+              context.lineTo(points[j$4], points[j$4 + 1]);
+            }
+          }
+
+          if (holes[k].shape.closeStroke) {
+            context.closePath();
+          }
+        }
+      }
+
+      if (fillStyle.visible) {
+        context.globalAlpha = fillStyle.alpha * worldAlpha;
+        context.fillStyle = "#" + ("00000" + (fillColor | 0).toString(16)).substr(-6);
+        context.fill();
+      }
+
+      if (lineStyle.visible) {
+        context.globalAlpha = lineStyle.alpha * worldAlpha;
+        context.strokeStyle = "#" + ("00000" + (lineColor | 0).toString(16)).substr(-6);
+        context.stroke();
+      }
+    } else if (data.type === _math.SHAPES.RECT) {
+      if (fillStyle.visible) {
+        context.globalAlpha = fillStyle.alpha * worldAlpha;
+        context.fillStyle = "#" + ("00000" + (fillColor | 0).toString(16)).substr(-6);
+        context.fillRect(shape.x, shape.y, shape.width, shape.height);
+      }
+
+      if (lineStyle.visible) {
+        context.globalAlpha = lineStyle.alpha * worldAlpha;
+        context.strokeStyle = "#" + ("00000" + (lineColor | 0).toString(16)).substr(-6);
+        context.strokeRect(shape.x, shape.y, shape.width, shape.height);
+      }
+    } else if (data.type === _math.SHAPES.CIRC) {
+      // TODO - need to be Undefined!
+      context.beginPath();
+      context.arc(shape.x, shape.y, shape.radius, 0, 2 * Math.PI);
+      context.closePath();
+
+      if (fillStyle.visible) {
+        context.globalAlpha = fillStyle.alpha * worldAlpha;
+        context.fillStyle = "#" + ("00000" + (fillColor | 0).toString(16)).substr(-6);
+        context.fill();
+      }
+
+      if (lineStyle.visible) {
+        context.globalAlpha = lineStyle.alpha * worldAlpha;
+        context.strokeStyle = "#" + ("00000" + (lineColor | 0).toString(16)).substr(-6);
+        context.stroke();
+      }
+    } else if (data.type === _math.SHAPES.ELIP) {
+      // ellipse code taken from: http://stackoverflow.com/questions/2172798/how-to-draw-an-oval-in-html5-canvas
+      var w = shape.width * 2;
+      var h = shape.height * 2;
+      var x = shape.x - w / 2;
+      var y = shape.y - h / 2;
+      context.beginPath();
+      var kappa = 0.5522848;
+      var ox = w / 2 * kappa; // control point offset horizontal
+
+      var oy = h / 2 * kappa; // control point offset vertical
+
+      var xe = x + w; // x-end
+
+      var ye = y + h; // y-end
+
+      var xm = x + w / 2; // x-middle
+
+      var ym = y + h / 2; // y-middle
+
+      context.moveTo(x, ym);
+      context.bezierCurveTo(x, ym - oy, xm - ox, y, xm, y);
+      context.bezierCurveTo(xm + ox, y, xe, ym - oy, xe, ym);
+      context.bezierCurveTo(xe, ym + oy, xm + ox, ye, xm, ye);
+      context.bezierCurveTo(xm - ox, ye, x, ym + oy, x, ym);
+      context.closePath();
+
+      if (fillStyle.visible) {
+        context.globalAlpha = fillStyle.alpha * worldAlpha;
+        context.fillStyle = "#" + ("00000" + (fillColor | 0).toString(16)).substr(-6);
+        context.fill();
+      }
+
+      if (lineStyle.visible) {
+        context.globalAlpha = lineStyle.alpha * worldAlpha;
+        context.strokeStyle = "#" + ("00000" + (lineColor | 0).toString(16)).substr(-6);
+        context.stroke();
+      }
+    } else if (data.type === _math.SHAPES.RREC) {
+      var rx = shape.x;
+      var ry = shape.y;
+      var width = shape.width;
+      var height = shape.height;
+      var radius = shape.radius;
+      var maxRadius = Math.min(width, height) / 2 | 0;
+      radius = radius > maxRadius ? maxRadius : radius;
+      context.beginPath();
+      context.moveTo(rx, ry + radius);
+      context.lineTo(rx, ry + height - radius);
+      context.quadraticCurveTo(rx, ry + height, rx + radius, ry + height);
+      context.lineTo(rx + width - radius, ry + height);
+      context.quadraticCurveTo(rx + width, ry + height, rx + width, ry + height - radius);
+      context.lineTo(rx + width, ry + radius);
+      context.quadraticCurveTo(rx + width, ry, rx + width - radius, ry);
+      context.lineTo(rx + radius, ry);
+      context.quadraticCurveTo(rx, ry, rx, ry + radius);
+      context.closePath();
+
+      if (fillStyle.visible) {
+        context.globalAlpha = fillStyle.alpha * worldAlpha;
+        context.fillStyle = "#" + ("00000" + (fillColor | 0).toString(16)).substr(-6);
+        context.fill();
+      }
+
+      if (lineStyle.visible) {
+        context.globalAlpha = lineStyle.alpha * worldAlpha;
+        context.strokeStyle = "#" + ("00000" + (lineColor | 0).toString(16)).substr(-6);
+        context.stroke();
+      }
+    }
+  }
+};
+/**
+ * Updates the tint of a graphics object
+ *
+ * @protected
+ * @param {PIXI.Graphics} graphics - the graphics that will have its tint updated
+ */
+
+
+CanvasGraphicsRenderer.prototype.updateGraphicsTint = function updateGraphicsTint(graphics) {
+  graphics._prevTint = graphics.tint;
+  graphics.canvasTintDirty = graphics.geometry.dirty;
+  var tintR = (graphics.tint >> 16 & 0xFF) / 255;
+  var tintG = (graphics.tint >> 8 & 0xFF) / 255;
+  var tintB = (graphics.tint & 0xFF) / 255;
+  var graphicsData = graphics.geometry.graphicsData;
+
+  for (var i = 0; i < graphicsData.length; ++i) {
+    var data = graphicsData[i];
+    var fillColor = data.fillStyle.color | 0;
+    var lineColor = data.lineStyle.color | 0; // super inline, cos optimization :)
+
+    data._fillTint = ((fillColor >> 16 & 0xFF) / 255 * tintR * 255 << 16) + ((fillColor >> 8 & 0xFF) / 255 * tintG * 255 << 8) + (fillColor & 0xFF) / 255 * tintB * 255;
+    data._lineTint = ((lineColor >> 16 & 0xFF) / 255 * tintR * 255 << 16) + ((lineColor >> 8 & 0xFF) / 255 * tintG * 255 << 8) + (lineColor & 0xFF) / 255 * tintB * 255;
+  }
+};
+/**
+ * destroy graphics object
+ *
+ */
+
+
+CanvasGraphicsRenderer.prototype.destroy = function destroy() {
+  this.renderer = null;
+};
+
+var canvasRenderer;
+var tempMatrix = new _math.Matrix();
+/**
+ * Generates a canvas texture. Only available with **pixi.js-legacy** bundle
+ * or the **@pixi/canvas-graphics** package.
+ * @method generateCanvasTexture
+ * @memberof PIXI.Graphics#
+ * @param {number} scaleMode - The scale mode of the texture.
+ * @param {number} resolution - The resolution of the texture.
+ * @return {PIXI.Texture} The new texture.
+ */
+
+_graphics.Graphics.prototype.generateCanvasTexture = function generateCanvasTexture(scaleMode, resolution) {
+  if (resolution === void 0) resolution = 1;
+  var bounds = this.getLocalBounds();
+
+  var canvasBuffer = _core.RenderTexture.create(bounds.width, bounds.height, scaleMode, resolution);
+
+  if (!canvasRenderer) {
+    canvasRenderer = new _canvasRenderer.CanvasRenderer();
+  }
+
+  this.transform.updateLocalTransform();
+  this.transform.localTransform.copyTo(tempMatrix);
+  tempMatrix.invert();
+  tempMatrix.tx -= bounds.x;
+  tempMatrix.ty -= bounds.y;
+  canvasRenderer.render(this, canvasBuffer, true, tempMatrix);
+
+  var texture = _core.Texture.from(canvasBuffer.baseTexture._canvasRenderTarget.canvas, {
+    scaleMode: scaleMode
+  });
+
+  texture.baseTexture.resolution = resolution;
+  texture.baseTexture.update();
+  return texture;
+};
+
+_graphics.Graphics.prototype.cachedGraphicsData = [];
+/**
+ * Renders the object using the Canvas renderer
+ *
+ * @method _renderCanvas
+ * @memberof PIXI.Graphics#
+ * @private
+ * @param {PIXI.CanvasRenderer} renderer - The renderer
+ */
+
+_graphics.Graphics.prototype._renderCanvas = function _renderCanvas(renderer) {
+  if (this.isMask === true) {
+    return;
+  }
+
+  this.finishPoly();
+  renderer.plugins.graphics.render(this);
+};
+},{"@pixi/math":"../node_modules/@pixi/math/lib/math.es.js","@pixi/graphics":"../node_modules/@pixi/graphics/lib/graphics.es.js","@pixi/canvas-renderer":"../node_modules/@pixi/canvas-renderer/lib/canvas-renderer.es.js","@pixi/core":"../node_modules/@pixi/core/lib/core.es.js"}],"../node_modules/@pixi/canvas-sprite/lib/canvas-sprite.es.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.CanvasSpriteRenderer = void 0;
+
+var _constants = require("@pixi/constants");
+
+var _math = require("@pixi/math");
+
+var _canvasRenderer = require("@pixi/canvas-renderer");
+
+var _sprite = require("@pixi/sprite");
+
+/*!
+ * @pixi/canvas-sprite - v5.1.2
+ * Compiled Sat, 24 Aug 2019 01:06:18 UTC
+ *
+ * @pixi/canvas-sprite is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+var canvasRenderWorldTransform = new _math.Matrix();
+/**
+ * Types that can be passed to drawImage
+ * @typedef {HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | ImageBitmap} ICanvasImageSource
+ * @memberof PIXI
+ */
+
+/**
+ * @author Mat Groves
+ *
+ * Big thanks to the very clever Matt DesLauriers <mattdesl> https://github.com/mattdesl/
+ * for creating the original PixiJS version!
+ * Also a thanks to https://github.com/bchevalier for tweaking the tint and alpha so that they now
+ * share 4 bytes on the vertex buffer
+ *
+ * Heavily inspired by LibGDX's CanvasSpriteRenderer:
+ * https://github.com/libgdx/libgdx/blob/master/gdx/src/com/badlogic/gdx/graphics/g2d/CanvasSpriteRenderer.java
+ */
+
+/**
+ * Renderer dedicated to drawing and batching sprites.
+ *
+ * @class
+ * @protected
+ * @memberof PIXI
+ */
+
+var CanvasSpriteRenderer = function CanvasSpriteRenderer(renderer) {
+  this.renderer = renderer;
+};
+/**
+ * Renders the sprite object.
+ *
+ * @param {PIXI.Sprite} sprite - the sprite to render when using this spritebatch
+ */
+
+
+exports.CanvasSpriteRenderer = CanvasSpriteRenderer;
+
+CanvasSpriteRenderer.prototype.render = function render(sprite) {
+  var texture = sprite._texture;
+  var renderer = this.renderer;
+  var context = renderer.context;
+  var width = texture._frame.width;
+  var height = texture._frame.height;
+  var wt = sprite.transform.worldTransform;
+  var dx = 0;
+  var dy = 0;
+  var source = texture.baseTexture.getDrawableSource();
+
+  if (texture.orig.width <= 0 || texture.orig.height <= 0 || !source) {
+    return;
+  }
+
+  if (!texture.valid) {
+    return;
+  }
+
+  renderer.setBlendMode(sprite.blendMode, true);
+  renderer.context.globalAlpha = sprite.worldAlpha; // If smoothingEnabled is supported and we need to change the smoothing property for sprite texture
+
+  var smoothingEnabled = texture.baseTexture.scaleMode === _constants.SCALE_MODES.LINEAR;
+
+  if (renderer.smoothProperty && renderer.context[renderer.smoothProperty] !== smoothingEnabled) {
+    context[renderer.smoothProperty] = smoothingEnabled;
+  }
+
+  if (texture.trim) {
+    dx = texture.trim.width / 2 + texture.trim.x - sprite.anchor.x * texture.orig.width;
+    dy = texture.trim.height / 2 + texture.trim.y - sprite.anchor.y * texture.orig.height;
+  } else {
+    dx = (0.5 - sprite.anchor.x) * texture.orig.width;
+    dy = (0.5 - sprite.anchor.y) * texture.orig.height;
+  }
+
+  if (texture.rotate) {
+    wt.copyTo(canvasRenderWorldTransform);
+    wt = canvasRenderWorldTransform;
+
+    _math.GroupD8.matrixAppendRotationInv(wt, texture.rotate, dx, dy); // the anchor has already been applied above, so lets set it to zero
+
+
+    dx = 0;
+    dy = 0;
+  }
+
+  dx -= width / 2;
+  dy -= height / 2; // Allow for pixel rounding
+
+  if (sprite.roundPixels) {
+    renderer.context.setTransform(wt.a, wt.b, wt.c, wt.d, wt.tx * renderer.resolution | 0, wt.ty * renderer.resolution | 0);
+    dx = dx | 0;
+    dy = dy | 0;
+  } else {
+    renderer.context.setTransform(wt.a, wt.b, wt.c, wt.d, wt.tx * renderer.resolution, wt.ty * renderer.resolution);
+  }
+
+  var resolution = texture.baseTexture.resolution;
+  var outerBlend = renderer._outerBlend;
+
+  if (outerBlend) {
+    context.save();
+    context.beginPath();
+    context.rect(dx * renderer.resolution, dy * renderer.resolution, width * renderer.resolution, height * renderer.resolution);
+    context.clip();
+  }
+
+  if (sprite.tint !== 0xFFFFFF) {
+    if (sprite._cachedTint !== sprite.tint || sprite._tintedCanvas.tintId !== sprite._texture._updateID) {
+      sprite._cachedTint = sprite.tint; // TODO clean up caching - how to clean up the caches?
+
+      sprite._tintedCanvas = _canvasRenderer.CanvasTinter.getTintedCanvas(sprite, sprite.tint);
+    }
+
+    context.drawImage(sprite._tintedCanvas, 0, 0, Math.floor(width * resolution), Math.floor(height * resolution), Math.floor(dx * renderer.resolution), Math.floor(dy * renderer.resolution), Math.floor(width * renderer.resolution), Math.floor(height * renderer.resolution));
+  } else {
+    context.drawImage(source, texture._frame.x * resolution, texture._frame.y * resolution, Math.floor(width * resolution), Math.floor(height * resolution), Math.floor(dx * renderer.resolution), Math.floor(dy * renderer.resolution), Math.floor(width * renderer.resolution), Math.floor(height * renderer.resolution));
+  }
+
+  if (outerBlend) {
+    context.restore();
+  } // just in case, leaking outer blend here will be catastrophic!
+
+
+  renderer.setBlendMode(_constants.BLEND_MODES.NORMAL);
+};
+/**
+ * destroy the sprite object.
+ *
+ */
+
+
+CanvasSpriteRenderer.prototype.destroy = function destroy() {
+  this.renderer = null;
+};
+/**
+ * Cached tinted texture.
+ * @memberof PIXI.Sprite#
+ * @member {HTMLCanvasElement} _tintedCanvas
+ * @protected
+ */
+
+
+_sprite.Sprite.prototype._tintedCanvas = null;
+/**
+* Renders the object using the Canvas renderer
+*
+* @private
+* @method _renderCanvas
+* @memberof PIXI.Sprite#
+* @param {PIXI.CanvasRenderer} renderer - The renderer
+*/
+
+_sprite.Sprite.prototype._renderCanvas = function _renderCanvas(renderer) {
+  renderer.plugins.sprite.render(this);
+};
+},{"@pixi/constants":"../node_modules/@pixi/constants/lib/constants.es.js","@pixi/math":"../node_modules/@pixi/math/lib/math.es.js","@pixi/canvas-renderer":"../node_modules/@pixi/canvas-renderer/lib/canvas-renderer.es.js","@pixi/sprite":"../node_modules/@pixi/sprite/lib/sprite.es.js"}],"../node_modules/@pixi/canvas-extract/lib/canvas-extract.es.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.CanvasExtract = void 0;
+
+var _core = require("@pixi/core");
+
+var _utils = require("@pixi/utils");
+
+var _math = require("@pixi/math");
+
+/*!
+ * @pixi/canvas-extract - v5.1.2
+ * Compiled Sat, 24 Aug 2019 01:06:18 UTC
+ *
+ * @pixi/canvas-extract is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+var TEMP_RECT = new _math.Rectangle();
+/**
+ * The extract manager provides functionality to export content from the renderers.
+ *
+ * An instance of this class is automatically created by default, and can be found at `renderer.plugins.extract`
+ *
+ * @class
+ * @memberof PIXI.extract
+ */
+
+var CanvasExtract = function CanvasExtract(renderer) {
+  this.renderer = renderer;
+  /**
+   * Collection of methods for extracting data (image, pixels, etc.) from a display object or render texture
+   *
+   * @member {PIXI.extract.CanvasExtract} extract
+   * @memberof PIXI.CanvasRenderer#
+   * @see PIXI.extract.CanvasExtract
+   */
+
+  renderer.extract = this;
+};
+/**
+ * Will return a HTML Image of the target
+ *
+ * @param {PIXI.DisplayObject|PIXI.RenderTexture} target - A displayObject or renderTexture
+ *  to convert. If left empty will use the main renderer
+ * @param {string} [format] - Image format, e.g. "image/jpeg" or "image/webp".
+ * @param {number} [quality] - JPEG or Webp compression from 0 to 1. Default is 0.92.
+ * @return {HTMLImageElement} HTML Image of the target
+ */
+
+
+exports.CanvasExtract = CanvasExtract;
+
+CanvasExtract.prototype.image = function image(target, format, quality) {
+  var image = new Image();
+  image.src = this.base64(target, format, quality);
+  return image;
+};
+/**
+ * Will return a a base64 encoded string of this target. It works by calling
+ *  `CanvasExtract.getCanvas` and then running toDataURL on that.
+ *
+ * @param {PIXI.DisplayObject|PIXI.RenderTexture} target - A displayObject or renderTexture
+ *  to convert. If left empty will use the main renderer
+ * @param {string} [format] - Image format, e.g. "image/jpeg" or "image/webp".
+ * @param {number} [quality] - JPEG or Webp compression from 0 to 1. Default is 0.92.
+ * @return {string} A base64 encoded string of the texture.
+ */
+
+
+CanvasExtract.prototype.base64 = function base64(target, format, quality) {
+  return this.canvas(target).toDataURL(format, quality);
+};
+/**
+ * Creates a Canvas element, renders this target to it and then returns it.
+ *
+ * @param {PIXI.DisplayObject|PIXI.RenderTexture} target - A displayObject or renderTexture
+ *  to convert. If left empty will use the main renderer
+ * @return {HTMLCanvasElement} A Canvas element with the texture rendered on.
+ */
+
+
+CanvasExtract.prototype.canvas = function canvas(target) {
+  var renderer = this.renderer;
+  var context;
+  var resolution;
+  var frame;
+  var renderTexture;
+
+  if (target) {
+    if (target instanceof _core.RenderTexture) {
+      renderTexture = target;
+    } else {
+      renderTexture = renderer.generateTexture(target);
+    }
+  }
+
+  if (renderTexture) {
+    context = renderTexture.baseTexture._canvasRenderTarget.context;
+    resolution = renderTexture.baseTexture._canvasRenderTarget.resolution;
+    frame = renderTexture.frame;
+  } else {
+    context = renderer.rootContext;
+    resolution = renderer.resolution;
+    frame = TEMP_RECT;
+    frame.width = this.renderer.width;
+    frame.height = this.renderer.height;
+  }
+
+  var width = Math.floor(frame.width * resolution);
+  var height = Math.floor(frame.height * resolution);
+  var canvasBuffer = new _utils.CanvasRenderTarget(width, height, 1);
+  var canvasData = context.getImageData(frame.x * resolution, frame.y * resolution, width, height);
+  canvasBuffer.context.putImageData(canvasData, 0, 0); // send the canvas back..
+
+  return canvasBuffer.canvas;
+};
+/**
+ * Will return a one-dimensional array containing the pixel data of the entire texture in RGBA
+ * order, with integer values between 0 and 255 (included).
+ *
+ * @param {PIXI.DisplayObject|PIXI.RenderTexture} target - A displayObject or renderTexture
+ *  to convert. If left empty will use the main renderer
+ * @return {Uint8ClampedArray} One-dimensional array containing the pixel data of the entire texture
+ */
+
+
+CanvasExtract.prototype.pixels = function pixels(target) {
+  var renderer = this.renderer;
+  var context;
+  var resolution;
+  var frame;
+  var renderTexture;
+
+  if (target) {
+    if (target instanceof _core.RenderTexture) {
+      renderTexture = target;
+    } else {
+      renderTexture = renderer.generateTexture(target);
+    }
+  }
+
+  if (renderTexture) {
+    context = renderTexture.baseTexture._canvasRenderTarget.context;
+    resolution = renderTexture.baseTexture._canvasRenderTarget.resolution;
+    frame = renderTexture.frame;
+  } else {
+    context = renderer.rootContext;
+    frame = TEMP_RECT;
+    frame.width = renderer.width;
+    frame.height = renderer.height;
+  }
+
+  return context.getImageData(0, 0, frame.width * resolution, frame.height * resolution).data;
+};
+/**
+ * Destroys the extract
+ *
+ */
+
+
+CanvasExtract.prototype.destroy = function destroy() {
+  this.renderer.extract = null;
+  this.renderer = null;
+};
+},{"@pixi/core":"../node_modules/@pixi/core/lib/core.es.js","@pixi/utils":"../node_modules/@pixi/utils/lib/utils.es.js","@pixi/math":"../node_modules/@pixi/math/lib/math.es.js"}],"../node_modules/@pixi/canvas-prepare/lib/canvas-prepare.es.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.CanvasPrepare = void 0;
+
+var _core = require("@pixi/core");
+
+var _prepare = require("@pixi/prepare");
+
+/*!
+ * @pixi/canvas-prepare - v5.1.2
+ * Compiled Sat, 24 Aug 2019 01:06:18 UTC
+ *
+ * @pixi/canvas-prepare is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+var CANVAS_START_SIZE = 16;
+/**
+ * The prepare manager provides functionality to upload content to the GPU.
+ *
+ * This cannot be done directly for Canvas like in WebGL, but the effect can be achieved by drawing
+ * textures to an offline canvas. This draw call will force the texture to be moved onto the GPU.
+ *
+ * An instance of this class is automatically created by default, and can be found at `renderer.plugins.prepare`
+ *
+ * @class
+ * @extends PIXI.prepare.BasePrepare
+ * @memberof PIXI.prepare
+ */
+
+var CanvasPrepare =
+/*@__PURE__*/
+function (BasePrepare) {
+  function CanvasPrepare(renderer) {
+    BasePrepare.call(this, renderer);
+    this.uploadHookHelper = this;
+    /**
+    * An offline canvas to render textures to
+    * @type {HTMLCanvasElement}
+    * @private
+    */
+
+    this.canvas = document.createElement('canvas');
+    this.canvas.width = CANVAS_START_SIZE;
+    this.canvas.height = CANVAS_START_SIZE;
+    /**
+     * The context to the canvas
+    * @type {CanvasRenderingContext2D}
+    * @private
+    */
+
+    this.ctx = this.canvas.getContext('2d'); // Add textures to upload
+
+    this.registerUploadHook(uploadBaseTextures);
+  }
+
+  if (BasePrepare) CanvasPrepare.__proto__ = BasePrepare;
+  CanvasPrepare.prototype = Object.create(BasePrepare && BasePrepare.prototype);
+  CanvasPrepare.prototype.constructor = CanvasPrepare;
+  /**
+   * Destroys the plugin, don't use after this.
+   *
+   */
+
+  CanvasPrepare.prototype.destroy = function destroy() {
+    BasePrepare.prototype.destroy.call(this);
+    this.ctx = null;
+    this.canvas = null;
+  };
+
+  return CanvasPrepare;
+}(_prepare.BasePrepare);
+/**
+ * Built-in hook to upload PIXI.Texture objects to the GPU.
+ *
+ * @private
+ * @param {*} prepare - Instance of CanvasPrepare
+ * @param {*} item - Item to check
+ * @return {boolean} If item was uploaded.
+ */
+
+
+exports.CanvasPrepare = CanvasPrepare;
+
+function uploadBaseTextures(prepare, item) {
+  if (item instanceof _core.BaseTexture) {
+    var image = item.source; // Sometimes images (like atlas images) report a size of zero, causing errors on windows phone.
+    // So if the width or height is equal to zero then use the canvas size
+    // Otherwise use whatever is smaller, the image dimensions or the canvas dimensions.
+
+    var imageWidth = image.width === 0 ? prepare.canvas.width : Math.min(prepare.canvas.width, image.width);
+    var imageHeight = image.height === 0 ? prepare.canvas.height : Math.min(prepare.canvas.height, image.height); // Only a small subsections is required to be drawn to have the whole texture uploaded to the GPU
+    // A smaller draw can be faster.
+
+    prepare.ctx.drawImage(image, 0, 0, imageWidth, imageHeight, 0, 0, prepare.canvas.width, prepare.canvas.height);
+    return true;
+  }
+
+  return false;
+}
+},{"@pixi/core":"../node_modules/@pixi/core/lib/core.es.js","@pixi/prepare":"../node_modules/@pixi/prepare/lib/prepare.es.js"}],"../node_modules/@pixi/canvas-sprite-tiling/lib/canvas-sprite-tiling.es.js":[function(require,module,exports) {
+"use strict";
+
+var _spriteTiling = require("@pixi/sprite-tiling");
+
+var _canvasRenderer = require("@pixi/canvas-renderer");
+
+var _utils = require("@pixi/utils");
+
+/*!
+ * @pixi/canvas-sprite-tiling - v5.1.2
+ * Compiled Sat, 24 Aug 2019 01:06:18 UTC
+ *
+ * @pixi/canvas-sprite-tiling is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+
+/**
+ * Renders the object using the Canvas renderer
+ *
+ * @protected
+ * @function _renderCanvas
+ * @memberof PIXI.TilingSprite#
+ * @param {PIXI.CanvasRenderer} renderer - a reference to the canvas renderer
+ */
+_spriteTiling.TilingSprite.prototype._renderCanvas = function _renderCanvas(renderer) {
+  var texture = this._texture;
+
+  if (!texture.baseTexture.valid) {
+    return;
+  }
+
+  var context = renderer.context;
+  var transform = this.worldTransform;
+  var resolution = renderer.resolution;
+  var baseTexture = texture.baseTexture;
+  var source = baseTexture.getDrawableSource();
+  var baseTextureResolution = baseTexture.resolution;
+  var modX = this.tilePosition.x / this.tileScale.x % texture._frame.width * baseTextureResolution;
+  var modY = this.tilePosition.y / this.tileScale.y % texture._frame.height * baseTextureResolution; // create a nice shiny pattern!
+
+  if (this._textureID !== this._texture._updateID || this._cachedTint !== this.tint) {
+    this._textureID = this._texture._updateID; // cut an object from a spritesheet..
+
+    var tempCanvas = new _utils.CanvasRenderTarget(texture._frame.width, texture._frame.height, baseTextureResolution); // Tint the tiling sprite
+
+    if (this.tint !== 0xFFFFFF) {
+      this._tintedCanvas = _canvasRenderer.CanvasTinter.getTintedCanvas(this, this.tint);
+      tempCanvas.context.drawImage(this._tintedCanvas, 0, 0);
+    } else {
+      tempCanvas.context.drawImage(source, -texture._frame.x * baseTextureResolution, -texture._frame.y * baseTextureResolution);
+    }
+
+    this._cachedTint = this.tint;
+    this._canvasPattern = tempCanvas.context.createPattern(tempCanvas.canvas, 'repeat');
+  } // set context state..
+
+
+  context.globalAlpha = this.worldAlpha;
+  context.setTransform(transform.a * resolution, transform.b * resolution, transform.c * resolution, transform.d * resolution, transform.tx * resolution, transform.ty * resolution);
+  renderer.setBlendMode(this.blendMode); // fill the pattern!
+
+  context.fillStyle = this._canvasPattern; // TODO - this should be rolled into the setTransform above..
+
+  context.scale(this.tileScale.x / baseTextureResolution, this.tileScale.y / baseTextureResolution);
+  var anchorX = this.anchor.x * -this._width;
+  var anchorY = this.anchor.y * -this._height;
+
+  if (this.uvRespectAnchor) {
+    context.translate(modX, modY);
+    context.fillRect(-modX + anchorX, -modY + anchorY, this._width / this.tileScale.x * baseTextureResolution, this._height / this.tileScale.y * baseTextureResolution);
+  } else {
+    context.translate(modX + anchorX, modY + anchorY);
+    context.fillRect(-modX, -modY, this._width / this.tileScale.x * baseTextureResolution, this._height / this.tileScale.y * baseTextureResolution);
+  }
+};
+},{"@pixi/sprite-tiling":"../node_modules/@pixi/sprite-tiling/lib/sprite-tiling.es.js","@pixi/canvas-renderer":"../node_modules/@pixi/canvas-renderer/lib/canvas-renderer.es.js","@pixi/utils":"../node_modules/@pixi/utils/lib/utils.es.js"}],"../node_modules/@pixi/canvas-particles/lib/canvas-particles.es.js":[function(require,module,exports) {
+"use strict";
+
+var _particles = require("@pixi/particles");
+
+/*!
+ * @pixi/canvas-particles - v5.1.2
+ * Compiled Sat, 24 Aug 2019 01:06:18 UTC
+ *
+ * @pixi/canvas-particles is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+
+/**
+ * Renders the object using the Canvas renderer
+ * @method renderCanvas
+ * @memberof PIXI.ParticleContainer#
+ * @private
+ * @param {PIXI.CanvasRenderer} renderer - a reference to the canvas renderer
+ */
+_particles.ParticleContainer.prototype.renderCanvas = function renderCanvas(renderer) {
+  if (!this.visible || this.worldAlpha <= 0 || !this.children.length || !this.renderable) {
+    return;
+  }
+
+  var context = renderer.context;
+  var transform = this.worldTransform;
+  var isRotated = true;
+  var positionX = 0;
+  var positionY = 0;
+  var finalWidth = 0;
+  var finalHeight = 0;
+  renderer.setBlendMode(this.blendMode);
+  context.globalAlpha = this.worldAlpha;
+  this.displayObjectUpdateTransform();
+
+  for (var i = 0; i < this.children.length; ++i) {
+    var child = this.children[i];
+
+    if (!child.visible) {
+      continue;
+    }
+
+    var frame = child._texture.frame;
+    context.globalAlpha = this.worldAlpha * child.alpha;
+
+    if (child.rotation % (Math.PI * 2) === 0) {
+      // this is the fastest  way to optimise! - if rotation is 0 then we can avoid any kind of setTransform call
+      if (isRotated) {
+        context.setTransform(transform.a, transform.b, transform.c, transform.d, transform.tx * renderer.resolution, transform.ty * renderer.resolution);
+        isRotated = false;
+      }
+
+      positionX = child.anchor.x * (-frame.width * child.scale.x) + child.position.x + 0.5;
+      positionY = child.anchor.y * (-frame.height * child.scale.y) + child.position.y + 0.5;
+      finalWidth = frame.width * child.scale.x;
+      finalHeight = frame.height * child.scale.y;
+    } else {
+      if (!isRotated) {
+        isRotated = true;
+      }
+
+      child.displayObjectUpdateTransform();
+      var childTransform = child.worldTransform;
+
+      if (this.roundPixels) {
+        context.setTransform(childTransform.a, childTransform.b, childTransform.c, childTransform.d, childTransform.tx * renderer.resolution | 0, childTransform.ty * renderer.resolution | 0);
+      } else {
+        context.setTransform(childTransform.a, childTransform.b, childTransform.c, childTransform.d, childTransform.tx * renderer.resolution, childTransform.ty * renderer.resolution);
+      }
+
+      positionX = child.anchor.x * -frame.width + 0.5;
+      positionY = child.anchor.y * -frame.height + 0.5;
+      finalWidth = frame.width;
+      finalHeight = frame.height;
+    }
+
+    var resolution = child._texture.baseTexture.resolution;
+    context.drawImage(child._texture.baseTexture.source, frame.x * resolution, frame.y * resolution, frame.width * resolution, frame.height * resolution, positionX * renderer.resolution, positionY * renderer.resolution, finalWidth * renderer.resolution, finalHeight * renderer.resolution);
+  }
+};
+},{"@pixi/particles":"../node_modules/@pixi/particles/lib/particles.es.js"}],"../node_modules/@pixi/canvas-display/lib/canvas-display.es.js":[function(require,module,exports) {
+"use strict";
+
+var _display = require("@pixi/display");
+
+/*!
+ * @pixi/canvas-display - v5.1.2
+ * Compiled Sat, 24 Aug 2019 01:06:18 UTC
+ *
+ * @pixi/canvas-display is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+
+/**
+ * To be overridden by the subclass
+ * @method _renderCanvas
+ * @memberof PIXI.Container#
+ * @protected
+ * @param {PIXI.CanvasRenderer} renderer - The renderer
+ */
+_display.Container.prototype._renderCanvas = function _renderCanvas(renderer) // eslint-disable-line no-unused-vars
+{// this is where content itself gets rendered...
+};
+/**
+ * Renders the object using the Canvas renderer
+ * @method renderCanvas
+ * @memberof PIXI.Container#
+ * @param {PIXI.CanvasRenderer} renderer - The renderer
+ */
+
+
+_display.Container.prototype.renderCanvas = function renderCanvas(renderer) {
+  // if not visible or the alpha is 0 then no need to render this
+  if (!this.visible || this.worldAlpha <= 0 || !this.renderable) {
+    return;
+  }
+
+  if (this._mask) {
+    renderer.maskManager.pushMask(this._mask);
+  }
+
+  this._renderCanvas(renderer);
+
+  for (var i = 0, j = this.children.length; i < j; ++i) {
+    this.children[i].renderCanvas(renderer);
+  }
+
+  if (this._mask) {
+    renderer.maskManager.popMask(renderer);
+  }
+};
+/**
+ * Renders the object using the Canvas renderer
+ * @method renderCanvas
+ * @memberof PIXI.Container#
+ * @param {PIXI.CanvasRenderer} renderer - The renderer
+ */
+
+
+_display.DisplayObject.prototype.renderCanvas = function renderCanvas(renderer) // eslint-disable-line no-unused-vars
+{// OVERWRITE;
+};
+},{"@pixi/display":"../node_modules/@pixi/display/lib/display.es.js"}],"../node_modules/@pixi/canvas-text/lib/canvas-text.es.js":[function(require,module,exports) {
+"use strict";
+
+var _text = require("@pixi/text");
+
+var _sprite = require("@pixi/sprite");
+
+/*!
+ * @pixi/canvas-text - v5.1.2
+ * Compiled Sat, 24 Aug 2019 01:06:18 UTC
+ *
+ * @pixi/canvas-text is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+
+/**
+ * Renders the object using the Canvas renderer
+ *
+ * @method _renderCanvas
+ * @memberof PIXI.Text#
+ * @private
+ * @param {PIXI.CanvasRenderer} renderer - The renderer
+ */
+_text.Text.prototype._renderCanvas = function _renderCanvas(renderer) {
+  if (this._autoResolution && this._resolution !== renderer.resolution) {
+    this._resolution = renderer.resolution;
+    this.dirty = true;
+  }
+
+  this.updateText(true);
+
+  _sprite.Sprite.prototype._renderCanvas.call(this, renderer);
+};
+},{"@pixi/text":"../node_modules/@pixi/text/lib/text.es.js","@pixi/sprite":"../node_modules/@pixi/sprite/lib/sprite.es.js"}],"../node_modules/pixi.js-legacy/lib/pixi-legacy.es.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _exportNames = {
+  CanvasRenderer: true,
+  CanvasTinter: true,
+  CanvasMeshRenderer: true,
+  CanvasGraphicsRenderer: true,
+  CanvasSpriteRenderer: true
+};
+Object.defineProperty(exports, "CanvasRenderer", {
+  enumerable: true,
+  get: function () {
+    return _canvasRenderer.CanvasRenderer;
+  }
+});
+Object.defineProperty(exports, "CanvasTinter", {
+  enumerable: true,
+  get: function () {
+    return _canvasRenderer.CanvasTinter;
+  }
+});
+Object.defineProperty(exports, "CanvasMeshRenderer", {
+  enumerable: true,
+  get: function () {
+    return _canvasMesh.CanvasMeshRenderer;
+  }
+});
+Object.defineProperty(exports, "CanvasGraphicsRenderer", {
+  enumerable: true,
+  get: function () {
+    return _canvasGraphics.CanvasGraphicsRenderer;
+  }
+});
+Object.defineProperty(exports, "CanvasSpriteRenderer", {
+  enumerable: true,
+  get: function () {
+    return _canvasSprite.CanvasSpriteRenderer;
+  }
+});
+
+var _pixi = require("pixi.js");
+
+Object.keys(_pixi).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _pixi[key];
+    }
+  });
+});
+
+var _canvasRenderer = require("@pixi/canvas-renderer");
+
+var _canvasMesh = require("@pixi/canvas-mesh");
+
+var _canvasGraphics = require("@pixi/canvas-graphics");
+
+var _canvasSprite = require("@pixi/canvas-sprite");
+
+var canvasExtract = _interopRequireWildcard(require("@pixi/canvas-extract"));
+
+var canvasPrepare = _interopRequireWildcard(require("@pixi/canvas-prepare"));
+
+require("@pixi/canvas-sprite-tiling");
+
+require("@pixi/canvas-particles");
+
+require("@pixi/canvas-display");
+
+require("@pixi/canvas-text");
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+/*!
+ * pixi.js-legacy - v5.1.2
+ * Compiled Sat, 24 Aug 2019 01:06:18 UTC
+ *
+ * pixi.js-legacy is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+_canvasRenderer.CanvasRenderer.registerPlugin('accessibility', _pixi.accessibility.AccessibilityManager);
+
+_canvasRenderer.CanvasRenderer.registerPlugin('extract', canvasExtract.CanvasExtract);
+
+_canvasRenderer.CanvasRenderer.registerPlugin('graphics', _canvasGraphics.CanvasGraphicsRenderer);
+
+_canvasRenderer.CanvasRenderer.registerPlugin('interaction', _pixi.interaction.InteractionManager);
+
+_canvasRenderer.CanvasRenderer.registerPlugin('mesh', _canvasMesh.CanvasMeshRenderer);
+
+_canvasRenderer.CanvasRenderer.registerPlugin('prepare', canvasPrepare.CanvasPrepare);
+
+_canvasRenderer.CanvasRenderer.registerPlugin('sprite', _canvasSprite.CanvasSpriteRenderer);
+
+Object.assign(_pixi.prepare, canvasPrepare);
+Object.assign(_pixi.extract, canvasExtract);
+},{"pixi.js":"../node_modules/pixi.js/lib/pixi.es.js","@pixi/canvas-renderer":"../node_modules/@pixi/canvas-renderer/lib/canvas-renderer.es.js","@pixi/canvas-mesh":"../node_modules/@pixi/canvas-mesh/lib/canvas-mesh.es.js","@pixi/canvas-graphics":"../node_modules/@pixi/canvas-graphics/lib/canvas-graphics.es.js","@pixi/canvas-sprite":"../node_modules/@pixi/canvas-sprite/lib/canvas-sprite.es.js","@pixi/canvas-extract":"../node_modules/@pixi/canvas-extract/lib/canvas-extract.es.js","@pixi/canvas-prepare":"../node_modules/@pixi/canvas-prepare/lib/canvas-prepare.es.js","@pixi/canvas-sprite-tiling":"../node_modules/@pixi/canvas-sprite-tiling/lib/canvas-sprite-tiling.es.js","@pixi/canvas-particles":"../node_modules/@pixi/canvas-particles/lib/canvas-particles.es.js","@pixi/canvas-display":"../node_modules/@pixi/canvas-display/lib/canvas-display.es.js","@pixi/canvas-text":"../node_modules/@pixi/canvas-text/lib/canvas-text.es.js"}],"components/Robot.tsx":[function(require,module,exports) {
 "use strict";
 
 var __importDefault = this && this.__importDefault || function (mod) {
@@ -90885,9 +90078,9 @@ const react_1 = __importDefault(require("react"));
 
 const react_pixi_fiber_1 = require("react-pixi-fiber");
 
-const robot_png_1 = __importDefault(require("./robot.png"));
+const robot_png_1 = __importDefault(require("./assets/robot.png"));
 
-const PIXI = __importStar(require("pixi.js"));
+const PIXI = __importStar(require("pixi.js-legacy"));
 
 const centerAnchor = new PIXI.Point(0.5, 0.5);
 
@@ -90902,7 +90095,7 @@ const Robot = props => {
 };
 
 exports.default = react_pixi_fiber_1.withApp(Robot);
-},{"react":"../node_modules/react/index.js","react-pixi-fiber":"../node_modules/react-pixi-fiber/index.js","./robot.png":"components/robot.png","pixi.js":"../node_modules/pixi.js/lib/pixi.es.js"}],"components/context/RobotContext.tsx":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-pixi-fiber":"../node_modules/react-pixi-fiber/index.js","./assets/robot.png":"components/assets/robot.png","pixi.js-legacy":"../node_modules/pixi.js-legacy/lib/pixi-legacy.es.js"}],"components/context/RobotContext.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -90915,9 +90108,24 @@ const RobotContext = react_1.createContext([{
   visible: false,
   xPosition: 0,
   yPosition: 0,
-  direction: 0
+  direction: 'N'
 }, () => {}]);
 exports.default = RobotContext;
+},{"react":"../node_modules/react/index.js"}],"components/context/GridContext.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = require("react");
+
+const GridContext = react_1.createContext([{
+  height: 5,
+  width: 5,
+  unitSize: 100
+}, () => {}]);
+exports.default = GridContext;
 },{"react":"../node_modules/react/index.js"}],"components/Table.tsx":[function(require,module,exports) {
 "use strict";
 
@@ -90949,35 +90157,34 @@ Object.defineProperty(exports, "__esModule", {
 
 const react_1 = __importStar(require("react"));
 
-const styled_components_1 = __importDefault(require("styled-components"));
-
 const react_pixi_fiber_1 = require("react-pixi-fiber");
 
 const Robot_1 = __importDefault(require("./Robot"));
 
 const RobotContext_1 = __importDefault(require("./context/RobotContext"));
 
-const Table = (_ref) => {
-  let grid = _ref.grid;
+const GridContext_1 = __importDefault(require("./context/GridContext"));
 
+const Table = () => {
   const _react_1$useContext = react_1.useContext(RobotContext_1.default),
         _react_1$useContext2 = _slicedToArray(_react_1$useContext, 1),
         robotState = _react_1$useContext2[0];
 
+  const _react_1$useContext3 = react_1.useContext(GridContext_1.default),
+        _react_1$useContext4 = _slicedToArray(_react_1$useContext3, 1),
+        gridState = _react_1$useContext4[0];
+
   const robotWrapper = react_1.default.createElement(Robot_1.default, {
-    y: robotState.xPosition * grid.unitSize + grid.unitSize / 2,
-    x: robotState.yPosition * grid.unitSize + grid.unitSize / 2,
+    y: robotState.xPosition * gridState.unitSize + gridState.unitSize / 2,
+    x: robotState.yPosition * gridState.unitSize + gridState.unitSize / 2,
     rotation: robotState.rotation
   });
   const placeholderWrapper = react_1.default.createElement(react_pixi_fiber_1.Sprite, null);
-  return react_1.default.createElement(Wrapper, {
-    style: {
-      width: `${grid.width * grid.unitSize}px`,
-      height: `${grid.height * grid.unitSize}px`
-    }
+  return react_1.default.createElement("section", {
+    className: "stage-wrapper"
   }, react_1.default.createElement(react_pixi_fiber_1.Stage, {
-    width: grid.width * grid.unitSize,
-    height: grid.height * grid.unitSize,
+    width: gridState.height * gridState.unitSize,
+    height: gridState.width * gridState.unitSize,
     options: {
       backgroundColor: 0xffffff
     }
@@ -90985,21 +90192,7 @@ const Table = (_ref) => {
 };
 
 exports.default = Table;
-const Wrapper = styled_components_1.default.section`
-  border: 1px solid ${(_ref2) => {
-  let theme = _ref2.theme;
-  return theme.styles.colors.leadColorLight;
-}};
-  border-radius: 5px;
-  margin: auto;
-  overflow: scroll;
-  transform-origin: center;
-  transform: rotate(-90deg);
-  @media (min-width: 600px) {
-    overflow: hidden;
-  }
-`;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react-pixi-fiber":"../node_modules/react-pixi-fiber/index.js","./Robot":"components/Robot.tsx","./context/RobotContext":"components/context/RobotContext.tsx"}],"components/Report.tsx":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-pixi-fiber":"../node_modules/react-pixi-fiber/index.js","./Robot":"components/Robot.tsx","./context/RobotContext":"components/context/RobotContext.tsx","./context/GridContext":"components/context/GridContext.tsx"}],"components/Report.tsx":[function(require,module,exports) {
 "use strict";
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
@@ -91030,8 +90223,6 @@ Object.defineProperty(exports, "__esModule", {
 
 const react_1 = __importStar(require("react"));
 
-const styled_components_1 = __importDefault(require("styled-components"));
-
 const RobotContext_1 = __importDefault(require("./context/RobotContext"));
 
 const Report = () => {
@@ -91039,22 +90230,33 @@ const Report = () => {
         _react_1$useContext2 = _slicedToArray(_react_1$useContext, 1),
         robotState = _react_1$useContext2[0];
 
-  return react_1.default.createElement(Container, null, react_1.default.createElement(ReportElement, null, react_1.default.createElement("p", null, "X position:"), react_1.default.createElement("p", null, react_1.default.createElement("b", null, robotState.xPosition))), react_1.default.createElement(ReportElement, null, react_1.default.createElement("p", null, "Y position:"), react_1.default.createElement("p", null, react_1.default.createElement("b", null, robotState.yPosition))), react_1.default.createElement(ReportElement, null, react_1.default.createElement("p", null, "Direction:"), react_1.default.createElement("p", null, react_1.default.createElement("b", null, robotState.direction))));
+  return react_1.default.createElement("div", {
+    className: "wrapper--report"
+  }, react_1.default.createElement("div", {
+    className: "layout--main"
+  }, react_1.default.createElement("p", null, "X position:"), react_1.default.createElement("p", null, react_1.default.createElement("b", null, robotState.xPosition))), react_1.default.createElement("div", {
+    className: "layout--main"
+  }, react_1.default.createElement("p", null, "Y position:"), react_1.default.createElement("p", null, react_1.default.createElement("b", null, robotState.yPosition))), react_1.default.createElement("div", {
+    className: "layout--main"
+  }, react_1.default.createElement("p", null, "Direction:"), react_1.default.createElement("p", null, react_1.default.createElement("b", null, robotState.direction))));
 };
 
 exports.default = Report;
-const Container = styled_components_1.default.div`
-  width: 200px;
-  margin: ${(_ref) => {
-  let theme = _ref.theme;
-  return theme.styles.boxModel.full;
-}};
-`;
-const ReportElement = styled_components_1.default.div`
-  display: flex;
-  justify-content: space-between;
-`;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","./context/RobotContext":"components/context/RobotContext.tsx"}],"components/Controlers.tsx":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./context/RobotContext":"components/context/RobotContext.tsx"}],"components/context/KeyContext.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = require("react");
+
+const KeyContext = react_1.createContext([{
+  key: '',
+  count: 0
+}, () => {}]);
+exports.default = KeyContext;
+},{"react":"../node_modules/react/index.js"}],"components/MovmentControler.tsx":[function(require,module,exports) {
 "use strict";
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -91091,43 +90293,32 @@ Object.defineProperty(exports, "__esModule", {
 
 const react_1 = __importStar(require("react"));
 
-const styled_components_1 = __importDefault(require("styled-components"));
-
 const RobotContext_1 = __importDefault(require("./context/RobotContext"));
 
-const Report_1 = __importDefault(require("./Report"));
+const GridContext_1 = __importDefault(require("./context/GridContext"));
 
-const Controlers = (_ref) => {
-  let grid = _ref.grid;
+const KeyContext_1 = __importDefault(require("./context/KeyContext"));
+
+const MovementControler = (_ref) => {
+  let tests = _ref.tests;
 
   const _react_1$useContext = react_1.useContext(RobotContext_1.default),
         _react_1$useContext2 = _slicedToArray(_react_1$useContext, 2),
         robotState = _react_1$useContext2[0],
         setRobotState = _react_1$useContext2[1];
 
-  const _react_1$useState = react_1.useState(false),
-        _react_1$useState2 = _slicedToArray(_react_1$useState, 2),
-        controlers = _react_1$useState2[0],
-        setControlers = _react_1$useState2[1];
+  const _react_1$useContext3 = react_1.useContext(KeyContext_1.default),
+        _react_1$useContext4 = _slicedToArray(_react_1$useContext3, 1),
+        currentKey = _react_1$useContext4[0];
 
-  const _react_1$useState3 = react_1.useState(false),
-        _react_1$useState4 = _slicedToArray(_react_1$useState3, 2),
-        error = _react_1$useState4[0],
-        setError = _react_1$useState4[1];
-
-  const _react_1$useState5 = react_1.useState({
-    setX: '',
-    setY: '',
-    setDirection: ''
-  }),
-        _react_1$useState6 = _slicedToArray(_react_1$useState5, 2),
-        position = _react_1$useState6[0],
-        setPosition = _react_1$useState6[1];
+  const _react_1$useContext5 = react_1.useContext(GridContext_1.default),
+        _react_1$useContext6 = _slicedToArray(_react_1$useContext5, 1),
+        gridState = _react_1$useContext6[0];
 
   const move = () => {
     switch (robotState.direction) {
       case 'N':
-        if (robotState.yPosition < grid.height - 1) {
+        if (robotState.yPosition < gridState.height - 1) {
           setRobotState(_objectSpread({}, robotState, {
             yPosition: robotState.yPosition + 1
           }));
@@ -91136,7 +90327,7 @@ const Controlers = (_ref) => {
         break;
 
       case 'E':
-        if (robotState.xPosition < grid.width - 1) {
+        if (robotState.xPosition < gridState.width - 1) {
           setRobotState(_objectSpread({}, robotState, {
             xPosition: robotState.xPosition + 1
           }));
@@ -91200,6 +90391,117 @@ const Controlers = (_ref) => {
     }
   };
 
+  react_1.useEffect(() => {
+    switch (currentKey.key) {
+      case 'w':
+        move();
+        break;
+
+      case 'a':
+        rotate('left');
+        break;
+
+      case 'd':
+        rotate('right');
+        break;
+
+      default:
+        break;
+    }
+  }, [currentKey.count]);
+  const testRender = react_1.default.createElement(react_1.default.Fragment, null, react_1.default.createElement("div", {
+    "data-testid": "robotHookTest"
+  }, `y: ${String(robotState.yPosition)}, x: ${String(robotState.xPosition)}, d: ${String(robotState.direction)}`));
+  return react_1.default.createElement("div", {
+    className: "wrapper--buttons"
+  }, react_1.default.createElement("button", {
+    className: "button",
+    onClick: () => rotate('left'),
+    "data-testid": "turnLeftTest"
+  }, "Left (A)"), react_1.default.createElement("button", {
+    className: "button",
+    onClick: move,
+    "data-testid": "moveTest"
+  }, "Move (W)"), react_1.default.createElement("button", {
+    className: "button",
+    onClick: () => rotate('right'),
+    "data-testid": "turnRightTest"
+  }, "Right (D)"), tests === true ? testRender : '');
+};
+
+exports.default = MovementControler;
+},{"react":"../node_modules/react/index.js","./context/RobotContext":"components/context/RobotContext.tsx","./context/GridContext":"components/context/GridContext.tsx","./context/KeyContext":"components/context/KeyContext.tsx"}],"components/PlacementControler.tsx":[function(require,module,exports) {
+"use strict";
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  result["default"] = mod;
+  return result;
+};
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importStar(require("react"));
+
+const RobotContext_1 = __importDefault(require("./context/RobotContext"));
+
+const GridContext_1 = __importDefault(require("./context/GridContext"));
+
+const PlacementControler = (_ref) => {
+  let parentCallback = _ref.parentCallback,
+      tests = _ref.tests;
+
+  const _react_1$useContext = react_1.useContext(RobotContext_1.default),
+        _react_1$useContext2 = _slicedToArray(_react_1$useContext, 2),
+        robotState = _react_1$useContext2[0],
+        setRobotState = _react_1$useContext2[1];
+
+  const _react_1$useContext3 = react_1.useContext(GridContext_1.default),
+        _react_1$useContext4 = _slicedToArray(_react_1$useContext3, 1),
+        gridState = _react_1$useContext4[0];
+
+  const _react_1$useState = react_1.useState({
+    errorX: false,
+    errorY: false,
+    errorDir: false
+  }),
+        _react_1$useState2 = _slicedToArray(_react_1$useState, 2),
+        error = _react_1$useState2[0],
+        setError = _react_1$useState2[1];
+
+  const _react_1$useState3 = react_1.useState({
+    setX: '',
+    setY: '',
+    setDirection: ''
+  }),
+        _react_1$useState4 = _slicedToArray(_react_1$useState3, 2),
+        position = _react_1$useState4[0],
+        setPosition = _react_1$useState4[1];
+
   const convertDirection = latinValue => {
     switch (latinValue) {
       case 'N':
@@ -91220,9 +90522,8 @@ const Controlers = (_ref) => {
   };
 
   const placeRobot = () => {
-    if (position.setX && position.setY && position.setDirection) {
-      setError(false);
-      setControlers(true);
+    if (!error.errorX && !error.errorY && !error.errorDir && position.setX && position.setY && position.setDirection) {
+      parentCallback(true);
       setRobotState({
         visible: true,
         direction: position.setDirection,
@@ -91230,15 +90531,13 @@ const Controlers = (_ref) => {
         xPosition: Number(position.setX),
         yPosition: Number(position.setY)
       });
-    } else {
-      setError(true);
     }
   };
 
   const validateInputs = field => {
     const value = Number(field.value);
-    const xReg = RegExp(`[0-${grid.width - 1}]`);
-    const yReg = RegExp(`[0-${grid.height - 1}]`);
+    const xReg = RegExp(`[0-${gridState.width - 1}]`);
+    const yReg = RegExp(`[0-${gridState.height - 1}]`);
     const dirReg = RegExp('^[NEWS]{1}$');
 
     switch (field.name) {
@@ -91247,12 +90546,16 @@ const Controlers = (_ref) => {
           setX: field.value
         }));
 
-        if (xReg.test(field.value) && value < grid.width && Number.isInteger(value)) {
-          setError(false);
+        if (xReg.test(field.value) && value < gridState.width && Number.isInteger(value)) {
+          setError(_objectSpread({}, error, {
+            errorX: false
+          }));
           return true;
         }
 
-        setError(true);
+        setError(_objectSpread({}, error, {
+          errorX: true
+        }));
         return false;
 
       case 'y_value':
@@ -91260,12 +90563,16 @@ const Controlers = (_ref) => {
           setY: field.value
         }));
 
-        if (yReg.test(field.value) && value < grid.height && Number.isInteger(value)) {
-          setError(false);
+        if (yReg.test(field.value) && value < gridState.height && Number.isInteger(value)) {
+          setError(_objectSpread({}, error, {
+            errorY: false
+          }));
           return true;
         }
 
-        setError(true);
+        setError(_objectSpread({}, error, {
+          errorY: true
+        }));
         return false;
 
       case 'direction':
@@ -91274,11 +90581,15 @@ const Controlers = (_ref) => {
         }));
 
         if (dirReg.test(field.value)) {
-          setError(false);
+          setError(_objectSpread({}, error, {
+            errorDir: false
+          }));
           return true;
         }
 
-        setError(true);
+        setError(_objectSpread({}, error, {
+          errorDir: true
+        }));
         return false;
 
       default:
@@ -91286,134 +90597,140 @@ const Controlers = (_ref) => {
     }
   };
 
-  const keyControlers = key => {
-    switch (key) {
-      case 'w':
-        move();
-        break;
-
-      case 'a':
-        rotate('left');
-        break;
-
-      case 'd':
-        rotate('right');
-        break;
-
-      default:
-        break;
-    }
-  };
-
-  const controlersWrapper = react_1.default.createElement(ButtonsWrapper, null, react_1.default.createElement("button", {
-    onClick: () => rotate('left')
-  }, "Left (A)"), react_1.default.createElement("button", {
-    onClick: move
-  }, "Move (W)"), react_1.default.createElement("button", {
-    onClick: () => rotate('right')
-  }, "Right (D)"));
-  return react_1.default.createElement(Container, {
-    onKeyUp: e => keyControlers(e.key)
-  }, react_1.default.createElement("section", null, react_1.default.createElement(InputsWrapper, null, react_1.default.createElement("label", null, "Provide X coordinate", react_1.default.createElement("input", {
+  const testRender = react_1.default.createElement(react_1.default.Fragment, null, react_1.default.createElement("div", {
+    "data-testid": "errorHookTest"
+  }, `x: ${String(error.errorX)}, y: ${String(error.errorY)}, d:${String(error.errorDir)}`), react_1.default.createElement("div", {
+    "data-testid": "positionHookTest"
+  }, `x: ${String(position.setX)}, y: ${String(position.setY)}, d:${String(position.setDirection)}`));
+  return react_1.default.createElement(react_1.default.Fragment, null, react_1.default.createElement("label", null, "Provide X coordinate", react_1.default.createElement("input", {
+    "data-testid": "xDataInput",
+    className: "input",
     value: position.setX,
     name: "x_value",
-    placeholder: `Integer from 0 to ${grid.width - 1}`,
+    type: "number",
+    placeholder: `Integer from 0 to ${gridState.width - 1}`,
     onChange: e => validateInputs(e.currentTarget)
   })), react_1.default.createElement("label", null, "Provide Y coordinate", react_1.default.createElement("input", {
+    "data-testid": "yDataInput",
+    className: "input",
     value: position.setY,
     name: "y_value",
     type: "number",
-    placeholder: `Integer from 0 to ${grid.height - 1}`,
+    placeholder: `Integer from 0 to ${gridState.height - 1}`,
     onChange: e => validateInputs(e.currentTarget)
   })), react_1.default.createElement("label", null, "Provide Direction", react_1.default.createElement("input", {
+    "data-testid": "dirDataInput",
+    className: "input",
     value: position.setDirection,
     name: "direction",
+    type: "text",
     placeholder: "N, E, W or S",
     onChange: e => validateInputs(e.currentTarget)
-  }))), error === true ? react_1.default.createElement(StyledError, null, "Value/s you provided are not correct") : '', react_1.default.createElement("button", {
+  })), error.errorDir === true || error.errorY === true || error.errorX === true ? react_1.default.createElement("p", {
+    className: "error",
+    "data-testid": "placementError"
+  }, "Value/s you provided are not correct") : '', react_1.default.createElement("button", {
+    "data-testid": "placementButton",
+    className: "button",
     onClick: placeRobot
-  }, "Place")), controlers === true ? controlersWrapper : '', controlers === true ? react_1.default.createElement(Report_1.default, null) : '');
+  }, "Place"), tests === true ? testRender : '');
 };
 
-exports.default = Controlers;
-const StyledError = styled_components_1.default.p`
-  color: ${(_ref2) => {
-  let theme = _ref2.theme;
-  return theme.styles.colors.error;
-}};
-  margin: 0 1rem 1rem;
-`;
-const ButtonsWrapper = styled_components_1.default.div`
-  display: flex;
-  justify-content: center;
-  margin: ${(_ref3) => {
-  let theme = _ref3.theme;
-  return theme.styles.boxModel.vertical;
-}};
-`;
-const InputsWrapper = styled_components_1.default.div`
-  input {
-    width: 80%;
-    padding: ${(_ref4) => {
-  let theme = _ref4.theme;
-  return theme.styles.boxModel.full;
-}};
-    border: 1px solid ${(_ref5) => {
-  let theme = _ref5.theme;
-  return theme.styles.colors.leadColorDark;
-}};
-    background-color: ${(_ref6) => {
-  let theme = _ref6.theme;
-  return theme.styles.colors.backgroundButon;
-}};
-    border-radius: 5px;
-    margin: ${(_ref7) => {
-  let theme = _ref7.theme;
-  return theme.styles.boxModel.vertical;
-}};
-  }
-`;
-const Container = styled_components_1.default.section`
-  width: 300px;
-  min-height: 100vh;
-  padding: ${(_ref8) => {
-  let theme = _ref8.theme;
-  return theme.styles.boxModel.full;
-}};
-  border-right: 1px solid ${(_ref9) => {
-  let theme = _ref9.theme;
-  return theme.styles.colors.leadColorDark;
-}};
-  button {
-    width: 150px;
-    padding: ${(_ref10) => {
-  let theme = _ref10.theme;
-  return theme.styles.boxModel.full;
-}};
-    border: 1px solid ${(_ref11) => {
-  let theme = _ref11.theme;
-  return theme.styles.colors.leadColorDark;
-}};
-    background-color: ${(_ref12) => {
-  let theme = _ref12.theme;
-  return theme.styles.colors.leadColorLight;
-}};
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    :hover {
-      background-color: ${(_ref13) => {
-  let theme = _ref13.theme;
-  return theme.styles.colors.contrast1;
-}};
-      border: 1px solid ${(_ref14) => {
-  let theme = _ref14.theme;
-  return theme.styles.colors.contrast2;
-}};
+exports.default = PlacementControler;
+},{"react":"../node_modules/react/index.js","./context/RobotContext":"components/context/RobotContext.tsx","./context/GridContext":"components/context/GridContext.tsx"}],"components/GridControler.tsx":[function(require,module,exports) {
+"use strict";
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  result["default"] = mod;
+  return result;
+};
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importStar(require("react"));
+
+const GridContext_1 = __importDefault(require("./context/GridContext"));
+
+const GridControler = (_ref) => {
+  let tests = _ref.tests;
+
+  const _react_1$useContext = react_1.useContext(GridContext_1.default),
+        _react_1$useContext2 = _slicedToArray(_react_1$useContext, 2),
+        gridState = _react_1$useContext2[0],
+        setGridState = _react_1$useContext2[1];
+
+  const gridOptions = [3, 4, 5, 6, 7, 8, 9];
+
+  const handleChange = event => {
+    switch (event.currentTarget.name) {
+      case 'y-axis':
+        setGridState(_objectSpread({}, gridState, {
+          height: Number(event.currentTarget.value)
+        }));
+        break;
+
+      case 'x-axis':
+        setGridState(_objectSpread({}, gridState, {
+          width: Number(event.currentTarget.value)
+        }));
+        break;
+
+      default:
+        throw new Error();
     }
-  }
-`;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","./context/RobotContext":"components/context/RobotContext.tsx","./Report":"components/Report.tsx"}],"App.tsx":[function(require,module,exports) {
+  };
+
+  const testRender = react_1.default.createElement(react_1.default.Fragment, null, react_1.default.createElement("div", {
+    "data-testid": "gridHookTest"
+  }, `h: ${String(gridState.height)}, w: ${String(gridState.width)}`));
+  return react_1.default.createElement(react_1.default.Fragment, null, react_1.default.createElement("label", null, "Set Grid Size (x, y)", react_1.default.createElement("div", {
+    className: "wrapper--selects"
+  }, react_1.default.createElement("select", {
+    name: "x-axis",
+    value: gridState.width,
+    onChange: handleChange,
+    "data-testid": "changeXsize"
+  }, gridOptions.map(size => react_1.default.createElement("option", {
+    key: size,
+    value: size
+  }, size))), react_1.default.createElement("select", {
+    name: "y-axis",
+    value: gridState.height,
+    onChange: handleChange,
+    "data-testid": "changeYsize"
+  }, gridOptions.map(size => react_1.default.createElement("option", {
+    key: size,
+    value: size
+  }, size))))), tests === true ? testRender : '');
+};
+
+exports.default = GridControler;
+},{"react":"../node_modules/react/index.js","./context/GridContext":"components/context/GridContext.tsx"}],"components/Controlers.tsx":[function(require,module,exports) {
 "use strict";
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
@@ -91444,36 +90761,10955 @@ Object.defineProperty(exports, "__esModule", {
 
 const react_1 = __importStar(require("react"));
 
-const styled_components_1 = __importDefault(require("styled-components"));
+const Report_1 = __importDefault(require("./Report"));
+
+const MovmentControler_1 = __importDefault(require("./MovmentControler"));
+
+const PlacementControler_1 = __importDefault(require("./PlacementControler"));
+
+const GridControler_1 = __importDefault(require("./GridControler"));
+
+const Controlers = () => {
+  const _react_1$useState = react_1.useState(false),
+        _react_1$useState2 = _slicedToArray(_react_1$useState, 2),
+        controlers = _react_1$useState2[0],
+        setControlers = _react_1$useState2[1];
+
+  const showControlers = state => {
+    setControlers(state);
+  };
+
+  return react_1.default.createElement("aside", {
+    className: "layout--controlers"
+  }, react_1.default.createElement(GridControler_1.default, {
+    tests: false
+  }), react_1.default.createElement(PlacementControler_1.default, {
+    parentCallback: showControlers,
+    tests: false
+  }), controlers === true ? react_1.default.createElement(MovmentControler_1.default, {
+    tests: false
+  }) : '', controlers === true ? react_1.default.createElement(Report_1.default, null) : '');
+};
+
+exports.default = Controlers;
+},{"react":"../node_modules/react/index.js","./Report":"components/Report.tsx","./MovmentControler":"components/MovmentControler.tsx","./PlacementControler":"components/PlacementControler.tsx","./GridControler":"components/GridControler.tsx"}],"../node_modules/react-hotkeys/es/utils/object/dictionaryFrom.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function dictionaryFrom(array) {
+  var value = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+  return array.reduce(function (memo, element) {
+    memo[element] = value || {
+      value: element
+    };
+    return memo;
+  }, {});
+}
+
+var _default = dictionaryFrom;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/lib/config/Configuration.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _dictionaryFrom = _interopRequireDefault(require("../../utils/object/dictionaryFrom"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+    var ownKeys = Object.keys(source);
+
+    if (typeof Object.getOwnPropertySymbols === 'function') {
+      ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
+        return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      _defineProperty(target, key, source[key]);
+    });
+  }
+
+  return target;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+/**
+ * Default configuration values
+ * @private
+ */
+var _defaultConfiguration = {
+  /**
+   * The level of logging of its own behaviour React HotKeys should perform.
+   * @type {LogLevel}
+   */
+  logLevel: 'warn',
+
+  /**
+   * Default key event key maps are bound to, if left unspecified
+   * @type {KeyEventName}
+   */
+  defaultKeyEvent: 'keydown',
+
+  /**
+   * The default component type to wrap HotKey components' children in, to provide
+   * the required focus and keyboard event listening for HotKeys to function
+   */
+  defaultComponent: 'div',
+
+  /**
+   * The default tabIndex value passed to the wrapping component used to contain
+   * HotKey components' children. -1 skips focusing the element when tabbing through
+   * the DOM, but allows focusing programmatically.
+   */
+  defaultTabIndex: '-1',
+
+  /**
+   * The HTML tags that React HotKeys should ignore key events from. This only works
+   * if you are using the default ignoreEventsCondition function.
+   * @type {String[]}
+   */
+  ignoreTags: ['input', 'select', 'textarea'],
+
+  /**
+   * Whether to allow hard sequences, or the binding of handlers to actions that have
+   * names that are valid key sequences, which implicitly define actions that are
+   * triggered by that key sequence
+   */
+  enableHardSequences: false,
+
+  /**
+   * Whether to ignore changes to keyMap and handlers props by default (this reduces
+   * a significant amount of unnecessarily resetting internal state)
+   *
+   * @type {boolean}
+   */
+  ignoreKeymapAndHandlerChangesByDefault: true,
+
+  /**
+   * The function used to determine whether a key event should be ignored by React
+   * Hotkeys. By default, keyboard events originating elements with a tag name in
+   * ignoreTags, or a isContentEditable property of true, are ignored.
+   *
+   * @type {Function<KeyboardEvent>}
+   */
+  ignoreEventsCondition: function ignoreEventsCondition(event) {
+    var target = event.target;
+
+    if (target && target.tagName) {
+      var tagName = target.tagName.toLowerCase();
+      return Configuration.option('_ignoreTagsDict')[tagName] || target.isContentEditable;
+    } else {
+      return false;
+    }
+  },
+
+  /**
+   * Whether to ignore repeated keyboard events when a key is being held down
+   * @type {boolean}
+   */
+  ignoreRepeatedEventsWhenKeyHeldDown: true,
+
+  /**
+   * Whether React HotKeys should simulate keypress events for the keys that do not
+   * natively emit them.
+   * @type {boolean}
+   */
+  simulateMissingKeyPressEvents: true,
+
+  /**
+   * Whether to call stopPropagation() on events after they are handled (preventing
+   * the event from bubbling up any further, both within React Hotkeys and any other
+   * event listeners bound in React).
+   *
+   * This does not affect the behaviour of React Hotkeys, but rather what happens to
+   * the event once React Hotkeys is done with it (whether it's allowed to propagate
+   * any further through the Render tree).
+   * @type {boolean}
+   */
+  stopEventPropagationAfterHandling: true,
+
+  /**
+   * Whether to call stopPropagation() on events after they are ignored (preventing
+   * the event from bubbling up any further, both within React Hotkeys and any other
+   * event listeners bound in React).
+   *
+   * This does not affect the behaviour of React Hotkeys, but rather what happens to
+   * the event once React Hotkeys is done with it (whether it's allowed to propagate
+   * any further through the Render tree).
+   * @type {boolean}
+   */
+  stopEventPropagationAfterIgnoring: true,
+
+  /**
+   * Whether to allow combination submatches - e.g. if there is an action bound to
+   * cmd, pressing shift+cmd will *not* trigger that action when
+   * allowCombinationSubmatches is false.
+   *
+   * @note This option is ignored for combinations involving command (Meta) and
+   *      submatches are <i>always</i> allowed because Meta hides keyup events
+   *      of other keys, so until Command is released, it's impossible to know
+   *      if one of the keys that has also been pressed has been released.
+   *      @see https://github.com/greena13/react-hotkeys/pull/207
+   * @type {boolean}
+   */
+  allowCombinationSubmatches: false,
+
+  /**
+   * A mapping of custom key codes to key names that you can then use in your
+   * key sequences
+   * @type {Object.<Number, KeyName>}
+   */
+  customKeyCodes: {}
+};
+
+var _configuration = _objectSpread({}, _defaultConfiguration);
+/**
+ * Turn our array of tags to ignore into a dictionary, for faster lookup
+ */
+
+
+_configuration._ignoreTagsDict = (0, _dictionaryFrom.default)(_configuration.ignoreTags, true);
+/**
+ * Handles getting and setting global configuration values, that affect how
+ * React Hotkeys behaves
+ * @class
+ */
+
+var Configuration =
+/*#__PURE__*/
+function () {
+  function Configuration() {
+    _classCallCheck(this, Configuration);
+  }
+
+  _createClass(Configuration, null, [{
+    key: "init",
+
+    /**
+     * Merges the specified configuration options with the current values.
+     * @see _configuration
+     */
+    value: function init(configuration) {
+      var _this = this;
+
+      var ignoreTags = configuration.ignoreTags,
+          customKeyCodes = configuration.customKeyCodes;
+
+      if (ignoreTags) {
+        configuration._ignoreTagsDict = (0, _dictionaryFrom.default)(configuration.ignoreTags);
+      }
+
+      if (customKeyCodes) {
+        configuration._customKeyNamesDict = (0, _dictionaryFrom.default)(Object.values(configuration.customKeyCodes));
+      }
+
+      if (false) {
+        if (['verbose', 'debug', 'info'].indexOf(configuration.logLevel) !== -1) {
+          console.warn("React HotKeys: You have requested log level '".concat(configuration.logLevel, "' but for performance reasons, logging below severity level 'warning' is disabled in production. Please use the development build for complete logs."));
+        }
+      }
+
+      Object.keys(configuration).forEach(function (key) {
+        _this.set(key, configuration[key]);
+      });
+    }
+    /**
+     * Sets a single configuration value by name
+     * @param {string} key - Name of the configuration value to set
+     * @param {*} value - New value to set
+     */
+
+  }, {
+    key: "set",
+    value: function set(key, value) {
+      _configuration[key] = value;
+    }
+  }, {
+    key: "reset",
+    value: function reset(key) {
+      _configuration[key] = _defaultConfiguration[key];
+    }
+    /**
+     * Gets a single configuration value by name
+     * @param {string} key - Name of the configuration value
+     * @returns {*} Configuration value
+     */
+
+  }, {
+    key: "option",
+    value: function option(key) {
+      return _configuration[key];
+    }
+  }]);
+
+  return Configuration;
+}();
+
+var _default = Configuration;
+exports.default = _default;
+},{"../../utils/object/dictionaryFrom":"../node_modules/react-hotkeys/es/utils/object/dictionaryFrom.js"}],"../node_modules/react-hotkeys/es/lib/logging/Logger.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+/**
+ * Encapsulates all logging behaviour and provides the ability to specify the level
+ * of logging desired.
+ * @class
+ */
+
+
+var Logger =
+/*#__PURE__*/
+function () {
+  _createClass(Logger, [{
+    key: "noop",
+
+    /**
+     * Icons prefixed to the start of logging statements that cycled through each
+     * time a focus tree changes, making it easier to quickly spot events related
+     * to the same focus tree.
+     */
+
+    /**
+     * Icons prefixed to the start of logging statements that cycled through each
+     * time a component ID changes, making it easier to quickly spot events related
+     * to the same component.
+     */
+
+    /**
+     * Icons prefixed to the start of logging statements that cycled through each
+     * time an event ID changes, making it easier to quickly trace the path of KeyEvent
+     * objects as they propagate through multiple components.
+     */
+
+    /**
+     * The level of logging to perform
+     * @typedef {'none'|'error'|'warn'|'info'|'debug'|'verbose'} LogLevel
+     */
+
+    /**
+     * Levels of log severity - the higher the log level, the greater the amount (and
+     * lesser the importance) of information logged to the console about React HotKey's
+     * behaviour
+     * @enum {number} LogLevel
+     */
+    value: function noop() {}
+    /**
+     * By default, calls to all log severities are a no-operation. It's only when the
+     * user specifies a log level, are they replaced with logging statements
+     * @type {Logger.noop}
+     */
+
+  }]);
+
+  function Logger() {
+    var _this = this;
+
+    var logLevel = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'warn';
+
+    _classCallCheck(this, Logger);
+
+    _defineProperty(this, "verbose", this.noop);
+
+    _defineProperty(this, "debug", this.noop);
+
+    _defineProperty(this, "info", this.noop);
+
+    _defineProperty(this, "warn", this.noop);
+
+    _defineProperty(this, "error", this.noop);
+
+    this.logLevel = this.constructor.levels[logLevel];
+
+    if (this.logLevel >= this.constructor.levels.error) {
+      this.error = console.error;
+    } else {
+      return;
+    }
+
+    if (this.logLevel >= this.constructor.levels.warn) {
+      this.warn = console.warn;
+    } else {
+      return;
+    }
+
+    ['info', 'debug', 'verbose'].some(function (logLevel) {
+      if (_this.logLevel >= _this.constructor.levels[logLevel]) {
+        _this[logLevel] = console.log;
+        return false;
+      }
+
+      return true;
+    });
+  }
+
+  return Logger;
+}();
+
+_defineProperty(Logger, "logIcons", ['📕', '📗', '📘', '📙']);
+
+_defineProperty(Logger, "componentIcons", ['🔺', '⭐️', '🔷', '🔶', '⬛️']);
+
+_defineProperty(Logger, "eventIcons", ['❤️', '💚', '💙', '💛', '💜', '🧡']);
+
+_defineProperty(Logger, "levels", {
+  none: 0,
+  error: 1,
+  warn: 2,
+  info: 3,
+  debug: 4,
+  verbose: 5
+});
+
+var _default = Logger;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/const/KeyEventType.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+/**
+ * @typedef {number} KeyEventType index (0-2) of which position in an event record
+ * a particular event is located
+ */
+
+/**
+ * Enum for types of key events
+ * @readonly
+ * @enum {KeyEventType}
+ */
+var KeyEventType = {
+  keydown: 0,
+  keypress: 1,
+  keyup: 2
+};
+var _default = KeyEventType;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/const/ModifierFlagsDictionary.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var ModifierFlagsDictionary = {
+  Shift: ['shiftKey'],
+  Meta: ['metaKey'],
+  Control: ['ctrlKey'],
+  Alt: ['altKey']
+};
+var _default = ModifierFlagsDictionary;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/const/ShiftedKeysDictionary.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+/**
+ * Dictionary of symbols that correspond to keys when pressed with the shift key
+ * also held down. Used for combinations involving the shift key and one or more
+ * others. (e.g. shift+1)
+ */
+var ShiftedKeysDictionary = {
+  '`': ['~'],
+  '1': ['!'],
+  '2': ['@',
+  /** UK Keyboard: **/
+  '"'],
+  '3': ['#',
+  /** UK Keyboard: **/
+  '£'],
+  '4': ['$'],
+  '5': ['%'],
+  '6': ['^'],
+  '7': ['&'],
+  '8': ['*'],
+  '9': ['('],
+  '0': [')'],
+  '-': ['_'],
+  '=': ['plus'],
+  ';': [':'],
+  "'": ['"',
+  /** UK Keyboard: **/
+  '@'],
+  ',': ['<'],
+  '.': ['>'],
+  '/': ['?'],
+  '\\': ['|'],
+  '[': ['{'],
+  ']': ['}'],
+
+  /**
+   * UK Keyboard:
+   */
+  '#': ['~']
+};
+var _default = ShiftedKeysDictionary;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveShiftedAlias.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _ShiftedKeysDictionary = _interopRequireDefault(require("../../const/ShiftedKeysDictionary"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Returns the corresponding symbol or character for a particular key, when it is
+ * pressed with the shift key also held down
+ * @param {NormalizedKeyName} keyName Name of the key
+ * @returns {ReactKeyName[]} Symbol or character for the key, when it is pressed with the
+ *          shift key
+ */
+function resolveShiftedAlias(keyName) {
+  return _ShiftedKeysDictionary.default[keyName] || [keyName.length === 1 ? keyName.toUpperCase() : keyName];
+}
+
+var _default = resolveShiftedAlias;
+exports.default = _default;
+},{"../../const/ShiftedKeysDictionary":"../node_modules/react-hotkeys/es/const/ShiftedKeysDictionary.js"}],"../node_modules/react-hotkeys/es/utils/object/hasKey.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function hasKey(object, key) {
+  return object.hasOwnProperty(key);
+}
+
+var _default = hasKey;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/utils/invertArrayDictionary.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _hasKey = _interopRequireDefault(require("./object/hasKey"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) {
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();
+}
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance");
+}
+
+function _iterableToArray(iter) {
+  if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
+}
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) {
+    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {
+      arr2[i] = arr[i];
+    }
+
+    return arr2;
+  }
+}
+
+function invertArrayDictionary(dictionary) {
+  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  return Object.keys(dictionary).reduce(function (memo, key) {
+    var arrayValue = dictionary[key];
+    arrayValue.forEach(function (shiftedKey) {
+      if (!(0, _hasKey.default)(memo, shiftedKey)) {
+        memo[shiftedKey] = [];
+      }
+
+      memo[shiftedKey].push(key);
+    });
+
+    if (options.includeOriginal) {
+      if (!(0, _hasKey.default)(memo, key)) {
+        memo[key] = [];
+      }
+
+      memo[key] = [].concat(_toConsumableArray(memo[key]), _toConsumableArray(arrayValue));
+    }
+
+    return memo;
+  }, {});
+}
+
+var _default = invertArrayDictionary;
+exports.default = _default;
+},{"./object/hasKey":"../node_modules/react-hotkeys/es/utils/object/hasKey.js"}],"../node_modules/react-hotkeys/es/const/reverse-dictionaries/UnshiftedKeysDictionary.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _ShiftedKeysDictionary = _interopRequireDefault(require("../ShiftedKeysDictionary"));
+
+var _invertArrayDictionary = _interopRequireDefault(require("../../utils/invertArrayDictionary"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var UnshiftedKeysDictionary = (0, _invertArrayDictionary.default)(_ShiftedKeysDictionary.default);
+var _default = UnshiftedKeysDictionary;
+exports.default = _default;
+},{"../ShiftedKeysDictionary":"../node_modules/react-hotkeys/es/const/ShiftedKeysDictionary.js","../../utils/invertArrayDictionary":"../node_modules/react-hotkeys/es/utils/invertArrayDictionary.js"}],"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveUnshiftedAlias.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _UnshiftedKeysDictionary = _interopRequireDefault(require("../../const/reverse-dictionaries/UnshiftedKeysDictionary"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Returns the name of the key that must be pressed with the shift key, to yield the
+ * specified symbol
+ * @param {NormalizedKeyName} keyName Name of the key
+ * @returns {ReactKeyName[]} Name of the key that must be pressed with the shift key, to
+ *          yield the specified symbol
+ */
+function resolveUnshiftedAlias(keyName) {
+  return _UnshiftedKeysDictionary.default[keyName] || [keyName.length === 1 ? keyName.toLowerCase() : keyName];
+}
+
+var _default = resolveUnshiftedAlias;
+exports.default = _default;
+},{"../../const/reverse-dictionaries/UnshiftedKeysDictionary":"../node_modules/react-hotkeys/es/const/reverse-dictionaries/UnshiftedKeysDictionary.js"}],"../node_modules/react-hotkeys/es/const/KeyOSAndLayoutAliasesDictionary.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _invertArrayDictionary = _interopRequireDefault(require("../utils/invertArrayDictionary"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * A dictionary of key aliases to make it easier to specify key maps that work
+ * across different keyboard layouts and operating systems - this builds on top
+ * of what React already does.
+ */
+var KeyOSAndLayoutAliasesDictionary = {};
+
+var _default = (0, _invertArrayDictionary.default)(KeyOSAndLayoutAliasesDictionary, {
+  includeOriginal: true
+});
+
+exports.default = _default;
+},{"../utils/invertArrayDictionary":"../node_modules/react-hotkeys/es/utils/invertArrayDictionary.js"}],"../node_modules/react-hotkeys/es/utils/string/isString.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function isString(object) {
+  return typeof object === 'string';
+}
+
+var _default = isString;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/utils/string/stripSuperfluousWhitespace.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _isString = _interopRequireDefault(require("./isString"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function stripSuperfluousWhitespace(target) {
+  if ((0, _isString.default)(target)) {
+    return target.trim().replace(/\s+/g, ' ');
+  }
+
+  return target;
+}
+
+var _default = stripSuperfluousWhitespace;
+exports.default = _default;
+},{"./isString":"../node_modules/react-hotkeys/es/utils/string/isString.js"}],"../node_modules/react-hotkeys/es/const/MousetrapToReactKeyNamesDictionary.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+/**
+ * A mapping between Mousetrap syntax and React syntax to support the use of both
+ */
+var MousetrapToReactKeyNamesDictionary = {
+  /**
+   * Generic
+   */
+  'tab': 'Tab',
+  'capslock': 'CapsLock',
+  'shift': 'Shift',
+  'meta': 'Meta',
+  'alt': 'Alt',
+  'ctrl': 'Control',
+  'space': ' ',
+  'spacebar': ' ',
+  'escape': 'Escape',
+  'esc': 'Escape',
+  'left': 'ArrowLeft',
+  'right': 'ArrowRight',
+  'up': 'ArrowUp',
+  'down': 'ArrowDown',
+
+  /**
+   * Mac
+   */
+  'return': 'Enter',
+  'del': 'Delete',
+  'command': 'Meta',
+  'option': 'Alt',
+
+  /**
+   * Windows
+   */
+  'enter': 'Enter',
+  'backspace': 'Backspace',
+  'ins': 'Insert',
+  'pageup': 'PageUp',
+  'pagedown': 'PageDown',
+  'end': 'End',
+  'home': 'Home',
+  'contextmenu': 'ContextMenu',
+  'numlock': 'Clear'
+};
+var _default = MousetrapToReactKeyNamesDictionary;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/const/KeyShorthandDictionary.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+/**
+ * A mapping between key names and official names
+ */
+var KeyShorthandDictionary = {
+  'cmd': 'Meta'
+};
+var _default = KeyShorthandDictionary;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/helpers/parsing-key-maps/standardizeKeyName.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _MousetrapToReactKeyNamesDictionary = _interopRequireDefault(require("../../const/MousetrapToReactKeyNamesDictionary"));
+
+var _KeyShorthandDictionary = _interopRequireDefault(require("../../const/KeyShorthandDictionary"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * @typedef {string} KeyName Name of the keyboard key
+ */
+
+/**
+ * @typedef {string} ReactKeyName Name used by React to refer to key
+ */
+
+/**
+ * Returns the name for the specified key used by React. Supports translating key aliases
+ * used by mousetrap to their counterparts in React
+ * @param {KeyName} keyName Name of the key to resolve to the React equivalent
+ * @returns {ReactKeyName} Name used by React to refer to the key
+ */
+function standardizeKeyName(keyName) {
+  var _keyName = keyName.toLowerCase();
+
+  return _MousetrapToReactKeyNamesDictionary.default[_keyName] || _KeyShorthandDictionary.default[_keyName] || (keyName.match(/^f\d+$/) ? keyName.toUpperCase() : keyName);
+}
+
+var _default = standardizeKeyName;
+exports.default = _default;
+},{"../../const/MousetrapToReactKeyNamesDictionary":"../node_modules/react-hotkeys/es/const/MousetrapToReactKeyNamesDictionary.js","../../const/KeyShorthandDictionary":"../node_modules/react-hotkeys/es/const/KeyShorthandDictionary.js"}],"../node_modules/react-hotkeys/es/vendor/react-dom/translateToKey.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+/**
+ * Translation from legacy `keyCode` to HTML5 `key`
+ * Only special keys supported, all others depend on keyboard layout or browser
+ * @see https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent#Key_names
+ */
+var translateToKey = {
+  '8': 'Backspace',
+  '9': 'Tab',
+  '12': 'Clear',
+  '13': 'Enter',
+  '16': 'Shift',
+  '17': 'Control',
+  '18': 'Alt',
+  '19': 'Pause',
+  '20': 'CapsLock',
+  '27': 'Escape',
+  '32': ' ',
+  '33': 'PageUp',
+  '34': 'PageDown',
+  '35': 'End',
+  '36': 'Home',
+  '37': 'ArrowLeft',
+  '38': 'ArrowUp',
+  '39': 'ArrowRight',
+  '40': 'ArrowDown',
+  '45': 'Insert',
+  '46': 'Delete',
+  '112': 'F1',
+  '113': 'F2',
+  '114': 'F3',
+  '115': 'F4',
+  '116': 'F5',
+  '117': 'F6',
+  '118': 'F7',
+  '119': 'F8',
+  '120': 'F9',
+  '121': 'F10',
+  '122': 'F11',
+  '123': 'F12',
+  '144': 'NumLock',
+  '145': 'ScrollLock',
+  '224': 'Meta'
+};
+var _default = translateToKey;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/const/NonPrintableKeysDictionary.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _dictionaryFrom = _interopRequireDefault(require("../utils/object/dictionaryFrom"));
+
+var _translateToKey = _interopRequireDefault(require("../vendor/react-dom/translateToKey"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Dictionary of keys whose name is not a single symbol or character
+ */
+var NonPrintableKeysDictionary = (0, _dictionaryFrom.default)(Object.values(_translateToKey.default), true);
+var _default = NonPrintableKeysDictionary;
+exports.default = _default;
+},{"../utils/object/dictionaryFrom":"../node_modules/react-hotkeys/es/utils/object/dictionaryFrom.js","../vendor/react-dom/translateToKey":"../node_modules/react-hotkeys/es/vendor/react-dom/translateToKey.js"}],"../node_modules/react-hotkeys/es/helpers/parsing-key-maps/isNonPrintableKeyName.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _NonPrintableKeysDictionary = _interopRequireDefault(require("../../const/NonPrintableKeysDictionary"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Whether the specified key is a valid key name that is not a single character or
+ * symbol
+ * @param {ReactKeyName} keyName Name of the key
+ * @returns {boolean} Whether the key is a valid special key
+ */
+function isNonPrintableKeyName(keyName) {
+  return !!_NonPrintableKeysDictionary.default[keyName];
+}
+
+var _default = isNonPrintableKeyName;
+exports.default = _default;
+},{"../../const/NonPrintableKeysDictionary":"../node_modules/react-hotkeys/es/const/NonPrintableKeysDictionary.js"}],"../node_modules/react-hotkeys/es/helpers/parsing-key-maps/isCustomKeyName.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _Configuration = _interopRequireDefault(require("../../lib/config/Configuration"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Whether the specified key name is among those defined as custom key codes
+ * @param {ReactKeyName} keyName Name of the key
+ * @returns {boolean} true if keyName matches a custom key name
+ */
+function isCustomKeyName(keyName) {
+  return _Configuration.default.option('_customKeyNamesDict')[keyName];
+}
+
+var _default = isCustomKeyName;
+exports.default = _default;
+},{"../../lib/config/Configuration":"../node_modules/react-hotkeys/es/lib/config/Configuration.js"}],"../node_modules/react-hotkeys/es/helpers/parsing-key-maps/isValidKey.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = exports.InvalidKeyNameError = void 0;
+
+var _isNonPrintableKeyName = _interopRequireDefault(require("./isNonPrintableKeyName"));
+
+var _isCustomKeyName = _interopRequireDefault(require("./isCustomKeyName"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _wrapNativeSuper(Class) {
+  var _cache = typeof Map === "function" ? new Map() : undefined;
+
+  _wrapNativeSuper = function _wrapNativeSuper(Class) {
+    if (Class === null || !_isNativeFunction(Class)) return Class;
+
+    if (typeof Class !== "function") {
+      throw new TypeError("Super expression must either be null or a function");
+    }
+
+    if (typeof _cache !== "undefined") {
+      if (_cache.has(Class)) return _cache.get(Class);
+
+      _cache.set(Class, Wrapper);
+    }
+
+    function Wrapper() {
+      return _construct(Class, arguments, _getPrototypeOf(this).constructor);
+    }
+
+    Wrapper.prototype = Object.create(Class.prototype, {
+      constructor: {
+        value: Wrapper,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }
+    });
+    return _setPrototypeOf(Wrapper, Class);
+  };
+
+  return _wrapNativeSuper(Class);
+}
+
+function isNativeReflectConstruct() {
+  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+  if (Reflect.construct.sham) return false;
+  if (typeof Proxy === "function") return true;
+
+  try {
+    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+function _construct(Parent, args, Class) {
+  if (isNativeReflectConstruct()) {
+    _construct = Reflect.construct;
+  } else {
+    _construct = function _construct(Parent, args, Class) {
+      var a = [null];
+      a.push.apply(a, args);
+      var Constructor = Function.bind.apply(Parent, a);
+      var instance = new Constructor();
+      if (Class) _setPrototypeOf(instance, Class.prototype);
+      return instance;
+    };
+  }
+
+  return _construct.apply(null, arguments);
+}
+
+function _isNativeFunction(fn) {
+  return Function.toString.call(fn).indexOf("[native code]") !== -1;
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function isValidKey(keyName) {
+  return (0, _isNonPrintableKeyName.default)(keyName) || String.fromCharCode(keyName.charCodeAt(0)) === keyName || (0, _isCustomKeyName.default)(keyName);
+}
+
+var InvalidKeyNameError =
+/*#__PURE__*/
+function (_Error) {
+  _inherits(InvalidKeyNameError, _Error);
+
+  function InvalidKeyNameError() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, InvalidKeyNameError);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(InvalidKeyNameError)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "name", 'InvalidKeyNameError');
+
+    return _this;
+  }
+
+  return InvalidKeyNameError;
+}(_wrapNativeSuper(Error));
+
+exports.InvalidKeyNameError = InvalidKeyNameError;
+var _default = isValidKey;
+exports.default = _default;
+},{"./isNonPrintableKeyName":"../node_modules/react-hotkeys/es/helpers/parsing-key-maps/isNonPrintableKeyName.js","./isCustomKeyName":"../node_modules/react-hotkeys/es/helpers/parsing-key-maps/isCustomKeyName.js"}],"../node_modules/react-hotkeys/es/lib/shared/KeySequenceParser.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _stripSuperfluousWhitespace = _interopRequireDefault(require("../../utils/string/stripSuperfluousWhitespace"));
+
+var _standardizeKeyName = _interopRequireDefault(require("../../helpers/parsing-key-maps/standardizeKeyName"));
+
+var _isValidKey = _interopRequireWildcard(require("../../helpers/parsing-key-maps/isValidKey"));
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+/**
+ * Returns a normalized KeyCombinationString (with the key names in the combination
+ * sorted in alphabetical order)
+ * @param {KeyName[]} keys List of key names to sort and reconstitute as a
+ *        KeyCombinationString
+ * @returns {NormalizedKeyCombinationString} Normalized KeyCombinationString
+ */
+function normalizedCombinationId(keys) {
+  return keys.sort().join('+');
+}
+/**
+ * Parses KeySequenceStrings and returns KeySequenceOptions
+ *
+ * Used primarily to parse strings describing hot key sequences and combinations
+ * so that they may be matched with key events when they occur.
+ * @class
+ */
+
+
+var KeySequenceParser =
+/*#__PURE__*/
+function () {
+  function KeySequenceParser() {
+    _classCallCheck(this, KeySequenceParser);
+  }
+
+  _createClass(KeySequenceParser, null, [{
+    key: "parse",
+
+    /**
+     * @typedef {Object} BasicKeyCombination Object containing the basic information that
+     *          describes a key combination
+     * @property {KeyCombinationString} id - String description of keys involved in the key
+     *          combination
+     * @property {number} size - Number of keys involved in the combination
+     * @property {Object.<KeyName, Boolean>} keyDictionary - Dictionary of key names involved
+     *           in the key combination
+     * @property {KeyEventType} keyEventType - Record index for key event that
+     *          the matcher should match on
+     */
+
+    /**
+     * @typedef {string} KeySequenceString String describing a sequence of one or more key
+     * combinations with whitespace separating key combinations in the sequence and '+'
+     * separating keys within a key combination.
+     */
+
+    /**
+     * @typedef {KeySequenceString} NormalizedKeySequenceId key sequence id with all of the
+     * combination id's normalized
+     */
+
+    /**
+     * @typedef {Object} BasicKeySequence Object containing the basic information that
+     *          describes a key sequence
+     * @property {NormalizedKeySequenceId} prefix - Normalized key sequence id
+     * @property {number} size - Number of combinations involved in the sequence
+     */
+
+    /**
+     * @typedef {Object} KeySequenceObject Object containing description of a key sequence
+     *          to compared against key events
+     * @property {KeySequenceString} id Id describing key sequence used for matching against
+     *            key events
+     * @property {ComponentId} componentId Id associated with the HotKeys component
+     *          that registered the key sequence
+     * @property {BasicKeyCombination[]} sequence A list of key combinations involved in
+     *            the sequence
+     * @property {number} size Number of key combinations in the key sequence
+     * @property {KeyEventType} keyEventType Index that matches key event type
+     * @property {ActionName} actionName Name of the action that should be triggered if a
+     *           keyboard event matching the sequence and event type occur
+     */
+
+    /**
+     * @typedef {Object} KeySequenceOptions Object containing the results of parsing a
+     *          KeySequenceString
+     * @property {BasicKeyCombination} combination Properties of the final combination in
+     *        the sequence
+     * @property {BasicKeySequence} sequence Properties of the sequence of keys leading
+     *        up to the final combination
+     */
+
+    /**
+     * Parses a KeySequenceString and returns a KeySequenceOptions object containing
+     * information about the sequence in a format that is easier to query
+     * @param {KeySequenceString} sequenceString String describing a key sequence to
+     *        parse
+     * @param {Object} options Configuration object describing how the KeySequenceString
+     *        should be parsed.
+     * @param {KeyEventType} options.keyEventType Event record index indicating
+     *        what key event the sequence should match
+     * @param {boolean} options.ensureValidKeys Whether to throw an exception if an invalid
+     *        key name is found in the key combination string.
+     * @returns {KeySequenceOptions} Object containing information about the key
+     *        sequence described by the KeySequenceString
+     */
+    value: function parse(sequenceString) {
+      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var trimmedSequenceString = (0, _stripSuperfluousWhitespace.default)(sequenceString);
+      var keyCombinationsArray = trimmedSequenceString.split(' ');
+
+      try {
+        var nonTerminalCombinations = keyCombinationsArray.slice(0, keyCombinationsArray.length - 1);
+        var terminalCombination = keyCombinationsArray[keyCombinationsArray.length - 1];
+        var prefix = nonTerminalCombinations.map(function (keyCombination) {
+          var keysInComboDict = parseCombination(keyCombination, options);
+          return normalizedCombinationId(Object.keys(keysInComboDict));
+        }).join(' ');
+        var keysInComboDict = parseCombination(terminalCombination, options);
+        var normalizedComboString = normalizedCombinationId(Object.keys(keysInComboDict));
+        var combination = {
+          id: normalizedComboString,
+          keyDictionary: keysInComboDict,
+          keyEventType: options.keyEventType,
+          size: Object.keys(keysInComboDict).length
+        };
+        return {
+          sequence: {
+            prefix: prefix,
+            size: nonTerminalCombinations.length + 1
+          },
+          combination: combination
+        };
+      } catch (InvalidKeyNameError) {
+        return {
+          sequence: null,
+          combination: null
+        };
+      }
+    }
+  }]);
+
+  return KeySequenceParser;
+}();
+/**
+ * @typedef {string} KeyCombinationString String describing a combination of one or more
+ * keys separated by '+'
+ */
+
+/**
+ * @typedef {KeyCombinationString} NormalizedKeyCombinationString key combination id where
+ * the keys have been normalized (sorted in alphabetical order)
+ */
+
+/**
+ * @typedef {Object.<ReactKeyName, Boolean>} KeyDictionary Registry of the names
+ * of keys in a particular combination, for easy/quick checking if a particular
+ * key is in the key combination
+ */
+
+/**
+ * Parses a key combination string and returns the corresponding KeyDictionary
+ * @param {KeyCombinationString} string Describes key combination
+ * @param {Object} options Options hash of how the string should be parsed
+ * @param {boolean} options.ensureValidKeys Whether to throw an exception if an invalid
+ *        key name is found in the key combination string.
+ * @returns {KeyDictionary} Dictionary of keys in the parsed combination
+ */
+
+
+function parseCombination(string) {
+  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  return string.replace(/^\+|(\s|[^+]\+)\+/, '$1plus').split('+').reduce(function (keyDictionary, keyName) {
+    var finalKeyName = (0, _standardizeKeyName.default)(keyName);
+
+    if (options.ensureValidKeys) {
+      if (!(0, _isValidKey.default)(finalKeyName)) {
+        throw new _isValidKey.InvalidKeyNameError();
+      }
+    }
+
+    keyDictionary[finalKeyName] = true;
+    return keyDictionary;
+  }, {});
+}
+
+var _default = KeySequenceParser;
+exports.default = _default;
+},{"../../utils/string/stripSuperfluousWhitespace":"../node_modules/react-hotkeys/es/utils/string/stripSuperfluousWhitespace.js","../../helpers/parsing-key-maps/standardizeKeyName":"../node_modules/react-hotkeys/es/helpers/parsing-key-maps/standardizeKeyName.js","../../helpers/parsing-key-maps/isValidKey":"../node_modules/react-hotkeys/es/helpers/parsing-key-maps/isValidKey.js"}],"../node_modules/react-hotkeys/es/const/AltedKeysDictionary.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+/**
+ * A dictionary of symbols for each key, when pressed with the alt key also held.
+ * Used for combinations that involve the alt key and one or more others. (e.g.
+ * shift+a)
+ */
+var AltedKeysDictionary = {
+  '`': ['`'],
+  '1': ['¡'],
+  '2': ['™'],
+  '3': ['£'],
+  '4': ['¢'],
+  '5': ['∞'],
+  '6': ['§'],
+  '7': ['¶'],
+  '8': ['•'],
+  '9': ['ª'],
+  '0': ['º'],
+  '-': ['–'],
+  '=': ['≠'],
+  'a': ['å'],
+  'b': ['∫'],
+  'c': ['ç'],
+  'd': ['∂'],
+  'e': ['´'],
+  'f': ['ƒ'],
+  'g': ['©'],
+  'h': ['˙'],
+  'i': ['ˆ'],
+  'j': ['∆'],
+  'k': ['˚'],
+  'l': ['¬'],
+  'm': ['µ'],
+  'n': ['˜'],
+  'o': ['ø'],
+  'p': ['π'],
+  'q': ['œ'],
+  'r': ['®'],
+  's': ['ß'],
+  't': ['†'],
+  'u': ['¨'],
+  'v': ['√'],
+  'w': ['∑'],
+  'x': ['≈'],
+  'y': ['¥'],
+  'z': ['Ω'],
+  '[': ['“'],
+  ']': ['‘'],
+  "\\": ['«'],
+  "'": ['æ'],
+  ';': ['…'],
+  ',': ['≤'],
+  '.': ['≥'],
+  '/': ['÷']
+};
+var _default = AltedKeysDictionary;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/const/reverse-dictionaries/UnaltedKeysDictionary.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _invertArrayDictionary = _interopRequireDefault(require("../../utils/invertArrayDictionary"));
+
+var _AltedKeysDictionary = _interopRequireDefault(require("../AltedKeysDictionary"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var UnaltedKeysDictionary = (0, _invertArrayDictionary.default)(_AltedKeysDictionary.default);
+var _default = UnaltedKeysDictionary;
+exports.default = _default;
+},{"../../utils/invertArrayDictionary":"../node_modules/react-hotkeys/es/utils/invertArrayDictionary.js","../AltedKeysDictionary":"../node_modules/react-hotkeys/es/const/AltedKeysDictionary.js"}],"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveUnaltedAlias.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _UnaltedKeysDictionary = _interopRequireDefault(require("../../const/reverse-dictionaries/UnaltedKeysDictionary"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Returns the name of the key that must be pressed with the alt key, to yield the
+ * specified symbol
+ * @param {ReactKeyName} keyName Name of the key
+ * @returns {ReactKeyName[]} Name of the key that must be pressed with the alt key, to
+ *          yield the specified symbol
+ */
+function resolveUnaltedAlias(keyName) {
+  return _UnaltedKeysDictionary.default[keyName] || [keyName];
+}
+
+var _default = resolveUnaltedAlias;
+exports.default = _default;
+},{"../../const/reverse-dictionaries/UnaltedKeysDictionary":"../node_modules/react-hotkeys/es/const/reverse-dictionaries/UnaltedKeysDictionary.js"}],"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveAltedAlias.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _AltedKeysDictionary = _interopRequireDefault(require("../../const/AltedKeysDictionary"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Returns the corresponding symbol or character for a particular key, when it is
+ * pressed with the alt key also held down
+ * @param {NormalizedKeyName} keyName Name of the key
+ * @returns {ReactKeyName[]} Symbol or character for the key, when it is pressed with the
+ *          alt key
+ */
+function resolveAltedAlias(keyName) {
+  return _AltedKeysDictionary.default[keyName] || [keyName];
+}
+
+var _default = resolveAltedAlias;
+exports.default = _default;
+},{"../../const/AltedKeysDictionary":"../node_modules/react-hotkeys/es/const/AltedKeysDictionary.js"}],"../node_modules/react-hotkeys/es/const/AltShiftedKeysDictionary.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+/**
+ * A dictionary of symbols for each key, when pressed with the alt and shift key also
+ * held. Used for combinations that involve the shift and alt key and one or more
+ * others (e.g. shift+alt+a)
+ */
+var AltShiftedKeysDictionary = {
+  '`': ['`'],
+  '1': ['⁄'],
+  '2': ['€'],
+  '3': ['‹'],
+  '4': ['›'],
+  '5': ['ﬁ'],
+  '6': ['ﬂ'],
+  '7': ['‡'],
+  '8': ['°'],
+  '9': ['·'],
+  '0': ['‚'],
+  '-': ['—'],
+  '=': ['±'],
+  'a': ['Å'],
+  'b': ['ı'],
+  'c': ['Ç'],
+  'd': ['Î'],
+  'e': ['´'],
+  'f': ['Ï'],
+  'g': ['˝'],
+  'h': ['Ó'],
+  'i': ['ˆ'],
+  'j': ['Ô'],
+  'k': [''],
+  'l': ['Ò'],
+  'm': ['Â'],
+  'n': ['˜'],
+  'o': ['Ø'],
+  'p': ['π'],
+  'q': ['Œ'],
+  'r': ['‰'],
+  's': ['Í'],
+  't': ['Î'],
+  'u': ['¨'],
+  'v': ['◊'],
+  'w': ['„'],
+  'x': ['˛'],
+  'y': ['Á'],
+  'z': ['¸'],
+  '[': ['”'],
+  ']': ['’'],
+  "\\": ['»'],
+  "'": ['Æ'],
+  ';': ['Ú'],
+  ',': ['¯'],
+  '.': ['˘']
+};
+var _default = AltShiftedKeysDictionary;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/const/reverse-dictionaries/UnaltShiftedKeysDictionary.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _invertArrayDictionary = _interopRequireDefault(require("../../utils/invertArrayDictionary"));
+
+var _AltShiftedKeysDictionary = _interopRequireDefault(require("../AltShiftedKeysDictionary"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var UnaltShiftedKeysDictionary = (0, _invertArrayDictionary.default)(_AltShiftedKeysDictionary.default);
+var _default = UnaltShiftedKeysDictionary;
+exports.default = _default;
+},{"../../utils/invertArrayDictionary":"../node_modules/react-hotkeys/es/utils/invertArrayDictionary.js","../AltShiftedKeysDictionary":"../node_modules/react-hotkeys/es/const/AltShiftedKeysDictionary.js"}],"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveUnaltShiftedAlias.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _UnaltShiftedKeysDictionary = _interopRequireDefault(require("../../const/reverse-dictionaries/UnaltShiftedKeysDictionary"));
+
+var _resolveUnshiftedAlias = _interopRequireDefault(require("./resolveUnshiftedAlias"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Returns the name of the key that must be pressed with the shift and alt keys,
+ * to yield the specified symbol
+ * @param {ReactKeyName} keyName Name of the key
+ * @returns {ReactKeyName[]} Name of the key that must be pressed with the alt key, to
+ *          yield the specified symbol
+ */
+function resolveUnaltShiftedAlias(keyName) {
+  return _UnaltShiftedKeysDictionary.default[keyName] || (0, _resolveUnshiftedAlias.default)(keyName);
+}
+
+var _default = resolveUnaltShiftedAlias;
+exports.default = _default;
+},{"../../const/reverse-dictionaries/UnaltShiftedKeysDictionary":"../node_modules/react-hotkeys/es/const/reverse-dictionaries/UnaltShiftedKeysDictionary.js","./resolveUnshiftedAlias":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveUnshiftedAlias.js"}],"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveAltShiftedAlias.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _AltShiftedKeysDictionary = _interopRequireDefault(require("../../const/AltShiftedKeysDictionary"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Returns the corresponding symbol or character for a particular key, when it is
+ * pressed with the alt and shift keys also held down
+ * @param {NormalizedKeyName} keyName Name of the key
+ * @returns {ReactKeyName[]} Symbol or character for the key, when it is pressed with the
+ *          alt and shit keys
+ */
+function resolveAltShiftedAlias(keyName) {
+  return _AltShiftedKeysDictionary.default[keyName] || [keyName];
+}
+
+var _default = resolveAltShiftedAlias;
+exports.default = _default;
+},{"../../const/AltShiftedKeysDictionary":"../node_modules/react-hotkeys/es/const/AltShiftedKeysDictionary.js"}],"../node_modules/react-hotkeys/es/lib/shared/KeyCombinationSerializer.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _resolveShiftedAlias = _interopRequireDefault(require("../../helpers/resolving-handlers/resolveShiftedAlias"));
+
+var _resolveUnshiftedAlias = _interopRequireDefault(require("../../helpers/resolving-handlers/resolveUnshiftedAlias"));
+
+var _KeyOSAndLayoutAliasesDictionary = _interopRequireDefault(require("../../const/KeyOSAndLayoutAliasesDictionary"));
+
+var _KeySequenceParser = _interopRequireDefault(require("./KeySequenceParser"));
+
+var _resolveUnaltedAlias = _interopRequireDefault(require("../../helpers/resolving-handlers/resolveUnaltedAlias"));
+
+var _resolveAltedAlias = _interopRequireDefault(require("../../helpers/resolving-handlers/resolveAltedAlias"));
+
+var _resolveUnaltShiftedAlias = _interopRequireDefault(require("../../helpers/resolving-handlers/resolveUnaltShiftedAlias"));
+
+var _resolveAltShiftedAlias = _interopRequireDefault(require("../../helpers/resolving-handlers/resolveAltShiftedAlias"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+    var ownKeys = Object.keys(source);
+
+    if (typeof Object.getOwnPropertySymbols === 'function') {
+      ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
+        return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      _defineProperty(target, key, source[key]);
+    });
+  }
+
+  return target;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _toConsumableArray(arr) {
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();
+}
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance");
+}
+
+function _iterableToArray(iter) {
+  if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
+}
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) {
+    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {
+      arr2[i] = arr[i];
+    }
+
+    return arr2;
+  }
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+/**
+ * Serializes instances of KeyCombination to KeyCombinationString.
+ *
+ * Used primarily to serialize string representations of key events as they happen.
+ * @class
+ */
+var KeyCombinationSerializer =
+/*#__PURE__*/
+function () {
+  function KeyCombinationSerializer() {
+    _classCallCheck(this, KeyCombinationSerializer);
+  }
+
+  _createClass(KeyCombinationSerializer, null, [{
+    key: "serialize",
+
+    /**
+     * Returns a string representation of a single KeyCombination
+     * @param {KeyCombination} keyCombination KeyCombination to serialize
+     * @returns {string[]} Serialization of KeyCombination
+     */
+    value: function serialize(keyCombination) {
+      var combinationIncludesShift = keyCombination['Shift'];
+      var combinationIncludesAlt = keyCombination['Alt'];
+      var keyCombinationIdDict = {};
+      /**
+       * List of key names in alphabetical order
+       * @type {string[]}
+       */
+
+      var sortedKeys = Object.keys(keyCombination).sort();
+      sortedKeys.forEach(function (keyName) {
+        var keyAliases = [];
+
+        if (combinationIncludesShift) {
+          if (combinationIncludesAlt) {
+            var unaltShiftedKeyNames = (0, _resolveUnaltShiftedAlias.default)(keyName);
+            var altShiftedKeyNames = (0, _resolveAltShiftedAlias.default)(keyName);
+            keyAliases = [].concat(_toConsumableArray(keyAliases), [keyName], _toConsumableArray(unaltShiftedKeyNames), _toConsumableArray(altShiftedKeyNames));
+          } else {
+            var unshiftedKeyNames = (0, _resolveUnshiftedAlias.default)(keyName);
+            var shiftedKeyNames = (0, _resolveShiftedAlias.default)(keyName);
+            keyAliases = [].concat(_toConsumableArray(keyAliases), [keyName], _toConsumableArray(unshiftedKeyNames), _toConsumableArray(shiftedKeyNames));
+          }
+        } else if (combinationIncludesAlt) {
+          var unaltedKeyNames = (0, _resolveUnaltedAlias.default)(keyName);
+          var altedKeyNames = (0, _resolveAltedAlias.default)(keyName);
+          keyAliases = [].concat(_toConsumableArray(keyAliases), [keyName], _toConsumableArray(unaltedKeyNames), _toConsumableArray(altedKeyNames));
+        } else {
+          keyAliases.push(keyName);
+          var keyAlias = _KeyOSAndLayoutAliasesDictionary.default[keyName];
+
+          if (keyAlias) {
+            keyAliases = [].concat(_toConsumableArray(keyAliases), _toConsumableArray(keyAlias));
+          }
+        }
+
+        var keyCombinationIds = Object.keys(keyCombinationIdDict);
+
+        if (keyCombinationIds.length > 0) {
+          keyCombinationIds.forEach(function (keyCombinationId) {
+            keyAliases.forEach(function (keyAlias) {
+              keyCombinationIdDict[keyCombinationId + "+".concat(keyAlias)] = _objectSpread({}, keyCombinationIdDict[keyCombinationId], _defineProperty({}, keyAlias, true));
+            });
+            delete keyCombinationIdDict[keyCombinationId];
+          });
+        } else {
+          keyAliases.forEach(function (keyAlias) {
+            keyCombinationIdDict[keyAlias] = _defineProperty({}, keyAlias, true);
+          });
+        }
+      });
+      return Object.values(keyCombinationIdDict).map(function (keysInCombo) {
+        return Object.keys(keysInCombo).sort().join('+');
+      });
+    }
+    /**
+     * Whether the specified key sequence is valid (is of the correct format and contains
+     * combinations consisting entirely of valid keys)
+     * @param {KeySequenceString} keySequence Key sequence to validate
+     * @returns {boolean} Whether the key sequence is valid
+     */
+
+  }, {
+    key: "isValidKeySerialization",
+    value: function isValidKeySerialization(keySequence) {
+      if (keySequence.length > 0) {
+        return !!_KeySequenceParser.default.parse(keySequence, {
+          ensureValidKeys: true
+        }).combination;
+      } else {
+        return false;
+      }
+    }
+  }]);
+
+  return KeyCombinationSerializer;
+}();
+
+var _default = KeyCombinationSerializer;
+exports.default = _default;
+},{"../../helpers/resolving-handlers/resolveShiftedAlias":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveShiftedAlias.js","../../helpers/resolving-handlers/resolveUnshiftedAlias":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveUnshiftedAlias.js","../../const/KeyOSAndLayoutAliasesDictionary":"../node_modules/react-hotkeys/es/const/KeyOSAndLayoutAliasesDictionary.js","./KeySequenceParser":"../node_modules/react-hotkeys/es/lib/shared/KeySequenceParser.js","../../helpers/resolving-handlers/resolveUnaltedAlias":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveUnaltedAlias.js","../../helpers/resolving-handlers/resolveAltedAlias":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveAltedAlias.js","../../helpers/resolving-handlers/resolveUnaltShiftedAlias":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveUnaltShiftedAlias.js","../../helpers/resolving-handlers/resolveAltShiftedAlias":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveAltShiftedAlias.js"}],"../node_modules/react-hotkeys/es/const/KeyEventSequenceIndex.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+/**
+ * Enum for index values for KeyEvents
+ * @readonly
+ * @enum {number}
+ */
+var KeyEventSequenceIndex = {
+  previous: 0,
+  current: 1
+};
+var _default = KeyEventSequenceIndex;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveKeyAlias.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _KeyOSAndLayoutAliasesDictionary = _interopRequireDefault(require("../../const/KeyOSAndLayoutAliasesDictionary"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Returns a list of accepted aliases for the specified key
+ * @param {NormalizedKeyName} keyName Name of the key
+ * @returns {ReactKeyName[]} List of key aliases
+ */
+function resolveKeyAlias(keyName) {
+  return _KeyOSAndLayoutAliasesDictionary.default[keyName] || [keyName];
+}
+
+var _default = resolveKeyAlias;
+exports.default = _default;
+},{"../../const/KeyOSAndLayoutAliasesDictionary":"../node_modules/react-hotkeys/es/const/KeyOSAndLayoutAliasesDictionary.js"}],"../node_modules/react-hotkeys/es/helpers/resolving-handlers/applicableAliasFunctions.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _resolveAltShiftedAlias = _interopRequireDefault(require("./resolveAltShiftedAlias"));
+
+var _resolveUnaltShiftedAlias = _interopRequireDefault(require("./resolveUnaltShiftedAlias"));
+
+var _resolveShiftedAlias = _interopRequireDefault(require("./resolveShiftedAlias"));
+
+var _resolveUnshiftedAlias = _interopRequireDefault(require("./resolveUnshiftedAlias"));
+
+var _resolveAltedAlias = _interopRequireDefault(require("./resolveAltedAlias"));
+
+var _resolveUnaltedAlias = _interopRequireDefault(require("./resolveUnaltedAlias"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function applicableAliasFunctions(keyDictionary) {
+  if (keyDictionary['Shift']) {
+    if (keyDictionary['Alt']) {
+      return [_resolveAltShiftedAlias.default, _resolveUnaltShiftedAlias.default];
+    } else {
+      return [_resolveShiftedAlias.default, _resolveUnshiftedAlias.default];
+    }
+  } else {
+    if (keyDictionary['Alt']) {
+      return [_resolveAltedAlias.default, _resolveUnaltedAlias.default];
+    } else {
+      var nop = function nop(keyName) {
+        return [keyName];
+      };
+
+      return [nop, nop];
+    }
+  }
+}
+
+var _default = applicableAliasFunctions;
+exports.default = _default;
+},{"./resolveAltShiftedAlias":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveAltShiftedAlias.js","./resolveUnaltShiftedAlias":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveUnaltShiftedAlias.js","./resolveShiftedAlias":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveShiftedAlias.js","./resolveUnshiftedAlias":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveUnshiftedAlias.js","./resolveAltedAlias":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveAltedAlias.js","./resolveUnaltedAlias":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveUnaltedAlias.js"}],"../node_modules/react-hotkeys/es/utils/isUndefined.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function isUndefined(object) {
+  return typeof object === 'undefined';
+}
+
+var _default = isUndefined;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/const/KeyEventState.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+/**
+ * @typedef {number} KeyEventState
+ */
+
+/**
+ * Enum for different states a key event can be recorded in
+ * @readonly
+ * @enum {KeyEventState}
+ */
+var KeyEventState = {
+  unseen: 0,
+  seen: 1,
+  simulated: 2
+};
+var _default = KeyEventState;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/lib/shared/KeyEventStateArrayManager.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _isUndefined = _interopRequireDefault(require("../../utils/isUndefined"));
+
+var _KeyEventState = _interopRequireDefault(require("../../const/KeyEventState"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+/**
+ * @typedef {KeyEventState[]} KeyEvent A record indicating which of the key events
+ * have been registered to a particular key. The first bit is for the keydown event,
+ * the second keypress and the third is for keyup.
+ *
+ * @example: A record for an key that has seen the keydown and keypress event, but not
+ * the keyup event
+ *
+ * [1,1,0]
+ */
+
+
+/**
+ * Creates and modifies KeyEvents
+ * @class
+ */
+var KeyEventStateArrayManager =
+/*#__PURE__*/
+function () {
+  function KeyEventStateArrayManager() {
+    _classCallCheck(this, KeyEventStateArrayManager);
+  }
+
+  _createClass(KeyEventStateArrayManager, null, [{
+    key: "newRecord",
+
+    /**
+     * Makes a new KeyEvent with one of the bits set to true
+     * @param {KeyEventType=} keyEventType Index of bit to set to true
+     * @param {KeyEventState} keyEventState The state to set the key event to
+     * @returns {KeyEvent} New key event record with bit set to true
+     */
+    value: function newRecord(keyEventType, keyEventState) {
+      var record = [_KeyEventState.default.unseen, _KeyEventState.default.unseen, _KeyEventState.default.unseen];
+
+      if (!(0, _isUndefined.default)(keyEventType)) {
+        for (var i = 0; i <= keyEventType; i++) {
+          record[i] = keyEventState;
+        }
+      }
+
+      return record;
+    }
+    /**
+     * Sets a bit in the map to true
+     * @param {KeyEvent} record Map to set a bit to true
+     * @param {KeyEventType} index Index of bit to set
+     * @param {KeyEventState} keyEventState The state to set the key event to
+     */
+
+  }, {
+    key: "setBit",
+    value: function setBit(record, index, keyEventState) {
+      record[index] = keyEventState;
+      return record;
+    }
+    /**
+     * Returns a new record with the same values as the one passed to it
+     * @param {KeyEvent} original Record to copy
+     * @returns {KeyEvent} Record with the same values as the original
+     */
+
+  }, {
+    key: "clone",
+    value: function clone(original) {
+      var record = this.newRecord();
+
+      for (var i = 0; i < original.length; i++) {
+        record[i] = original[i];
+      }
+
+      return record;
+    }
+  }]);
+
+  return KeyEventStateArrayManager;
+}();
+
+var _default = KeyEventStateArrayManager;
+exports.default = _default;
+},{"../../utils/isUndefined":"../node_modules/react-hotkeys/es/utils/isUndefined.js","../../const/KeyEventState":"../node_modules/react-hotkeys/es/const/KeyEventState.js"}],"../node_modules/react-hotkeys/es/utils/object/isObject.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function isObject(target) {
+  return !Array.isArray(target) && _typeof(target) === 'object' && target !== null;
+}
+
+var _default = isObject;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/utils/collection/isEmpty.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _isObject = _interopRequireDefault(require("../object/isObject"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function isEmpty(target) {
+  if ((0, _isObject.default)(target)) {
+    return Object.keys(target).length === 0;
+  } else {
+    return !target ? true : target.length === 0;
+  }
+}
+
+var _default = isEmpty;
+exports.default = _default;
+},{"../object/isObject":"../node_modules/react-hotkeys/es/utils/object/isObject.js"}],"../node_modules/react-hotkeys/es/utils/collection/size.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _isObject = _interopRequireDefault(require("../object/isObject"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function size(collection) {
+  return (0, _isObject.default)(collection) ? Object.keys(collection).length : collection.length;
+}
+
+var _default = size;
+exports.default = _default;
+},{"../object/isObject":"../node_modules/react-hotkeys/es/utils/object/isObject.js"}],"../node_modules/react-hotkeys/es/lib/listening/KeyCombination.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _KeyEventSequenceIndex = _interopRequireDefault(require("../../const/KeyEventSequenceIndex"));
+
+var _KeyEventType = _interopRequireDefault(require("../../const/KeyEventType"));
+
+var _KeyCombinationSerializer = _interopRequireDefault(require("../shared/KeyCombinationSerializer"));
+
+var _resolveKeyAlias = _interopRequireDefault(require("../../helpers/resolving-handlers/resolveKeyAlias"));
+
+var _applicableAliasFunctions = _interopRequireDefault(require("../../helpers/resolving-handlers/applicableAliasFunctions"));
+
+var _KeyEventStateArrayManager = _interopRequireDefault(require("../shared/KeyEventStateArrayManager"));
+
+var _isEmpty = _interopRequireDefault(require("../../utils/collection/isEmpty"));
+
+var _size = _interopRequireDefault(require("../../utils/collection/size"));
+
+var _KeyEventState = _interopRequireDefault(require("../../const/KeyEventState"));
+
+var _dictionaryFrom = _interopRequireDefault(require("../../utils/object/dictionaryFrom"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+/**
+ * Record of one or more keys pressed together, in a combination
+ * @class
+ */
+var KeyCombination =
+/*#__PURE__*/
+function () {
+  /**
+   * Creates a new KeyCombination instance
+   * @param {Object.<ReactKeyName, Array.<KeyEventState[]>>} keys Dictionary
+   *        of keys
+   * @returns {KeyCombination}
+   */
+  function KeyCombination() {
+    var keys = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+    _classCallCheck(this, KeyCombination);
+
+    this._keys = keys;
+    this._includesKeyUp = false;
+
+    this._update();
+  }
+  /********************************************************************************
+   * Getters
+   *********************************************************************************/
+
+  /**
+   * List of ids (serialized representations) for the keys involved in the combination
+   * @returns {KeySequence[]} List of combination ids
+   */
+
+
+  _createClass(KeyCombination, [{
+    key: "getIds",
+    value: function getIds() {
+      return this._ids;
+    }
+    /**
+     * Dictionary mapping keys to their acceptable aliases. This includes "shifted" or
+     * "alted" key characters.
+     * @returns {Object.<ReactKeyName, ReactKeyName[]>}
+     */
+
+  }, {
+    key: "getKeyAliases",
+    value: function getKeyAliases() {
+      return this._keyAliases;
+    }
+    /**
+     * A normalized version of the key, achieved by comparing it to the list of known
+     * aliases for the keys in the combination
+     * @param {ReactKeyName} keyName Name of the key to normalize
+     * @returns {ReactKeyName} Normalized key name
+     */
+
+  }, {
+    key: "getNormalizedKeyName",
+    value: function getNormalizedKeyName(keyName) {
+      var keyState = this._keys[keyName];
+
+      if (keyState) {
+        return keyName;
+      } else {
+        var keyAlias = this._keyAliases[keyName];
+
+        if (keyAlias) {
+          return keyAlias;
+        } else {
+          return keyName;
+        }
+      }
+    }
+    /********************************************************************************
+     * Query attributes of entire combination
+     *********************************************************************************/
+
+    /**
+     * Number of keys involved in the combination
+     * @returns {number} Number of keys
+     */
+
+  }, {
+    key: "getNumberOfKeys",
+    value: function getNumberOfKeys() {
+      return (0, _size.default)(this._keys);
+    }
+    /**
+     * Whether there are any keys in the combination
+     * @returns {boolean} true if there is 1 or more keys involved in the combination,
+     *          else false.
+     */
+
+  }, {
+    key: "any",
+    value: function any() {
+      return Object.keys(this._getKeyStates()).length > 0;
+    }
+    /**
+     * Whether any of the keys in the combination have been released
+     * @returns {boolean} true if at least 1 key has been released in the combination
+     */
+
+  }, {
+    key: "isEnding",
+    value: function isEnding() {
+      return this._includesKeyUp;
+    }
+    /**
+     * Whether there are any keys in the current combination still being pressed
+     * @returns {boolean} True if all keys in the current combination are released
+     */
+
+  }, {
+    key: "hasEnded",
+    value: function hasEnded() {
+      return (0, _isEmpty.default)(this.keysStillPressedDict());
+    }
+    /********************************************************************************
+     * Adding & modifying key states
+     *********************************************************************************/
+
+    /**
+     * Add a new key to the combination (starting with a state of keydown)
+     * @param {ReactKeyName} keyName Name of key
+     * @param {KeyEventState} keyEventState State key is in
+     * @returns {void}
+     */
+
+  }, {
+    key: "addKey",
+    value: function addKey(keyName, keyEventState) {
+      this._setKeyState(keyName, [_KeyEventStateArrayManager.default.newRecord(), _KeyEventStateArrayManager.default.newRecord(_KeyEventType.default.keydown, keyEventState)]);
+    }
+    /**
+     * Adds a key event to the current key combination (as opposed to starting a new
+     * keyboard combination).
+     * @param {ReactKeyName} keyName - Name of the key to add to the current combination
+     * @param {KeyEventType} recordIndex - Index in record to set to true
+     * @param {KeyEventState} keyEventState The state to set the key event to
+     */
+
+  }, {
+    key: "setKeyState",
+    value: function setKeyState(keyName, recordIndex, keyEventState) {
+      var existingRecord = this._getKeyState(keyName);
+
+      if (this.isKeyIncluded(keyName)) {
+        var previous = _KeyEventStateArrayManager.default.clone(existingRecord[1]);
+
+        var current = _KeyEventStateArrayManager.default.clone(previous);
+
+        _KeyEventStateArrayManager.default.setBit(current, recordIndex, keyEventState);
+
+        this._setKeyState(keyName, [previous, current]);
+      } else {
+        this.addKey(keyName, keyEventState);
+      }
+
+      if (recordIndex === _KeyEventType.default.keyup) {
+        this._includesKeyUp = true;
+      }
+    }
+    /********************************************************************************
+     * Iteration and subsets
+     *********************************************************************************/
+
+    /**
+     * @callback forEachHandler
+     * @param {ReactKeyName} keyName Name of a key in the combination
+     * @returns {void}
+     */
+
+    /**
+     * Iterates over every key in the combination, calling an function with each
+     * key name
+     * @param {forEachHandler} handler Function to call with the name of each key
+     *        in the combination
+     * @returns {void}
+     */
+
+  }, {
+    key: "forEachKey",
+    value: function forEachKey(handler) {
+      return Object.keys(this._keys).forEach(handler);
+    }
+    /**
+     * @callback evaluator
+     * @param {ReactKeyName} keyName Name of a key in the combination
+     * @returns {boolean}
+     */
+
+    /**
+     * Whether at least one of the keys causes a evaluator function to return true
+     * @callback {evaluator} evaluator Function to evaluate each key
+     * @returns {boolean} Whether at least one key satisfies the evaluator
+     */
+
+  }, {
+    key: "some",
+    value: function some(evaluator) {
+      return Object.keys(this._keys).some(evaluator);
+    }
+    /**
+     * Dictionary of keys included in the combination record
+     * @returns {Object.<ReactKeyName, boolean>}
+     */
+
+  }, {
+    key: "getKeyDictionary",
+    value: function getKeyDictionary() {
+      return (0, _dictionaryFrom.default)(Object.keys(this._getKeyStates()), true);
+    }
+    /**
+     * Returns a new KeyCombination without the keys that have been
+     * released (had the keyup event recorded). Essentially, the keys that are
+     * currently still pressed down at the time a key event is being handled.
+     * @returns {KeyCombination} New KeyCombination with all of the
+     *        keys with keyup events omitted
+     */
+
+  }, {
+    key: "keysStillPressedDict",
+    value: function keysStillPressedDict() {
+      var _this = this;
+
+      return Object.keys(this._keys).reduce(function (memo, keyName) {
+        if (_this.isKeyStillPressed(keyName)) {
+          memo[keyName] = _this._getKeyState(keyName);
+        }
+
+        return memo;
+      }, {});
+    }
+    /********************************************************************************
+     * Query individual keys
+     *********************************************************************************/
+
+    /**
+     * Whether key is in the combination
+     * @param {ReactKeyName} keyName Name of key
+     * @returns {boolean} true if the key is in the combination
+     */
+
+  }, {
+    key: "isKeyIncluded",
+    value: function isKeyIncluded(keyName) {
+      return !!this._getKeyState(keyName);
+    }
+    /**
+     * Whether key is in the combination and has yet to be released
+     * @param {ReactKeyName} keyName Name of key
+     * @returns {boolean} true if the key is in the combination and yet to be released
+     */
+
+  }, {
+    key: "isKeyStillPressed",
+    value: function isKeyStillPressed(keyName) {
+      return this.isEventTriggered(keyName, _KeyEventType.default.keypress) && !this.isKeyReleased(keyName);
+    }
+    /**
+     * Whether key is in the combination and been released
+     * @param {ReactKeyName} keyName Name of key
+     * @returns {boolean} true if the key is in the combination and has been released
+     */
+
+  }, {
+    key: "isKeyReleased",
+    value: function isKeyReleased(keyName) {
+      return this.isEventTriggered(keyName, _KeyEventType.default.keyup);
+    }
+    /**
+     * Whether an event has been recorded for a key yet
+     * @param {ReactKeyName} keyName Name of the key
+     * @param {KeyEventType} keyEventType Index of the event type
+     * @returns {boolean} true if the event has been recorded for the key
+     */
+
+  }, {
+    key: "isEventTriggered",
+    value: function isEventTriggered(keyName, keyEventType) {
+      return this._getKeyStateType(keyName, _KeyEventSequenceIndex.default.current, keyEventType);
+    }
+    /**
+     * Whether an event has been previously recorded for a key (the second most recent
+     * event to occur for the key)
+     * @param {ReactKeyName} keyName Name of the key
+     * @param {KeyEventType} keyEventType Index of the event type
+     * @returns {boolean} true if the event has been previously recorded for the key
+     */
+
+  }, {
+    key: "wasEventPreviouslyTriggered",
+    value: function wasEventPreviouslyTriggered(keyName, keyEventType) {
+      return this._getKeyStateType(keyName, _KeyEventSequenceIndex.default.previous, keyEventType);
+    }
+    /**
+     * Whether a keypress event is currently being simulated
+     * @param {ReactKeyName} keyName Name of the key
+     * @returns {boolean} true if the keypress event is currently being simulated for the
+     *        key
+     */
+
+  }, {
+    key: "isKeyPressSimulated",
+    value: function isKeyPressSimulated(keyName) {
+      return this._isKeyEventSimulated(keyName, _KeyEventType.default.keypress);
+    }
+    /**
+     * Whether a keyup event is currently being simulated
+     * @param {ReactKeyName} keyName Name of the key
+     * @returns {boolean} true if the keyup event is currently being simulated for the
+     *        key
+     */
+
+  }, {
+    key: "isKeyUpSimulated",
+    value: function isKeyUpSimulated(keyName) {
+      return this._isKeyEventSimulated(keyName, _KeyEventType.default.keyup);
+    }
+    /********************************************************************************
+     * Presentation
+     *********************************************************************************/
+
+    /**
+     * Return a serialized description of the keys in the combination
+     * @returns {KeySequence}
+     */
+
+  }, {
+    key: "describe",
+    value: function describe() {
+      return this.getIds()[0];
+    }
+    /**
+     * A plain JavaScript representation of the key combination record, useful for
+     * serialization or debugging
+     * @returns {Object} Serialized representation of the combination record
+     */
+
+  }, {
+    key: "toJSON",
+    value: function toJSON() {
+      return {
+        keys: this._getKeyStates(),
+        ids: this.getIds(),
+        keyAliases: this.getKeyAliases()
+      };
+    }
+    /********************************************************************************
+     * Private methods
+     *********************************************************************************/
+
+  }, {
+    key: "_getKeyStateType",
+    value: function _getKeyStateType(keyName, keyStage, keyEventType) {
+      var keyState = this._getKeyState(keyName);
+
+      return keyState && keyState[keyStage][keyEventType];
+    }
+  }, {
+    key: "_update",
+    value: function _update() {
+      this._ids = _KeyCombinationSerializer.default.serialize(this._keys);
+      this._keyAliases = buildKeyAliases(this._keys);
+    }
+  }, {
+    key: "_isKeyEventSimulated",
+    value: function _isKeyEventSimulated(keyName, keyEventType) {
+      return this.isEventTriggered(keyName, keyEventType) === _KeyEventState.default.simulated;
+    }
+  }, {
+    key: "_getKeyStates",
+    value: function _getKeyStates() {
+      return this._keys;
+    }
+  }, {
+    key: "_getKeyState",
+    value: function _getKeyState(keyName) {
+      var keyState = this._keys[keyName];
+
+      if (keyState) {
+        return keyState;
+      } else {
+        var keyAlias = this._keyAliases[keyName];
+
+        if (keyAlias) {
+          return this._keys[keyAlias];
+        }
+      }
+    }
+  }, {
+    key: "_setKeyState",
+    value: function _setKeyState(keyName, keyState) {
+      var keyAlias = this.getNormalizedKeyName(keyName);
+      this._keys[keyAlias] = keyState;
+
+      this._update();
+    }
+  }]);
+
+  return KeyCombination;
+}();
+
+function buildKeyAliases(keyDictionary) {
+  return Object.keys(keyDictionary).reduce(function (memo, keyName) {
+    (0, _resolveKeyAlias.default)(keyName).forEach(function (normalizedKey) {
+      (0, _applicableAliasFunctions.default)(keyDictionary).forEach(function (aliasFunction) {
+        aliasFunction(normalizedKey).forEach(function (keyAlias) {
+          if (keyAlias !== keyName || keyName !== normalizedKey) {
+            memo[keyAlias] = keyName;
+          }
+        });
+      });
+    });
+    return memo;
+  }, {});
+}
+
+var _default = KeyCombination;
+exports.default = _default;
+},{"../../const/KeyEventSequenceIndex":"../node_modules/react-hotkeys/es/const/KeyEventSequenceIndex.js","../../const/KeyEventType":"../node_modules/react-hotkeys/es/const/KeyEventType.js","../shared/KeyCombinationSerializer":"../node_modules/react-hotkeys/es/lib/shared/KeyCombinationSerializer.js","../../helpers/resolving-handlers/resolveKeyAlias":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveKeyAlias.js","../../helpers/resolving-handlers/applicableAliasFunctions":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/applicableAliasFunctions.js","../shared/KeyEventStateArrayManager":"../node_modules/react-hotkeys/es/lib/shared/KeyEventStateArrayManager.js","../../utils/collection/isEmpty":"../node_modules/react-hotkeys/es/utils/collection/isEmpty.js","../../utils/collection/size":"../node_modules/react-hotkeys/es/utils/collection/size.js","../../const/KeyEventState":"../node_modules/react-hotkeys/es/const/KeyEventState.js","../../utils/object/dictionaryFrom":"../node_modules/react-hotkeys/es/utils/object/dictionaryFrom.js"}],"../node_modules/react-hotkeys/es/lib/listening/KeyHistory.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _KeyCombination = _interopRequireDefault(require("./KeyCombination"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+/**
+ * List of key combinations seen by hot key components
+ * @class
+ */
+var KeyHistory =
+/*#__PURE__*/
+function () {
+  /**
+   * Creates a new KeyHistory instance
+   * @param {Number} maxLength Maximum length of the list.
+   * @param {KeyCombination} startingPoint Initial state of first combination
+   * @returns {KeyHistory}
+   */
+  function KeyHistory(_ref) {
+    var maxLength = _ref.maxLength;
+    var startingPoint = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+
+    _classCallCheck(this, KeyHistory);
+
+    this._records = [];
+    this._maxLength = maxLength;
+
+    if (startingPoint) {
+      this._push(startingPoint);
+    } else {
+      this._push(new _KeyCombination.default());
+    }
+  }
+  /**
+   * A subset of the most recently press key combinations
+   * @param {Number} numberOfCombinations The number of most recent key combinations
+   * @returns {KeyCombination[]} List of key combinations
+   */
+
+
+  _createClass(KeyHistory, [{
+    key: "getMostRecentCombinations",
+    value: function getMostRecentCombinations(numberOfCombinations) {
+      return this._records.slice(-numberOfCombinations, -1);
+    }
+    /**
+     * Whether any keys have been stored in the key history
+     * @returns {boolean} true if there is at least one key combination, else false
+     */
+
+  }, {
+    key: "any",
+    value: function any() {
+      return this._records.some(function (keyCombination) {
+        return keyCombination.any();
+      });
+    }
+    /**
+     * The number of key combinations in the history (limited by the max length)
+     * @returns {number} Number of key combinations
+     */
+
+  }, {
+    key: "getLength",
+    value: function getLength() {
+      return this._records.length;
+    }
+    /**
+     * Most recent or current key combination
+     * @returns {KeyCombination} Key combination record
+     */
+
+  }, {
+    key: "getCurrentCombination",
+    value: function getCurrentCombination() {
+      return this._records[this.getLength() - 1];
+    }
+    /**
+     * Adds a key event to the current key combination (as opposed to starting a new
+     * keyboard combination).
+     * @param {ReactKeyName} keyName - Name of the key to add to the current combination
+     * @param {KeyEventType} recordIndex - Index in record to set to true
+     * @param {KeyEventState} keyEventState The state to set the key event to
+     */
+
+  }, {
+    key: "addKeyToCurrentCombination",
+    value: function addKeyToCurrentCombination(keyName, recordIndex, keyEventState) {
+      this._ensureInitialKeyCombination();
+
+      this.getCurrentCombination().setKeyState(keyName, recordIndex, keyEventState);
+    }
+    /**
+     * Sets a new maximum length for the key combination history. Once the number of
+     * key combinations exceeds this length, the oldest is dropped.
+     * @param {Number} length New maximum length of the key history
+     */
+
+  }, {
+    key: "setMaxLength",
+    value: function setMaxLength(length) {
+      this._maxLength = length;
+
+      this._trimHistory();
+    }
+    /**
+     * Adds a new KeyCombination to the event history.
+     * @param {ReactKeyName} keyName - Name of the keyboard key to add to the new
+     *        KeyCombination
+     * @param {KeyEventState} keyEventState The state to set the key event to
+     */
+
+  }, {
+    key: "startNewKeyCombination",
+    value: function startNewKeyCombination(keyName, keyEventState) {
+      this._ensureInitialKeyCombination();
+
+      var newCombinationRecord = new _KeyCombination.default(this.getCurrentCombination().keysStillPressedDict());
+      newCombinationRecord.addKey(keyName, keyEventState);
+
+      this._push(newCombinationRecord);
+    }
+    /**
+     * A plain JavaScript representation of the key combination history, useful for
+     * serialization or debugging
+     * @returns {Object[]} Serialized representation of the registry
+     */
+
+  }, {
+    key: "toJSON",
+    value: function toJSON() {
+      return this._records.map(function (keyCombination) {
+        return keyCombination.toJSON();
+      });
+    }
+    /********************************************************************************
+     * Private methods
+     ********************************************************************************/
+
+  }, {
+    key: "_ensureInitialKeyCombination",
+    value: function _ensureInitialKeyCombination() {
+      if (this.getLength() === 0) {
+        this._push(new _KeyCombination.default());
+      }
+    }
+  }, {
+    key: "_push",
+    value: function _push(record) {
+      this._trimHistory();
+
+      this._records.push(record);
+    }
+  }, {
+    key: "_trimHistory",
+    value: function _trimHistory() {
+      while (this.getLength() > this._maxLength) {
+        /**
+         * We know the longest key sequence registered for the currently focused
+         * components, so we don't need to keep a record of history longer than
+         * that
+         */
+        this._shift();
+      }
+    }
+  }, {
+    key: "_shift",
+    value: function _shift() {
+      this._records.shift();
+    }
+  }]);
+
+  return KeyHistory;
+}();
+
+var _default = KeyHistory;
+exports.default = _default;
+},{"./KeyCombination":"../node_modules/react-hotkeys/es/lib/listening/KeyCombination.js"}],"../node_modules/react-hotkeys/es/lib/shared/Registry.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+/**
+ * Generic registry for storing and retrieving items
+ * @class @abstract
+ */
+
+
+var Registry =
+/*#__PURE__*/
+function () {
+  /**
+   * Create a new Registry instance
+   * @returns {Registry}
+   */
+  function Registry() {
+    _classCallCheck(this, Registry);
+
+    this._registry = {};
+  }
+  /**
+   * Returns the registry item stored with against an id
+   * @param {*} id The key item was registered with
+   * @returns {*} Item stored in registry
+   */
+
+
+  _createClass(Registry, [{
+    key: "get",
+    value: function get(id) {
+      return this._registry[id];
+    }
+    /**
+     * Add an item to the registry
+     * @param {*} id Key to store the item against
+     * @param {*} item Item to store in the registry
+     */
+
+  }, {
+    key: "set",
+    value: function set(id, item) {
+      this._registry[id] = item;
+    }
+    /**
+     * Remove an item from the registry
+     * @param {*} id Key of the item to remove from the registry
+     */
+
+  }, {
+    key: "remove",
+    value: function remove(id) {
+      delete this._registry[id];
+    }
+    /**
+     * A plain JavaScript representation of the registry, useful for serialization or
+     * debugging
+     * @returns {Object.<*,*>} Serialized representation of the registry
+     */
+
+  }, {
+    key: "toJSON",
+    value: function toJSON() {
+      return this._registry;
+    }
+  }]);
+
+  return Registry;
+}();
+
+var _default = Registry;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/utils/array/arrayFrom.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function arrayFrom(target) {
+  if (Array.isArray(target)) {
+    return target;
+  } else if (!target) {
+    return [];
+  } else {
+    return [target];
+  }
+}
+
+var _default = arrayFrom;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/utils/collection/without.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _dictionaryFrom = _interopRequireDefault(require("../object/dictionaryFrom"));
+
+var _arrayFrom = _interopRequireDefault(require("../array/arrayFrom"));
+
+var _isObject = _interopRequireDefault(require("../object/isObject"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function without(target) {
+  var attributesToOmit = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+  var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+  var omitDict = (0, _dictionaryFrom.default)((0, _arrayFrom.default)(attributesToOmit));
+
+  if (Array.isArray(target)) {
+    return target.reduce(function (memo, element) {
+      if (!(omitDict[element] && (options.stringifyFirst || omitDict[element].value === element))) {
+        memo.push(element);
+      }
+
+      return memo;
+    }, []);
+  } else if ((0, _isObject.default)(target)) {
+    return Object.keys(target).reduce(function (memo, key) {
+      if (!omitDict[key]) {
+        memo[key] = target[key];
+      }
+
+      return memo;
+    }, {});
+  } else {
+    return target;
+  }
+}
+
+var _default = without;
+exports.default = _default;
+},{"../object/dictionaryFrom":"../node_modules/react-hotkeys/es/utils/object/dictionaryFrom.js","../array/arrayFrom":"../node_modules/react-hotkeys/es/utils/array/arrayFrom.js","../object/isObject":"../node_modules/react-hotkeys/es/utils/object/isObject.js"}],"../node_modules/react-hotkeys/es/lib/definitions/ComponentTree.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _Registry2 = _interopRequireDefault(require("../shared/Registry"));
+
+var _without = _interopRequireDefault(require("../../utils/collection/without"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+    var ownKeys = Object.keys(source);
+
+    if (typeof Object.getOwnPropertySymbols === 'function') {
+      ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
+        return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      _defineProperty(target, key, source[key]);
+    });
+  }
+
+  return target;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _get(target, property, receiver) {
+  if (typeof Reflect !== "undefined" && Reflect.get) {
+    _get = Reflect.get;
+  } else {
+    _get = function _get(target, property, receiver) {
+      var base = _superPropBase(target, property);
+
+      if (!base) return;
+      var desc = Object.getOwnPropertyDescriptor(base, property);
+
+      if (desc.get) {
+        return desc.get.call(receiver);
+      }
+
+      return desc.value;
+    };
+  }
+
+  return _get(target, property, receiver || target);
+}
+
+function _superPropBase(object, property) {
+  while (!Object.prototype.hasOwnProperty.call(object, property)) {
+    object = _getPrototypeOf(object);
+    if (object === null) break;
+  }
+
+  return object;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+/**
+ * @typedef {Object} ComponentRegistryEntry
+ * @property {ComponentId[]} childIds List of ids of the children of a component
+ * @property {ComponentId|null} parentIds Id of the parent component
+ */
+
+/**
+ * Registry of hot keys components, mapping children to their parents and vice versa
+ * @class
+ */
+var ComponentTree =
+/*#__PURE__*/
+function (_Registry) {
+  _inherits(ComponentTree, _Registry);
+
+  function ComponentTree() {
+    _classCallCheck(this, ComponentTree);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(ComponentTree).apply(this, arguments));
+  }
+
+  _createClass(ComponentTree, [{
+    key: "add",
+
+    /**
+     * Register a component
+     * @param {ComponentId} componentId Id of the component to register
+     * @param {KeyMap} keyMap - Map of actions to key expressions
+     * @returns {void}
+     */
+    value: function add(componentId, keyMap) {
+      _get(_getPrototypeOf(ComponentTree.prototype), "set", this).call(this, componentId, {
+        childIds: [],
+        parentId: null,
+        keyMap: keyMap
+      });
+    }
+    /**
+     * Updates an existing component's key map
+     * @param {ComponentId} componentId Id of the component to register
+     * @param {KeyMap} keyMap - Map of actions to key expressions
+     * @returns {void}
+     */
+
+  }, {
+    key: "update",
+    value: function update(componentId, keyMap) {
+      var component = _get(_getPrototypeOf(ComponentTree.prototype), "get", this).call(this, componentId);
+
+      _get(_getPrototypeOf(ComponentTree.prototype), "set", this).call(this, componentId, _objectSpread({}, component, {
+        keyMap: keyMap
+      }));
+    }
+    /**
+     * Set the parent ID of a component
+     * @param {ComponentId} componentId Id of the component
+     * @param {ComponentId} parentId Id of the parent
+     * @returns {void}
+     */
+
+  }, {
+    key: "setParent",
+    value: function setParent(componentId, parentId) {
+      this.get(componentId).parentId = parentId;
+
+      this._addChildId(parentId, componentId);
+    }
+    /**
+     * Deregister a component
+     * @param {ComponentId} componentId Id of the component to remove
+     * @returns {void}
+     */
+
+  }, {
+    key: "remove",
+    value: function remove(componentId) {
+      var parentId = this._getParentId(componentId);
+
+      this._removeChildId(parentId, componentId);
+
+      _get(_getPrototypeOf(ComponentTree.prototype), "remove", this).call(this, componentId);
+    }
+    /********************************************************************************
+     * Private methods
+     ********************************************************************************/
+
+  }, {
+    key: "_getParentId",
+    value: function _getParentId(componentId) {
+      var component = this.get(componentId);
+      return component && component.parentId;
+    }
+  }, {
+    key: "_addChildId",
+    value: function _addChildId(parentId, componentId) {
+      this.get(parentId).childIds.push(componentId);
+    }
+  }, {
+    key: "_removeChildId",
+    value: function _removeChildId(parentId, childId) {
+      var parent = this.get(parentId);
+
+      if (parent) {
+        parent.childIds = (0, _without.default)(parent.childIds, childId);
+      }
+    }
+  }]);
+
+  return ComponentTree;
+}(_Registry2.default);
+
+var _default = ComponentTree;
+exports.default = _default;
+},{"../shared/Registry":"../node_modules/react-hotkeys/es/lib/shared/Registry.js","../../utils/collection/without":"../node_modules/react-hotkeys/es/utils/collection/without.js"}],"../node_modules/react-hotkeys/es/utils/array/removeAtIndex.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function _toConsumableArray(arr) {
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();
+}
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance");
+}
+
+function _iterableToArray(iter) {
+  if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
+}
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) {
+    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {
+      arr2[i] = arr[i];
+    }
+
+    return arr2;
+  }
+}
+
+function removeAtIndex(array, index) {
+  return [].concat(_toConsumableArray(array.slice(0, index)), _toConsumableArray(array.slice(index + 1)));
+}
+
+var _default = removeAtIndex;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/lib/definitions/ComponentOptionsListIterator.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+/**
+ * Iterates over ComponentOptionList instances
+ * @class
+ */
+
+
+var ComponentOptionsListIterator =
+/*#__PURE__*/
+function () {
+  /**
+   * Creates a new instance of ComponentOptionsListIterator
+   * @param {ComponentOptionsList} list The list to iterate over
+   */
+  function ComponentOptionsListIterator(list) {
+    _classCallCheck(this, ComponentOptionsListIterator);
+
+    this._list = list;
+    this._position = -1;
+  }
+  /**
+   * The position the iterator is currently at
+   * @returns {number} The current position
+   */
+
+
+  _createClass(ComponentOptionsListIterator, [{
+    key: "getPosition",
+    value: function getPosition() {
+      return this._position;
+    }
+    /**
+     * The component options the iterator is currently pointed at
+     * @returns {ComponentOptions} The current component options
+     */
+
+  }, {
+    key: "getComponent",
+    value: function getComponent() {
+      return this._list.getAtPosition(this.getPosition());
+    }
+    /**
+     * Move to the next component options in the list, if not already at the end of the
+     * list.
+     * @returns {ComponentOptionsList|null} The next component options the iterator is now
+     *        pointed at. If the iterator is already at the last component options, null
+     *        is returned.
+     */
+
+  }, {
+    key: "next",
+    value: function next() {
+      if (this.getPosition() + 1 < this._list.getLength()) {
+        this._position++;
+        return this.getComponent();
+      } else {
+        return null;
+      }
+    }
+  }]);
+
+  return ComponentOptionsListIterator;
+}();
+
+var _default = ComponentOptionsListIterator;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/lib/definitions/ComponentOptionsList.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _removeAtIndex = _interopRequireDefault(require("../../utils/array/removeAtIndex"));
+
+var _KeyEventStateArrayManager = _interopRequireDefault(require("../shared/KeyEventStateArrayManager"));
+
+var _Configuration = _interopRequireDefault(require("../config/Configuration"));
+
+var _KeyCombinationSerializer = _interopRequireDefault(require("../shared/KeyCombinationSerializer"));
+
+var _isObject = _interopRequireDefault(require("../../utils/object/isObject"));
+
+var _hasKey = _interopRequireDefault(require("../../utils/object/hasKey"));
+
+var _arrayFrom = _interopRequireDefault(require("../../utils/array/arrayFrom"));
+
+var _isUndefined = _interopRequireDefault(require("../../utils/isUndefined"));
+
+var _KeyEventType = _interopRequireDefault(require("../../const/KeyEventType"));
+
+var _KeySequenceParser = _interopRequireDefault(require("../shared/KeySequenceParser"));
+
+var _KeyEventState = _interopRequireDefault(require("../../const/KeyEventState"));
+
+var _ComponentOptionsListIterator = _interopRequireDefault(require("./ComponentOptionsListIterator"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+    var ownKeys = Object.keys(source);
+
+    if (typeof Object.getOwnPropertySymbols === 'function') {
+      ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
+        return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      _defineProperty(target, key, source[key]);
+    });
+  }
+
+  return target;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+/**
+ * @typedef {Object} ComponentOptions a hotkeys component's options in a normalized
+ *          format
+ * @property {ActionDictionary} actions The dictionary of actions defined by the
+ *           component
+ */
+
+/**
+ * A mapping between ActionName and ActionConfiguration
+ * @typedef {Object.<ActionName,ActionConfiguration>} ActionDictionary
+ */
+
+/**
+ * Standardized format for defining an action
+ * @typedef {Object} ActionConfiguration
+ * @property {NormalizedKeySequenceId} prefix - String describing the sequence of key
+ *          combinations, before the final key combination (an empty string for
+ *          sequences that are a single key combination)
+ * @property {ActionName} actionName - Name of the action
+ * @property {number} sequenceLength - Number of combinations involved in the
+ *           sequence
+ * @property {KeyCombinationString} id - Serialized description of the key combinations
+ *            that make up the sequence
+ * @property {Object.<KeyName, Boolean>} keyDictionary - Dictionary of key names involved
+ *           in the last key combination of the sequence
+ * @property {KeyEventType} keyEventType - Record index for key event that
+ *          the matcher should match on
+ * @property {number} size - Number of keys involved in the final key combination
+ */
+
+/**
+ * List of component options that define the application's currently enabled key
+ * maps and handlers, starting from the inner-most (most deeply nested) component,
+ * that is closest to the DOM element currently in focus, and ending with the options
+ * of the root hotkeys component.
+ * @class
+ */
+var ComponentOptionsList =
+/*#__PURE__*/
+function () {
+  function ComponentOptionsList() {
+    _classCallCheck(this, ComponentOptionsList);
+    /**
+     * List of ComponentOptions for the actions registered by each hot keys component.
+     * @type {ComponentOptions[]}
+     */
+
+
+    this._list = [];
+    /**
+     * Dictionary mapping the ids of the components defining actions, and their
+     * position in the list.
+     * @type {Object.<ComponentId, Number>}
+     */
+
+    this._idToIndex = {};
+    /**
+     * Counter for the length of the longest sequence currently enabled.
+     * @type {number}
+     */
+
+    this._longestSequence = 1;
+    /**
+     * The id of the component with the longest key sequence
+     * @type {ComponentId}
+     */
+
+    this._longestSequenceComponentId = null;
+    /**
+     * Record of whether at least one keymap is bound to each event type (keydown,
+     * keypress or keyup)
+     * @type {KeyEvent}
+     */
+
+    this._keyMapEventRecord = _KeyEventStateArrayManager.default.newRecord();
+  }
+  /**
+   * Return a new iterator that can be used to enumerate the list
+   * @returns {ComponentOptionsListIterator}
+   */
+
+
+  _createClass(ComponentOptionsList, [{
+    key: "getNewIterator",
+    value: function getNewIterator() {
+      return new _ComponentOptionsListIterator.default(this);
+    }
+    /**
+     * Adds a new hot key component's options, to be parsed and standardised before being
+     * added to the list
+     * @param {ComponentId} componentId - Id of the component the options belong to
+     * @param {KeyMap} actionNameToKeyMap - Map of actions to key maps
+     * @param {HandlersMap} actionNameToHandlersMap - Map of actions to handlers
+     * @param {Object} options - Hash of options that configure how the key map is built.
+     * @param {string} options.defaultKeyEvent - The default key event to use for any
+     *        action that does not explicitly define one.
+     * @returns {number} The position the component options have in the list
+     */
+
+  }, {
+    key: "add",
+    value: function add(componentId, actionNameToKeyMap, actionNameToHandlersMap, options) {
+      if (this.containsId(componentId)) {
+        return this.update(componentId, actionNameToKeyMap, actionNameToHandlersMap, options);
+      }
+
+      var componentOptions = this._build(componentId, actionNameToKeyMap, actionNameToHandlersMap, options);
+
+      this._list.push(componentOptions);
+
+      var newIndex = this._getLastIndex();
+
+      return this._idToIndex[componentId] = newIndex;
+    }
+    /**
+     * Whether the list contains options for a component with the specified id
+     * @param {ComponentId} id Id of the component
+     * @returns {boolean} True if the list contains options for the component with the
+     *        specified id
+     */
+
+  }, {
+    key: "containsId",
+    value: function containsId(id) {
+      return !!this.get(id);
+    }
+    /**
+     * Retrieves options for a component from the list
+     * @param {ComponentId} id Id of the component to retrieve the options for
+     * @returns {ComponentOptions} Options for the component with the specified id
+     */
+
+  }, {
+    key: "get",
+    value: function get(id) {
+      return this.getAtPosition(this.getIndexById(id));
+    }
+    /**
+     * Returns the position of the options belonging to the component with the specified
+     * id.
+     * @param {ComponentId} id Id of the component to retrieve the options for
+     * @returns {number} The position of the component options in the list.
+     */
+
+  }, {
+    key: "getIndexById",
+    value: function getIndexById(id) {
+      return this._idToIndex[id];
+    }
+    /**
+     * Replaces the options of a component already in the list with new values
+     * @param {ComponentId} componentId - Id of the component to replace the options of
+     * @param {KeyMap} actionNameToKeyMap - Map of actions to key maps
+     * @param {HandlersMap} actionNameToHandlersMap - Map of actions to handlers
+     * @param {Object} options - Hash of options that configure how the key map is built.
+     * @param {string} options.defaultKeyEvent - The default key event to use for any
+     *        action that does not explicitly define one.
+     * @returns {number} The position the component options have in the list
+     */
+
+  }, {
+    key: "update",
+    value: function update(componentId, actionNameToKeyMap, actionNameToHandlersMap, options) {
+      /**
+       * We record whether we're building new options for the component that currently
+       * has the longest sequence, to decide whether we need to recalculate the longest
+       * sequence.
+       */
+      var isUpdatingLongestSequenceComponent = this._isUpdatingComponentWithLongestSequence(componentId);
+
+      var longestSequenceBefore = this.getLongestSequence();
+
+      var componentOptions = this._build(componentId, actionNameToKeyMap, actionNameToHandlersMap, options);
+
+      if (isUpdatingLongestSequenceComponent && componentOptions.sequenceLength !== longestSequenceBefore) {
+        /**
+         * Component with the longest sequence has just had new options registered
+         * so we need to reset the longest sequence
+         */
+        if (componentOptions.sequenceLength > longestSequenceBefore) {
+          /**
+           * The same component has registered a longer sequence, so we just
+           * need to update the sequence length to the new, larger number
+           */
+          this._longestSequence = componentOptions.sequenceLength;
+        } else {
+          /**
+           * The component may no longer have the longest sequence, so we need to
+           * recalculate
+           */
+          this._recalculateLongestSequence();
+        }
+      }
+
+      this._list[this.getIndexById(componentId)] = componentOptions;
+    }
+    /**
+     * Removes the options of a component from the list
+     * @param {ComponentId} id The id of the component whose options are removed
+     * @returns {void}
+     */
+
+  }, {
+    key: "remove",
+    value: function remove(id) {
+      var isUpdatingLongestSequenceComponent = this._isUpdatingComponentWithLongestSequence(id);
+
+      this.removeAtPosition(this.getIndexById(id));
+
+      if (isUpdatingLongestSequenceComponent) {
+        this._recalculateLongestSequence();
+      }
+    }
+    /**
+     * Whether the list has any options in it (non-empty)
+     * @returns {boolean} true if the list has one or more options in it
+     */
+
+  }, {
+    key: "any",
+    value: function any() {
+      return this.getLength() !== 0;
+    }
+    /**
+     * Whether a component is the root component (the last one in the list)
+     * @param {ComponentId} id Id of the component to query if it is the root
+     * @returns {boolean} true if the component is the last in the list
+     */
+
+  }, {
+    key: "isRoot",
+    value: function isRoot(id) {
+      return this.getIndexById(id) >= this.getLength() - 1;
+    }
+    /**
+     * The length of the longest sequence currently defined.
+     * @returns {number} The sequence length
+     */
+
+  }, {
+    key: "getLongestSequence",
+    value: function getLongestSequence() {
+      return this._longestSequence;
+    }
+    /**
+     * Whether the list contains at least one component with an action bound to a
+     * particular keyboard event type.
+     * @param {KeyEventType} keyEventType Index of the keyboard event type
+     * @returns {boolean} true when the list contains a component with an action bound
+     *          to the event type
+     */
+
+  }, {
+    key: "anyActionsForEventType",
+    value: function anyActionsForEventType(keyEventType) {
+      return !!this._keyMapEventRecord[keyEventType];
+    }
+    /**
+     * The number of components in the list
+     * @returns {number} Number of components in the list
+     */
+
+  }, {
+    key: "getLength",
+    value: function getLength() {
+      return this._list.length;
+    }
+    /**
+     * The component options at particular position in the list
+     * @param {number} position The position in the list
+     * @returns {ComponentOptions} The component options at the position in the list
+     */
+
+  }, {
+    key: "getAtPosition",
+    value: function getAtPosition(position) {
+      return this._list[position];
+    }
+    /**
+     * Remove the component options at a position in the list
+     * @param {number} position The position in the list to remove the options
+     * return {void}
+     */
+
+  }, {
+    key: "removeAtPosition",
+    value: function removeAtPosition(position) {
+      this._list = (0, _removeAtIndex.default)(this._list, position);
+      var counter = position;
+
+      while (counter < this.getLength()) {
+        this._idToIndex[this.getAtPosition(counter).componentId] = counter;
+        counter++;
+      }
+    }
+    /**
+     * A plain JavaScript object representation of the component options list that can
+     * be used for serialization or debugging
+     * @returns {ComponentOptions[]} plain JavaScript object representation of the list
+     */
+
+  }, {
+    key: "toJSON",
+    value: function toJSON() {
+      return this._list;
+    }
+    /********************************************************************************
+     * Private methods
+     ********************************************************************************/
+
+  }, {
+    key: "_getLastIndex",
+    value: function _getLastIndex() {
+      return this.getLength() - 1;
+    }
+    /**
+     * Builds the internal representation that described the options passed to a hot keys
+     * component
+     * @param {ComponentId} componentId - Id of the component the options belong to
+     * @param {KeyMap} actionNameToKeyMap - Map of actions to key maps
+     * @param {HandlersMap} actionNameToHandlersMap - Map of actions to handlers
+     * @param {Object} options - Hash of options that configure how the key map is built.
+     * @returns {ComponentOptions} Options for the specified component
+     * @private
+     */
+
+  }, {
+    key: "_build",
+    value: function _build(componentId, actionNameToKeyMap, actionNameToHandlersMap, options) {
+      var _this$_applyHardSeque = this._applyHardSequences(actionNameToKeyMap, actionNameToHandlersMap),
+          hardSequenceKeyMap = _this$_applyHardSeque.keyMap,
+          includingHardSequenceHandlers = _this$_applyHardSeque.handlers;
+
+      var actions = this._buildActionDictionary(_objectSpread({}, actionNameToKeyMap, hardSequenceKeyMap), options, componentId);
+
+      return {
+        actions: actions,
+        handlers: includingHardSequenceHandlers,
+        componentId: componentId,
+        options: options
+      };
+    }
+  }, {
+    key: "_isUpdatingComponentWithLongestSequence",
+    value: function _isUpdatingComponentWithLongestSequence(componentId) {
+      return componentId === this._getLongestSequenceComponentId();
+    }
+  }, {
+    key: "_getLongestSequenceComponentId",
+    value: function _getLongestSequenceComponentId() {
+      return this._longestSequenceComponentId;
+    }
+  }, {
+    key: "_recalculateLongestSequence",
+    value: function _recalculateLongestSequence() {
+      var iterator = this.getNewIterator();
+
+      while (iterator.next()) {
+        var _iterator$getComponen = iterator.getComponent(),
+            longestSequence = _iterator$getComponen.longestSequence,
+            componentId = _iterator$getComponen.componentId;
+
+        if (longestSequence > this.getLongestSequence()) {
+          this._longestSequenceComponentId = componentId;
+          this._longestSequence = longestSequence;
+        }
+      }
+    }
+    /**
+     * Applies hard sequences (handlers attached to actions with names that are valid
+     * KeySequenceStrings) that implicitly define a corresponding action name.
+     * @param {KeyMap} actionNameToKeyMap - KeyMap specified by HotKeys component
+     * @param {HandlersMap} actionMap - HandlersMap specified by HotKeys component
+     * @returns {{keyMap: {}, handlers: {}}} Object containing keymap and handlers map
+     *        with the hard sequence actions applied
+     * @private
+     */
+
+  }, {
+    key: "_applyHardSequences",
+    value: function _applyHardSequences(actionNameToKeyMap, actionMap) {
+      if (_Configuration.default.option('enableHardSequences')) {
+        return Object.keys(actionMap).reduce(function (memo, actionNameOrHardSequence) {
+          var actionNameIsInKeyMap = !!actionNameToKeyMap[actionNameOrHardSequence];
+
+          if (!actionNameIsInKeyMap && _KeyCombinationSerializer.default.isValidKeySerialization(actionNameOrHardSequence)) {
+            memo.keyMap[actionNameOrHardSequence] = actionNameOrHardSequence;
+          }
+
+          memo.handlers[actionNameOrHardSequence] = actionMap[actionNameOrHardSequence];
+          return memo;
+        }, {
+          keyMap: {},
+          handlers: {}
+        });
+      } else {
+        return {
+          keyMap: actionNameToKeyMap,
+          handlers: actionMap
+        };
+      }
+    }
+    /**
+     * Returns a mapping between ActionNames and ActionConfiguration
+     * @param {KeyMap} actionNameToKeyMap - Mapping of ActionNames to key sequences.
+     * @param {Object} options - Hash of options that configure how the key map is built.
+     * @param {string} options.defaultKeyEvent - The default key event to use for any
+     *        action that does not explicitly define one.
+     * @param {ComponentId} componentId Index of the component the matcher belongs to
+     * @returns {ActionDictionary} Map from ActionNames to ActionConfiguration
+     * @private
+     */
+
+  }, {
+    key: "_buildActionDictionary",
+    value: function _buildActionDictionary(actionNameToKeyMap, options, componentId) {
+      var _this = this;
+
+      return Object.keys(actionNameToKeyMap).reduce(function (memo, actionName) {
+        var keyMapConfig = actionNameToKeyMap[actionName];
+
+        var keyMapOptions = function () {
+          if ((0, _isObject.default)(keyMapConfig) && (0, _hasKey.default)(keyMapConfig, 'sequences')) {
+            return (0, _arrayFrom.default)(keyMapConfig.sequences);
+          } else {
+            return (0, _arrayFrom.default)(keyMapConfig);
+          }
+        }();
+
+        keyMapOptions.forEach(function (keyMapOption) {
+          var _normalizeActionOptio = normalizeActionOptions(keyMapOption, options),
+              keySequence = _normalizeActionOptio.keySequence,
+              keyEventType = _normalizeActionOptio.keyEventType;
+
+          _this._addActionOptions(memo, componentId, actionName, keySequence, keyEventType);
+        });
+        return memo;
+      }, {});
+    }
+  }, {
+    key: "_addActionOptions",
+    value: function _addActionOptions(memo, componentId, actionName, keySequence, keyEventType) {
+      var _KeySequenceParser$pa = _KeySequenceParser.default.parse(keySequence, {
+        keyEventType: keyEventType
+      }),
+          sequence = _KeySequenceParser$pa.sequence,
+          combination = _KeySequenceParser$pa.combination;
+
+      if (sequence.size > this.getLongestSequence()) {
+        this._longestSequence = sequence.size;
+        this._longestSequenceComponentId = componentId;
+      }
+      /**
+       * Record that there is at least one key sequence in the focus tree bound to
+       * the keyboard event
+       */
+
+
+      this._keyMapEventRecord[keyEventType] = _KeyEventState.default.seen;
+
+      if (!memo[actionName]) {
+        memo[actionName] = [];
+      }
+
+      memo[actionName].push(_objectSpread({
+        prefix: sequence.prefix,
+        actionName: actionName,
+        sequenceLength: sequence.size
+      }, combination));
+    }
+  }]);
+
+  return ComponentOptionsList;
+}();
+
+function normalizeActionOptions(keyMapOption, options) {
+  if ((0, _isObject.default)(keyMapOption)) {
+    var sequence = keyMapOption.sequence,
+        action = keyMapOption.action;
+    return {
+      keySequence: sequence,
+      keyEventType: (0, _isUndefined.default)(action) ? _KeyEventType.default[options.defaultKeyEvent] : _KeyEventType.default[action]
+    };
+  } else {
+    return {
+      keySequence: keyMapOption,
+      keyEventType: _KeyEventType.default[options.defaultKeyEvent]
+    };
+  }
+}
+
+var _default = ComponentOptionsList;
+exports.default = _default;
+},{"../../utils/array/removeAtIndex":"../node_modules/react-hotkeys/es/utils/array/removeAtIndex.js","../shared/KeyEventStateArrayManager":"../node_modules/react-hotkeys/es/lib/shared/KeyEventStateArrayManager.js","../config/Configuration":"../node_modules/react-hotkeys/es/lib/config/Configuration.js","../shared/KeyCombinationSerializer":"../node_modules/react-hotkeys/es/lib/shared/KeyCombinationSerializer.js","../../utils/object/isObject":"../node_modules/react-hotkeys/es/utils/object/isObject.js","../../utils/object/hasKey":"../node_modules/react-hotkeys/es/utils/object/hasKey.js","../../utils/array/arrayFrom":"../node_modules/react-hotkeys/es/utils/array/arrayFrom.js","../../utils/isUndefined":"../node_modules/react-hotkeys/es/utils/isUndefined.js","../../const/KeyEventType":"../node_modules/react-hotkeys/es/const/KeyEventType.js","../shared/KeySequenceParser":"../node_modules/react-hotkeys/es/lib/shared/KeySequenceParser.js","../../const/KeyEventState":"../node_modules/react-hotkeys/es/const/KeyEventState.js","./ComponentOptionsListIterator":"../node_modules/react-hotkeys/es/lib/definitions/ComponentOptionsListIterator.js"}],"../node_modules/react-hotkeys/es/utils/array/indexFromEnd.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+/**
+ * Returns the element in an array at a particular index from the end
+ * @param {Array.<T>} array Array to iterate over to find the item
+ * @param {number} placesFromEnd Number of places from the end of the array to find
+ *        the item to return
+ * @returns {T} The item found in the array at the particular index
+ * @template T
+ */
+function indexFromEnd(array, placesFromEnd) {
+  return array[array.length - (placesFromEnd + 1)];
+}
+
+var _default = indexFromEnd;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/const/KeysWithKeyUpHiddenByCmd.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+/**
+ * Dictionary of keys that, when pressed down with the cmd key, never trigger a keyup
+ * event in the browser
+ */
+var KeysWithKeyUpHiddenByCmd = {
+  Enter: true,
+  Backspace: true,
+  ArrowRight: true,
+  ArrowLeft: true,
+  ArrowUp: true,
+  ArrowDown: true,
+
+  /**
+   * Caps lock is a strange case where it not only fails to trigger a keyup event when,
+   * pressed with cmd, but it's keyup event is triggered when caps lock is toggled off
+   */
+  CapsLock: true
+};
+
+for (var i = 1; i < 13; i++) {
+  KeysWithKeyUpHiddenByCmd["F".concat(i)] = true;
+}
+
+var _default = KeysWithKeyUpHiddenByCmd;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/helpers/resolving-handlers/keyupIsHiddenByCmd.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _KeysWithKeyUpHiddenByCmd = _interopRequireDefault(require("../../const/KeysWithKeyUpHiddenByCmd"));
+
+var _hasKey = _interopRequireDefault(require("../../utils/object/hasKey"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Whether the specified key, when pressed down with the cmd key, never triggers a keyup
+ * event in the browser
+ * @param {NormalizedKeyName} keyName Name of the key
+ * @returns {boolean} Whether the key has its keyup event hidden by cmd
+ */
+function keyupIsHiddenByCmd(keyName) {
+  return keyName.length === 1 || (0, _hasKey.default)(_KeysWithKeyUpHiddenByCmd.default, keyName);
+}
+
+var _default = keyupIsHiddenByCmd;
+exports.default = _default;
+},{"../../const/KeysWithKeyUpHiddenByCmd":"../node_modules/react-hotkeys/es/const/KeysWithKeyUpHiddenByCmd.js","../../utils/object/hasKey":"../node_modules/react-hotkeys/es/utils/object/hasKey.js"}],"../node_modules/react-hotkeys/es/lib/matching/KeyCombinationMatcher.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _Configuration = _interopRequireDefault(require("../config/Configuration"));
+
+var _size = _interopRequireDefault(require("../../utils/collection/size"));
+
+var _keyupIsHiddenByCmd = _interopRequireDefault(require("../../helpers/resolving-handlers/keyupIsHiddenByCmd"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+    var ownKeys = Object.keys(source);
+
+    if (typeof Object.getOwnPropertySymbols === 'function') {
+      ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
+        return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      _defineProperty(target, key, source[key]);
+    });
+  }
+
+  return target;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+/**
+ * Object containing all information necessary to match a handler to a history of
+ * key combinations
+ * @typedef {Object} MatchingActionConfig
+ * @property {NormalizedKeySequenceId} prefix - String describing the sequence of key
+ *          combinations, before the final key combination (an empty string for
+ *          sequences that are a single key combination)
+ * @property {number} sequenceLength - Number of combinations involved in the
+ *           sequence
+ * @property {KeyCombinationString} id - Serialized description of the key combinations
+ *            that make up the sequence
+ * @property {Object.<KeyName, Boolean>} keyDictionary - Dictionary of key names involved
+ *           in the last key combination of the sequence
+ * @property {KeyEventType} keyEventType - Record index for key event that
+ *          the matcher should match on
+ * @property {number} size - Number of keys involved in the final key combination
+ * @property {EventMatchDictionary} events - Dictionary of EventMatches
+ */
+
+/**
+ * A dictionary mapping key event types to event matches
+ * @typedef {Object.<KeyEventType, EventMatch>} EventMatchDictionary
+ */
+
+/**
+ * Object containing information to call a handler if an event type matches a
+ * key event
+ * @typedef {Object} EventMatch
+ * @property {ActionName} actionName - Name of the action
+ * @property {Function} handler - Handler to call if event type matches
+ */
+
+/**
+ * Matches a KeyCombination to a list of pre-registered ActionConfiguration and their
+ * corresponding handler functions
+ * @class
+ */
+var KeyCombinationMatcher =
+/*#__PURE__*/
+function () {
+  /**
+   * Returns a new instance of KeyCombinationMatcher
+   * @returns {KeyCombinationMatcher}
+   */
+  function KeyCombinationMatcher() {
+    _classCallCheck(this, KeyCombinationMatcher);
+
+    this._actionConfigs = {};
+    this._order = null;
+  }
+  /**
+   * Adds a new ActionConfiguration and handler to those that can be used to match a
+   * KeyCombination
+   * @param {ActionConfiguration} actionConfig
+   * @param {Function} handler Function to call if match is selected
+   * @returns {void}
+   */
+
+
+  _createClass(KeyCombinationMatcher, [{
+    key: "addMatch",
+    value: function addMatch(actionConfig, handler) {
+      if (this._includesMatcherForCombination(actionConfig.id)) {
+        var keyEventType = actionConfig.keyEventType,
+            actionName = actionConfig.actionName,
+            id = actionConfig.id;
+
+        this._addHandlerToActionConfig(id, {
+          keyEventType: keyEventType,
+          actionName: actionName,
+          handler: handler
+        });
+      } else {
+        this._addNewActionConfig(actionConfig, handler);
+      }
+    }
+    /**
+     * Finds a MatchingActionConfig for a KeyCombination, ReactKeyName and
+     * KeyEventType
+     * @param {KeyCombination} keyCombination Record of key combinations
+     *         to use in the match
+     * @param {ReactKeyName} keyName Name of the key to use in the match
+     * @param {KeyEventType} keyEventType The type of key event to use in the match
+     * @returns {MatchingActionConfig|null} A MatchingActionOptions that matches the
+     *          KeyCombination, ReactKeyName and KeyEventType
+     */
+
+  }, {
+    key: "findMatch",
+    value: function findMatch(keyCombination, keyName, keyEventType) {
+      if (!this._order) {
+        this._setOrder();
+      }
+
+      var _iteratorNormalCompletion = true;
+      var _didIteratorError = false;
+      var _iteratorError = undefined;
+
+      try {
+        for (var _iterator = this._order[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+          var combinationId = _step.value;
+          var actionOptions = this._actionConfigs[combinationId];
+
+          if (this._matchesActionConfig(keyCombination, keyName, keyEventType, actionOptions)) {
+            return actionOptions;
+          }
+        }
+      } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion && _iterator.return != null) {
+            _iterator.return();
+          }
+        } finally {
+          if (_didIteratorError) {
+            throw _iteratorError;
+          }
+        }
+      }
+
+      return null;
+    }
+    /********************************************************************************
+     * Presentation
+     ********************************************************************************/
+
+    /**
+     * A plain JavaScript representation of the KeyCombinationMatcher, useful for
+     * serialization or debugging
+     * @returns {Object} Serialized representation of the key combination matcher
+     */
+
+  }, {
+    key: "toJSON",
+    value: function toJSON() {
+      return {
+        actionConfigs: this._actionConfigs,
+        order: this._order
+      };
+    }
+    /********************************************************************************
+     * Private methods
+     ********************************************************************************/
+
+  }, {
+    key: "_matchesActionConfig",
+    value: function _matchesActionConfig(keyCombination, keyName, keyEventType, actionOptions) {
+      if (!canBeMatched(keyCombination, actionOptions)) {
+        return false;
+      }
+
+      var combinationHasHandlerForEventType = actionOptions.events[keyEventType];
+
+      if (!combinationHasHandlerForEventType) {
+        /**
+         * If the combination does not have any actions bound to the key event we are
+         * currently processing, we skip checking if it matches the current keys being
+         * pressed.
+         */
+        return false;
+      }
+
+      var keyCompletesCombination = false;
+      var combinationMatchesKeysPressed = Object.keys(actionOptions.keyDictionary).every(function (candidateKeyName) {
+        if (keyCombination.isEventTriggered(candidateKeyName, keyEventType)) {
+          if (keyName && keyName === keyCombination.getNormalizedKeyName(candidateKeyName)) {
+            keyCompletesCombination = !keyCombination.wasEventPreviouslyTriggered(candidateKeyName, keyEventType);
+          }
+
+          return true;
+        } else {
+          return false;
+        }
+      });
+      return combinationMatchesKeysPressed && keyCompletesCombination;
+    }
+  }, {
+    key: "_setOrder",
+    value: function _setOrder() {
+      /**
+       * The first time the component that is currently handling the key event has
+       * its handlers searched for a match, order the combinations based on their
+       * size so that they may be applied in the correct priority order
+       */
+      var combinationsPartitionedBySize = Object.values(this._actionConfigs).reduce(function (memo, _ref) {
+        var id = _ref.id,
+            size = _ref.size;
+
+        if (!memo[size]) {
+          memo[size] = [];
+        }
+
+        memo[size].push(id);
+        return memo;
+      }, {});
+      this._order = Object.keys(combinationsPartitionedBySize).sort(function (a, b) {
+        return b - a;
+      }).reduce(function (memo, key) {
+        return memo.concat(combinationsPartitionedBySize[key]);
+      }, []);
+    }
+  }, {
+    key: "_addNewActionConfig",
+    value: function _addNewActionConfig(combinationSchema, handler) {
+      var prefix = combinationSchema.prefix,
+          sequenceLength = combinationSchema.sequenceLength,
+          id = combinationSchema.id,
+          keyDictionary = combinationSchema.keyDictionary,
+          size = combinationSchema.size,
+          keyEventType = combinationSchema.keyEventType,
+          actionName = combinationSchema.actionName;
+
+      this._setCombinationMatcher(id, {
+        prefix: prefix,
+        sequenceLength: sequenceLength,
+        id: id,
+        keyDictionary: keyDictionary,
+        size: size,
+        events: {}
+      });
+
+      this._addHandlerToActionConfig(id, {
+        keyEventType: keyEventType,
+        actionName: actionName,
+        handler: handler
+      });
+    }
+  }, {
+    key: "_addHandlerToActionConfig",
+    value: function _addHandlerToActionConfig(id, _ref2) {
+      var keyEventType = _ref2.keyEventType,
+          actionName = _ref2.actionName,
+          handler = _ref2.handler;
+
+      var combination = this._getCombinationMatcher(id);
+
+      this._setCombinationMatcher(id, _objectSpread({}, combination, {
+        events: _objectSpread({}, combination.events, _defineProperty({}, keyEventType, {
+          actionName: actionName,
+          handler: handler
+        }))
+      }));
+    }
+  }, {
+    key: "_setCombinationMatcher",
+    value: function _setCombinationMatcher(id, combinationMatcher) {
+      this._actionConfigs[id] = combinationMatcher;
+    }
+  }, {
+    key: "_getCombinationMatcher",
+    value: function _getCombinationMatcher(id) {
+      return this._actionConfigs[id];
+    }
+  }, {
+    key: "_includesMatcherForCombination",
+    value: function _includesMatcherForCombination(id) {
+      return !!this._getCombinationMatcher(id);
+    }
+  }]);
+
+  return KeyCombinationMatcher;
+}();
+
+function canBeMatched(keyCombination, combinationMatcher) {
+  var combinationKeysNo = (0, _size.default)(combinationMatcher.keyDictionary);
+
+  if (_Configuration.default.option('allowCombinationSubmatches') || keyUpIsBeingHidden(keyCombination)) {
+    return keyCombination.getNumberOfKeys() >= combinationKeysNo;
+  } else {
+    /**
+     * If sub-matches are not allow, the number of keys in the key state and the
+     * number of keys in the combination we are attempting to match, must be
+     * exactly the same
+     */
+    return keyCombination.getNumberOfKeys() === combinationKeysNo;
+  }
+}
+
+function keyUpIsBeingHidden(keyCombination) {
+  if (keyCombination.isKeyStillPressed('Meta')) {
+    return keyCombination.some(function (keyName) {
+      return (0, _keyupIsHiddenByCmd.default)(keyName);
+    });
+  }
+
+  return false;
+}
+
+var _default = KeyCombinationMatcher;
+exports.default = _default;
+},{"../config/Configuration":"../node_modules/react-hotkeys/es/lib/config/Configuration.js","../../utils/collection/size":"../node_modules/react-hotkeys/es/utils/collection/size.js","../../helpers/resolving-handlers/keyupIsHiddenByCmd":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/keyupIsHiddenByCmd.js"}],"../node_modules/react-hotkeys/es/lib/matching/KeyHistoryMatcher.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _KeyEventStateArrayManager = _interopRequireDefault(require("../shared/KeyEventStateArrayManager"));
+
+var _indexFromEnd = _interopRequireDefault(require("../../utils/array/indexFromEnd"));
+
+var _KeyCombinationMatcher = _interopRequireDefault(require("./KeyCombinationMatcher"));
+
+var _KeyEventState = _interopRequireDefault(require("../../const/KeyEventState"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+/**
+ * Matches a KeyHistory to a list of pre-registered ActionConfiguration and
+ * their corresponding handler functions
+ * @class
+ */
+var KeyHistoryMatcher =
+/*#__PURE__*/
+function () {
+  /**
+   * Returns a new instance of KeyMapMatcher
+   * @returns {KeyHistoryMatcher}
+   */
+  function KeyHistoryMatcher() {
+    _classCallCheck(this, KeyHistoryMatcher);
+
+    this._combinationMatchers = {};
+    this._eventRecord = _KeyEventStateArrayManager.default.newRecord();
+  }
+  /**
+   * Adds a possible match that can be used to match key combination histories
+   * @param {ActionConfiguration} actionConfig The configuration object that
+   *        defines the action the possible match represents
+   * @param {Function} handler Function to call if the possible match is selected
+   *        when matching against a key combination history
+   * @returns {void}
+   */
+
+
+  _createClass(KeyHistoryMatcher, [{
+    key: "addMatch",
+    value: function addMatch(actionConfig, handler) {
+      var combinationMatcher = this._getOrCreateCombinationMatcher(actionConfig.prefix);
+
+      combinationMatcher.addMatch(actionConfig, handler);
+      /**
+       * Merge event records so we can quickly determine if a given component
+       * has any handlers bound to particular key events
+       */
+
+      _KeyEventStateArrayManager.default.setBit(this._eventRecord, actionConfig.keyEventType, _KeyEventState.default.seen);
+      /**
+       * Record the longest sequence length so we know to only check for sequences
+       * of that length or shorter for a particular component
+       */
+
+
+      if (!this._longestSequence || this._longestSequence < actionConfig.sequenceLength) {
+        this._longestSequence = actionConfig.sequenceLength;
+      }
+    }
+    /**
+     * Attempts to find a match from the list of possible matches previously registered
+     * for a given key event and key combination history
+     * @param {KeyHistory} keyHistory History to attempt to
+     *        find a match for
+     * @param {ReactKeyName} key Name of the key to find a match for
+     * @param {KeyEventType} keyEventType Type of event to find a match
+     * @returns {MatchingActionConfig|null} First MatchingActionOptions that matches
+     */
+
+  }, {
+    key: "findMatch",
+    value: function findMatch(keyHistory, key, keyEventType) {
+      var combinationMatcher = this._findCombinationMatcher(keyHistory);
+
+      if (combinationMatcher) {
+        return combinationMatcher.findMatch(keyHistory.getCurrentCombination(), keyHistory.getCurrentCombination().getNormalizedKeyName(key), keyEventType);
+      }
+
+      return null;
+    }
+    /**
+     * Whether a possible match has been registered for a key event type
+     * @param {KeyEventType} eventType Type of event
+     * @returns {boolean} true if at least one possible match has been registered for
+     *        the event
+     */
+
+  }, {
+    key: "hasMatchesForEventType",
+    value: function hasMatchesForEventType(eventType) {
+      return !!this._eventRecord[eventType];
+    }
+    /**
+     * The number of combinations involved for the ActionConfiguration with the longest
+     * key sequence
+     * @returns {number} Number of combinations in the longest sequence
+     */
+
+  }, {
+    key: "getLongestSequence",
+    value: function getLongestSequence() {
+      return this._longestSequence;
+    }
+    /********************************************************************************
+     * Presentation
+     ********************************************************************************/
+
+    /**
+     * A plain JavaScript representation of the KeyMapMatcher, useful for
+     * serialization or debugging
+     * @returns {Object} Serialized representation of the key map matcher
+     */
+
+  }, {
+    key: "toJSON",
+    value: function toJSON() {
+      var _this = this;
+
+      return Object.keys(this._combinationMatchers).reduce(function (memo, prefix) {
+        var combinationMatcher = _this._combinationMatchers[prefix];
+        memo[prefix] = combinationMatcher.toJSON();
+        return memo;
+      }, {});
+    }
+    /********************************************************************************
+     * Private methods
+     ********************************************************************************/
+
+  }, {
+    key: "_getOrCreateCombinationMatcher",
+    value: function _getOrCreateCombinationMatcher(prefix) {
+      if (!this._combinationMatchers[prefix]) {
+        this._combinationMatchers[prefix] = new _KeyCombinationMatcher.default();
+      }
+
+      return this._combinationMatchers[prefix];
+    }
+  }, {
+    key: "_findCombinationMatcher",
+    value: function _findCombinationMatcher(keyHistory) {
+      var sequenceHistory = keyHistory.getMostRecentCombinations(this.getLongestSequence());
+
+      if (sequenceHistory.length === 0) {
+        return this._combinationMatchers[''];
+      }
+
+      var sequenceIds = sequenceHistory.map(function (keyCombination) {
+        return keyCombination.getIds();
+      });
+      var idSizes = sequenceIds.map(function (ids) {
+        return ids.length;
+      });
+      /**
+       * List of counters
+       * @type {number[]}
+       */
+
+      var indexCounters = new Array(sequenceIds.length).fill(0);
+      var triedAllPossiblePermutations = false;
+
+      while (!triedAllPossiblePermutations) {
+        var sequenceIdPermutation = indexCounters.map(function (sequenceIdIndex, index) {
+          return sequenceIds[index][sequenceIdIndex];
+        });
+        var candidateId = sequenceIdPermutation.join(' ');
+
+        if (this._combinationMatchers[candidateId]) {
+          return this._combinationMatchers[candidateId];
+        }
+
+        var incrementer = 0;
+        var carry = true;
+
+        while (carry && incrementer < indexCounters.length) {
+          var count = (0, _indexFromEnd.default)(indexCounters, incrementer);
+          var newIndex = (count + 1) % ((0, _indexFromEnd.default)(idSizes, incrementer) || 1);
+          indexCounters[indexCounters.length - (incrementer + 1)] = newIndex;
+          carry = newIndex === 0;
+
+          if (carry) {
+            incrementer++;
+          }
+        }
+
+        triedAllPossiblePermutations = incrementer === indexCounters.length;
+      }
+    }
+  }]);
+
+  return KeyHistoryMatcher;
+}();
+
+var _default = KeyHistoryMatcher;
+exports.default = _default;
+},{"../shared/KeyEventStateArrayManager":"../node_modules/react-hotkeys/es/lib/shared/KeyEventStateArrayManager.js","../../utils/array/indexFromEnd":"../node_modules/react-hotkeys/es/utils/array/indexFromEnd.js","./KeyCombinationMatcher":"../node_modules/react-hotkeys/es/lib/matching/KeyCombinationMatcher.js","../../const/KeyEventState":"../node_modules/react-hotkeys/es/const/KeyEventState.js"}],"../node_modules/react-hotkeys/es/lib/matching/ActionResolver.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _KeyHistoryMatcher = _interopRequireDefault(require("./KeyHistoryMatcher"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+/**
+ * Resolves the correct actions to trigger for a list of hotkeys components and a
+ * history of key events
+ * @class
+ */
+var ActionResolver =
+/*#__PURE__*/
+function () {
+  /**
+   * Creates a new instance of ActionResolver
+   * @param {ComponentOptionsList} componentList List of components
+   * @returns {ActionResolver}
+   */
+  function ActionResolver(componentList) {
+    _classCallCheck(this, ActionResolver);
+    /**
+     * List of mappings from key sequences to handlers that is constructed on-the-fly
+     * as key events propagate up the render tree
+     * @type {KeyHistoryMatcher[]}
+     */
+
+
+    this._keyMapMatchers = [];
+    /**
+     * Array of counters - one for each component - to keep track of how many handlers
+     * for that component still need actions assigned to them
+     * @type {Array.<Number,Object>}
+     */
+
+    this._unmatchedHandlerStatus = [];
+    /**
+     * A dictionary mapping action names to the position in the list of the components
+     * that define handlers for them
+     * @type {Object.<ActionName, Number[]>}
+     */
+
+    this._handlersDictionary = {};
+    /**
+     * A dictionary of sequences already encountered in the process of building the
+     * list of keyMaps on the fly, as key events propagate up the component tree
+     * @type {Object.<MouseTrapKeySequence, Number[]>}
+     */
+
+    this._keySequencesDictionary = {};
+    var iterator = componentList.getNewIterator();
+
+    while (iterator.next()) {
+      var _iterator$getComponen = iterator.getComponent(),
+          handlers = _iterator$getComponen.handlers;
+
+      this._unmatchedHandlerStatus.push([Object.keys(handlers).length, {}]);
+
+      this._keyMapMatchers.push(new _KeyHistoryMatcher.default());
+    }
+
+    this._componentList = componentList;
+    this._componentListIterator = componentList.getNewIterator();
+  }
+  /**
+   * The KeyHistoryMatcher for the component in a particular position
+   * @param {number} componentPosition Position of component to find the
+   *        KeyHistoryMatcher for
+   * @returns {KeyHistoryMatcher} Key combination matcher that corresponds
+   *        to the component
+   */
+
+
+  _createClass(ActionResolver, [{
+    key: "getKeyHistoryMatcher",
+    value: function getKeyHistoryMatcher(componentPosition) {
+      if (this._componentHasUnmatchedHandlers(componentPosition)) {
+        /**
+         * We build the mapping between actions and their closest handlers the
+         * first time the key map for the component at <tt>position</tt> is accessed.
+         *
+         * We must search higher than the current component for actions, as they are
+         * often defined in parent components of those that ultimately define their
+         * handlers.
+         */
+        while (this._componentListIterator.next()) {
+          this._addHandlersFromComponent();
+
+          this._addActionsFromComponent();
+        }
+      }
+
+      return this._getKeyHistoryMatcher(componentPosition);
+    }
+    /**
+     * Whether a component has one or more actions bound to an event type
+     * @param {number} componentPosition Position of the component
+     * @param {KeyEventType} keyEventType
+     * @returns {boolean} true if the component has an action bound to the event type
+     */
+
+  }, {
+    key: "componentHasActionsBoundToEventType",
+    value: function componentHasActionsBoundToEventType(componentPosition, keyEventType) {
+      return this.getKeyHistoryMatcher(componentPosition).hasMatchesForEventType(keyEventType);
+    }
+    /**
+     * Finds matcher for sequence and current key event for a component at a position
+     * @param {number} componentPosition Position of the component
+     * @param {KeyHistory} keyHistory History of key combinations to match
+     *        against actions defined in component
+     * @param {ReactKeyName} keyName Name of the key the current event relates to
+     * @param {KeyEventType} keyEventType Type of key event
+     * @returns {Object|null}
+     */
+
+  }, {
+    key: "findMatchingKeySequenceInComponent",
+    value: function findMatchingKeySequenceInComponent(componentPosition, keyHistory, keyName, keyEventType) {
+      if (!this.componentHasActionsBoundToEventType(componentPosition, keyEventType)) {
+        return null;
+      }
+
+      return this.getKeyHistoryMatcher(componentPosition).findMatch(keyHistory, keyName, keyEventType);
+    }
+    /********************************************************************************
+     * Private methods
+     *********************************************************************************/
+
+  }, {
+    key: "_getKeyHistoryMatcher",
+    value: function _getKeyHistoryMatcher(index) {
+      return this._keyMapMatchers[index];
+    }
+  }, {
+    key: "_addActionsFromComponent",
+    value: function _addActionsFromComponent() {
+      var _this = this;
+
+      var _this$_componentListI = this._componentListIterator.getComponent(),
+          actions = _this$_componentListI.actions;
+      /**
+       * Iterate over the actions of a component (starting with the current component
+       * and working through its ancestors), matching them to the current component's
+       * handlers
+       */
+
+
+      Object.keys(actions).forEach(function (actionName) {
+        var handlerComponentIndexArray = _this._getHandlers(actionName);
+
+        if (handlerComponentIndexArray) {
+          /**
+           * Get action handler closest to the event target
+           */
+          var handlerComponentIndex = handlerComponentIndexArray[0];
+
+          var handler = _this._componentList.getAtPosition(handlerComponentIndex).handlers[actionName];
+          /**
+           * Get key map that corresponds with the component that defines the handler
+           * closest to the event target
+           */
+
+
+          var keyMapMatcher = _this._getKeyHistoryMatcher(handlerComponentIndex);
+          /**
+           * At least one child HotKeys component (or the component itself) has
+           * defined a handler for the action, so now we need to associate them
+           */
+
+
+          var actionOptionsList = actions[actionName];
+          actionOptionsList.forEach(function (actionOptions) {
+            var keySequence = [actionOptions.prefix, actionOptions.id].join(' ');
+
+            if (_this._isClosestHandlerFound(keySequence, actionOptions)) {
+              /**
+               * Return if there is already a component with handlers for the current
+               * key sequence closer to the event target
+               */
+              return;
+            }
+
+            keyMapMatcher.addMatch(actionOptions, handler);
+
+            _this._addKeySequence(keySequence, [handlerComponentIndex, actionOptions.keyEventType]);
+          });
+          handlerComponentIndexArray.forEach(function (handlerComponentIndex) {
+            var handlerComponentStatus = _this._getUnmatchedHandlerStatus(handlerComponentIndex);
+
+            if (!handlerComponentStatus[1][actionName]) {
+              handlerComponentStatus[1][actionName] = true;
+              /**
+               * Decrement the number of remaining unmatched handlers for the
+               * component currently handling the propagating key event, so we know
+               * when all handlers have been matched to sequences and we can move on
+               * to matching them against the current key event
+               */
+
+              handlerComponentStatus[0]--;
+            }
+          });
+        }
+      });
+    }
+  }, {
+    key: "_getHandlers",
+    value: function _getHandlers(actionName) {
+      return this._handlersDictionary[actionName];
+    }
+  }, {
+    key: "_addHandlersFromComponent",
+    value: function _addHandlersFromComponent() {
+      var _this2 = this;
+
+      var _this$_componentListI2 = this._componentListIterator.getComponent(),
+          handlers = _this$_componentListI2.handlers;
+      /**
+       * Add current component's handlers to the handlersDictionary so we know
+       * which component has defined them
+       */
+
+
+      Object.keys(handlers).forEach(function (actionName) {
+        _this2._addHandler(actionName);
+      });
+    }
+  }, {
+    key: "_addHandler",
+    value: function _addHandler(actionName) {
+      if (!this._handlersDictionary[actionName]) {
+        this._handlersDictionary[actionName] = [];
+      }
+
+      this._handlersDictionary[actionName].push(this._componentListIterator.getPosition());
+    }
+  }, {
+    key: "_addKeySequence",
+    value: function _addKeySequence(keySequence, value) {
+      /**
+       * Record that we have already found a handler for the current action so
+       * that we do not override handlers for an action closest to the event target
+       * with handlers further up the tree
+       */
+      if (!this._keySequencesDictionary[keySequence]) {
+        this._keySequencesDictionary[keySequence] = [];
+      }
+
+      this._keySequencesDictionary[keySequence].push(value);
+    }
+  }, {
+    key: "_componentHasUnmatchedHandlers",
+    value: function _componentHasUnmatchedHandlers(componentIndex) {
+      return this._getUnmatchedHandlerStatus(componentIndex)[0] > 0;
+    }
+  }, {
+    key: "_getUnmatchedHandlerStatus",
+    value: function _getUnmatchedHandlerStatus(index) {
+      return this._unmatchedHandlerStatus[index];
+    }
+  }, {
+    key: "_isClosestHandlerFound",
+    value: function _isClosestHandlerFound(keySequence, keyMatcher) {
+      return this._keySequencesDictionary[keySequence] && this._keySequencesDictionary[keySequence].some(function (dictEntry) {
+        return dictEntry[1] === keyMatcher.keyEventType;
+      });
+    }
+  }]);
+
+  return ActionResolver;
+}();
+
+var _default = ActionResolver;
+exports.default = _default;
+},{"./KeyHistoryMatcher":"../node_modules/react-hotkeys/es/lib/matching/KeyHistoryMatcher.js"}],"../node_modules/react-hotkeys/es/utils/object/copyAttributes.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _hasKey = _interopRequireDefault(require("./hasKey"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Copies a list of attributes and their values from a source object to a target object.
+ * The attributes are only copied if they exist on the source object.
+ * @param {Object} source Object to copy the attributes from
+ * @param {Object} target Object to copy the attributes to
+ * @param {String[]} attributes List of attributes to copy
+ * @returns {Object} The target object, now with the copied attributes
+ */
+function copyAttributes(source, target, attributes) {
+  attributes.forEach(function (attributeName) {
+    if ((0, _hasKey.default)(source, attributeName)) {
+      target[attributeName] = source[attributeName];
+    }
+  });
+  return target;
+}
+
+var _default = copyAttributes;
+exports.default = _default;
+},{"./hasKey":"../node_modules/react-hotkeys/es/utils/object/hasKey.js"}],"../node_modules/react-hotkeys/es/helpers/logging/describeKeyEventType.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+/**
+ * Returns the name of the event at a specified event record index
+ * @param {KeyEventType} keyEventType
+ * @returns {KeyEventName} Name of the key event
+ */
+function describeKeyEventType(keyEventType) {
+  switch (parseInt(keyEventType, 10)) {
+    case 0:
+      return 'keydown';
+
+    case 1:
+      return 'keypress';
+
+    default:
+      return 'keyup';
+  }
+}
+
+var _default = describeKeyEventType;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/helpers/logging/printComponent.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function printComponent(component) {
+  return JSON.stringify(component, componentAttributeSerializer, 4);
+}
+
+function componentAttributeSerializer(key, value) {
+  if (typeof value === 'function') {
+    return value.toString();
+  }
+
+  return value;
+}
+
+var _default = printComponent;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/helpers/resolving-handlers/hasKeyPressEvent.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _isNonPrintableKeyName = _interopRequireDefault(require("../parsing-key-maps/isNonPrintableKeyName"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Whether the specified key name is for a key that has a native keypress event
+ * @param {NormalizedKeyName} keyName Name of the key
+ * @returns {boolean} Whether the key has a native keypress event
+ */
+function hasKeyPressEvent(keyName) {
+  return !(0, _isNonPrintableKeyName.default)(keyName);
+}
+
+var _default = hasKeyPressEvent;
+exports.default = _default;
+},{"../parsing-key-maps/isNonPrintableKeyName":"../node_modules/react-hotkeys/es/helpers/parsing-key-maps/isNonPrintableKeyName.js"}],"../node_modules/react-hotkeys/es/helpers/parsing-key-maps/stateFromEvent.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _KeyEventState = _interopRequireDefault(require("../../const/KeyEventState"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function stateFromEvent(event) {
+  return event.simulated ? _KeyEventState.default.simulated : _KeyEventState.default.seen;
+}
+
+var _default = stateFromEvent;
+exports.default = _default;
+},{"../../const/KeyEventState":"../node_modules/react-hotkeys/es/const/KeyEventState.js"}],"../node_modules/react-hotkeys/es/lib/strategies/AbstractKeyEventStrategy.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _KeyEventType = _interopRequireDefault(require("../../const/KeyEventType"));
+
+var _ModifierFlagsDictionary = _interopRequireDefault(require("../../const/ModifierFlagsDictionary"));
+
+var _Logger = _interopRequireDefault(require("../logging/Logger"));
+
+var _KeyCombinationSerializer = _interopRequireDefault(require("../shared/KeyCombinationSerializer"));
+
+var _Configuration = _interopRequireDefault(require("../config/Configuration"));
+
+var _KeyHistory = _interopRequireDefault(require("../listening/KeyHistory"));
+
+var _KeyCombination = _interopRequireDefault(require("../listening/KeyCombination"));
+
+var _ComponentTree = _interopRequireDefault(require("../definitions/ComponentTree"));
+
+var _ComponentOptionsList = _interopRequireDefault(require("../definitions/ComponentOptionsList"));
+
+var _ActionResolver = _interopRequireDefault(require("../matching/ActionResolver"));
+
+var _arrayFrom = _interopRequireDefault(require("../../utils/array/arrayFrom"));
+
+var _isObject = _interopRequireDefault(require("../../utils/object/isObject"));
+
+var _isUndefined = _interopRequireDefault(require("../../utils/isUndefined"));
+
+var _copyAttributes = _interopRequireDefault(require("../../utils/object/copyAttributes"));
+
+var _hasKey = _interopRequireDefault(require("../../utils/object/hasKey"));
+
+var _describeKeyEventType = _interopRequireDefault(require("../../helpers/logging/describeKeyEventType"));
+
+var _printComponent = _interopRequireDefault(require("../../helpers/logging/printComponent"));
+
+var _hasKeyPressEvent = _interopRequireDefault(require("../../helpers/resolving-handlers/hasKeyPressEvent"));
+
+var _keyupIsHiddenByCmd = _interopRequireDefault(require("../../helpers/resolving-handlers/keyupIsHiddenByCmd"));
+
+var _stateFromEvent = _interopRequireDefault(require("../../helpers/parsing-key-maps/stateFromEvent"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+    var ownKeys = Object.keys(source);
+
+    if (typeof Object.getOwnPropertySymbols === 'function') {
+      ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
+        return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      _defineProperty(target, key, source[key]);
+    });
+  }
+
+  return target;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+var SEQUENCE_ATTRIBUTES = ['sequence', 'action'];
+var KEYMAP_ATTRIBUTES = ['name', 'description', 'group'];
+/**
+ * Defines common behaviour for key event strategies
+ * @abstract
+ * @class
+ */
+
+var AbstractKeyEventStrategy =
+/*#__PURE__*/
+function () {
+  /********************************************************************************
+   * Init & Reset
+   ********************************************************************************/
+
+  /**
+   * Creates a new instance of an event strategy (this class is an abstract one and
+   * not intended to be instantiated directly).
+   * @param {Object} options Options for how event strategy should behave
+   * @param {Logger} options.logger The Logger to use to report event strategy actions
+   * @param {KeyEventManager} keyEventManager KeyEventManager used for passing
+   *        messages between key event strategies
+   */
+  function AbstractKeyEventStrategy() {
+    var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    var keyEventManager = arguments.length > 1 ? arguments[1] : undefined;
+
+    _classCallCheck(this, AbstractKeyEventStrategy);
+
+    this.logger = options.logger || new _Logger.default('warn');
+    /**
+     * @typedef {number} ComponentId Unique index associated with every HotKeys component
+     * as it becomes active.
+     *
+     * For focus-only components, this happens when the component is focused. The HotKeys
+     * component closest to the DOM element in focus gets the smallest number (0) and
+     * those further up the render tree get larger (incrementing) numbers. When a different
+     * element is focused (triggering the creation of a new focus tree) all component indexes
+     * are reset (de-allocated) and re-assigned to the new tree of HotKeys components that
+     * are now in focus.
+     *
+     * For global components, component indexes are assigned when a HotKeys component is
+     * mounted, and de-allocated when it unmounts. The component index counter is never reset
+     * back to 0 and just keeps incrementing as new components are mounted.
+     */
+
+    /**
+     * Counter to maintain what the next component index should be
+     * @type {ComponentId}
+     */
+
+    this.componentId = -1;
+    /**
+     * Reference to key event manager, so that information may pass between the
+     * global strategy and the focus-only strategy
+     * @type {KeyEventManager}
+     */
+
+    this.keyEventManager = keyEventManager;
+    this._componentTree = new _ComponentTree.default();
+    this.rootComponentId = null;
+
+    this._reset();
+
+    this.resetKeyHistory();
+  }
+  /**
+   * Resets all strategy state to the values it had when it was first created
+   * @protected
+   */
+
+
+  _createClass(AbstractKeyEventStrategy, [{
+    key: "_reset",
+    value: function _reset() {
+      this.componentList = new _ComponentOptionsList.default();
+
+      this._initHandlerResolutionState();
+    }
+  }, {
+    key: "_newKeyHistory",
+    value: function _newKeyHistory() {
+      return new _KeyHistory.default({
+        maxLength: this.componentList.getLongestSequence()
+      });
+    }
+  }, {
+    key: "getKeyHistory",
+    value: function getKeyHistory() {
+      if (this._keyHistory) {
+        return this._keyHistory;
+      } else {
+        this._keyHistory = this._newKeyHistory();
+      }
+
+      return this._keyHistory;
+    }
+    /**
+     * Resets the state of the values used to resolve which handler function should be
+     * called when key events match a registered key map
+     * @protected
+     */
+
+  }, {
+    key: "_initHandlerResolutionState",
+    value: function _initHandlerResolutionState() {
+      this._actionResolver = null;
+    }
+    /**
+     * Reset the state values that record the current and recent state of key events
+     * @param {Object} options An options hash
+     * @param {boolean} options.force Whether to force a hard reset of the key
+     *        combination history.
+     */
+
+  }, {
+    key: "resetKeyHistory",
+    value: function resetKeyHistory() {
+      var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      this.keypressEventsToSimulate = [];
+      this.keyupEventsToSimulate = [];
+
+      if (this.getKeyHistory().any() && !options.force) {
+        this._keyHistory = new _KeyHistory.default({
+          maxLength: this.componentList.getLongestSequence()
+        }, new _KeyCombination.default(this.getCurrentCombination().keysStillPressedDict()));
+      } else {
+        this._keyHistory = this._newKeyHistory();
+      }
+    }
+    /********************************************************************************
+     * Generating key maps
+     ********************************************************************************/
+
+    /**
+     * Returns a mapping of all of the application's actions and the key sequences
+     * needed to trigger them.
+     *
+     * @returns {ApplicationKeyMap} The application's key map
+     */
+
+  }, {
+    key: "getApplicationKeyMap",
+    value: function getApplicationKeyMap() {
+      if (this.rootComponentId === null) {
+        return {};
+      }
+
+      return this._buildApplicationKeyMap([this.rootComponentId], {});
+    }
+  }, {
+    key: "_buildApplicationKeyMap",
+    value: function _buildApplicationKeyMap(componentIds, keyMapSummary) {
+      var _this = this;
+
+      componentIds.forEach(function (componentId) {
+        var _this$_componentTree$ = _this._componentTree.get(componentId),
+            childIds = _this$_componentTree$.childIds,
+            keyMap = _this$_componentTree$.keyMap;
+
+        if (keyMap) {
+          Object.keys(keyMap).forEach(function (actionName) {
+            var keyMapConfig = keyMap[actionName];
+            keyMapSummary[actionName] = {};
+
+            if ((0, _isObject.default)(keyMapConfig)) {
+              if ((0, _hasKey.default)(keyMapConfig, 'sequences')) {
+                /**
+                 * Support syntax:
+                 *  {
+                 *    sequences: [ {sequence: 'a+b', action: 'keyup' }],
+                 *    name: 'My keymap',
+                 *    description: 'Key to press for something special',
+                 *    group: 'Vanity'
+                 *  }
+                 */
+                (0, _copyAttributes.default)(keyMapConfig, keyMapSummary[actionName], KEYMAP_ATTRIBUTES);
+                keyMapSummary[actionName].sequences = _this._createSequenceFromConfig(keyMapConfig.sequences);
+              } else {
+                /**
+                 * Support syntax:
+                 * {
+                 *   sequence: 'a+b', action: 'keyup',
+                 *   name: 'My keymap',
+                 *   description: 'Key to press for something special',
+                 *   group: 'Vanity'
+                 * }
+                 */
+                (0, _copyAttributes.default)(keyMapConfig, keyMapSummary[actionName], KEYMAP_ATTRIBUTES);
+                keyMapSummary[actionName].sequences = [(0, _copyAttributes.default)(keyMapConfig, {}, SEQUENCE_ATTRIBUTES)];
+              }
+            } else {
+              keyMapSummary[actionName].sequences = _this._createSequenceFromConfig(keyMapConfig);
+            }
+          });
+        }
+
+        _this._buildApplicationKeyMap(childIds, keyMapSummary);
+      });
+      return keyMapSummary;
+    }
+  }, {
+    key: "_createSequenceFromConfig",
+    value: function _createSequenceFromConfig(keyMapConfig) {
+      return (0, _arrayFrom.default)(keyMapConfig).map(function (sequenceOrKeyMapOptions) {
+        if ((0, _isObject.default)(sequenceOrKeyMapOptions)) {
+          /**
+           * Support syntax:
+           * [
+           *   { sequence: 'a+b', action: 'keyup' },
+           *   { sequence: 'c' }
+           * ]
+           */
+          return (0, _copyAttributes.default)(sequenceOrKeyMapOptions, {}, SEQUENCE_ATTRIBUTES);
+        } else {
+          /**
+           * Support syntax:
+           * 'a+b'
+           */
+          return {
+            sequence: sequenceOrKeyMapOptions
+          };
+        }
+      });
+    }
+    /********************************************************************************
+     * Registering key maps
+     ********************************************************************************/
+
+    /**
+     * Registers a new mounted component's key map so that it can be included in the
+     * application's key map
+     * @param {KeyMap} keyMap - Map of actions to key expressions
+     * @returns {ComponentId} Unique component ID to assign to the focused HotKeys
+     *          component and passed back when handling a key event
+     */
+
+  }, {
+    key: "registerKeyMap",
+    value: function registerKeyMap(keyMap) {
+      this.componentId += 1;
+
+      this._componentTree.add(this.componentId, keyMap);
+
+      this.logger.verbose(this._logPrefix(this.componentId), 'Registered component:\n', "".concat((0, _printComponent.default)(this._componentTree.get(this.componentId))));
+      return this.componentId;
+    }
+    /**
+     * Re-registers (updates) a mounted component's key map
+     * @param {ComponentId} componentId - Id of the component that the keyMap belongs to
+     * @param {KeyMap} keyMap - Map of actions to key expressions
+     */
+
+  }, {
+    key: "reregisterKeyMap",
+    value: function reregisterKeyMap(componentId, keyMap) {
+      this._componentTree.update(componentId, keyMap);
+    }
+    /**
+     * Registers that a component has now mounted, and declares its parent hot keys
+     * component id so that actions may be properly resolved
+     * @param {ComponentId} componentId - Id of the component that has mounted
+     * @param {ComponentId} parentId - Id of the parent hot keys component
+     */
+
+  }, {
+    key: "registerComponentMount",
+    value: function registerComponentMount(componentId, parentId) {
+      if (!(0, _isUndefined.default)(parentId)) {
+        this._componentTree.setParent(componentId, parentId);
+      } else {
+        this.rootComponentId = componentId;
+      }
+
+      this.logger.verbose(this._logPrefix(componentId), 'Registered component mount:\n', "".concat((0, _printComponent.default)(this._componentTree.get(componentId))));
+    }
+    /**
+     * De-registers (removes) a mounted component's key map from the registry
+     * @param {ComponentId} componentId - Id of the component that the keyMap
+     *        belongs to
+     */
+
+  }, {
+    key: "deregisterKeyMap",
+    value: function deregisterKeyMap(componentId) {
+      this._componentTree.remove(componentId);
+
+      this.logger.verbose(this._logPrefix(componentId), 'De-registered component. Remaining component Registry:\n', "".concat((0, _printComponent.default)(this._componentTree.toJSON())));
+
+      if (componentId === this.rootComponentId) {
+        this.rootComponentId = null;
+      }
+    }
+    /********************************************************************************
+     * Registering key maps and handlers
+     ********************************************************************************/
+
+    /**
+     * Registers the hotkeys defined by a HotKeys component
+     * @param {ComponentId} componentId - Index of the component
+     * @param {KeyMap} actionNameToKeyMap - Definition of actions and key maps defined
+     *        in the HotKeys component
+     * @param {HandlersMap} actionNameToHandlersMap - Map of ActionNames to handlers
+     *        defined in the HotKeys component
+     * @param {Object} options - Hash of options that configure how the key map is built.
+     * @protected
+     */
+
+  }, {
+    key: "_addComponent",
+    value: function _addComponent(componentId) {
+      var actionNameToKeyMap = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var actionNameToHandlersMap = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      var options = arguments.length > 3 ? arguments[3] : undefined;
+      this.componentList.add(componentId, actionNameToKeyMap, actionNameToHandlersMap, options);
+      this.getKeyHistory().setMaxLength(this.componentList.getLongestSequence());
+    }
+    /********************************************************************************
+     * Recording key events
+     ********************************************************************************/
+
+    /**
+     * Whether there are any keys in the current combination still being pressed
+     * @returns {boolean} True if all keys in the current combination are released
+     * @protected
+     */
+
+  }, {
+    key: "_allKeysAreReleased",
+    value: function _allKeysAreReleased() {
+      return this.getCurrentCombination().hasEnded();
+    }
+  }, {
+    key: "getCurrentCombination",
+    value: function getCurrentCombination() {
+      return this.getKeyHistory().getCurrentCombination();
+    }
+  }, {
+    key: "_shouldSimulate",
+    value: function _shouldSimulate(eventType, keyName) {
+      var keyHasNativeKeyPress = (0, _hasKeyPressEvent.default)(keyName);
+      var currentCombination = this.getCurrentCombination();
+
+      if (eventType === _KeyEventType.default.keypress) {
+        return !keyHasNativeKeyPress || keyHasNativeKeyPress && currentCombination.isKeyStillPressed('Meta');
+      } else if (eventType === _KeyEventType.default.keyup) {
+        return (0, _keyupIsHiddenByCmd.default)(keyName) && currentCombination.isKeyReleased('Meta');
+      }
+
+      return false;
+    }
+  }, {
+    key: "_cloneAndMergeEvent",
+    value: function _cloneAndMergeEvent(event, extra) {
+      var eventAttributes = Object.keys(_ModifierFlagsDictionary.default).reduce(function (memo, eventAttribute) {
+        memo[eventAttribute] = event[eventAttribute];
+        return memo;
+      }, {});
+      return _objectSpread({}, eventAttributes, extra);
+    }
+    /********************************************************************************
+     * Matching and calling handlers
+     ********************************************************************************/
+
+  }, {
+    key: "_callClosestMatchingHandler",
+    value: function _callClosestMatchingHandler(event, keyName, keyEventType, componentPosition, componentSearchIndex) {
+      if (!this._actionResolver) {
+        this._actionResolver = new _ActionResolver.default(this.componentList);
+      }
+
+      while (componentSearchIndex <= componentPosition) {
+        var keyHistoryMatcher = this._actionResolver.getKeyHistoryMatcher(componentSearchIndex);
+
+        this.logger.verbose(this._logPrefix(componentSearchIndex), 'Internal key mapping:\n', "".concat((0, _printComponent.default)(keyHistoryMatcher.toJSON())));
+
+        var sequenceMatch = this._actionResolver.findMatchingKeySequenceInComponent(componentSearchIndex, this.getKeyHistory(), keyName, keyEventType);
+
+        var currentCombination = this.getCurrentCombination();
+
+        if (sequenceMatch) {
+          var eventSchema = sequenceMatch.events[keyEventType];
+
+          if (_Configuration.default.option('allowCombinationSubmatches')) {
+            var subMatchDescription = _KeyCombinationSerializer.default.serialize(sequenceMatch.keyDictionary);
+
+            this.logger.debug(this._logPrefix(componentSearchIndex), "Found action that matches '".concat(currentCombination.describe(), "' (sub-match: '").concat(subMatchDescription, "'): ").concat(eventSchema.actionName, ". Calling handler . . ."));
+          } else {
+            this.logger.debug(this._logPrefix(componentSearchIndex), "Found action that matches '".concat(currentCombination.describe(), "': ").concat(eventSchema.actionName, ". Calling handler . . ."));
+          }
+
+          eventSchema.handler(event);
+
+          this._stopEventPropagationAfterHandlingIfEnabled(event, componentSearchIndex);
+
+          return true;
+        } else {
+          if (this._actionResolver.componentHasActionsBoundToEventType(componentSearchIndex, keyEventType)) {
+            var eventName = (0, _describeKeyEventType.default)(keyEventType);
+            this.logger.debug(this._logPrefix(componentSearchIndex), "No matching actions found for '".concat(currentCombination.describe(), "' ").concat(eventName, "."));
+          } else {
+            this.logger.debug(this._logPrefix(componentSearchIndex), "Doesn't define a handler for '".concat(currentCombination.describe(), "' ").concat((0, _describeKeyEventType.default)(keyEventType), "."));
+          }
+        }
+
+        componentSearchIndex++;
+      }
+    }
+  }, {
+    key: "_stopEventPropagationAfterHandlingIfEnabled",
+    value: function _stopEventPropagationAfterHandlingIfEnabled(event, componentId) {
+      if (_Configuration.default.option('stopEventPropagationAfterHandling')) {
+        this._stopEventPropagation(event, componentId);
+
+        return true;
+      }
+
+      return false;
+    }
+  }, {
+    key: "_stopEventPropagation",
+    value: function _stopEventPropagation(event, componentId) {
+      throw new Error('_stopEventPropagation must be overridden by a subclass');
+    }
+    /**
+     * Synchronises the key combination history to match the modifier key flag attributes
+     * on new key events
+     * @param {KeyboardEvent} event - Event to check the modifier flags for
+     * @param {string} key - Name of key that events relates to
+     * @param {KeyEventType} keyEventType - The record index of the current
+     *        key event type
+     * @protected
+     */
+
+  }, {
+    key: "_checkForModifierFlagDiscrepancies",
+    value: function _checkForModifierFlagDiscrepancies(event, key, keyEventType) {
+      var _this2 = this;
+      /**
+       * If a new key event is received with modifier key flags that contradict the
+       * key combination history we are maintaining, we can surmise that some keyup events
+       * for those modifier keys have been lost (possibly because the window lost focus).
+       * We update the key combination to match the modifier flags
+       */
+
+
+      Object.keys(_ModifierFlagsDictionary.default).forEach(function (modifierKey) {
+        /**
+         * When a modifier key is being released (keyup), it sets its own modifier flag
+         * to false. (e.g. On the keyup event for Command, the metaKey attribute is false).
+         * If this the case, we want to handle it using the main algorithm and skip the
+         * reconciliation algorithm.
+         */
+        if (key === modifierKey && keyEventType === _KeyEventType.default.keyup) {
+          return;
+        }
+
+        var currentCombination = _this2.getCurrentCombination();
+
+        var modifierStillPressed = currentCombination.isKeyStillPressed(modifierKey);
+
+        _ModifierFlagsDictionary.default[modifierKey].forEach(function (attributeName) {
+          if (event[attributeName] === false && modifierStillPressed) {
+            currentCombination.setKeyState(modifierKey, _KeyEventType.default.keyup, (0, _stateFromEvent.default)(event));
+          }
+        });
+      });
+    }
+    /**
+     * Returns a prefix for all log entries related to the current event strategy
+     * @protected
+     * @abstract
+     */
+
+  }, {
+    key: "_logPrefix",
+    value: function _logPrefix() {}
+  }]);
+
+  return AbstractKeyEventStrategy;
+}();
+
+var _default = AbstractKeyEventStrategy;
+exports.default = _default;
+},{"../../const/KeyEventType":"../node_modules/react-hotkeys/es/const/KeyEventType.js","../../const/ModifierFlagsDictionary":"../node_modules/react-hotkeys/es/const/ModifierFlagsDictionary.js","../logging/Logger":"../node_modules/react-hotkeys/es/lib/logging/Logger.js","../shared/KeyCombinationSerializer":"../node_modules/react-hotkeys/es/lib/shared/KeyCombinationSerializer.js","../config/Configuration":"../node_modules/react-hotkeys/es/lib/config/Configuration.js","../listening/KeyHistory":"../node_modules/react-hotkeys/es/lib/listening/KeyHistory.js","../listening/KeyCombination":"../node_modules/react-hotkeys/es/lib/listening/KeyCombination.js","../definitions/ComponentTree":"../node_modules/react-hotkeys/es/lib/definitions/ComponentTree.js","../definitions/ComponentOptionsList":"../node_modules/react-hotkeys/es/lib/definitions/ComponentOptionsList.js","../matching/ActionResolver":"../node_modules/react-hotkeys/es/lib/matching/ActionResolver.js","../../utils/array/arrayFrom":"../node_modules/react-hotkeys/es/utils/array/arrayFrom.js","../../utils/object/isObject":"../node_modules/react-hotkeys/es/utils/object/isObject.js","../../utils/isUndefined":"../node_modules/react-hotkeys/es/utils/isUndefined.js","../../utils/object/copyAttributes":"../node_modules/react-hotkeys/es/utils/object/copyAttributes.js","../../utils/object/hasKey":"../node_modules/react-hotkeys/es/utils/object/hasKey.js","../../helpers/logging/describeKeyEventType":"../node_modules/react-hotkeys/es/helpers/logging/describeKeyEventType.js","../../helpers/logging/printComponent":"../node_modules/react-hotkeys/es/helpers/logging/printComponent.js","../../helpers/resolving-handlers/hasKeyPressEvent":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/hasKeyPressEvent.js","../../helpers/resolving-handlers/keyupIsHiddenByCmd":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/keyupIsHiddenByCmd.js","../../helpers/parsing-key-maps/stateFromEvent":"../node_modules/react-hotkeys/es/helpers/parsing-key-maps/stateFromEvent.js"}],"../node_modules/react-hotkeys/es/lib/listening/KeyEventCounter.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _isUndefined = _interopRequireDefault(require("../../utils/isUndefined"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+/**
+ * Manages the incrementing of a globally unique event id
+ * @class
+ */
+var KeyEventCounter =
+/*#__PURE__*/
+function () {
+  function KeyEventCounter() {
+    _classCallCheck(this, KeyEventCounter);
+  }
+
+  _createClass(KeyEventCounter, null, [{
+    key: "getId",
+
+    /**
+     * Globally unique event id
+     * @typedef {number} EventId
+     */
+
+    /**
+     * Get the current event id
+     * @returns {EventId} The current event ID
+     */
+    value: function getId() {
+      if ((0, _isUndefined.default)(this._id)) {
+        this._id = 0;
+      }
+
+      return this._id;
+    }
+    /**
+     * Increment the current event id
+     */
+
+  }, {
+    key: "incrementId",
+    value: function incrementId() {
+      this._id = this.getId() + 1;
+    }
+  }]);
+
+  return KeyEventCounter;
+}();
+
+var _default = KeyEventCounter;
+exports.default = _default;
+},{"../../utils/isUndefined":"../node_modules/react-hotkeys/es/utils/isUndefined.js"}],"../node_modules/react-hotkeys/es/vendor/react-dom/getEventCharCode.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the same directory of this source tree.
+ */
+
+/**
+ * `charCode` represents the actual "character code" and is safe to use with
+ * `String.fromCharCode`. As such, only keys that correspond to printable
+ * characters produce a valid `charCode`, the only exception to this is Enter.
+ * The Tab-key is considered non-printable and does not have a `charCode`,
+ * presumably because it does not produce a tab-character in browsers.
+ *
+ * @param {object} nativeEvent Native browser event.
+ * @returns {number} Normalized `charCode` property.
+ */
+function getEventCharCode(nativeEvent) {
+  var charCode;
+  var keyCode = nativeEvent.keyCode;
+
+  if ('charCode' in nativeEvent) {
+    charCode = nativeEvent.charCode; // FF does not set `charCode` for the Enter-key, check against `keyCode`.
+
+    if (charCode === 0 && keyCode === 13) {
+      charCode = 13;
+    }
+  } else {
+    // IE8 does not implement `charCode`, but `keyCode` has the correct value.
+    charCode = keyCode;
+  } // IE and Edge (on Windows) and Chrome / Safari (on Windows and Linux)
+  // report Enter as charCode 10 when ctrl is pressed.
+
+
+  if (charCode === 10) {
+    charCode = 13;
+  } // Some non-printable keys are reported in `charCode`/`keyCode`, discard them.
+  // Must not discard the (non-)printable Enter-key.
+
+
+  if (charCode >= 32 || charCode === 13) {
+    return charCode;
+  }
+
+  return 0;
+}
+
+var _default = getEventCharCode;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/vendor/react-dom/reactsGetEventKey.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _getEventCharCode = _interopRequireDefault(require("./getEventCharCode"));
+
+var _translateToKey = _interopRequireDefault(require("./translateToKey"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the same directory of this source tree.
+ *
+ * @flow
+ */
+
+/**
+ * Normalization of deprecated HTML5 `key` values
+ * @see https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent#Key_names
+ */
+var normalizeKey = {
+  Esc: 'Escape',
+  Spacebar: ' ',
+  Left: 'ArrowLeft',
+  Up: 'ArrowUp',
+  Right: 'ArrowRight',
+  Down: 'ArrowDown',
+  Del: 'Delete',
+  Win: 'OS',
+  Menu: 'ContextMenu',
+  Apps: 'ContextMenu',
+  Scroll: 'ScrollLock',
+  MozPrintableKey: 'Unidentified'
+};
+/**
+ * @param {object} nativeEvent Native browser event.
+ * @returns {string} Normalized `key` property.
+ */
+
+function reactsGetEventKey(nativeEvent) {
+  if (nativeEvent.key) {
+    // Normalize inconsistent values reported by browsers due to
+    // implementations of a working draft specification.
+    // FireFox implements `key` but returns `MozPrintableKey` for all
+    // printable characters (normalized to `Unidentified`), ignore it.
+    var key = normalizeKey[nativeEvent.key] || nativeEvent.key;
+
+    if (key !== 'Unidentified') {
+      return key;
+    }
+  } // Browser does not implement `key`, polyfill as much of it as we can.
+
+
+  if (nativeEvent.type === 'keypress') {
+    var charCode = (0, _getEventCharCode.default)(nativeEvent); // The enter-key is technically both printable and non-printable and can
+    // thus be captured by `keypress`, no other non-printable key should.
+
+    return charCode === 13 ? 'Enter' : String.fromCharCode(charCode);
+  }
+
+  if (nativeEvent.type === 'keydown' || nativeEvent.type === 'keyup') {
+    // While user keyboard layout determines the actual meaning of each
+    // `keyCode` value, almost all function keys have a universal value.
+    return _translateToKey.default[nativeEvent.keyCode] || 'Unidentified';
+  }
+
+  return '';
+}
+
+var _default = reactsGetEventKey;
+exports.default = _default;
+},{"./getEventCharCode":"../node_modules/react-hotkeys/es/vendor/react-dom/getEventCharCode.js","./translateToKey":"../node_modules/react-hotkeys/es/vendor/react-dom/translateToKey.js"}],"../node_modules/react-hotkeys/es/helpers/resolving-handlers/getKeyName.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _reactsGetEventKey = _interopRequireDefault(require("../../vendor/react-dom/reactsGetEventKey"));
+
+var _Configuration = _interopRequireDefault(require("../../lib/config/Configuration"));
+
+var _hasKey = _interopRequireDefault(require("../../utils/object/hasKey"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Lowercased string representing a particular keyboard key
+ * @typedef {string} NormalizedKeyName
+ */
+
+/**
+ * Returns key name from native or React keyboard event
+ * @param {KeyboardEvent} event - Event containing the key name
+ * @returns {NormalizedKeyName} Normalized name of the key
+ */
+function getKeyName(event) {
+  var keyName = function () {
+    var customKeyCodes = _Configuration.default.option('customKeyCodes');
+
+    var keyCode = event.keyCode || event.charCode;
+
+    if ((0, _hasKey.default)(customKeyCodes, keyCode)) {
+      return customKeyCodes[keyCode];
+    }
+
+    if (event.nativeEvent) {
+      return event.key;
+    } else {
+      return (0, _reactsGetEventKey.default)(event);
+    }
+  }();
+
+  if (keyName === '+') {
+    return 'plus';
+  } else {
+    return keyName;
+  }
+}
+
+var _default = getKeyName;
+exports.default = _default;
+},{"../../vendor/react-dom/reactsGetEventKey":"../node_modules/react-hotkeys/es/vendor/react-dom/reactsGetEventKey.js","../../lib/config/Configuration":"../node_modules/react-hotkeys/es/lib/config/Configuration.js","../../utils/object/hasKey":"../node_modules/react-hotkeys/es/utils/object/hasKey.js"}],"../node_modules/react-hotkeys/es/helpers/parsing-key-maps/isCmdKey.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+/**
+ * Returns whether the current key name matches the command key
+ * @param {ReactKeyName} keyName Key name to compare to the command key's
+ * @returns {boolean} Whether the key name matches the command key's
+ */
+function isCmdKey(keyName) {
+  return keyName === 'Meta';
+}
+
+var _default = isCmdKey;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/helpers/logging/describeKeyEvent.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _describeKeyEventType = _interopRequireDefault(require("./describeKeyEventType"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function describeKeyEvent(event, keyName, keyEventType) {
+  var eventDescription = "'".concat(keyName, "' ").concat((0, _describeKeyEventType.default)(keyEventType));
+
+  if (event.simulated) {
+    return "(simulated) ".concat(eventDescription);
+  }
+
+  return eventDescription;
+}
+
+var _default = describeKeyEvent;
+exports.default = _default;
+},{"./describeKeyEventType":"../node_modules/react-hotkeys/es/helpers/logging/describeKeyEventType.js"}],"../node_modules/react-hotkeys/es/const/EventResponse.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+/**
+ * @typedef {number} EventResponseType
+ */
+
+/**
+ * Enum for different ways to respond to a key event
+ * @readonly
+ * @enum {EventResponseType}
+ */
+var EventResponse = {
+  unseen: 0,
+  ignored: 1,
+  seen: 2,
+  recorded: 3,
+  handled: 4
+};
+var _default = EventResponse;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/lib/listening/EventPropagator.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _KeyEventCounter = _interopRequireDefault(require("./KeyEventCounter"));
+
+var _Configuration = _interopRequireDefault(require("../config/Configuration"));
+
+var _describeKeyEvent = _interopRequireDefault(require("../../helpers/logging/describeKeyEvent"));
+
+var _KeyEventType = _interopRequireDefault(require("../../const/KeyEventType"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+/**
+ * Handles the propagation of keyboard events up through the React component tree,
+ * starting from the hot keys component closest to the event target
+ * @class
+ */
+var EventPropagator =
+/*#__PURE__*/
+function () {
+  /**
+   * Create a new instance of EventPropagator
+   * @param {ComponentOptionsList} componentList List of options of the components
+   *        the event is propagating through
+   * @param {Logger} logger The logger instance to use
+   * @param {function} logPrefix Function that returns the appropriate log prefix for
+   *        each log entry
+   * @returns {EventPropagator}
+   */
+  function EventPropagator(componentList, _ref) {
+    var logger = _ref.logger,
+        logPrefix = _ref.logPrefix;
+
+    _classCallCheck(this, EventPropagator);
+
+    this._componentList = componentList;
+    this._previousPropagation = null;
+    this.logger = logger;
+    this._logPrefix = logPrefix;
+
+    this._reset();
+  }
+
+  _createClass(EventPropagator, [{
+    key: "_reset",
+    value: function _reset() {
+      /**
+       * Position of the component that the event last propagated through
+       * @type {number}
+       */
+      this._previousPosition = -1;
+      /**
+       * Position of the current component the event is propagating through
+       * @type {number}
+       */
+
+      this._position = -1;
+      /**
+       * Flag to record whether the keyboard event matches an action whose handler
+       * has already been called
+       * @type {boolean}
+       */
+
+      this._actionHandled = false;
+      /**
+       * Flag to record whether the keyboard event should be ignored
+       * @type {boolean}
+       */
+
+      this._ignoreEvent = false;
+      /**
+       * Flag to record whether the keyboard event current being handled should be
+       * observed, even if matches the ignoreEventCondition
+       * @type {boolean}
+       */
+
+      this._observeIgnoredEvents = false;
+      /**
+       * Flag to record whether the event is being stopped from further propagation
+       * @type {boolean}
+       */
+
+      this._stopping = false;
+      /**
+       * The id of the component the event is current propagating through
+       * @type {ComponentId}
+       */
+
+      this._componentId = null;
+      /**
+       * The name of the key the propagating event relates to
+       * @type {ReactKeyName}
+       */
+
+      this._key = null;
+      /**
+       * The type of keyboard event that is propagating
+       * @type {KeyEventType}
+       */
+
+      this._type = null;
+    }
+    /********************************************************************************
+     * New event propagation
+     *********************************************************************************/
+
+    /**
+     * Whether the current propagation step is the first one
+     * @returns {boolean} true if this is the first propagation step
+     */
+
+  }, {
+    key: "isFirstPropagationStep",
+    value: function isFirstPropagationStep() {
+      var previousPosition = this.getPreviousPosition();
+      return previousPosition === -1 || previousPosition >= this._position;
+    }
+    /**
+     * Whether the propagation is for a particular key
+     * @param {ReactKeyName} keyName The name of the key to query
+     * @returns {boolean} true if the event propagation is for the key
+     */
+
+  }, {
+    key: "isForKey",
+    value: function isForKey(keyName) {
+      return this._key === keyName;
+    }
+    /**
+     * The type of keyboard event that is propagating
+     * @param {KeyEventType} keyEventType The type of keyboard event to query
+     * @returns {boolean} true if the keyboard event propagating is that type
+     */
+
+  }, {
+    key: "isForEventType",
+    value: function isForEventType(keyEventType) {
+      return this._type === keyEventType;
+    }
+    /********************************************************************************
+     * Propagation steps
+     *********************************************************************************/
+
+    /**
+     * Begin a new propagation step, called as a before callback. i.e. the first thing
+     * after an event has propagated to a new hot keys component
+     * @param {ComponentId} componentId The id of the component that has just had the
+     *        event propagate up to it
+     * @param {KeyboardEvent} event The actual KeyboardEvent that is propagating
+     * @param {ReactKeyName} key The name of the key the event relates to
+     * @param {KeyEventType} type The type of keyboard event
+     * @returns {boolean} true if the event should be observed, otherwise false if it
+     *        should be ignored.
+     */
+
+  }, {
+    key: "startNewPropagationStep",
+    value: function startNewPropagationStep(componentId, event, key, type) {
+      this._position = this._componentList.getIndexById(componentId);
+      this._componentId = componentId;
+
+      if (this.isFirstPropagationStep()) {
+        _KeyEventCounter.default.incrementId();
+
+        this._key = event.key;
+        this._type = type;
+      }
+
+      if (event.repeat && _Configuration.default.option('ignoreRepeatedEventsWhenKeyHeldDown')) {
+        this.logger.debug(this._logPrefix(componentId), "Ignored repeated ".concat((0, _describeKeyEvent.default)(event, key, _KeyEventType.default.keydown), " event."));
+        this.ignoreEvent(event);
+        return false;
+      }
+
+      return true;
+    }
+    /**
+     * Ends handling of a propagation step and performs cleanup. Called as a after callback.
+     * @returns {void}
+     */
+
+  }, {
+    key: "finishPropagationStep",
+    value: function finishPropagationStep() {
+      if (this.isStopped() || this._componentList.isRoot(this._componentId)) {
+        this._previousPropagation = this._clone();
+
+        this._reset();
+      } else {
+        this._previousPosition = this._position;
+      }
+    }
+    /********************************************************************************
+     * Previous propagation
+     *********************************************************************************/
+
+    /**
+     * The previous event propagation, either for an earlier event type of the same key
+     * or a different key's event propagation
+     * @returns {EventPropagator} The propagator for the previous event propagation
+     */
+
+  }, {
+    key: "getPreviousPropagation",
+    value: function getPreviousPropagation() {
+      if (!this._previousPropagation) {
+        this._previousPropagation = this._clone({
+          copyState: false
+        });
+      }
+
+      return this._previousPropagation;
+    }
+    /**
+     * The position of the component that last had the current propagating event
+     * propagate through it
+     * @returns {number}
+     */
+
+  }, {
+    key: "getPreviousPosition",
+    value: function getPreviousPosition() {
+      return this._previousPosition;
+    }
+    /********************************************************************************
+     * Ignoring events
+     *********************************************************************************/
+
+    /**
+     * Set the observeIgnoredEvents flag, to observe (not ignore) keyboard events that
+     * match the ignored events filter
+     * @returns {void}
+     */
+
+  }, {
+    key: "observeIgnoredEvents",
+    value: function observeIgnoredEvents() {
+      this._observeIgnoredEvents = true;
+    }
+    /**
+     * Record that an event is being ignored for the rest of its propagation and, if
+     * enabled, stop it from further propagation entirely.
+     * @param {KeyboardEvent} event Event to ignore
+     * @returns {boolean} true if the event was stopped from further propagation,
+     *          otherwise false.
+     */
+
+  }, {
+    key: "ignoreEvent",
+    value: function ignoreEvent(event) {
+      this.setIgnoreEvent(true);
+
+      if (this.isIgnoringEvent() && _Configuration.default.option('stopEventPropagationAfterIgnoring')) {
+        this.logger.debug(this._logPrefix(this._componentId), 'Stopping further event propagation.');
+        this.stop(event);
+        this.finishPropagationStep();
+        return true;
+      }
+
+      return false;
+    }
+    /**
+     * Set the ignore event flag, to ignore the current event for the rest of its
+     * propagation
+     * @param {boolean} ignore true to ignore the event, or false to not ignore it
+     * @returns {void}
+     */
+
+  }, {
+    key: "setIgnoreEvent",
+    value: function setIgnoreEvent(ignore) {
+      this._ignoreEvent = ignore;
+    }
+    /**
+     * Whether to ignore the currently propagating event or not
+     * @returns {boolean} true if the event is being ignored for the current propagation
+     */
+
+  }, {
+    key: "isIgnoringEvent",
+    value: function isIgnoringEvent() {
+      return !this._observeIgnoredEvents && this._ignoreEvent;
+    }
+    /********************************************************************************
+     * Stopping propagation
+     *********************************************************************************/
+
+    /**
+     * Whether the event has been stopped from further propagation
+     * @returns {boolean} true if the event is being stopped
+     */
+
+  }, {
+    key: "isStopped",
+    value: function isStopped() {
+      return this._stopping;
+    }
+    /**
+     * Stop an event from further propagation
+     * @param {KeyboardEvent} event Event to call stopPropagation() on
+     * @returns {boolean} true if the event was stopped and false if it was already
+     *          stopped
+     */
+
+  }, {
+    key: "stop",
+    value: function stop(event) {
+      if (!this.isStopped()) {
+        this._stopping = true; // noinspection JSUnresolvedVariable
+
+        if (!event.simulated) {
+          event.stopPropagation();
+        }
+
+        return true;
+      }
+
+      return false;
+    }
+    /**
+     * Whether the keyboard event has yet propagated to the root hot keys component
+     * @returns {boolean} true if it still has hotkeys components to propagate to
+     *          before being complete.
+     */
+
+  }, {
+    key: "isPendingPropagation",
+    value: function isPendingPropagation() {
+      var previousPosition = this.getPreviousPosition();
+      return previousPosition !== -1 && previousPosition + 1 < this._position;
+    }
+    /**
+     * If the action has already been handled
+     * @returns {boolean} true if the action has already been handled
+     */
+
+  }, {
+    key: "isHandled",
+    value: function isHandled() {
+      return this._actionHandled;
+    }
+    /**
+     * Record that the current propagating event matched and action and its handler
+     * has been called.
+     * @returns {void}
+     */
+
+  }, {
+    key: "setHandled",
+    value: function setHandled() {
+      this._actionHandled = true;
+    }
+    /********************************************************************************
+     * Private methods
+     ********************************************************************************/
+
+  }, {
+    key: "_clone",
+    value: function _clone() {
+      var _ref2 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+          _ref2$copyState = _ref2.copyState,
+          copyState = _ref2$copyState === void 0 ? true : _ref2$copyState;
+
+      var cloned = new EventPropagator(this._componentList, {
+        logger: this.logger,
+        logPrefix: this._logPrefix
+      });
+
+      if (copyState) {
+        Object.assign(cloned, this);
+      }
+
+      return cloned;
+    }
+  }]);
+
+  return EventPropagator;
+}();
+
+var _default = EventPropagator;
+exports.default = _default;
+},{"./KeyEventCounter":"../node_modules/react-hotkeys/es/lib/listening/KeyEventCounter.js","../config/Configuration":"../node_modules/react-hotkeys/es/lib/config/Configuration.js","../../helpers/logging/describeKeyEvent":"../node_modules/react-hotkeys/es/helpers/logging/describeKeyEvent.js","../../const/KeyEventType":"../node_modules/react-hotkeys/es/const/KeyEventType.js"}],"../node_modules/react-hotkeys/es/lib/strategies/FocusOnlyKeyEventStrategy.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _AbstractKeyEventStrategy = _interopRequireDefault(require("./AbstractKeyEventStrategy"));
+
+var _KeyEventType = _interopRequireDefault(require("../../const/KeyEventType"));
+
+var _KeyEventCounter = _interopRequireDefault(require("../listening/KeyEventCounter"));
+
+var _describeKeyEventType = _interopRequireDefault(require("../../helpers/logging/describeKeyEventType"));
+
+var _Configuration = _interopRequireDefault(require("../config/Configuration"));
+
+var _Logger = _interopRequireDefault(require("../logging/Logger"));
+
+var _printComponent = _interopRequireDefault(require("../../helpers/logging/printComponent"));
+
+var _isUndefined = _interopRequireDefault(require("../../utils/isUndefined"));
+
+var _getKeyName = _interopRequireDefault(require("../../helpers/resolving-handlers/getKeyName"));
+
+var _isCmdKey = _interopRequireDefault(require("../../helpers/parsing-key-maps/isCmdKey"));
+
+var _describeKeyEvent = _interopRequireDefault(require("../../helpers/logging/describeKeyEvent"));
+
+var _EventResponse = _interopRequireDefault(require("../../const/EventResponse"));
+
+var _KeyEventState = _interopRequireDefault(require("../../const/KeyEventState"));
+
+var _stateFromEvent = _interopRequireDefault(require("../../helpers/parsing-key-maps/stateFromEvent"));
+
+var _EventPropagator = _interopRequireDefault(require("../listening/EventPropagator"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _get(target, property, receiver) {
+  if (typeof Reflect !== "undefined" && Reflect.get) {
+    _get = Reflect.get;
+  } else {
+    _get = function _get(target, property, receiver) {
+      var base = _superPropBase(target, property);
+
+      if (!base) return;
+      var desc = Object.getOwnPropertyDescriptor(base, property);
+
+      if (desc.get) {
+        return desc.get.call(receiver);
+      }
+
+      return desc.value;
+    };
+  }
+
+  return _get(target, property, receiver || target);
+}
+
+function _superPropBase(object, property) {
+  while (!Object.prototype.hasOwnProperty.call(object, property)) {
+    object = _getPrototypeOf(object);
+    if (object === null) break;
+  }
+
+  return object;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+/**
+ * Defines behaviour for dealing with key maps defined in focus-only HotKey components
+ * @class
+ */
+var FocusOnlyKeyEventStrategy =
+/*#__PURE__*/
+function (_AbstractKeyEventStra) {
+  _inherits(FocusOnlyKeyEventStrategy, _AbstractKeyEventStra);
+  /********************************************************************************
+   * Init & Reset
+   ********************************************************************************/
+
+
+  function FocusOnlyKeyEventStrategy() {
+    var _this;
+
+    var configuration = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    var keyEventManager = arguments.length > 1 ? arguments[1] : undefined;
+
+    _classCallCheck(this, FocusOnlyKeyEventStrategy);
+    /**
+     * Set state that DOES get cleared on each new focus tree
+     */
+
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(FocusOnlyKeyEventStrategy).call(this, configuration, keyEventManager));
+    /**
+     * State that doesn't get cleared on each new focus tree
+     */
+
+    /**
+     * Unique identifier given to each focus tree - when the focus in the browser
+     * changes, and a different tree of elements are focused, a new id is allocated
+     * @typedef {number} FocusTreeId
+     */
+
+    /**
+     * Counter to keep track of what focus tree ID should be allocated next
+     * @type {FocusTreeId}
+     */
+
+    _this.focusTreeId = 0;
+    return _this;
+  }
+  /**
+   * Clears the internal state, wiping any history of key events and registered handlers
+   * so they have no effect on the next tree of focused HotKeys components
+   * @private
+   */
+
+
+  _createClass(FocusOnlyKeyEventStrategy, [{
+    key: "_reset",
+    value: function _reset() {
+      _get(_getPrototypeOf(FocusOnlyKeyEventStrategy.prototype), "_reset", this).call(this);
+
+      this.keypressEventsToSimulate = [];
+      /**
+       * Increase the unique ID associated with each unique focus tree
+       * @type {number}
+       */
+
+      this.focusTreeId += 1;
+      this.eventPropagator = new _EventPropagator.default(this.componentList, {
+        logger: this.logger,
+        logPrefix: this._logPrefix.bind(this)
+      });
+    }
+    /********************************************************************************
+     * Registering key maps and handlers
+     ********************************************************************************/
+
+    /**
+     * Registers the actions and handlers of a HotKeys component that has gained focus
+     * @param {ComponentId} componentId - Id of the component that the keyMap belongs to
+     * @param {KeyMap} actionNameToKeyMap - Map of actions to key expressions
+     * @param {HandlersMap} actionNameToHandlersMap - Map of actions to handler functions
+     * @param {Object} options Hash of options that configure how the actions
+     *        and handlers are associated and called.
+     * @returns {FocusTreeId|undefined} The current focus tree's ID or undefined if the
+     *        the <tt>componentId</tt> has already been registered (shouldn't normally
+     *        occur).
+     */
+
+  }, {
+    key: "enableHotKeys",
+    value: function enableHotKeys(componentId) {
+      var actionNameToKeyMap = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var actionNameToHandlersMap = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      var options = arguments.length > 3 ? arguments[3] : undefined;
+
+      if (this.resetOnNextFocus) {
+        /**
+         * We know components have just lost focus or keymaps have already been built,
+         * meaning we are either anticipating a new set of components to be focused or
+         * we are receiving notice of a component being focused when we aren't expecting it.
+         * In either case, the internal state needs to be reset.
+         */
+        this._reset();
+
+        this.resetOnNextFocus = false;
+      }
+
+      if (this.componentList.containsId(componentId)) {
+        /**
+         * The <tt>componentId</tt> has already been registered - this occurs when the
+         * same component has somehow managed to be focused twice, without being blurred
+         * in between.
+         *
+         * @see https://github.com/greena13/react-hotkeys/issues/173
+         */
+        return undefined;
+      }
+
+      this._addComponent(componentId, actionNameToKeyMap, actionNameToHandlersMap, options);
+
+      this.logger.debug(this._logPrefix(componentId, {
+        eventId: false
+      }), 'Focused. \n');
+      this.logger.verbose(this._logPrefix(componentId, {
+        eventId: false
+      }), 'Component options:\n', (0, _printComponent.default)(this.componentList.get(componentId)));
+      return this.focusTreeId;
+    }
+    /**
+     * Handles when a HotKeys component that is in focus updates its props and changes
+     * either the keyMap or handlers prop value
+     * @param {FocusTreeId} focusTreeId - The ID of the focus tree the component is part of.
+     *        Used to identify (and ignore) stale updates.
+     * @param {ComponentId} componentId - The component index of the component to
+     *        update
+     * @param {KeyMap} actionNameToKeyMap - Map of key sequences to action names
+     * @param {HandlersMap} actionNameToHandlersMap - Map of action names to handler
+     *        functions
+     * @param {Object} options Hash of options that configure how the actions
+     *        and handlers are associated and called.
+     */
+
+  }, {
+    key: "updateEnabledHotKeys",
+    value: function updateEnabledHotKeys(focusTreeId, componentId) {
+      var actionNameToKeyMap = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      var actionNameToHandlersMap = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+      var options = arguments.length > 4 ? arguments[4] : undefined;
+
+      if (focusTreeId !== this.focusTreeId || !this.componentList.containsId(componentId)) {
+        return;
+      }
+
+      this.componentList.update(componentId, actionNameToKeyMap, actionNameToHandlersMap, options);
+      this.getKeyHistory().setMaxLength(this.componentList.getLongestSequence());
+      this.logger.debug(this._logPrefix(componentId, {
+        focusTreeId: focusTreeId,
+        eventId: false
+      }), 'Received new props.');
+      /**
+       * Reset handler resolution state
+       */
+
+      this._initHandlerResolutionState();
+
+      this.logger.verbose(this._logPrefix(componentId, {
+        focusTreeId: focusTreeId,
+        eventId: false
+      }), 'Component options:\n', (0, _printComponent.default)(this.componentList.get(componentId)));
+    }
+    /**
+     * Handles when a component loses focus by resetting the internal state, ready to
+     * receive the next tree of focused HotKeys components
+     * @param {FocusTreeId} focusTreeId - Id of focus tree component thinks it's
+     *        apart of
+     * @param {ComponentId} componentId - Index of component that is blurring
+     * @returns {boolean} Whether the component still has event propagation yet to handle
+     */
+
+  }, {
+    key: "disableHotKeys",
+    value: function disableHotKeys(focusTreeId, componentId) {
+      if (!this.resetOnNextFocus) {
+        this.resetOnNextFocus = true;
+      }
+
+      var outstandingEventPropagation = this.eventPropagator.isPendingPropagation();
+      this.logger.debug("".concat(this._logPrefix(componentId, {
+        focusTreeId: focusTreeId,
+        eventId: false
+      })), "Lost focus".concat(outstandingEventPropagation ? ' (Key event has yet to propagate through it)' : '', "."));
+      return outstandingEventPropagation;
+    }
+    /********************************************************************************
+     * Recording key events
+     ********************************************************************************/
+
+    /**
+     * @typedef {KeyboardEvent} SyntheticKeyboardEvent
+     * @property {function} persist
+     */
+
+    /**
+     * Records a keydown keyboard event and matches it against the list of pre-registered
+     * event handlers, calling the first matching handler with the highest priority if
+     * one exists.
+     *
+     * This method is called many times as a keyboard event bubbles up through the React
+     * render tree. The event is only registered the first time it is seen and results
+     * of some calculations are cached. The event is matched against the handlers registered
+     * at each component level, to ensure the proper handler declaration scoping.
+     * @param {SyntheticKeyboardEvent} event - Event containing the key name and state
+     * @param {FocusTreeId} focusTreeId - Id of focus tree component thinks it's apart of
+     * @param {ComponentId} componentId - The id of the component that is currently handling
+     *        the keyboard event as it bubbles towards the document root.
+     * @param {Object} options - Hash of options that configure how the event is handled.
+     * @returns Whether the event was discarded because it was part of an old focus tree
+     */
+
+  }, {
+    key: "handleKeydown",
+    value: function handleKeydown(event, focusTreeId, componentId) {
+      var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+      var key = (0, _getKeyName.default)(event);
+
+      if (focusTreeId !== this.focusTreeId) {
+        this.logger.debug(this._logPrefix(componentId), "Ignored ".concat((0, _describeKeyEvent.default)(event, key, _KeyEventType.default.keydown), " event because it had an old focus tree id: ").concat(focusTreeId, "."));
+        this.eventPropagator.ignoreEvent(event);
+        return true;
+      }
+
+      var started = this.eventPropagator.startNewPropagationStep(componentId, event, key, _KeyEventType.default.keydown);
+
+      if (!started) {
+        return;
+      }
+
+      var responseAction = this._howToHandleKeyEvent(event, focusTreeId, componentId, key, options, _KeyEventType.default.keydown);
+
+      if (responseAction === _EventResponse.default.handled) {
+        var keyEventState = (0, _stateFromEvent.default)(event);
+        var currentCombination = this.getCurrentCombination();
+
+        if (currentCombination.isKeyIncluded(key) || currentCombination.isEnding()) {
+          this._startAndLogNewKeyCombination(key, focusTreeId, componentId, keyEventState);
+        } else {
+          this._addToAndLogCurrentKeyCombination(key, _KeyEventType.default.keydown, focusTreeId, componentId, keyEventState);
+        }
+
+        this._callHandlerIfActionNotHandled(event, key, _KeyEventType.default.keydown, componentId, focusTreeId);
+      }
+
+      this._simulateKeyPressForNonPrintableKeys(event, key, focusTreeId, componentId, options);
+
+      this.eventPropagator.finishPropagationStep();
+      return false;
+    }
+  }, {
+    key: "_howToHandleKeyEvent",
+    value: function _howToHandleKeyEvent(event, focusTreeId, componentId, key, options, keyEventType) {
+      if (this.eventPropagator.isFirstPropagationStep()) {
+        if (options.ignoreEventsCondition(event) && this.eventPropagator.ignoreEvent(event)) {
+          return this._eventIsToBeIgnored(event, componentId, key, keyEventType);
+        }
+
+        this.logger.debug(this._logPrefix(componentId), "New ".concat((0, _describeKeyEvent.default)(event, key, keyEventType), " event."));
+
+        this._checkForModifierFlagDiscrepancies(event, key, keyEventType);
+      } else if (this.eventPropagator.isIgnoringEvent()) {
+        return this._eventIsToBeIgnored(event, componentId, key, keyEventType);
+      }
+
+      return _EventResponse.default.handled;
+    }
+  }, {
+    key: "_eventIsToBeIgnored",
+    value: function _eventIsToBeIgnored(event, componentId, key, keyEventType) {
+      this.logger.debug(this._logPrefix(componentId), "Ignored ".concat((0, _describeKeyEvent.default)(event, key, keyEventType), " event because ignoreEventsFilter rejected it."));
+      return _EventResponse.default.ignored;
+    }
+    /**
+     * Records a keypress keyboard event and matches it against the list of pre-registered
+     * event handlers, calling the first matching handler with the highest priority if
+     * one exists.
+     *
+     * This method is called many times as a keyboard event bubbles up through the React
+     * render tree. The event is only registered the first time it is seen and results
+     * of some calculations are cached. The event is matched against the handlers registered
+     * at each component level, to ensure the proper handler declaration scoping.
+     * @param {KeyboardEvent} event - Event containing the key name and state
+     * @param {FocusTreeId} focusTreeId Id - of focus tree component thinks it's apart of
+     * @param {ComponentId} componentId - The index of the component that is currently handling
+     *        the keyboard event as it bubbles towards the document root.
+     * @param {Object} options - Hash of options that configure how the event
+     *        is handled.
+     * @returns {boolean} Whether the HotKeys component should discard its current focus
+     *        tree Id, because it belongs to an old focus tree.
+     */
+
+  }, {
+    key: "handleKeyPress",
+    value: function handleKeyPress(event, focusTreeId, componentId, options) {
+      var key = (0, _getKeyName.default)(event);
+      var currentCombination = this.getCurrentCombination();
+
+      if (currentCombination.isKeyPressSimulated(key)) {
+        this.logger.debug(this._logPrefix(componentId), "Ignored ".concat((0, _describeKeyEvent.default)(event, key, _KeyEventType.default.keypress), " as it was not expected, and has already been simulated."));
+        this.eventPropagator.ignoreEvent(event);
+        return true;
+      }
+
+      var started = this.eventPropagator.startNewPropagationStep(componentId, event, key, _KeyEventType.default.keypress);
+
+      if (!started) {
+        return;
+      }
+
+      var shouldDiscardFocusTreeId = focusTreeId !== this.focusTreeId;
+      /**
+       * We first decide if the keypress event should be handled (to ensure the correct
+       * order of logging statements)
+       */
+
+      var responseAction = this._howToHandleKeyEvent(event, focusTreeId, componentId, key, options, _KeyEventType.default.keypress);
+
+      if (this.eventPropagator.isFirstPropagationStep(componentId) && currentCombination.isKeyIncluded(key)) {
+        this._addToAndLogCurrentKeyCombination(key, _KeyEventType.default.keypress, focusTreeId, componentId, (0, _stateFromEvent.default)(event));
+      }
+      /**
+       * We attempt to find a handler of the event, only if it has not already
+       * been handled and should not be ignored
+       */
+
+
+      if (responseAction === _EventResponse.default.handled) {
+        this._callHandlerIfActionNotHandled(event, key, _KeyEventType.default.keypress, componentId, focusTreeId);
+      }
+
+      this.eventPropagator.finishPropagationStep();
+      return shouldDiscardFocusTreeId;
+    }
+    /**
+     * Records a keyup keyboard event and matches it against the list of pre-registered
+     * event handlers, calling the first matching handler with the highest priority if
+     * one exists.
+     *
+     * This method is called many times as a keyboard event bubbles up through the React
+     * render tree. The event is only registered the first time it is seen and results
+     * of some calculations are cached. The event is matched against the handlers registered
+     * at each component level, to ensure the proper handler declaration scoping.
+     * @param {KeyboardEvent} event Event containing the key name and state
+     * @param {FocusTreeId} focusTreeId Id of focus tree component thinks it's apart of
+     * @param {ComponentId} componentId The index of the component that is currently handling
+     *        the keyboard event as it bubbles towards the document root.
+     * @param {Object} options Hash of options that configure how the event
+     *        is handled.
+     * @returns {boolean} Whether HotKeys component should discard its current focusTreeId
+     *        because it's stale (part of an old focus tree)
+     */
+
+  }, {
+    key: "handleKeyUp",
+    value: function handleKeyUp(event, focusTreeId, componentId, options) {
+      var key = (0, _getKeyName.default)(event);
+      var currentCombination = this.getCurrentCombination();
+
+      if (currentCombination.isKeyUpSimulated(key)) {
+        this.logger.debug(this._logPrefix(componentId), "Ignored ".concat((0, _describeKeyEvent.default)(event, key, _KeyEventType.default.keyup), " as it was not expected, and has already been simulated."));
+        this.eventPropagator.ignoreEvent(event);
+        return true;
+      }
+
+      var started = this.eventPropagator.startNewPropagationStep(componentId, event, key, _KeyEventType.default.keyup);
+
+      if (!started) {
+        return;
+      }
+
+      var shouldDiscardFocusId = focusTreeId !== this.focusTreeId;
+      /**
+       * We first decide if the keyup event should be handled (to ensure the correct
+       * order of logging statements)
+       */
+
+      var responseAction = this._howToHandleKeyEvent(event, focusTreeId, componentId, key, options, _KeyEventType.default.keyup);
+      /**
+       * We then add the keyup to our current combination - regardless of whether
+       * it's to be handled or not. We need to do this to ensure that if a handler
+       * function changes focus to a context that ignored events, the keyup event
+       * is not lost (leaving react hotkeys thinking the key is still pressed).
+       */
+
+
+      if (this.eventPropagator.isFirstPropagationStep(componentId) && currentCombination.isKeyIncluded(key)) {
+        this._addToAndLogCurrentKeyCombination(key, _KeyEventType.default.keyup, focusTreeId, componentId, (0, _stateFromEvent.default)(event));
+      }
+      /**
+       * We attempt to find a handler of the event, only if it has not already
+       * been handled and should not be ignored
+       */
+
+
+      if (responseAction === _EventResponse.default.handled) {
+        this._callHandlerIfActionNotHandled(event, key, _KeyEventType.default.keyup, componentId, focusTreeId);
+      }
+      /**
+       * We simulate any hidden keyup events hidden by the command key, regardless
+       * of whether the event should be ignored or not
+       */
+
+
+      this._simulateKeyUpEventsHiddenByCmd(event, key, focusTreeId, componentId, options);
+
+      this.eventPropagator.finishPropagationStep();
+      return shouldDiscardFocusId;
+    }
+    /**
+     * Closes any hanging key combinations that have not received the key event indicated
+     * by recordIndex.
+     * @param {KeyName} keyName The name of the key whose state should be updated if it
+     *        is currently set to keydown or keypress.
+     * @param {KeyEventType} recordIndex Index of key event to move the key state
+     *        up to.
+     */
+
+  }, {
+    key: "closeHangingKeyCombination",
+    value: function closeHangingKeyCombination(keyName, recordIndex) {
+      var currentCombination = this.getCurrentCombination();
+
+      if (currentCombination.isKeyIncluded(keyName) && !currentCombination.isEventTriggered(keyName, recordIndex)) {
+        /**
+         * If the key is in the current combination and recorded as still being pressed
+         * down (as either keydown or keypress), then we update the state
+         * to keypress or keyup (depending on the value of recordIndex).
+         */
+        currentCombination.setKeyState(keyName, recordIndex, _KeyEventState.default.simulated);
+      }
+    }
+  }, {
+    key: "_simulateKeyPressForNonPrintableKeys",
+    value: function _simulateKeyPressForNonPrintableKeys(event, key, focusTreeId, componentId, options) {
+      this._handleEventSimulation('keypressEventsToSimulate', 'simulatePendingKeyPressEvents', this._shouldSimulate(_KeyEventType.default.keypress, key), {
+        event: event,
+        key: key,
+        focusTreeId: focusTreeId,
+        componentId: componentId,
+        options: options
+      });
+    }
+  }, {
+    key: "_simulateKeyUpEventsHiddenByCmd",
+    value: function _simulateKeyUpEventsHiddenByCmd(event, key, focusTreeId, componentId, options) {
+      var _this2 = this;
+
+      if ((0, _isCmdKey.default)(key)) {
+        this.getCurrentCombination().forEachKey(function (keyName) {
+          if ((0, _isCmdKey.default)(keyName)) {
+            return;
+          }
+
+          _this2._handleEventSimulation('keyupEventsToSimulate', 'simulatePendingKeyUpEvents', _this2._shouldSimulate(_KeyEventType.default.keyup, keyName), {
+            event: event,
+            key: keyName,
+            focusTreeId: focusTreeId,
+            componentId: componentId,
+            options: options
+          });
+        });
+      }
+    }
+  }, {
+    key: "_stopEventPropagation",
+    value: function _stopEventPropagation(event, componentId) {
+      if (this.eventPropagator.stop(event)) {
+        this.logger.debug(this._logPrefix(componentId), 'Stopping further event propagation.');
+      }
+    }
+  }, {
+    key: "getEventPropagator",
+    value: function getEventPropagator() {
+      return this.eventPropagator;
+    }
+  }, {
+    key: "_startAndLogNewKeyCombination",
+    value: function _startAndLogNewKeyCombination(keyName, focusTreeId, componentId, keyEventState) {
+      this.getKeyHistory().startNewKeyCombination(keyName, keyEventState);
+      this.logger.verbose(this._logPrefix(componentId, {
+        focusTreeId: focusTreeId
+      }), "Started a new combination with '".concat(keyName, "'."));
+      this.logger.verbose(this._logPrefix(componentId, {
+        focusTreeId: focusTreeId
+      }), "Key history: ".concat((0, _printComponent.default)(this.getKeyHistory().toJSON()), "."));
+    }
+  }, {
+    key: "_addToAndLogCurrentKeyCombination",
+    value: function _addToAndLogCurrentKeyCombination(keyName, keyEventType, focusTreeId, componentId, keyEventState) {
+      this.getKeyHistory().addKeyToCurrentCombination(keyName, keyEventType, keyEventState);
+
+      if (keyEventType === _KeyEventType.default.keydown) {
+        this.logger.verbose(this._logPrefix(componentId, {
+          focusTreeId: focusTreeId
+        }), "Added '".concat(keyName, "' to current combination: '").concat(this.getCurrentCombination().describe(), "'."));
+      }
+
+      this.logger.verbose(this._logPrefix(componentId, {
+        focusTreeId: focusTreeId
+      }), "Key history: ".concat((0, _printComponent.default)(this.getKeyHistory().toJSON()), "."));
+    }
+    /********************************************************************************
+     * Event simulation
+     ********************************************************************************/
+
+  }, {
+    key: "_handleEventSimulation",
+    value: function _handleEventSimulation(listName, handlerName, shouldSimulate, _ref) {
+      var event = _ref.event,
+          key = _ref.key,
+          focusTreeId = _ref.focusTreeId,
+          componentId = _ref.componentId,
+          options = _ref.options;
+
+      if (shouldSimulate && _Configuration.default.option('simulateMissingKeyPressEvents')) {
+        /**
+         * If a key does not have a keypress event, we save the details of the keydown
+         * event to simulate the keypress event, as the keydown event bubbles through
+         * the last focus-only HotKeysComponent
+         */
+        var _event = this._cloneAndMergeEvent(event, {
+          key: key,
+          simulated: true
+        });
+
+        this[listName].push({
+          event: _event,
+          focusTreeId: focusTreeId,
+          componentId: componentId,
+          options: options
+        });
+      }
+
+      if (this.componentList.isRoot(componentId) || this.eventPropagator.isStopped()) {
+        if (!this.keyEventManager.isGlobalListenersBound()) {
+          this[handlerName]();
+        }
+        /**
+         * else, we wait for keydown event to propagate through global strategy
+         * before we simulate the keypress
+         */
+
+      }
+    }
+  }, {
+    key: "simulatePendingKeyPressEvents",
+    value: function simulatePendingKeyPressEvents() {
+      this._simulatePendingKeyEvents('keypressEventsToSimulate', 'handleKeyPress');
+    }
+  }, {
+    key: "simulatePendingKeyUpEvents",
+    value: function simulatePendingKeyUpEvents() {
+      this._simulatePendingKeyEvents('keyupEventsToSimulate', 'handleKeyUp');
+    }
+  }, {
+    key: "_simulatePendingKeyEvents",
+    value: function _simulatePendingKeyEvents(listName, handlerName) {
+      var _this3 = this;
+
+      if (this[listName].length > 0) {
+        _KeyEventCounter.default.incrementId();
+      }
+
+      this[listName].forEach(function (_ref2) {
+        var event = _ref2.event,
+            focusTreeId = _ref2.focusTreeId,
+            componentId = _ref2.componentId,
+            options = _ref2.options;
+
+        _this3[handlerName](event, focusTreeId, componentId, options);
+      });
+      this[listName] = [];
+    }
+    /********************************************************************************
+     * Matching and calling handlers
+     ********************************************************************************/
+
+    /**
+     * Calls the first handler that matches the current key event if the action has not
+     * already been handled in a more deeply nested component
+     * @param {KeyboardEvent} event Keyboard event object to be passed to the handler
+     * @param {NormalizedKeyName} keyName Normalized key name
+     * @param {KeyEventType} keyEventType The record index of the current key event type
+     * @param {FocusTreeId} focusTreeId Id of focus tree component thinks it's apart of
+     * @param {ComponentId} componentId Index of the component that is currently handling
+     *        the keyboard event
+     * @private
+     */
+
+  }, {
+    key: "_callHandlerIfActionNotHandled",
+    value: function _callHandlerIfActionNotHandled(event, keyName, keyEventType, componentId, focusTreeId) {
+      var eventName = (0, _describeKeyEventType.default)(keyEventType);
+      var combinationName = this.getCurrentCombination().describe();
+
+      if (!this.componentList.anyActionsForEventType(keyEventType)) {
+        this.logger.verbose(this._logPrefix(componentId, {
+          focusTreeId: focusTreeId
+        }), "Ignored '".concat(combinationName, "' ").concat(eventName, " because it doesn't have any ").concat(eventName, " handlers."));
+        return;
+      }
+
+      if (this.eventPropagator.isHandled()) {
+        this.logger.debug(this._logPrefix(componentId, {
+          focusTreeId: focusTreeId
+        }), "Ignored '".concat(combinationName, "' ").concat(eventName, " as it has already been handled."));
+      } else {
+        this.logger.verbose(this._logPrefix(componentId, {
+          focusTreeId: focusTreeId
+        }), "Attempting to find action matching '".concat(combinationName, "' ").concat(eventName, " . . ."));
+        var previousComponentPosition = this.eventPropagator.getPreviousPosition();
+        var componentPosition = this.componentList.getIndexById(componentId);
+
+        var handlerWasCalled = this._callClosestMatchingHandler(event, keyName, keyEventType, componentPosition, previousComponentPosition === -1 ? 0 : previousComponentPosition);
+
+        if (handlerWasCalled) {
+          this.eventPropagator.setHandled();
+        }
+      }
+    }
+    /********************************************************************************
+     * Logging
+     ********************************************************************************/
+
+  }, {
+    key: "_logPrefix",
+    value: function _logPrefix(componentId) {
+      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var logIcons = _Logger.default.logIcons;
+      var eventIcons = _Logger.default.eventIcons;
+      var componentIcons = _Logger.default.componentIcons;
+      var base = 'HotKeys (';
+
+      if (options.focusTreeId !== false) {
+        var focusTreeId = (0, _isUndefined.default)(options.focusTreeId) ? this.focusTreeId : options.focusTreeId;
+        base += "F".concat(focusTreeId).concat(logIcons[focusTreeId % logIcons.length], "-");
+      }
+
+      if (options.eventId !== false) {
+        var eventId = (0, _isUndefined.default)(options.eventId) ? _KeyEventCounter.default.getId() : options.eventId;
+        base += "E".concat(eventId).concat(eventIcons[eventId % eventIcons.length], "-");
+      }
+
+      base += "C".concat(componentId).concat(componentIcons[componentId % componentIcons.length]);
+      var position = this.componentList.getIndexById(componentId);
+
+      if (!(0, _isUndefined.default)(position)) {
+        base += "-P".concat(position).concat(componentIcons[position % componentIcons.length], ":");
+      }
+
+      return "".concat(base, ")");
+    }
+  }]);
+
+  return FocusOnlyKeyEventStrategy;
+}(_AbstractKeyEventStrategy.default);
+
+var _default = FocusOnlyKeyEventStrategy;
+exports.default = _default;
+},{"./AbstractKeyEventStrategy":"../node_modules/react-hotkeys/es/lib/strategies/AbstractKeyEventStrategy.js","../../const/KeyEventType":"../node_modules/react-hotkeys/es/const/KeyEventType.js","../listening/KeyEventCounter":"../node_modules/react-hotkeys/es/lib/listening/KeyEventCounter.js","../../helpers/logging/describeKeyEventType":"../node_modules/react-hotkeys/es/helpers/logging/describeKeyEventType.js","../config/Configuration":"../node_modules/react-hotkeys/es/lib/config/Configuration.js","../logging/Logger":"../node_modules/react-hotkeys/es/lib/logging/Logger.js","../../helpers/logging/printComponent":"../node_modules/react-hotkeys/es/helpers/logging/printComponent.js","../../utils/isUndefined":"../node_modules/react-hotkeys/es/utils/isUndefined.js","../../helpers/resolving-handlers/getKeyName":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/getKeyName.js","../../helpers/parsing-key-maps/isCmdKey":"../node_modules/react-hotkeys/es/helpers/parsing-key-maps/isCmdKey.js","../../helpers/logging/describeKeyEvent":"../node_modules/react-hotkeys/es/helpers/logging/describeKeyEvent.js","../../const/EventResponse":"../node_modules/react-hotkeys/es/const/EventResponse.js","../../const/KeyEventState":"../node_modules/react-hotkeys/es/const/KeyEventState.js","../../helpers/parsing-key-maps/stateFromEvent":"../node_modules/react-hotkeys/es/helpers/parsing-key-maps/stateFromEvent.js","../listening/EventPropagator":"../node_modules/react-hotkeys/es/lib/listening/EventPropagator.js"}],"../node_modules/react-hotkeys/es/utils/collection/contains.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _isObject = _interopRequireDefault(require("../object/isObject"));
+
+var _hasKey = _interopRequireDefault(require("../object/hasKey"));
+
+var _isString = _interopRequireDefault(require("../string/isString"));
+
+var _isUndefined = _interopRequireDefault(require("../isUndefined"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function contains(collection, item) {
+  var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+  if (Array.isArray(collection) || (0, _isString.default)(collection)) {
+    if (options.stringifyFirst) {
+      return !(0, _isUndefined.default)(collection.find(function (collectionItem) {
+        return collectionItem.toString() === item.toString();
+      }));
+    } else {
+      return collection.indexOf(item) !== -1;
+    }
+  } else if ((0, _isObject.default)(collection)) {
+    return (0, _hasKey.default)(collection, item);
+  } else {
+    if (options.stringifyFirst) {
+      return collection.toString() === item.toString();
+    } else {
+      return collection === item;
+    }
+  }
+}
+
+var _default = contains;
+exports.default = _default;
+},{"../object/isObject":"../node_modules/react-hotkeys/es/utils/object/isObject.js","../object/hasKey":"../node_modules/react-hotkeys/es/utils/object/hasKey.js","../string/isString":"../node_modules/react-hotkeys/es/utils/string/isString.js","../isUndefined":"../node_modules/react-hotkeys/es/utils/isUndefined.js"}],"../node_modules/react-hotkeys/es/utils/string/capitalize.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function capitalize(string) {
+  return string.replace(/\b\w/g, function (l) {
+    return l.toUpperCase();
+  });
+}
+
+var _default = capitalize;
+exports.default = _default;
+},{}],"../node_modules/react-hotkeys/es/utils/string/normalizeEventName.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _capitalize = _interopRequireDefault(require("./capitalize"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function normalizeEventName(eventName) {
+  return "".concat((0, _capitalize.default)(eventName.slice(0, 3))).concat((0, _capitalize.default)(eventName.slice(3)));
+}
+
+var _default = normalizeEventName;
+exports.default = _default;
+},{"./capitalize":"../node_modules/react-hotkeys/es/utils/string/capitalize.js"}],"../node_modules/react-hotkeys/es/lib/strategies/GlobalKeyEventStrategy.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _KeyEventType = _interopRequireDefault(require("../../const/KeyEventType"));
+
+var _AbstractKeyEventStrategy = _interopRequireDefault(require("./AbstractKeyEventStrategy"));
+
+var _describeKeyEventType = _interopRequireDefault(require("../../helpers/logging/describeKeyEventType"));
+
+var _KeyEventCounter = _interopRequireDefault(require("../listening/KeyEventCounter"));
+
+var _Logger = _interopRequireDefault(require("../logging/Logger"));
+
+var _isUndefined = _interopRequireDefault(require("../../utils/isUndefined"));
+
+var _printComponent = _interopRequireDefault(require("../../helpers/logging/printComponent"));
+
+var _getKeyName = _interopRequireDefault(require("../../helpers/resolving-handlers/getKeyName"));
+
+var _Configuration = _interopRequireDefault(require("../config/Configuration"));
+
+var _describeKeyEvent = _interopRequireDefault(require("../../helpers/logging/describeKeyEvent"));
+
+var _isCmdKey = _interopRequireDefault(require("../../helpers/parsing-key-maps/isCmdKey"));
+
+var _EventResponse = _interopRequireDefault(require("../../const/EventResponse"));
+
+var _contains = _interopRequireDefault(require("../../utils/collection/contains"));
+
+var _stateFromEvent = _interopRequireDefault(require("../../helpers/parsing-key-maps/stateFromEvent"));
+
+var _normalizeEventName = _interopRequireDefault(require("../../utils/string/normalizeEventName"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _get(target, property, receiver) {
+  if (typeof Reflect !== "undefined" && Reflect.get) {
+    _get = Reflect.get;
+  } else {
+    _get = function _get(target, property, receiver) {
+      var base = _superPropBase(target, property);
+
+      if (!base) return;
+      var desc = Object.getOwnPropertyDescriptor(base, property);
+
+      if (desc.get) {
+        return desc.get.call(receiver);
+      }
+
+      return desc.value;
+    };
+  }
+
+  return _get(target, property, receiver || target);
+}
+
+function _superPropBase(object, property) {
+  while (!Object.prototype.hasOwnProperty.call(object, property)) {
+    object = _getPrototypeOf(object);
+    if (object === null) break;
+  }
+
+  return object;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+/**
+ * Defines behaviour for dealing with key maps defined in global HotKey components
+ * @class
+ */
+var GlobalKeyEventStrategy =
+/*#__PURE__*/
+function (_AbstractKeyEventStra) {
+  _inherits(GlobalKeyEventStrategy, _AbstractKeyEventStra);
+  /********************************************************************************
+   * Init & Reset
+   ********************************************************************************/
+
+
+  function GlobalKeyEventStrategy() {
+    var _this;
+
+    var configuration = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    var keyEventManager = arguments.length > 1 ? arguments[1] : undefined;
+
+    _classCallCheck(this, GlobalKeyEventStrategy);
+    /**
+     * Set state that gets cleared every time a component gets mounted or unmounted
+     */
+
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(GlobalKeyEventStrategy).call(this, configuration, keyEventManager));
+    /**
+     * Set state that doesn't get cleared each time a new new component is mounted
+     * or unmounted
+     * @type {number}
+     */
+
+    /**
+     * Whether the global key event handlers have been bound to document yet or not
+     * @type {boolean}
+     */
+
+    _this.listenersBound = false;
+    _this.eventOptions = {
+      ignoreEventsCondition: _Configuration.default.option('ignoreEventsCondition')
+    };
+    /**
+     * Dictionary of listener functions - currently only intended to house
+     * keyCombinationListener
+     */
+
+    _this.listeners = {};
+    return _this;
+  }
+  /********************************************************************************
+   * Enabling key maps and handlers
+   ********************************************************************************/
+
+  /**
+   * Registers the actions and handlers of a HotKeys component that has mounted
+   * @param {ComponentId} componentId - Id of the component that the keyMap belongs to
+   * @param {KeyMap} actionNameToKeyMap - Map of actions to key expressions
+   * @param {HandlersMap} actionNameToHandlersMap - Map of actions to handler functions
+   * @param {Object} options Hash of options that configure how the actions
+   *        and handlers are associated and called.
+   * @param {Object} eventOptions - Options for how the event should be handled
+   */
+
+
+  _createClass(GlobalKeyEventStrategy, [{
+    key: "enableHotKeys",
+    value: function enableHotKeys(componentId) {
+      var actionNameToKeyMap = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var actionNameToHandlersMap = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      var options = arguments.length > 3 ? arguments[3] : undefined;
+      var eventOptions = arguments.length > 4 ? arguments[4] : undefined;
+      this.eventOptions = eventOptions;
+
+      this._addComponent(componentId, actionNameToKeyMap, actionNameToHandlersMap, options);
+
+      this._updateDocumentHandlers();
+      /**
+       * Reset handler resolution state
+       */
+
+
+      this._initHandlerResolutionState();
+
+      this.logger.debug(this._logPrefix(componentId, {
+        eventId: false
+      }), 'Mounted.');
+      this.logger.verbose(this._logPrefix(componentId, {
+        eventId: false
+      }), 'Component options: \n', (0, _printComponent.default)(this.componentList.get(componentId)));
+    }
+    /**
+     * Handles when a mounted global HotKeys component updates its props and changes
+     * either the keyMap or handlers prop value
+     * @param {ComponentId} componentId - The component index of the component to
+     *        update
+     * @param {KeyMap} actionNameToKeyMap - Map of actions to key expressions
+     * @param {HandlersMap} actionNameToHandlersMap - Map of actions to handler functions
+     * @param {Object} options Hash of options that configure how the actions
+     *        and handlers are associated and called.
+     * @param {Object} eventOptions - Options for how the event should be handled
+     */
+
+  }, {
+    key: "updateEnabledHotKeys",
+    value: function updateEnabledHotKeys(componentId) {
+      var actionNameToKeyMap = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var actionNameToHandlersMap = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      var options = arguments.length > 3 ? arguments[3] : undefined;
+      var eventOptions = arguments.length > 4 ? arguments[4] : undefined;
+      this.eventOptions = eventOptions;
+      this.componentList.update(componentId, actionNameToKeyMap, actionNameToHandlersMap, options);
+      this.getKeyHistory().setMaxLength(this.componentList.getLongestSequence());
+      /**
+       * Reset strategy state specific to the global strategy
+       */
+
+      this._updateDocumentHandlers();
+      /**
+       * Reset handler resolution state
+       */
+
+
+      this._initHandlerResolutionState();
+
+      this.logger.debug(this._logPrefix(componentId, {
+        eventId: false
+      }), "Global component ".concat(componentId, " updated."));
+      this.logger.verbose(this._logPrefix(componentId, {
+        eventId: false
+      }), 'Component options: \n', (0, _printComponent.default)(this.componentList.get(componentId)));
+    }
+    /**
+     * Handles when a component is unmounted
+     * @param {ComponentId} componentId - Index of component that is being unmounted
+     */
+
+  }, {
+    key: "disableHotKeys",
+    value: function disableHotKeys(componentId) {
+      /**
+       * Manually update the registered key map state, usually reset using
+       * _resetRegisteredKeyMapsState() method
+       */
+      this.componentList.remove(componentId);
+      this.getKeyHistory().setMaxLength(this.componentList.getLongestSequence());
+
+      this._updateDocumentHandlers();
+      /**
+       * Reset handler resolution state
+       */
+
+
+      this._initHandlerResolutionState();
+
+      this.logger.debug(this._logPrefix(componentId, {
+        eventId: false
+      }), "Unmounted global component ".concat(componentId));
+    }
+  }, {
+    key: "_updateDocumentHandlers",
+    value: function _updateDocumentHandlers() {
+      var _this2 = this;
+
+      var listenersShouldBeBound = this._listenersShouldBeBound();
+
+      if (!this.listenersBound && listenersShouldBeBound) {
+        Object.values(_KeyEventType.default).forEach(function (recordIndex) {
+          var eventName = (0, _describeKeyEventType.default)(recordIndex);
+
+          document["on".concat(eventName)] = function (keyEvent) {
+            _this2.keyEventManager["handleGlobal".concat((0, _normalizeEventName.default)(eventName))](keyEvent);
+          };
+
+          _this2.logger.debug(_this2._logPrefix(_this2.componentId, {
+            eventId: false
+          }), "Bound handler handleGlobal".concat((0, _normalizeEventName.default)(eventName), "() to document.on").concat(eventName, "()"));
+        });
+        this.listenersBound = true;
+      } else if (this.listenersBound && !listenersShouldBeBound) {
+        Object.values(_KeyEventType.default).forEach(function (recordIndex) {
+          var eventName = (0, _describeKeyEventType.default)(recordIndex);
+          delete document["on".concat(eventName)];
+
+          _this2.logger.debug(_this2._logPrefix(_this2.componentId, {
+            eventId: false
+          }), "Removed handler handleGlobal".concat((0, _normalizeEventName.default)(eventName), "() from document.on").concat(eventName, "()"));
+        });
+        this.listenersBound = false;
+      }
+    }
+    /**
+     * Whether the document listeners should be bound, to record key events. Basically a check
+     * to see if there are any global key maps, or whether the user is currently rebinding to
+     * a new key combination.
+     * @returns {boolean} True if the document listeners should be bound
+     * @private
+     */
+
+  }, {
+    key: "_listenersShouldBeBound",
+    value: function _listenersShouldBeBound() {
+      return this.componentList.any() || this.listeners.keyCombination;
+    }
+    /********************************************************************************
+     * Recording key events
+     ********************************************************************************/
+
+    /**
+     * Records a keydown keyboard event and matches it against the list of pre-registered
+     * event handlers, calling the first matching handler with the highest priority if
+     * one exists.
+     *
+     * This method is called once when a keyboard event bubbles up to document, and checks
+     * the keymaps for all of the mounted global HotKey components.
+     * @param {KeyboardEvent} event - Event containing the key name and state
+     */
+
+  }, {
+    key: "handleKeydown",
+    value: function handleKeydown(event) {
+      var _key = (0, _getKeyName.default)(event);
+
+      if (event.repeat && _Configuration.default.option('ignoreRepeatedEventsWhenKeyHeldDown')) {
+        this.logger.debug(this._logPrefix(), "Ignored repeated ".concat((0, _describeKeyEvent.default)(event, _key, _KeyEventType.default.keydown), " event."));
+        return true;
+      }
+
+      this._checkForModifierFlagDiscrepancies(event, _key, _KeyEventType.default.keydown);
+
+      var reactAppResponse = this._howReactAppRespondedTo(event, _key, _KeyEventType.default.keydown);
+
+      if (reactAppResponse === _EventResponse.default.unseen && this.eventOptions.ignoreEventsCondition(event)) {
+        this.logger.debug(this._logPrefix(), "Ignored ".concat((0, _describeKeyEvent.default)(event, _key, _KeyEventType.default.keydown), " event because ignoreEventsFilter rejected it."));
+        return;
+      }
+
+      if (reactAppResponse !== _EventResponse.default.ignored) {
+        var keyEventState = (0, _stateFromEvent.default)(event);
+        var currentCombination = this.getCurrentCombination();
+
+        if (currentCombination.isKeyIncluded(_key) || currentCombination.isEnding()) {
+          this._startAndLogNewKeyCombination(_key, keyEventState);
+        } else {
+          this._addToAndLogCurrentKeyCombination(_key, _KeyEventType.default.keydown, keyEventState);
+        }
+      }
+
+      if (!(0, _contains.default)([_EventResponse.default.ignored, _EventResponse.default.handled], reactAppResponse)) {
+        this._callHandlerIfExists(event, _key, _KeyEventType.default.keydown);
+      }
+
+      this._simulateKeyPressForNonPrintableKeys(event, _key);
+    }
+  }, {
+    key: "_howReactAppRespondedTo",
+    value: function _howReactAppRespondedTo(event, key, keyEventType) {
+      var reactAppHistoryWithEvent = this.keyEventManager.reactAppHistoryWithEvent(key, keyEventType);
+
+      switch (reactAppHistoryWithEvent) {
+        case _EventResponse.default.handled:
+          this.logger.debug(this._logPrefix(), "Ignored ".concat((0, _describeKeyEvent.default)(event, key, keyEventType), " event because React app has already handled it."));
+          break;
+
+        case _EventResponse.default.ignored:
+          this.logger.debug(this._logPrefix(), "Ignored ".concat((0, _describeKeyEvent.default)(event, key, keyEventType), " event because React app has declared it should be ignored."));
+          break;
+
+        case _EventResponse.default.seen:
+          this.logger.debug(this._logPrefix(), "Received ".concat((0, _describeKeyEvent.default)(event, key, keyEventType), " event (that has already passed through React app)."));
+          break;
+
+        default:
+          _KeyEventCounter.default.incrementId();
+
+          this.logger.debug(this._logPrefix(), "New ".concat((0, _describeKeyEvent.default)(event, key, keyEventType), " event (that has NOT passed through React app)."));
+      }
+
+      return reactAppHistoryWithEvent;
+    }
+    /**
+     * Records a keypress keyboard event and matches it against the list of pre-registered
+     * event handlers, calling the first matching handler with the highest priority if
+     * one exists.
+     *
+     * This method is called once when a keyboard event bubbles up to document, and checks
+     * the keymaps for all of the mounted global HotKey components.
+     * @param {KeyboardEvent} event - Event containing the key name and state
+     */
+
+  }, {
+    key: "handleKeyPress",
+    value: function handleKeyPress(event) {
+      var key = (0, _getKeyName.default)(event);
+
+      if (event.repeat && _Configuration.default.option('ignoreRepeatedEventsWhenKeyHeldDown')) {
+        this.logger.debug(this._logPrefix(), "Ignored repeated ".concat((0, _describeKeyEvent.default)(event, key, _KeyEventType.default.keypress), " event."));
+        return true;
+      }
+
+      var currentCombination = this.getCurrentCombination();
+
+      if (currentCombination.isKeyPressSimulated(key)) {
+        this.logger.debug(this._logPrefix(), "Ignored ".concat((0, _describeKeyEvent.default)(event, key, _KeyEventType.default.keypress), " as it was not expected, and has already been simulated."));
+        return true;
+      }
+      /**
+       * We first decide if the keypress event should be handled (to ensure the correct
+       * order of logging statements)
+       */
+
+
+      var reactAppResponse = this._howReactAppRespondedTo(event, key, _KeyEventType.default.keypress);
+      /**
+       * Add new key event to key combination history
+       */
+
+
+      if (currentCombination.isKeyIncluded(key)) {
+        this._addToAndLogCurrentKeyCombination(key, _KeyEventType.default.keypress, (0, _stateFromEvent.default)(event));
+      }
+
+      if (reactAppResponse === _EventResponse.default.unseen) {
+        /**
+         * If the key event has not been seen by the React application, we ensure that
+         * it's not still waiting for it. This occurs when action handlers bound to keydown
+         * move the focus outside of the react app before it can record the keypress or
+         * keyup
+         */
+        this.keyEventManager.closeHangingKeyCombination(key, _KeyEventType.default.keypress);
+
+        if (this.eventOptions.ignoreEventsCondition(event)) {
+          this.logger.debug(this._logPrefix(), "Ignored ".concat((0, _describeKeyEvent.default)(event, key, _KeyEventType.default.keypress), " event because ignoreEventsFilter rejected it."));
+          return;
+        }
+      }
+
+      if (!(0, _contains.default)([_EventResponse.default.ignored, _EventResponse.default.handled], reactAppResponse)) {
+        this._callHandlerIfExists(event, key, _KeyEventType.default.keypress);
+      }
+    }
+    /**
+     * Records a keyup keyboard event and matches it against the list of pre-registered
+     * event handlers, calling the first matching handler with the highest priority if
+     * one exists.
+     *
+     * This method is called once when a keyboard event bubbles up to document, and checks
+     * the keymaps for all of the mounted global HotKey components.
+     * @param {KeyboardEvent} event - Event containing the key name and state
+     */
+
+  }, {
+    key: "handleKeyUp",
+    value: function handleKeyUp(event) {
+      var key = (0, _getKeyName.default)(event);
+      var currentCombination = this.getCurrentCombination();
+
+      if (currentCombination.isKeyUpSimulated(key)) {
+        this.logger.debug(this._logPrefix(), "Ignored ".concat((0, _describeKeyEvent.default)(event, key, _KeyEventType.default.keyup), " as it was not expected, and has already been simulated."));
+        return true;
+      }
+      /**
+       * We first decide if the keyup event should be handled (to ensure the correct
+       * order of logging statements)
+       */
+
+
+      var reactAppResponse = this._howReactAppRespondedTo(event, key, _KeyEventType.default.keyup);
+      /**
+       * We then add the keyup to our current combination - regardless of whether
+       * it's to be handled or not. We need to do this to ensure that if a handler
+       * function changes focus to a context that ignored events, the keyup event
+       * is not lost (leaving react hotkeys thinking the key is still pressed).
+       */
+
+
+      if (currentCombination.isKeyIncluded(key)) {
+        this._addToAndLogCurrentKeyCombination(key, _KeyEventType.default.keyup, (0, _stateFromEvent.default)(event));
+      }
+
+      if (reactAppResponse === _EventResponse.default.unseen) {
+        /**
+         * If the key event has not been seen by the React application, we ensure that
+         * it's not still waiting for it. This occurs when action handlers bound to keydown
+         * or keypress move the focus outside of the react app before it can record the keyup
+         */
+        this.keyEventManager.closeHangingKeyCombination(key, _KeyEventType.default.keyup);
+
+        if (this.eventOptions.ignoreEventsCondition(event)) {
+          this.logger.debug(this._logPrefix(), "Ignored ".concat((0, _describeKeyEvent.default)(event, key, _KeyEventType.default.keyup), " event because ignoreEventsFilter rejected it."));
+        } else {
+          /**
+           * We attempt to find a handler of the event, only if it has not already
+           * been handled and should not be ignored
+           */
+          if (!(0, _contains.default)([_EventResponse.default.ignored, _EventResponse.default.handled], reactAppResponse)) {
+            this._callHandlerIfExists(event, key, _KeyEventType.default.keyup);
+          }
+        }
+      } else {
+        /**
+         * We attempt to find a handler of the event, only if it has not already
+         * been handled and should not be ignored
+         */
+        if (!(0, _contains.default)([_EventResponse.default.ignored, _EventResponse.default.handled], reactAppResponse)) {
+          this._callHandlerIfExists(event, key, _KeyEventType.default.keyup);
+        }
+      }
+      /**
+       * We simulate any hidden keyup events hidden by the command key, regardless
+       * of whether the event should be ignored or not
+       */
+
+
+      this._simulateKeyUpEventsHiddenByCmd(event, key);
+
+      if (this.listeners.keyCombination && this._allKeysAreReleased()) {
+        this.listeners.keyCombination({
+          keys: currentCombination.getKeyDictionary(),
+          id: currentCombination.describe()
+        });
+      }
+    }
+  }, {
+    key: "_simulateKeyPressForNonPrintableKeys",
+    value: function _simulateKeyPressForNonPrintableKeys(event, key) {
+      this.keyEventManager.simulatePendingKeyPressEvents();
+
+      this._handleEventSimulation('handleKeyPress', this._shouldSimulate(_KeyEventType.default.keypress, key), {
+        event: event,
+        key: key
+      });
+    }
+  }, {
+    key: "_simulateKeyUpEventsHiddenByCmd",
+    value: function _simulateKeyUpEventsHiddenByCmd(event, key) {
+      var _this3 = this;
+
+      if ((0, _isCmdKey.default)(key)) {
+        /**
+         * We simulate pending key events in the React app before we do it globally
+         */
+        this.keyEventManager.simulatePendingKeyUpEvents();
+        this.getCurrentCombination().forEachKey(function (keyName) {
+          if ((0, _isCmdKey.default)(keyName)) {
+            return;
+          }
+
+          _this3._handleEventSimulation('handleKeyUp', _this3._shouldSimulate(_KeyEventType.default.keyup, keyName), {
+            event: event,
+            key: keyName
+          });
+        });
+      }
+    }
+  }, {
+    key: "_startAndLogNewKeyCombination",
+    value: function _startAndLogNewKeyCombination(keyName, keyEventState) {
+      this.getKeyHistory().startNewKeyCombination(keyName, keyEventState);
+      this.logger.verbose(this._logPrefix(), "Started a new combination with '".concat(keyName, "'."));
+      this.logger.verbose(this._logPrefix(), "Key history: ".concat((0, _printComponent.default)(this.getKeyHistory().toJSON()), "."));
+    }
+  }, {
+    key: "_addToAndLogCurrentKeyCombination",
+    value: function _addToAndLogCurrentKeyCombination(keyName, keyEventType, keyEventState) {
+      this.getKeyHistory().addKeyToCurrentCombination(keyName, keyEventType, keyEventState);
+
+      if (keyEventType === _KeyEventType.default.keydown) {
+        this.logger.verbose(this._logPrefix(), "Added '".concat(keyName, "' to current combination: '").concat(this.getCurrentCombination().describe(), "'."));
+      }
+
+      this.logger.verbose(this._logPrefix(), "Key history: ".concat((0, _printComponent.default)(this.getKeyHistory().toJSON()), "."));
+    }
+    /********************************************************************************
+     * Event simulation
+     ********************************************************************************/
+
+  }, {
+    key: "_handleEventSimulation",
+    value: function _handleEventSimulation(handlerName, shouldSimulate, _ref) {
+      var event = _ref.event,
+          key = _ref.key;
+
+      if (shouldSimulate && _Configuration.default.option('simulateMissingKeyPressEvents')) {
+        /**
+         * If a key does not have a keypress event, we simulate one immediately after
+         * the keydown event, to keep the behaviour consistent across all keys
+         */
+        var _event = this._cloneAndMergeEvent(event, {
+          key: key,
+          simulated: true
+        });
+
+        this[handlerName](_event);
+      }
+    }
+    /********************************************************************************
+     * Matching and calling handlers
+     ********************************************************************************/
+
+  }, {
+    key: "_callHandlerIfExists",
+    value: function _callHandlerIfExists(event, keyName, keyEventType) {
+      var eventName = (0, _describeKeyEventType.default)(keyEventType);
+      var combinationName = this.getCurrentCombination().describe();
+
+      if (!this.componentList.anyActionsForEventType(keyEventType)) {
+        /**
+         * If there are no handlers registered for the particular key event type
+         * (keydown, keypress, keyup) then skip trying to find a matching handler
+         * for the current key combination
+         */
+        this.logger.debug(this._logPrefix(), "Ignored '".concat(combinationName, "' ").concat(eventName, " because it doesn't have any ").concat(eventName, " handlers."));
+        return;
+      }
+      /**
+       * If there is at least one handler for the specified key event type (keydown,
+       * keypress, keyup), then attempt to find a handler that matches the current
+       * key combination
+       */
+
+
+      this.logger.verbose(this._logPrefix(), "Attempting to find action matching '".concat(combinationName, "' ").concat(eventName, " . . ."));
+
+      this._callClosestMatchingHandler(event, keyName, keyEventType);
+    }
+  }, {
+    key: "_callClosestMatchingHandler",
+    value: function _callClosestMatchingHandler(event, keyName, keyEventType) {
+      var componentListIterator = this.componentList.getNewIterator();
+
+      while (componentListIterator.next()) {
+        var matchFound = _get(_getPrototypeOf(GlobalKeyEventStrategy.prototype), "_callClosestMatchingHandler", this).call(this, event, keyName, keyEventType, componentListIterator.getPosition(), 0);
+
+        if (matchFound) {
+          this.logger.debug(this._logPrefix(), "Searching no further, as handler has been found (and called).");
+          return;
+        }
+      }
+    }
+  }, {
+    key: "_stopEventPropagation",
+    value: function _stopEventPropagation(event, componentId) {
+      this.logger.debug(this._logPrefix(componentId), 'Stopping further event propagation.');
+
+      if (!event.simulated) {
+        event.stopPropagation();
+      }
+    }
+    /********************************************************************************
+     * Recording key combination
+     ********************************************************************************/
+
+    /**
+     * Add a new key combination listener function to be called the next time a key
+     * combination completes (assuming the cancel function is not called).
+     * @param {keyCombinationListener} callbackFunction Function to call with the next
+     *        completed key combination
+     * @returns {function} Function to call to cancel listening for the next key
+     *        combination
+     */
+
+  }, {
+    key: "addKeyCombinationListener",
+    value: function addKeyCombinationListener(callbackFunction) {
+      var _this4 = this;
+
+      var cancel = function cancel() {
+        delete _this4.listeners.keyCombination;
+      };
+
+      this.listeners.keyCombination = function (keyCombination) {
+        callbackFunction(keyCombination);
+        cancel();
+      };
+
+      this._updateDocumentHandlers();
+
+      return cancel;
+    }
+    /********************************************************************************
+     * Logging
+     ********************************************************************************/
+
+  }, {
+    key: "_logPrefix",
+    value: function _logPrefix(componentId) {
+      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var eventIcons = _Logger.default.eventIcons;
+      var componentIcons = _Logger.default.componentIcons;
+      var base = 'HotKeys (GLOBAL';
+
+      if (options.eventId !== false) {
+        var eventId = (0, _isUndefined.default)(options.eventId) ? _KeyEventCounter.default.getId() : options.eventId;
+        base = "".concat(base, "-E").concat(eventId).concat(eventIcons[eventId % eventIcons.length]);
+      }
+
+      if ((0, _isUndefined.default)(componentId)) {
+        return "".concat(base, "):");
+      } else {
+        return "".concat(base, "-C").concat(componentId).concat(componentIcons[componentId % componentIcons.length], "):");
+      }
+    }
+  }]);
+
+  return GlobalKeyEventStrategy;
+}(_AbstractKeyEventStrategy.default);
+
+var _default = GlobalKeyEventStrategy;
+exports.default = _default;
+},{"../../const/KeyEventType":"../node_modules/react-hotkeys/es/const/KeyEventType.js","./AbstractKeyEventStrategy":"../node_modules/react-hotkeys/es/lib/strategies/AbstractKeyEventStrategy.js","../../helpers/logging/describeKeyEventType":"../node_modules/react-hotkeys/es/helpers/logging/describeKeyEventType.js","../listening/KeyEventCounter":"../node_modules/react-hotkeys/es/lib/listening/KeyEventCounter.js","../logging/Logger":"../node_modules/react-hotkeys/es/lib/logging/Logger.js","../../utils/isUndefined":"../node_modules/react-hotkeys/es/utils/isUndefined.js","../../helpers/logging/printComponent":"../node_modules/react-hotkeys/es/helpers/logging/printComponent.js","../../helpers/resolving-handlers/getKeyName":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/getKeyName.js","../config/Configuration":"../node_modules/react-hotkeys/es/lib/config/Configuration.js","../../helpers/logging/describeKeyEvent":"../node_modules/react-hotkeys/es/helpers/logging/describeKeyEvent.js","../../helpers/parsing-key-maps/isCmdKey":"../node_modules/react-hotkeys/es/helpers/parsing-key-maps/isCmdKey.js","../../const/EventResponse":"../node_modules/react-hotkeys/es/const/EventResponse.js","../../utils/collection/contains":"../node_modules/react-hotkeys/es/utils/collection/contains.js","../../helpers/parsing-key-maps/stateFromEvent":"../node_modules/react-hotkeys/es/helpers/parsing-key-maps/stateFromEvent.js","../../utils/string/normalizeEventName":"../node_modules/react-hotkeys/es/utils/string/normalizeEventName.js"}],"../node_modules/react-hotkeys/es/helpers/resolving-handlers/isFromFocusOnlyComponent.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _isUndefined = _interopRequireDefault(require("../../utils/isUndefined"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Returns whether the specified component's focus tree ID indicates it is a focus-only
+ * HotKeys component, or not
+ * @param {FocusTreeId} focusTreeId The focus tree id for the component
+ * @returns {boolean} Whether the HotKeys component is focus-only
+ */
+function isFromFocusOnlyComponent(focusTreeId) {
+  return !(0, _isUndefined.default)(focusTreeId);
+}
+
+var _default = isFromFocusOnlyComponent;
+exports.default = _default;
+},{"../../utils/isUndefined":"../node_modules/react-hotkeys/es/utils/isUndefined.js"}],"../node_modules/react-hotkeys/es/lib/KeyEventManager.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _Logger = _interopRequireDefault(require("./logging/Logger"));
+
+var _FocusOnlyKeyEventStrategy = _interopRequireDefault(require("./strategies/FocusOnlyKeyEventStrategy"));
+
+var _GlobalKeyEventStrategy = _interopRequireDefault(require("./strategies/GlobalKeyEventStrategy"));
+
+var _isFromFocusOnlyComponent = _interopRequireDefault(require("../helpers/resolving-handlers/isFromFocusOnlyComponent"));
+
+var _Configuration = _interopRequireDefault(require("./config/Configuration"));
+
+var _EventResponse = _interopRequireDefault(require("../const/EventResponse"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+/**
+ * Provides a registry for keyboard sequences and events, and the handlers that should
+ * be called when they are detected. Also contains the interface for processing and
+ * matching keyboard events against its list of registered actions and handlers.
+ * @class
+ */
+var KeyEventManager =
+/*#__PURE__*/
+function () {
+  _createClass(KeyEventManager, null, [{
+    key: "getInstance",
+
+    /**
+     * Creates a new KeyEventManager instance if one does not already exist or returns the
+     * instance that already exists.
+     * @param {Object} configuration Configuration object
+     * @param {Logger} configuration.logger Logger instance
+     * @returns {KeyEventManager} The key event manager instance
+     */
+    value: function getInstance() {
+      var configuration = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+      if (!this.instance) {
+        this.instance = new KeyEventManager(configuration);
+      }
+
+      return this.instance;
+    }
+  }, {
+    key: "clear",
+    value: function clear() {
+      delete this.instance;
+    }
+    /**
+     * Creates a new KeyEventManager instance. It is expected that only a single instance
+     * will be used with a render tree.
+     */
+
+  }]);
+
+  function KeyEventManager() {
+    var configuration = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+    _classCallCheck(this, KeyEventManager);
+
+    this.logger = configuration.logger || new _Logger.default(_Configuration.default.option('logLevel'));
+    this._focusOnlyEventStrategy = new _FocusOnlyKeyEventStrategy.default({
+      configuration: configuration,
+      logger: this.logger
+    }, this);
+    this._globalEventStrategy = new _GlobalKeyEventStrategy.default({
+      configuration: configuration,
+      logger: this.logger
+    }, this);
+    this.mountedComponentsCount = 0;
+  }
+  /********************************************************************************
+   * Generating key maps
+   ********************************************************************************/
+
+
+  _createClass(KeyEventManager, [{
+    key: "getApplicationKeyMap",
+    value: function getApplicationKeyMap() {
+      return Object.assign(this._globalEventStrategy.getApplicationKeyMap(), this._focusOnlyEventStrategy.getApplicationKeyMap());
+    }
+    /********************************************************************************
+     * Registering key maps
+     ********************************************************************************/
+
+    /**
+     * Registers a new mounted component's key map so that it can be included in the
+     * application's key map
+     * @param {KeyMap} keyMap - Map of actions to key expressions
+     * @returns {ComponentId} Unique component ID to assign to the focused HotKeys
+     *          component and passed back when handling a key event
+     */
+
+  }, {
+    key: "registerKeyMap",
+    value: function registerKeyMap() {
+      var keyMap = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      return this._focusOnlyEventStrategy.registerKeyMap(keyMap);
+    }
+    /**
+     * Re-registers (updates) a mounted component's key map
+     * @param {ComponentId} componentId - Id of the component that the keyMap belongs to
+     * @param {KeyMap} keyMap - Map of actions to key expressions
+     */
+
+  }, {
+    key: "reregisterKeyMap",
+    value: function reregisterKeyMap(componentId) {
+      var keyMap = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+      this._focusOnlyEventStrategy.reregisterKeyMap(componentId, keyMap);
+    }
+    /**
+     * De-registers (removes) a mounted component's key map from the registry
+     * @param {ComponentId} componentId - Id of the component that the keyMap belongs to
+     */
+
+  }, {
+    key: "deregisterKeyMap",
+    value: function deregisterKeyMap(componentId) {
+      this._focusOnlyEventStrategy.deregisterKeyMap(componentId);
+    }
+    /**
+     * Registers that a component has now mounted, and declares its parent HotKeys
+     * component id so that actions may be properly resolved
+     * @param {ComponentId} componentId - Id of the component that has mounted
+     * @param {ComponentId} parentId - Id of the parent HotKeys component
+     */
+
+  }, {
+    key: "registerComponentMount",
+    value: function registerComponentMount(componentId, parentId) {
+      this._incrementComponentCount();
+
+      return this._focusOnlyEventStrategy.registerComponentMount(componentId, parentId);
+    }
+  }, {
+    key: "registerComponentUnmount",
+    value: function registerComponentUnmount() {
+      this._decrementComponentCount();
+    }
+  }, {
+    key: "_incrementComponentCount",
+    value: function _incrementComponentCount() {
+      var _this = this;
+
+      var preMountedComponentCount = this.mountedComponentsCount;
+      this.mountedComponentsCount += 1;
+
+      if (preMountedComponentCount === 0 && this.mountedComponentsCount === 1) {
+        window.onblur = function () {
+          return _this._clearKeyHistory();
+        };
+      }
+    }
+  }, {
+    key: "_decrementComponentCount",
+    value: function _decrementComponentCount() {
+      var preMountedComponentCount = this.mountedComponentsCount;
+      this.mountedComponentsCount -= 1;
+
+      if (preMountedComponentCount === 1 && this.mountedComponentsCount === 0) {
+        delete window.onblur;
+      }
+    }
+  }, {
+    key: "_clearKeyHistory",
+    value: function _clearKeyHistory() {
+      this.logger.info('HotKeys: Window focused - clearing key history');
+
+      this._focusOnlyEventStrategy.resetKeyHistory({
+        force: true
+      });
+
+      this._globalEventStrategy.resetKeyHistory({
+        force: true
+      });
+    }
+    /**
+     * Registers a new mounted component's global key map so that it can be included in the
+     * application's key map
+     * @param {KeyMap} keyMap - Map of actions to key expressions
+     * @returns {ComponentId} Unique component ID to assign to the focused HotKeys
+     *          component and passed back when handling a key event
+     */
+
+  }, {
+    key: "registerGlobalKeyMap",
+    value: function registerGlobalKeyMap() {
+      var keyMap = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      return this._globalEventStrategy.registerKeyMap(keyMap);
+    }
+  }, {
+    key: "registerGlobalComponentUnmount",
+    value: function registerGlobalComponentUnmount() {
+      this._decrementComponentCount();
+    }
+    /**
+     * Registers that a component has now mounted, and declares its parent GlobalHotKeys
+     * component id so that actions may be properly resolved
+     * @param {ComponentId} componentId - Id of the component that has mounted
+     * @param {ComponentId} parentId - Id of the parent GlobalHotKeys component
+     */
+
+  }, {
+    key: "registerGlobalComponentMount",
+    value: function registerGlobalComponentMount(componentId, parentId) {
+      this._incrementComponentCount();
+
+      return this._globalEventStrategy.registerComponentMount(componentId, parentId);
+    }
+    /**
+     * Re-registers (updates) a mounted component's global key map
+     * @param {ComponentId} componentId - Id of the component that the keyMap belongs to
+     * @param {KeyMap} keyMap - Map of actions to key expressions
+     */
+
+  }, {
+    key: "reregisterGlobalKeyMap",
+    value: function reregisterGlobalKeyMap(componentId, keyMap) {
+      this._globalEventStrategy.reregisterKeyMap(componentId, keyMap);
+    }
+    /**
+     * De-registers (removes) a mounted component's global key map from the registry
+     * @param {ComponentId} componentId - Id of the component that the keyMap belongs to
+     */
+
+  }, {
+    key: "deregisterGlobalKeyMap",
+    value: function deregisterGlobalKeyMap(componentId) {
+      this._globalEventStrategy.deregisterKeyMap(componentId);
+    }
+    /********************************************************************************
+     * Recording key combination
+     ********************************************************************************/
+
+    /**
+     * Adds a listener function that will be called the next time a key combination completes
+     * @param {keyCombinationListener} callbackFunction Listener function to be called
+     * @returns {function} Function to call to cancel listening to the next key combination
+     */
+
+  }, {
+    key: "addKeyCombinationListener",
+    value: function addKeyCombinationListener(callbackFunction) {
+      return this._globalEventStrategy.addKeyCombinationListener(callbackFunction);
+    }
+    /********************************************************************************
+     * Focus key events
+     ********************************************************************************/
+
+    /**
+     * Registers the actions and handlers of a HotKeys component that has gained focus
+     * @param {ComponentId} componentId - Id of the component that the keyMap belongs to
+     * @param {KeyMap} actionNameToKeyMap - Map of actions to key expressions
+     * @param {HandlersMap} actionNameToHandlersMap - Map of actions to handler functions
+     * @param {Object} options Hash of options that configure how the actions
+     *        and handlers are associated and called.
+     * @returns {FocusTreeId} The current focus tree's ID
+     */
+
+  }, {
+    key: "enableHotKeys",
+    value: function enableHotKeys(componentId) {
+      var actionNameToKeyMap = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var actionNameToHandlersMap = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      var options = arguments.length > 3 ? arguments[3] : undefined;
+      return this._focusOnlyEventStrategy.enableHotKeys(componentId, actionNameToKeyMap, actionNameToHandlersMap, options);
+    }
+    /**
+     * Handles when a HotKeys component that is in focus updates its props and changes
+     * either the keyMap or handlers prop value
+     * @param {FocusTreeId} focusTreeId - The ID of the focus tree the component is part of.
+     *        Used to identify (and ignore) stale updates.
+     * @param {ComponentId} componentId - The component index of the component to
+     *        update
+     * @param {KeyMap} actionNameToKeyMap - Map of key sequences to action names
+     * @param {HandlersMap} actionNameToHandlersMap - Map of action names to handler
+     *        functions
+     * @param {Object} options Hash of options that configure how the actions
+     *        and handlers are associated and called.
+     */
+
+  }, {
+    key: "updateEnabledHotKeys",
+    value: function updateEnabledHotKeys(focusTreeId, componentId) {
+      var actionNameToKeyMap = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      var actionNameToHandlersMap = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+      var options = arguments.length > 4 ? arguments[4] : undefined;
+      return this._focusOnlyEventStrategy.updateEnabledHotKeys(focusTreeId, componentId, actionNameToKeyMap, actionNameToHandlersMap, options);
+    }
+    /**
+     * Handles when a component loses focus by resetting the internal state, ready to
+     * receive the next tree of focused HotKeys components
+     * @param {FocusTreeId} focusTreeId - Id of focus tree component thinks it's
+     *        apart of
+     * @param {ComponentId} componentId - Index of component that is blurring
+     * @returns {boolean} Whether the component still has event propagation yet to handle
+     */
+
+  }, {
+    key: "disableHotKeys",
+    value: function disableHotKeys(focusTreeId, componentId) {
+      return this._focusOnlyEventStrategy.disableHotKeys(focusTreeId, componentId);
+    }
+    /**
+     * Records a keydown keyboard event and matches it against the list of pre-registered
+     * event handlers, calling the first matching handler with the highest priority if
+     * one exists.
+     *
+     * This method is called many times as a keyboard event bubbles up through the React
+     * render tree. The event is only registered the first time it is seen and results
+     * of some calculations are cached. The event is matched against the handlers registered
+     * at each component level, to ensure the proper handler declaration scoping.
+     * @param {KeyboardEvent} event - Event containing the key name and state
+     * @param {FocusTreeId} focusTreeId - Id of focus tree component thinks it's apart of
+     * @param {ComponentId} componentId - The id of the component that is currently handling
+     *        the keyboard event as it bubbles towards the document root.
+     * @param {Object} options - Hash of options that configure how the event is handled.
+     * @returns Whether the event was discarded because it was part of an old focus tree
+     */
+
+  }, {
+    key: "handleKeydown",
+    value: function handleKeydown(event, focusTreeId, componentId, options) {
+      if ((0, _isFromFocusOnlyComponent.default)(focusTreeId)) {
+        return this._focusOnlyEventStrategy.handleKeydown(event, focusTreeId, componentId, options);
+      }
+    }
+    /**
+     * Records a keypress keyboard event and matches it against the list of pre-registered
+     * event handlers, calling the first matching handler with the highest priority if
+     * one exists.
+     *
+     * This method is called many times as a keyboard event bubbles up through the React
+     * render tree. The event is only registered the first time it is seen and results
+     * of some calculations are cached. The event is matched against the handlers registered
+     * at each component level, to ensure the proper handler declaration scoping.
+     * @param {KeyboardEvent} event - Event containing the key name and state
+     * @param {FocusTreeId} focusTreeId Id - of focus tree component thinks it's apart of
+     * @param {ComponentId} componentId - The index of the component that is currently handling
+     *        the keyboard event as it bubbles towards the document root.
+     * @param {Object} options - Hash of options that configure how the event
+     *        is handled.
+     */
+
+  }, {
+    key: "handleKeyPress",
+    value: function handleKeyPress(event, focusTreeId, componentId, options) {
+      if ((0, _isFromFocusOnlyComponent.default)(focusTreeId)) {
+        return this._focusOnlyEventStrategy.handleKeyPress(event, focusTreeId, componentId, options);
+      }
+    }
+    /**
+     * Records a keyup keyboard event and matches it against the list of pre-registered
+     * event handlers, calling the first matching handler with the highest priority if
+     * one exists.
+     *
+     * This method is called many times as a keyboard event bubbles up through the React
+     * render tree. The event is only registered the first time it is seen and results
+     * of some calculations are cached. The event is matched against the handlers registered
+     * at each component level, to ensure the proper handler declaration scoping.
+     * @param {KeyboardEvent} event Event containing the key name and state
+     * @param {FocusTreeId} focusTreeId Id of focus tree component thinks it's apart of
+     * @param {ComponentId} componentId The index of the component that is currently handling
+     *        the keyboard event as it bubbles towards the document root.
+     * @param {Object} options Hash of options that configure how the event
+     *        is handled.
+     */
+
+  }, {
+    key: "handleKeyUp",
+    value: function handleKeyUp(event, focusTreeId, componentId, options) {
+      if ((0, _isFromFocusOnlyComponent.default)(focusTreeId)) {
+        return this._focusOnlyEventStrategy.handleKeyUp(event, focusTreeId, componentId, options);
+      }
+    }
+    /********************************************************************************
+     * Global key events
+     ********************************************************************************/
+
+    /**
+     * Registers the actions and handlers of a HotKeys component that has mounted
+     * @param {ComponentId} componentId - Id of the component that the keyMap belongs to
+     * @param {KeyMap} actionNameToKeyMap - Map of actions to key expressions
+     * @param {HandlersMap} actionNameToHandlersMap - Map of actions to handler functions
+     * @param {Object} options Hash of options that configure how the actions
+     *        and handlers are associated and called.
+     * @param {Object} eventOptions - Options for how the event should be handled
+     * @returns {ComponentId} A unique component ID to assign to the focused HotKeys
+     *        component and passed back when handling a key event
+     */
+
+  }, {
+    key: "enableGlobalHotKeys",
+    value: function enableGlobalHotKeys(componentId) {
+      var actionNameToKeyMap = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var actionNameToHandlersMap = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      var options = arguments.length > 3 ? arguments[3] : undefined;
+      var eventOptions = arguments.length > 4 ? arguments[4] : undefined;
+      return this._globalEventStrategy.enableHotKeys(componentId, actionNameToKeyMap, actionNameToHandlersMap, options, eventOptions);
+    }
+    /**
+     * Handles when a mounted global HotKeys component updates its props and changes
+     * either the keyMap or handlers prop value
+     * @param {ComponentId} componentId - The component index of the component to
+     *        update
+     * @param {KeyMap} actionNameToKeyMap - Map of actions to key expressions
+     * @param {HandlersMap} actionNameToHandlersMap - Map of actions to handler functions
+     * @param {Object} options Hash of options that configure how the actions
+     *        and handlers are associated and called.
+     * @param {Object} eventOptions - Options for how the event should be handled
+     */
+
+  }, {
+    key: "updateEnabledGlobalHotKeys",
+    value: function updateEnabledGlobalHotKeys(componentId) {
+      var actionNameToKeyMap = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var actionNameToHandlersMap = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      var options = arguments.length > 3 ? arguments[3] : undefined;
+      var eventOptions = arguments.length > 4 ? arguments[4] : undefined;
+      return this._globalEventStrategy.updateEnabledHotKeys(componentId, actionNameToKeyMap, actionNameToHandlersMap, options, eventOptions);
+    }
+    /**
+     * Handles when a component is unmounted
+     * @param {ComponentId} componentId - Index of component that is being unmounted
+     */
+
+  }, {
+    key: "disableGlobalHotKeys",
+    value: function disableGlobalHotKeys(componentId) {
+      return this._globalEventStrategy.disableHotKeys(componentId);
+    }
+    /**
+     * Records a keydown keyboard event and matches it against the list of pre-registered
+     * event handlers, calling the first matching handler with the highest priority if
+     * one exists.
+     *
+     * This method is called once when a keyboard event bubbles up to document, and checks
+     * the keymaps for all of the mounted global HotKey components.
+     * @param {KeyboardEvent} event - Event containing the key name and state
+     */
+
+  }, {
+    key: "handleGlobalKeyDown",
+    value: function handleGlobalKeyDown(event) {
+      return this._globalEventStrategy.handleKeydown(event);
+    }
+    /**
+     * Records a keypress keyboard event and matches it against the list of pre-registered
+     * event handlers, calling the first matching handler with the highest priority if
+     * one exists.
+     *
+     * This method is called once when a keyboard event bubbles up to document, and checks
+     * the keymaps for all of the mounted global HotKey components.
+     * @param {KeyboardEvent} event - Event containing the key name and state
+     */
+
+  }, {
+    key: "handleGlobalKeyPress",
+    value: function handleGlobalKeyPress(event) {
+      return this._globalEventStrategy.handleKeyPress(event);
+    }
+    /**
+     * Records a keyup keyboard event and matches it against the list of pre-registered
+     * event handlers, calling the first matching handler with the highest priority if
+     * one exists.
+     *
+     * This method is called once when a keyboard event bubbles up to document, and checks
+     * the keymaps for all of the mounted global HotKey components.
+     * @param {KeyboardEvent} event - Event containing the key name and state
+     */
+
+  }, {
+    key: "handleGlobalKeyUp",
+    value: function handleGlobalKeyUp(event) {
+      return this._globalEventStrategy.handleKeyUp(event);
+    }
+    /**
+     * Ignores the next keyboard event immediately, rather than waiting for it to
+     * match the ignoreEventsCondition
+     * @param {KeyboardEvent} event keyboard event to ignore
+     * @see Configuration.ignoreEventsCondition
+     */
+
+  }, {
+    key: "ignoreEvent",
+    value: function ignoreEvent(event) {
+      this._focusOnlyEventStrategy.getEventPropagator().ignoreEvent(event);
+    }
+    /**
+     * Forces the observation of the next keyboard event immediately, disregarding whether
+     * the event matches the ignoreKeyEventsCondition
+     * @param {KeyboardEvent} event keyboard event to force the observation of
+     * @see Configuration.ignoreEventsCondition
+     */
+
+  }, {
+    key: "observeIgnoredEvents",
+    value: function observeIgnoredEvents(event) {
+      this._focusOnlyEventStrategy.getEventPropagator().observeIgnoredEvents(event);
+    }
+    /**
+     * Closes any hanging key combinations that have not received the key event indicated
+     * by recordIndex.
+     * @param {KeyName} keyName The name of the key whose state should be updated if it
+     *        is currently set to keydown or keypress.
+     * @param {KeyEventType} recordIndex Index of key event to move the key state
+     *        up to.
+     */
+
+  }, {
+    key: "closeHangingKeyCombination",
+    value: function closeHangingKeyCombination(keyName, recordIndex) {
+      this._focusOnlyEventStrategy.closeHangingKeyCombination(keyName, recordIndex);
+    }
+  }, {
+    key: "reactAppHistoryWithEvent",
+    value: function reactAppHistoryWithEvent(key, type) {
+      var previousPropagation = this._focusOnlyEventStrategy.eventPropagator.getPreviousPropagation();
+
+      if (previousPropagation.isForKey(key) && previousPropagation.isForEventType(type)) {
+        if (previousPropagation.isHandled()) {
+          return _EventResponse.default.handled;
+        } else if (previousPropagation.isIgnoringEvent()) {
+          return _EventResponse.default.ignored;
+        } else {
+          return _EventResponse.default.seen;
+        }
+      } else {
+        return _EventResponse.default.unseen;
+      }
+    }
+  }, {
+    key: "simulatePendingKeyPressEvents",
+    value: function simulatePendingKeyPressEvents() {
+      this._focusOnlyEventStrategy.simulatePendingKeyPressEvents();
+    }
+  }, {
+    key: "simulatePendingKeyUpEvents",
+    value: function simulatePendingKeyUpEvents() {
+      this._focusOnlyEventStrategy.simulatePendingKeyUpEvents();
+    }
+  }, {
+    key: "isGlobalListenersBound",
+    value: function isGlobalListenersBound() {
+      return this._globalEventStrategy.listenersBound;
+    }
+  }]);
+
+  return KeyEventManager;
+}();
+
+var _default = KeyEventManager;
+exports.default = _default;
+},{"./logging/Logger":"../node_modules/react-hotkeys/es/lib/logging/Logger.js","./strategies/FocusOnlyKeyEventStrategy":"../node_modules/react-hotkeys/es/lib/strategies/FocusOnlyKeyEventStrategy.js","./strategies/GlobalKeyEventStrategy":"../node_modules/react-hotkeys/es/lib/strategies/GlobalKeyEventStrategy.js","../helpers/resolving-handlers/isFromFocusOnlyComponent":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/isFromFocusOnlyComponent.js","./config/Configuration":"../node_modules/react-hotkeys/es/lib/config/Configuration.js","../const/EventResponse":"../node_modules/react-hotkeys/es/const/EventResponse.js"}],"../node_modules/react-hotkeys/es/utils/backwardsCompatibleContext.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Modifies in-place and returns a React Component class such that it correctly uses
+ * the React context API appropriate for the version of React being used.
+ *
+ * @see https://reactjs.org/docs/context.html
+ *
+ * @param {React.Component} Component React component to modify to use the correct
+ *        context API
+ * @param {Object} options Hash of options that define the shape and default values
+ *        of the context to use with descendant components.
+ * @param {Object} options.deprecatedAPI Hash of options that satisfy the legacy
+ *        or deprecated pre React 16.* API
+ * @param {Object} options.deprecatedAPI.contextTypes Context types describing the
+ *        shape and type of the context that Component consumes, expressed as React
+ *        prop types
+ * @param {Object} options.deprecatedAPI.childContextTypes Context types describing the
+ *        shape and type of the context that Component makes available to its descendants
+ *        to consume, expressed as React prop types
+ * @param {Object} options.newAPI Hash of options that satisfy the new context API,
+ *        available from React 16.* onwards
+ * @param {Object} options.newAPI.contextType Object describing the shape and default
+ *        values of the context instance used provide context to descendant components
+ * @returns {React.Component} Component that has now had the specified context applied
+ */
+function backwardsCompatibleContext(Component, _ref) {
+  var _ref$deprecatedAPI = _ref.deprecatedAPI,
+      contextTypes = _ref$deprecatedAPI.contextTypes,
+      childContextTypes = _ref$deprecatedAPI.childContextTypes,
+      contextType = _ref.newAPI.contextType;
+  /**
+   * React v16.* introduces a new context API and deprecates the previous, experimental one
+   */
+
+  if (typeof _react.default.createContext === 'undefined') {
+    /**
+     * We apply the deprecated context if the new createContext method is not defined.
+     * @note this uses the new context API for React v16.*, even though it is still
+     * available until React v17.*
+     */
+
+    /**
+     * The contextTypes and childContextTypes are the same as each react hotkeys component
+     * that uses context, both consumes its most direct ancestor's context and modifies
+     * the context of its descendants in order to recursively pass down the guid of the
+     * most direct ancestor
+     */
+    Component.contextTypes = contextTypes;
+    Component.childContextTypes = childContextTypes;
+
+    Component.prototype.getChildContext = function () {
+      return this._childContext;
+    };
+  } else {
+    var context = _react.default.createContext(contextType);
+
+    Component.contextType = context;
+    Component.prototype._originalRender = Component.prototype.render;
+    /**
+     * We unfortunately have to wrap the original render method of the Component to
+     * dynamically add the context Provider component.
+     *
+     * No ill-effects have been discovered during testing, but if strange occurrences
+     * or edge cases start to appear - this may be a great place to start looking.
+     */
+
+    Component.prototype.render = function () {
+      var result = this._originalRender();
+
+      if (result) {
+        return _react.default.createElement(context.Provider, {
+          value: this._childContext
+        }, result);
+      } else {
+        return null;
+      }
+    };
+  }
+
+  return Component;
+}
+
+var _default = backwardsCompatibleContext;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"../node_modules/react-hotkeys/es/withHotKeys.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _Configuration = _interopRequireDefault(require("./lib/config/Configuration"));
+
+var _KeyEventManager = _interopRequireDefault(require("./lib/KeyEventManager"));
+
+var _isEmpty = _interopRequireDefault(require("./utils/collection/isEmpty"));
+
+var _KeyCombinationSerializer = _interopRequireDefault(require("./lib/shared/KeyCombinationSerializer"));
+
+var _backwardsCompatibleContext = _interopRequireDefault(require("./utils/backwardsCompatibleContext"));
+
+var _isUndefined = _interopRequireDefault(require("./utils/isUndefined"));
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+
+  var target = _objectWithoutPropertiesLoose(source, excluded);
+
+  var key, i;
+
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+    var ownKeys = Object.keys(source);
+
+    if (typeof Object.getOwnPropertySymbols === 'function') {
+      ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
+        return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      _defineProperty(target, key, source[key]);
+    });
+  }
+
+  return target;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+/**
+ * Wraps a React component in a HotKeysEnabled component, which passes down the
+ * callbacks and options necessary for React Hotkeys to work as a single prop value,
+ * hotkeys. These must be unwrapped and applied to a DOM-mountable element within
+ * the wrapped component (e.g. div, span, input, etc) in order for the key events
+ * to be recorded.
+ *
+ * @param {React.ComponentClass} Component - Component class to wrap
+ * @param {Object} hotKeysOptions - Options that become the wrapping component's
+ *                 default prop values
+ * @returns {React.ComponentClass} Wrapped component that is passed all of the React hotkeys
+ * props in a single value, hotkeys.
+ */
+function withHotKeys(Component) {
+  var hotKeysOptions = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+  function mergeWithOptions(key, props) {
+    return _objectSpread({}, hotKeysOptions[key] || {}, props[key] || {});
+  }
+
+  function getHandlers(props) {
+    return mergeWithOptions('handlers', props);
+  }
+
+  function getKeyMap(props) {
+    return mergeWithOptions('keyMap', props);
+  }
+  /**
+   * Component that listens to key events when one of its children are in focus and
+   * selectively triggers actions (that may be handled by handler functions) when a
+   * sequence of events matches a list of pre-defined sequences or combinations
+   * @class
+   */
+
+
+  var HotKeysEnabled =
+  /*#__PURE__*/
+  function (_PureComponent) {
+    _inherits(HotKeysEnabled, _PureComponent);
+
+    function HotKeysEnabled(props) {
+      var _this;
+
+      _classCallCheck(this, HotKeysEnabled);
+
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(HotKeysEnabled).call(this, props));
+      /**
+       * The focus and blur handlers need access to the current component as 'this'
+       * so they need to be bound to it when the component is instantiated
+       */
+
+      _this._handleFocus = _this._handleFocus.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+      _this._handleBlur = _this._handleBlur.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+      _this._handleKeyDown = _this._handleKeyDown.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+      _this._handleKeyPress = _this._handleKeyPress.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+      _this._handleKeyUp = _this._handleKeyUp.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+      _this._componentIsFocused = _this._componentIsFocused.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+      _this._id = _KeyEventManager.default.getInstance().registerKeyMap(props.keyMap);
+      /**
+       * We maintain a separate instance variable to contain context that will be
+       * passed down to descendants of this component so we can have a consistent
+       * reference to the same object, rather than instantiating a new one on each
+       * render, causing unnecessary re-rendering of descendant components that
+       * consume the context.
+       *
+       * @see https://reactjs.org/docs/context.html#caveats
+       */
+
+      _this._childContext = {
+        hotKeysParentId: _this._id
+      };
+      return _this;
+    }
+
+    _createClass(HotKeysEnabled, [{
+      key: "render",
+      value: function render() {
+        var _this$props = this.props,
+            keyMap = _this$props.keyMap,
+            handlers = _this$props.handlers,
+            allowChanges = _this$props.allowChanges,
+            root = _this$props.root,
+            props = _objectWithoutProperties(_this$props, ["keyMap", "handlers", "allowChanges", "root"]);
+
+        var hotKeys = {
+          onFocus: this._wrapFunction('onFocus', this._handleFocus),
+          onBlur: this._wrapFunction('onBlur', this._handleBlur),
+          tabIndex: _Configuration.default.option('defaultTabIndex')
+        };
+
+        if (this._shouldBindKeyListeners()) {
+          hotKeys.onKeyDown = this._handleKeyDown;
+          hotKeys.onKeyPress = this._handleKeyPress;
+          hotKeys.onKeyUp = this._handleKeyUp;
+        }
+
+        return _react.default.createElement(Component, _extends({
+          hotKeys: hotKeys
+        }, props));
+      }
+    }, {
+      key: "_shouldBindKeyListeners",
+      value: function _shouldBindKeyListeners() {
+        var keyMap = getKeyMap(this.props);
+        return !(0, _isEmpty.default)(keyMap) || this.props.root || _Configuration.default.option('enableHardSequences') && this._handlersIncludeHardSequences(keyMap, getHandlers(this.props));
+      }
+    }, {
+      key: "_handlersIncludeHardSequences",
+      value: function _handlersIncludeHardSequences(keyMap, handlers) {
+        return Object.keys(handlers).some(function (action) {
+          return !keyMap[action] && _KeyCombinationSerializer.default.isValidKeySerialization(action);
+        });
+      }
+    }, {
+      key: "_wrapFunction",
+      value: function _wrapFunction(propName, func) {
+        var _this2 = this;
+
+        if (typeof this.props[propName] === 'function') {
+          return function (event) {
+            _this2.props[propName](event);
+
+            func(event);
+          };
+        } else {
+          return func;
+        }
+      }
+    }, {
+      key: "_focusTreeIdsPush",
+      value: function _focusTreeIdsPush(componentId) {
+        if (!this._focusTreeIds) {
+          this._focusTreeIds = [];
+        }
+
+        this._focusTreeIds.push(componentId);
+      }
+    }, {
+      key: "_focusTreeIdsShift",
+      value: function _focusTreeIdsShift() {
+        if (this._focusTreeIds) {
+          this._focusTreeIds.shift();
+        }
+      }
+    }, {
+      key: "_getFocusTreeId",
+      value: function _getFocusTreeId() {
+        if (this._focusTreeIds) {
+          return this._focusTreeIds[0];
+        }
+      }
+    }, {
+      key: "componentDidUpdate",
+      value: function componentDidUpdate() {
+        var keyEventManager = _KeyEventManager.default.getInstance();
+
+        keyEventManager.reregisterKeyMap(this._id, this.props.keyMap);
+
+        if (this._componentIsFocused() && (this.props.allowChanges || !_Configuration.default.option('ignoreKeymapAndHandlerChangesByDefault'))) {
+          var _this$props2 = this.props,
+              keyMap = _this$props2.keyMap,
+              handlers = _this$props2.handlers;
+          keyEventManager.updateEnabledHotKeys(this._getFocusTreeId(), this._id, keyMap, handlers, this._getComponentOptions());
+        }
+      }
+    }, {
+      key: "_componentIsFocused",
+      value: function _componentIsFocused() {
+        return this._focused === true;
+      }
+    }, {
+      key: "componentDidMount",
+      value: function componentDidMount() {
+        var keyEventManager = _KeyEventManager.default.getInstance();
+
+        var hotKeysParentId = this.context.hotKeysParentId;
+        keyEventManager.registerComponentMount(this._id, hotKeysParentId);
+      }
+      /**
+       * Handles when the component gains focus by calling onFocus prop, if defined, and
+       * registering itself with the KeyEventManager
+       * @private
+       */
+
+    }, {
+      key: "_handleFocus",
+      value: function _handleFocus() {
+        if (this.props.onFocus) {
+          var _this$props3;
+
+          (_this$props3 = this.props).onFocus.apply(_this$props3, arguments);
+        }
+
+        var focusTreeId = _KeyEventManager.default.getInstance().enableHotKeys(this._id, getKeyMap(this.props), getHandlers(this.props), this._getComponentOptions());
+
+        if (!(0, _isUndefined.default)(focusTreeId)) {
+          /**
+           * focusTreeId should never normally be undefined, but this return state is
+           * used to indicate that a component with the same componentId has already
+           * registered as focused/enabled (again, a condition that should not normally
+           * occur, but apparently can for as-yet unknown reasons).
+           *
+           * @see https://github.com/greena13/react-hotkeys/issues/173
+           */
+          this._focusTreeIdsPush(focusTreeId);
+        }
+
+        this._focused = true;
+      }
+    }, {
+      key: "componentWillUnmount",
+      value: function componentWillUnmount() {
+        var keyEventManager = _KeyEventManager.default.getInstance();
+
+        keyEventManager.deregisterKeyMap(this._id);
+        keyEventManager.registerComponentUnmount();
+
+        this._handleBlur();
+      }
+      /**
+       * Handles when the component loses focus by calling the onBlur prop, if defined
+       * and removing itself from the KeyEventManager
+       * @private
+       */
+
+    }, {
+      key: "_handleBlur",
+      value: function _handleBlur() {
+        if (this.props.onBlur) {
+          var _this$props4;
+
+          (_this$props4 = this.props).onBlur.apply(_this$props4, arguments);
+        }
+
+        var retainCurrentFocusTreeId = _KeyEventManager.default.getInstance().disableHotKeys(this._getFocusTreeId(), this._id);
+
+        if (!retainCurrentFocusTreeId) {
+          this._focusTreeIdsShift();
+        }
+
+        this._focused = false;
+      }
+      /**
+       * Delegates handing the keydown event to the KeyEventManager
+       * @param {KeyboardEvent} event Key board event containing key name and state
+       * @private
+       */
+
+    }, {
+      key: "_handleKeyDown",
+      value: function _handleKeyDown(event) {
+        var discardFocusTreeId = _KeyEventManager.default.getInstance().handleKeydown(event, this._getFocusTreeId(), this._id, this._getEventOptions());
+
+        if (discardFocusTreeId) {
+          this._focusTreeIdsShift();
+        }
+      }
+      /**
+       * Delegates handing the keypress event to the KeyEventManager
+       * @param {KeyboardEvent} event Key board event containing key name and state
+       * @private
+       */
+
+    }, {
+      key: "_handleKeyPress",
+      value: function _handleKeyPress(event) {
+        var discardFocusTreeId = _KeyEventManager.default.getInstance().handleKeyPress(event, this._getFocusTreeId(), this._id, this._getEventOptions());
+
+        if (discardFocusTreeId) {
+          this._focusTreeIdsShift();
+        }
+      }
+      /**
+       * Delegates handing the keyup event to the KeyEventManager
+       * @param {KeyboardEvent} event Key board event containing key name and state
+       * @private
+       */
+
+    }, {
+      key: "_handleKeyUp",
+      value: function _handleKeyUp(event) {
+        var discardFocusTreeId = _KeyEventManager.default.getInstance().handleKeyUp(event, this._getFocusTreeId(), this._id, this._getEventOptions());
+
+        if (discardFocusTreeId) {
+          this._focusTreeIdsShift();
+        }
+      }
+    }, {
+      key: "_getComponentOptions",
+      value: function _getComponentOptions() {
+        return {
+          defaultKeyEvent: _Configuration.default.option('defaultKeyEvent')
+        };
+      }
+    }, {
+      key: "_getEventOptions",
+      value: function _getEventOptions() {
+        return {
+          ignoreEventsCondition: _Configuration.default.option('ignoreEventsCondition')
+        };
+      }
+    }]);
+
+    return HotKeysEnabled;
+  }(_react.PureComponent);
+
+  _defineProperty(HotKeysEnabled, "propTypes", {
+    /**
+     * A unique key to associate with KeyEventMatchers that allows associating handler
+     * functions at a later stage
+     * @typedef {string} ActionName
+     */
+
+    /**
+     * Name of a key event
+     * @typedef {'keyup'|'keydown'|'keypress'} KeyEventName
+     */
+
+    /**
+     * A string or list of strings, that represent a sequence of one or more keys
+     * @typedef {String | Array.<String>} MouseTrapKeySequence
+     * @see {@link https://craig.is/killing/mice} for support key sequences
+     */
+
+    /**
+     * Options for the mapping of a key sequence and event
+     * @typedef {Object} KeyEventOptions
+     * @property {MouseTrapKeySequence} sequence - The key sequence required to satisfy a
+     *           KeyEventDescription
+     * @property {KeyEventName} action - The keyboard state required to satisfy a
+     *           KeyEventDescription
+     * @property {string} name - The name of the action, to be displayed to the end user
+     * @property {string} description - A description of the action, to be displayed to
+     *           the end user
+     * @property {string} group - A group the action belongs to, to aid in showing similar
+     *           actions to the user
+     */
+
+    /**
+     * A description of key sequence of one or more key combinations
+     * @typedef {MouseTrapKeySequence|KeyEventOptions|Array.<MouseTrapKeySequence>} KeyEventDescription
+     */
+
+    /**
+     * A mapping from ActionName to KeyEventDescription
+     * @typedef {Object.<ActionName, KeyEventDescription>} KeyMap
+     */
+
+    /**
+     * A map from action names to Mousetrap or Browser key sequences
+     * @type {KeyMap}
+     */
+    keyMap: _propTypes.default.object,
+
+    /**
+     * A map from action names to event handler functions
+     * @typedef {Object.<ActionName, Function>} HandlersMap
+     */
+
+    /**
+     * A map from action names to event handler functions
+     * @type {HandlersMap}
+     */
+    handlers: _propTypes.default.object,
+
+    /**
+     * Function to call when this component gains focus in the browser
+     * @type {function}
+     */
+    onFocus: _propTypes.default.func,
+
+    /**
+     * Function to call when this component loses focus in the browser
+     * @type {function}
+     */
+    onBlur: _propTypes.default.func,
+
+    /**
+     * Whether the keyMap or handlers are permitted to change after the
+     * component mounts. If false, changes to the keyMap and handlers
+     * props will be ignored
+     */
+    allowChanges: _propTypes.default.bool,
+
+    /**
+     * Whether this is the root HotKeys node - this enables some special behaviour
+     */
+    root: _propTypes.default.bool
+  });
+
+  return (0, _backwardsCompatibleContext.default)(HotKeysEnabled, {
+    deprecatedAPI: {
+      contextTypes: {
+        hotKeysParentId: _propTypes.default.number
+      },
+      childContextTypes: {
+        hotKeysParentId: _propTypes.default.number
+      }
+    },
+    newAPI: {
+      contextType: {
+        hotKeysParentId: undefined
+      }
+    }
+  });
+}
+
+var _default = withHotKeys;
+exports.default = _default;
+},{"prop-types":"../node_modules/prop-types/index.js","react":"../node_modules/react/index.js","./lib/config/Configuration":"../node_modules/react-hotkeys/es/lib/config/Configuration.js","./lib/KeyEventManager":"../node_modules/react-hotkeys/es/lib/KeyEventManager.js","./utils/collection/isEmpty":"../node_modules/react-hotkeys/es/utils/collection/isEmpty.js","./lib/shared/KeyCombinationSerializer":"../node_modules/react-hotkeys/es/lib/shared/KeyCombinationSerializer.js","./utils/backwardsCompatibleContext":"../node_modules/react-hotkeys/es/utils/backwardsCompatibleContext.js","./utils/isUndefined":"../node_modules/react-hotkeys/es/utils/isUndefined.js"}],"../node_modules/react-hotkeys/es/HotKeys.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _Configuration = _interopRequireDefault(require("./lib/config/Configuration"));
+
+var _withHotKeys = _interopRequireDefault(require("./withHotKeys"));
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+    var ownKeys = Object.keys(source);
+
+    if (typeof Object.getOwnPropertySymbols === 'function') {
+      ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
+        return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      _defineProperty(target, key, source[key]);
+    });
+  }
+
+  return target;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+
+  var target = _objectWithoutPropertiesLoose(source, excluded);
+
+  var key, i;
+
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+/**
+ * @see HotKeysEnabled
+ */
+var HotKeysWrapper =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(HotKeysWrapper, _Component);
+
+  function HotKeysWrapper() {
+    _classCallCheck(this, HotKeysWrapper);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(HotKeysWrapper).apply(this, arguments));
+  }
+
+  _createClass(HotKeysWrapper, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          hotKeys = _this$props.hotKeys,
+          innerRef = _this$props.innerRef,
+          component = _this$props.component,
+          remainingProps = _objectWithoutProperties(_this$props, ["hotKeys", "innerRef", "component"]);
+
+      var DefaultComponent = component || _Configuration.default.option('defaultComponent');
+
+      return _react.default.createElement(DefaultComponent, _objectSpread({}, hotKeys, {
+        ref: innerRef
+      }, remainingProps));
+    }
+  }]);
+
+  return HotKeysWrapper;
+}(_react.Component);
+
+var HotKeys = (0, _withHotKeys.default)(HotKeysWrapper);
+HotKeys.propTypes = {
+  /**
+   * A ref to add to the underlying DOM-mountable node
+   */
+  innerRef: _propTypes.default.oneOfType([_propTypes.default.object, _propTypes.default.func])
+};
+var _default = HotKeys;
+exports.default = _default;
+},{"prop-types":"../node_modules/prop-types/index.js","react":"../node_modules/react/index.js","./lib/config/Configuration":"../node_modules/react-hotkeys/es/lib/config/Configuration.js","./withHotKeys":"../node_modules/react-hotkeys/es/withHotKeys.js"}],"../node_modules/react-hotkeys/es/GlobalHotKeys.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
+var _react = require("react");
+
+var _Configuration = _interopRequireDefault(require("./lib/config/Configuration"));
+
+var _KeyEventManager = _interopRequireDefault(require("./lib/KeyEventManager"));
+
+var _backwardsCompatibleContext = _interopRequireDefault(require("./utils/backwardsCompatibleContext"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+var GlobalHotKeys =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(GlobalHotKeys, _Component);
+
+  function GlobalHotKeys(props) {
+    var _this;
+
+    _classCallCheck(this, GlobalHotKeys);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(GlobalHotKeys).call(this, props));
+    _this._id = _KeyEventManager.default.getInstance().registerGlobalKeyMap(props.keyMap);
+    /**
+     * We maintain a separate instance variable to contain context that will be
+     * passed down to descendants of this component so we can have a consistent
+     * reference to the same object, rather than instantiating a new one on each
+     * render, causing unnecessary re-rendering of descendant components that
+     * consume the context.
+     *
+     * @see https://reactjs.org/docs/context.html#caveats
+     */
+
+    _this._childContext = {
+      globalHotKeysParentId: _this._id
+    };
+    return _this;
+  }
+
+  _createClass(GlobalHotKeys, [{
+    key: "render",
+    value: function render() {
+      return this.props.children || null;
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate() {
+      var keyEventManager = _KeyEventManager.default.getInstance();
+
+      keyEventManager.reregisterGlobalKeyMap(this._id, this.props.keyMap);
+
+      if (this.props.allowChanges || !_Configuration.default.option('ignoreKeymapAndHandlerChangesByDefault')) {
+        var _this$props = this.props,
+            keyMap = _this$props.keyMap,
+            handlers = _this$props.handlers;
+        /**
+         * Component defines global hotkeys, so any changes to props may have changes
+         * that should have immediate effect
+         */
+
+        keyEventManager.updateEnabledGlobalHotKeys(this._id, keyMap, handlers, this._getComponentOptions(), this._getEventOptions());
+      }
+    }
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this$props2 = this.props,
+          keyMap = _this$props2.keyMap,
+          handlers = _this$props2.handlers;
+      var globalHotKeysParentId = this.context.globalHotKeysParentId;
+
+      var keyEventManager = _KeyEventManager.default.getInstance();
+
+      keyEventManager.registerGlobalComponentMount(this._id, globalHotKeysParentId);
+      keyEventManager.enableGlobalHotKeys(this._id, keyMap, handlers, this._getComponentOptions(), this._getEventOptions());
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      var keyEventManager = _KeyEventManager.default.getInstance();
+
+      keyEventManager.deregisterGlobalKeyMap(this._id);
+      keyEventManager.disableGlobalHotKeys(this._id);
+      keyEventManager.registerGlobalComponentUnmount();
+    }
+  }, {
+    key: "_getComponentOptions",
+    value: function _getComponentOptions() {
+      return {
+        defaultKeyEvent: _Configuration.default.option('defaultKeyEvent')
+      };
+    }
+  }, {
+    key: "_getEventOptions",
+    value: function _getEventOptions() {
+      return {
+        ignoreEventsCondition: _Configuration.default.option('ignoreEventsCondition')
+      };
+    }
+  }]);
+
+  return GlobalHotKeys;
+}(_react.Component);
+
+_defineProperty(GlobalHotKeys, "propTypes", {
+  /**
+   * A map from action names to Mousetrap or Browser key sequences
+   * @type {KeyMap}
+   */
+  keyMap: _propTypes.default.object,
+
+  /**
+   * A map from action names to event handler functions
+   * @typedef {Object.<ActionName, Function>} HandlersMap
+   */
+
+  /**
+   * A map from action names to event handler functions
+   * @type {HandlersMap}
+   */
+  handlers: _propTypes.default.object,
+
+  /**
+   * Whether the keyMap or handlers are permitted to change after the
+   * component mounts. If false, changes to the keyMap and handlers
+   * props will be ignored
+   */
+  allowChanges: _propTypes.default.bool
+});
+
+var _default = (0, _backwardsCompatibleContext.default)(GlobalHotKeys, {
+  deprecatedAPI: {
+    contextTypes: {
+      globalHotKeysParentId: _propTypes.default.number
+    },
+    childContextTypes: {
+      globalHotKeysParentId: _propTypes.default.number
+    }
+  },
+  newAPI: {
+    contextType: {
+      globalHotKeysParentId: undefined
+    }
+  }
+});
+
+exports.default = _default;
+},{"prop-types":"../node_modules/prop-types/index.js","react":"../node_modules/react/index.js","./lib/config/Configuration":"../node_modules/react-hotkeys/es/lib/config/Configuration.js","./lib/KeyEventManager":"../node_modules/react-hotkeys/es/lib/KeyEventManager.js","./utils/backwardsCompatibleContext":"../node_modules/react-hotkeys/es/utils/backwardsCompatibleContext.js"}],"../node_modules/react-hotkeys/es/withHotKeysIgnoreOverride.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _KeyEventManager = _interopRequireDefault(require("./lib/KeyEventManager"));
+
+var _arrayFrom = _interopRequireDefault(require("./utils/array/arrayFrom"));
+
+var _standardizeKeyName = _interopRequireDefault(require("./helpers/parsing-key-maps/standardizeKeyName"));
+
+var _isValidKey = _interopRequireWildcard(require("./helpers/parsing-key-maps/isValidKey"));
+
+var _isEmpty = _interopRequireDefault(require("./utils/collection/isEmpty"));
+
+var _resolveAltShiftedAlias = _interopRequireDefault(require("./helpers/resolving-handlers/resolveAltShiftedAlias"));
+
+var _resolveUnaltShiftedAlias = _interopRequireDefault(require("./helpers/resolving-handlers/resolveUnaltShiftedAlias"));
+
+var _resolveShiftedAlias = _interopRequireDefault(require("./helpers/resolving-handlers/resolveShiftedAlias"));
+
+var _resolveUnshiftedAlias = _interopRequireDefault(require("./helpers/resolving-handlers/resolveUnshiftedAlias"));
+
+var _resolveAltedAlias = _interopRequireDefault(require("./helpers/resolving-handlers/resolveAltedAlias"));
+
+var _resolveUnaltedAlias = _interopRequireDefault(require("./helpers/resolving-handlers/resolveUnaltedAlias"));
+
+var _hasKey = _interopRequireDefault(require("./utils/object/hasKey"));
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+
+  var target = _objectWithoutPropertiesLoose(source, excluded);
+
+  var key, i;
+
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+/**
+ * Wraps a React component in a HotKeysIgnoreOverride component, which passes down the
+ * callbacks and options necessary for React Hotkeys to work as a single prop value,
+ * hotkeys. These must be unwrapped and applied to a DOM-mountable element within
+ * the wrapped component (e.g. div, span, input, etc) in order for the key events
+ * to be recorded.
+ *
+ * @param {React.ComponentClass} Component - Component class to wrap
+ * @param {Object} hotKeysIgnoreOptions - Options that become the wrapping component's
+ *                 default prop values
+ * @param {string} eventManagerMethod - Name of EventManager method to use to handle a
+ *        key event
+ * @returns {React.ComponentClass} Wrapped component that is passed all of the React
+ * hotkeys props in a single value, hotkeys.
+ */
+function withHotKeysIgnoreOverride(Component) {
+  var _class, _temp;
+
+  var hotKeysIgnoreOptions = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
+    only: [],
+    except: []
+  };
+  var eventManagerMethod = arguments.length > 2 ? arguments[2] : undefined;
+  /**
+   * A component that causes React Hotkeys to ignore the results of
+   * Configuration.ignoreEventCondition and instead either force the event to be
+   * ignored or observed. By default, this is all key events, but you can use
+   * the only prop to provide a whitelist, or the except prop to pass a blacklist.
+   * @class
+   */
+
+  return _temp = _class =
+  /*#__PURE__*/
+  function (_PureComponent) {
+    _inherits(HotKeysIgnoreOverride, _PureComponent);
+
+    function HotKeysIgnoreOverride(props) {
+      var _this;
+
+      _classCallCheck(this, HotKeysIgnoreOverride);
+
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(HotKeysIgnoreOverride).call(this, props));
+      _this._handleKeyEvent = _this._handleKeyEvent.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+      _this._reloadDictionaries = _this._reloadDictionaries.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+      return _this;
+    }
+
+    _createClass(HotKeysIgnoreOverride, [{
+      key: "render",
+      value: function render() {
+        var _this$props = this.props,
+            only = _this$props.only,
+            except = _this$props.except,
+            props = _objectWithoutProperties(_this$props, ["only", "except"]);
+
+        var hotKeys = {
+          onKeyDown: this._handleKeyEvent,
+          onKeyPress: this._handleKeyEvent,
+          onKeyUp: this._handleKeyEvent,
+          onFocus: this._reloadDictionaries
+        };
+        return _react.default.createElement(Component, _extends({
+          hotKeys: hotKeys
+        }, props));
+      }
+    }, {
+      key: "_reloadDictionaries",
+      value: function _reloadDictionaries() {
+        var _this$props2 = this.props,
+            only = _this$props2.only,
+            except = _this$props2.except;
+        this._onlyDict = keyDictionary(only);
+        this._exceptDict = keyDictionary(except);
+      }
+    }, {
+      key: "_shouldIgnoreEvent",
+      value: function _shouldIgnoreEvent(_ref) {
+        var key = _ref.key;
+
+        if ((0, _isEmpty.default)(this._onlyDict)) {
+          if ((0, _isEmpty.default)(this._exceptDict)) {
+            return true;
+          } else {
+            return !(0, _hasKey.default)(this._exceptDict, key);
+          }
+        } else {
+          if ((0, _isEmpty.default)(this._exceptDict)) {
+            return (0, _hasKey.default)(this._onlyDict, key);
+          } else {
+            return (0, _hasKey.default)(this._onlyDict, key) && !(0, _hasKey.default)(this._exceptDict, key);
+          }
+        }
+      }
+    }, {
+      key: "_handleKeyEvent",
+      value: function _handleKeyEvent(event) {
+        if (this._shouldIgnoreEvent(event)) {
+          _KeyEventManager.default.getInstance()[eventManagerMethod](event);
+        }
+      }
+    }]);
+
+    return HotKeysIgnoreOverride;
+  }(_react.PureComponent), _defineProperty(_class, "propTypes", {
+    /**
+     * The whitelist of keys that keyevents should be ignored. i.e. if you place
+     * a key in this list, all events related to it will be ignored by react hotkeys
+     */
+    only: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.arrayOf(_propTypes.default.string)]),
+
+    /**
+     * The blacklist of keys that keyevents should be not ignored. i.e. if you place
+     * a key in this list, all events related to it will be still be observed by react
+     * hotkeys
+     */
+    except: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.arrayOf(_propTypes.default.string)])
+  }), _defineProperty(_class, "defaultProps", hotKeysIgnoreOptions), _temp;
+}
+
+function keyDictionary(list) {
+  return (0, _arrayFrom.default)(list).reduce(function (memo, keyName) {
+    var finalKeyName = (0, _standardizeKeyName.default)(keyName);
+
+    if (!(0, _isValidKey.default)(finalKeyName)) {
+      throw new _isValidKey.InvalidKeyNameError(keyName);
+    }
+
+    [_resolveAltShiftedAlias.default, _resolveUnaltShiftedAlias.default, _resolveShiftedAlias.default, _resolveUnshiftedAlias.default, _resolveAltedAlias.default, _resolveUnaltedAlias.default].forEach(function (func) {
+      memo[func(finalKeyName)] = true;
+    });
+    return memo;
+  }, {});
+}
+
+var _default = withHotKeysIgnoreOverride;
+exports.default = _default;
+},{"prop-types":"../node_modules/prop-types/index.js","react":"../node_modules/react/index.js","./lib/KeyEventManager":"../node_modules/react-hotkeys/es/lib/KeyEventManager.js","./utils/array/arrayFrom":"../node_modules/react-hotkeys/es/utils/array/arrayFrom.js","./helpers/parsing-key-maps/standardizeKeyName":"../node_modules/react-hotkeys/es/helpers/parsing-key-maps/standardizeKeyName.js","./helpers/parsing-key-maps/isValidKey":"../node_modules/react-hotkeys/es/helpers/parsing-key-maps/isValidKey.js","./utils/collection/isEmpty":"../node_modules/react-hotkeys/es/utils/collection/isEmpty.js","./helpers/resolving-handlers/resolveAltShiftedAlias":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveAltShiftedAlias.js","./helpers/resolving-handlers/resolveUnaltShiftedAlias":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveUnaltShiftedAlias.js","./helpers/resolving-handlers/resolveShiftedAlias":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveShiftedAlias.js","./helpers/resolving-handlers/resolveUnshiftedAlias":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveUnshiftedAlias.js","./helpers/resolving-handlers/resolveAltedAlias":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveAltedAlias.js","./helpers/resolving-handlers/resolveUnaltedAlias":"../node_modules/react-hotkeys/es/helpers/resolving-handlers/resolveUnaltedAlias.js","./utils/object/hasKey":"../node_modules/react-hotkeys/es/utils/object/hasKey.js"}],"../node_modules/react-hotkeys/es/IgnoreKeys.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _Configuration = _interopRequireDefault(require("./lib/config/Configuration"));
+
+var _withHotKeysIgnoreOverride = _interopRequireDefault(require("./withHotKeysIgnoreOverride"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+    var ownKeys = Object.keys(source);
+
+    if (typeof Object.getOwnPropertySymbols === 'function') {
+      ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
+        return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      _defineProperty(target, key, source[key]);
+    });
+  }
+
+  return target;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+
+  var target = _objectWithoutPropertiesLoose(source, excluded);
+
+  var key, i;
+
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+/**
+ * A component that causes React Hotkeys to ignore all matching key events
+ * triggered by its children. By default, this is all key events, but you can use
+ * the only prop to provide a whitelist, or the except prop to pass a blacklist (and
+ * cause HotKeys components to still observe these events).
+ *
+ * @see HotKeysIgnoreOverride
+ */
+var IgnoreKeys =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(IgnoreKeys, _Component);
+
+  function IgnoreKeys() {
+    _classCallCheck(this, IgnoreKeys);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(IgnoreKeys).apply(this, arguments));
+  }
+
+  _createClass(IgnoreKeys, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          hotKeys = _this$props.hotKeys,
+          remainingProps = _objectWithoutProperties(_this$props, ["hotKeys"]);
+
+      var DefaultComponent = remainingProps.component || _Configuration.default.option('defaultComponent');
+
+      return _react.default.createElement(DefaultComponent, _objectSpread({}, hotKeys, remainingProps));
+    }
+  }]);
+
+  return IgnoreKeys;
+}(_react.Component);
+
+var _default = (0, _withHotKeysIgnoreOverride.default)(IgnoreKeys, {}, 'ignoreEvent');
+
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","./lib/config/Configuration":"../node_modules/react-hotkeys/es/lib/config/Configuration.js","./withHotKeysIgnoreOverride":"../node_modules/react-hotkeys/es/withHotKeysIgnoreOverride.js"}],"../node_modules/react-hotkeys/es/ObserveKeys.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _Configuration = _interopRequireDefault(require("./lib/config/Configuration"));
+
+var _withHotKeysIgnoreOverride = _interopRequireDefault(require("./withHotKeysIgnoreOverride"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+    var ownKeys = Object.keys(source);
+
+    if (typeof Object.getOwnPropertySymbols === 'function') {
+      ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
+        return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      _defineProperty(target, key, source[key]);
+    });
+  }
+
+  return target;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+
+  var target = _objectWithoutPropertiesLoose(source, excluded);
+
+  var key, i;
+
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+/**
+ * A component that forces React Hotkeys to observe all matching key events
+ * triggered by its children, even if they are matched by Configuration.ignoreEventsCondition.
+ * By default, this is all key events, but you can use the only prop to provide a
+ * whitelist, or the except prop to pass a blacklist.
+ *
+ * @see HotKeysIgnoreOverride
+ */
+var ObserveKeys =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(ObserveKeys, _Component);
+
+  function ObserveKeys() {
+    _classCallCheck(this, ObserveKeys);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(ObserveKeys).apply(this, arguments));
+  }
+
+  _createClass(ObserveKeys, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          hotKeys = _this$props.hotKeys,
+          remainingProps = _objectWithoutProperties(_this$props, ["hotKeys"]);
+
+      var DefaultComponent = remainingProps.component || _Configuration.default.option('defaultComponent');
+
+      return _react.default.createElement(DefaultComponent, _objectSpread({}, hotKeys, remainingProps));
+    }
+  }]);
+
+  return ObserveKeys;
+}(_react.Component);
+
+var _default = (0, _withHotKeysIgnoreOverride.default)(ObserveKeys, {}, 'observeIgnoredEvents');
+
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","./lib/config/Configuration":"../node_modules/react-hotkeys/es/lib/config/Configuration.js","./withHotKeysIgnoreOverride":"../node_modules/react-hotkeys/es/withHotKeysIgnoreOverride.js"}],"../node_modules/react-hotkeys/es/withIgnoreKeys.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _withHotKeysIgnoreOverride = _interopRequireDefault(require("./withHotKeysIgnoreOverride"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Wraps a React component in a HotKeysIgnored component, which passes down the
+ * callbacks and options necessary for React Hotkeys to work as a single prop value,
+ * hotkeys. These must be unwrapped and applied to a DOM-mountable element within
+ * the wrapped component (e.g. div, span, input, etc) in order for the key events
+ * to be recorded.
+ */
+function withIgnoreKeys(Component) {
+  var hotKeysIgnoreOptions = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
+    only: [],
+    except: []
+  };
+  return (0, _withHotKeysIgnoreOverride.default)(Component, hotKeysIgnoreOptions, 'ignoreEvent');
+}
+
+var _default = withIgnoreKeys;
+exports.default = _default;
+},{"./withHotKeysIgnoreOverride":"../node_modules/react-hotkeys/es/withHotKeysIgnoreOverride.js"}],"../node_modules/react-hotkeys/es/withObserveKeys.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _withHotKeysIgnoreOverride = _interopRequireDefault(require("./withHotKeysIgnoreOverride"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Wraps a React component in a ObserveKeys component, which passes down the
+ * callbacks and options necessary for React Hotkeys to work as a single prop value,
+ * hotkeys. These must be unwrapped and applied to a DOM-mountable element within
+ * the wrapped component (e.g. div, span, input, etc) in order for the key events
+ * to be recorded.
+ */
+function withObserveKeys(Component) {
+  var hotKeysIgnoreOptions = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
+    only: [],
+    except: []
+  };
+  return (0, _withHotKeysIgnoreOverride.default)(Component, hotKeysIgnoreOptions, 'observeIgnoredEvents');
+}
+
+var _default = withObserveKeys;
+exports.default = _default;
+},{"./withHotKeysIgnoreOverride":"../node_modules/react-hotkeys/es/withHotKeysIgnoreOverride.js"}],"../node_modules/react-hotkeys/es/configure.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _Configuration = _interopRequireDefault(require("./lib/config/Configuration"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Configure the behaviour of HotKeys
+ * @param {Object} configuration Configuration object
+ * @see Configuration.init
+ */
+function configure() {
+  var configuration = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  _Configuration.default.init(configuration);
+}
+
+var _default = configure;
+exports.default = _default;
+},{"./lib/config/Configuration":"../node_modules/react-hotkeys/es/lib/config/Configuration.js"}],"../node_modules/react-hotkeys/es/getApplicationKeyMap.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _KeyEventManager = _interopRequireDefault(require("./lib/KeyEventManager"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * @typedef {Object.<ActionName, KeyEventDescription[]>} ApplicationKeyMap
+ */
+
+/**
+ * Generates and returns the application's key map, including not only those
+ * that are live in the current focus, but all the key maps from all the
+ * HotKeys and GlobalHotKeys components that are currently mounted
+ * @returns {ApplicationKeyMap} The application's key map
+ */
+function getApplicationKeyMap() {
+  return _KeyEventManager.default.getInstance().getApplicationKeyMap();
+}
+
+var _default = getApplicationKeyMap;
+exports.default = _default;
+},{"./lib/KeyEventManager":"../node_modules/react-hotkeys/es/lib/KeyEventManager.js"}],"../node_modules/react-hotkeys/es/recordKeyCombination.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _KeyEventManager = _interopRequireDefault(require("./lib/KeyEventManager"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * @callback keyCombinationListener
+ */
+
+/**
+ * Adds a listener function that will be called the next time a key combination completes
+ * @param {keyCombinationListener} callbackFunction Listener function to be called
+ * @returns {function} Function to call to cancel listening to the next key combination
+ */
+function recordKeyCombination(callbackFunction) {
+  var eventManager = _KeyEventManager.default.getInstance();
+
+  return eventManager.addKeyCombinationListener(callbackFunction);
+}
+
+var _default = recordKeyCombination;
+exports.default = _default;
+},{"./lib/KeyEventManager":"../node_modules/react-hotkeys/es/lib/KeyEventManager.js"}],"../node_modules/react-hotkeys/es/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "HotKeys", {
+  enumerable: true,
+  get: function () {
+    return _HotKeys.default;
+  }
+});
+Object.defineProperty(exports, "GlobalHotKeys", {
+  enumerable: true,
+  get: function () {
+    return _GlobalHotKeys.default;
+  }
+});
+Object.defineProperty(exports, "IgnoreKeys", {
+  enumerable: true,
+  get: function () {
+    return _IgnoreKeys.default;
+  }
+});
+Object.defineProperty(exports, "ObserveKeys", {
+  enumerable: true,
+  get: function () {
+    return _ObserveKeys.default;
+  }
+});
+Object.defineProperty(exports, "withHotKeys", {
+  enumerable: true,
+  get: function () {
+    return _withHotKeys.default;
+  }
+});
+Object.defineProperty(exports, "withIgnoreKeys", {
+  enumerable: true,
+  get: function () {
+    return _withIgnoreKeys.default;
+  }
+});
+Object.defineProperty(exports, "withObserveKeys", {
+  enumerable: true,
+  get: function () {
+    return _withObserveKeys.default;
+  }
+});
+Object.defineProperty(exports, "configure", {
+  enumerable: true,
+  get: function () {
+    return _configure.default;
+  }
+});
+Object.defineProperty(exports, "getApplicationKeyMap", {
+  enumerable: true,
+  get: function () {
+    return _getApplicationKeyMap.default;
+  }
+});
+Object.defineProperty(exports, "recordKeyCombination", {
+  enumerable: true,
+  get: function () {
+    return _recordKeyCombination.default;
+  }
+});
+
+var _HotKeys = _interopRequireDefault(require("./HotKeys"));
+
+var _GlobalHotKeys = _interopRequireDefault(require("./GlobalHotKeys"));
+
+var _IgnoreKeys = _interopRequireDefault(require("./IgnoreKeys"));
+
+var _ObserveKeys = _interopRequireDefault(require("./ObserveKeys"));
+
+var _withHotKeys = _interopRequireDefault(require("./withHotKeys"));
+
+var _withIgnoreKeys = _interopRequireDefault(require("./withIgnoreKeys"));
+
+var _withObserveKeys = _interopRequireDefault(require("./withObserveKeys"));
+
+var _configure = _interopRequireDefault(require("./configure"));
+
+var _getApplicationKeyMap = _interopRequireDefault(require("./getApplicationKeyMap"));
+
+var _recordKeyCombination = _interopRequireDefault(require("./recordKeyCombination"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+},{"./HotKeys":"../node_modules/react-hotkeys/es/HotKeys.js","./GlobalHotKeys":"../node_modules/react-hotkeys/es/GlobalHotKeys.js","./IgnoreKeys":"../node_modules/react-hotkeys/es/IgnoreKeys.js","./ObserveKeys":"../node_modules/react-hotkeys/es/ObserveKeys.js","./withHotKeys":"../node_modules/react-hotkeys/es/withHotKeys.js","./withIgnoreKeys":"../node_modules/react-hotkeys/es/withIgnoreKeys.js","./withObserveKeys":"../node_modules/react-hotkeys/es/withObserveKeys.js","./configure":"../node_modules/react-hotkeys/es/configure.js","./getApplicationKeyMap":"../node_modules/react-hotkeys/es/getApplicationKeyMap.js","./recordKeyCombination":"../node_modules/react-hotkeys/es/recordKeyCombination.js"}],"../node_modules/react-hotkeys/index.es.js":[function(require,module,exports) {
+'use strict';
+
+if ("development" === 'production') {
+  module.exports = require('./es/react-hotkeys.production.min.js');
+} else {
+  module.exports = require('./es/index.js');
+}
+},{"./es/index.js":"../node_modules/react-hotkeys/es/index.js"}],"App.tsx":[function(require,module,exports) {
+"use strict";
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  result["default"] = mod;
+  return result;
+};
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const react_1 = __importStar(require("react"));
 
 const Table_1 = __importDefault(require("./components/Table"));
 
 const Controlers_1 = __importDefault(require("./components/Controlers"));
 
-const App = () => {
-  const _react_1$useState = react_1.useState({
-    width: 5,
-    height: 5,
-    unitSize: 100
-  }),
-        _react_1$useState2 = _slicedToArray(_react_1$useState, 1),
-        grid = _react_1$useState2[0];
+const react_hotkeys_1 = require("react-hotkeys");
 
-  return react_1.default.createElement(Layout, null, react_1.default.createElement(Controlers_1.default, {
-    grid: grid
-  }), react_1.default.createElement(Table_1.default, {
-    grid: grid
-  }));
+const KeyContext_1 = __importDefault(require("./components/context/KeyContext"));
+
+const App = () => {
+  const _react_1$useContext = react_1.useContext(KeyContext_1.default),
+        _react_1$useContext2 = _slicedToArray(_react_1$useContext, 2),
+        currentKey = _react_1$useContext2[0],
+        setCurrentKey = _react_1$useContext2[1];
+
+  const keyMap = {
+    ROTATE_LEFT: 'a',
+    ROTATE_RIGHT: 'd',
+    FORWARD: 'w'
+  };
+  const handlers = {
+    ROTATE_LEFT: e => setCurrentKey(_objectSpread({}, currentKey, {
+      key: 'a',
+      count: currentKey.count++
+    })),
+    ROTATE_RIGHT: e => setCurrentKey(_objectSpread({}, currentKey, {
+      key: 'd',
+      count: currentKey.count++
+    })),
+    FORWARD: e => setCurrentKey(_objectSpread({}, currentKey, {
+      key: 'w',
+      count: currentKey.count++
+    }))
+  };
+  return react_1.default.createElement(react_hotkeys_1.HotKeys, {
+    keyMap: keyMap,
+    handlers: handlers
+  }, react_1.default.createElement("section", {
+    className: "layout--main"
+  }, react_1.default.createElement(Controlers_1.default, null), react_1.default.createElement(Table_1.default, null)));
 };
 
 exports.default = App;
-const Layout = styled_components_1.default.section`
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  text-align: center;
-`;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","./components/Table":"components/Table.tsx","./components/Controlers":"components/Controlers.tsx"}],"index.tsx":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./components/Table":"components/Table.tsx","./components/Controlers":"components/Controlers.tsx","react-hotkeys":"../node_modules/react-hotkeys/index.es.js","./components/context/KeyContext":"components/context/KeyContext.tsx"}],"index.tsx":[function(require,module,exports) {
 "use strict";
 
 var __importStar = this && this.__importStar || function (mod) {
@@ -91498,54 +101734,42 @@ const react_1 = __importStar(require("react"));
 
 const react_dom_1 = require("react-dom");
 
-const styled_components_1 = require("styled-components");
-
-const styled_components_2 = require("styled-components");
-
-const ThemeExport_1 = require("./components/designSystem/ThemeExport");
-
 const App_1 = __importDefault(require("./App"));
 
 const RobotContext_1 = __importDefault(require("./components/context/RobotContext"));
+
+const GridContext_1 = __importDefault(require("./components/context/GridContext"));
+
+const KeyContext_1 = __importDefault(require("./components/context/KeyContext"));
 
 function AppWrapper() {
   const robotHook = react_1.useState({
     visible: false,
     xPosition: 0,
     yPosition: 0,
-    rotation: 0
+    rotation: 0,
+    direction: 'N'
   });
-  return react_1.default.createElement(react_1.default.StrictMode, null, react_1.default.createElement(styled_components_2.ThemeProvider, {
-    theme: ThemeExport_1.styledTheme
+  const gridHook = react_1.useState({
+    height: 5,
+    width: 5,
+    unitSize: 100
+  });
+  const keyHook = react_1.useState({
+    key: '',
+    count: 0
+  });
+  return react_1.default.createElement(react_1.default.StrictMode, null, react_1.default.createElement(KeyContext_1.default.Provider, {
+    value: keyHook
   }, react_1.default.createElement(RobotContext_1.default.Provider, {
     value: robotHook
-  }, react_1.default.createElement(GlobalStyle, null), react_1.default.createElement(App_1.default, null))));
+  }, react_1.default.createElement(GridContext_1.default.Provider, {
+    value: gridHook
+  }, react_1.default.createElement(App_1.default, null)))));
 }
 
-const GlobalStyle = styled_components_1.createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: ${() => ThemeExport_1.styledTheme.styles.colors.backgroundBody};
-    box-sizing: border-box;
-  }
-
-  h1, p, label {
-    color: ${() => ThemeExport_1.styledTheme.styles.colors.font};
-    font-family: 'verdana';
-  }
-
-  p,label {
-    font-size: .8rem;
-  }
-
-  h1 {
-    font-size: 1rem;
-  }
-
-`;
 react_dom_1.render(react_1.default.createElement(AppWrapper, null), document.getElementById('root'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","./components/designSystem/ThemeExport":"components/designSystem/ThemeExport.tsx","./App":"App.tsx","./components/context/RobotContext":"components/context/RobotContext.tsx"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./App":"App.tsx","./components/context/RobotContext":"components/context/RobotContext.tsx","./components/context/GridContext":"components/context/GridContext.tsx","./components/context/KeyContext":"components/context/KeyContext.tsx"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -91573,7 +101797,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56969" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56681" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
