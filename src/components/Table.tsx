@@ -3,21 +3,16 @@ import { Stage, Sprite } from 'react-pixi-fiber';
 
 import Robot from './Robot';
 import RobotContext from './context/RobotContext';
+import GridContext from './context/GridContext';
 
-interface IProps {
-  grid: {
-    width: number;
-    height: number;
-    unitSize: number;
-  };
-}
-
-const Table = ({ grid }: IProps) => {
+const Table = () => {
   const [robotState] = useContext(RobotContext);
+  const [gridState] = useContext(GridContext);
+
   const robotWrapper = (
     <Robot
-      y={robotState.xPosition * grid.unitSize + grid.unitSize / 2}
-      x={robotState.yPosition * grid.unitSize + grid.unitSize / 2}
+      y={robotState.xPosition * gridState.unitSize + gridState.unitSize / 2}
+      x={robotState.yPosition * gridState.unitSize + gridState.unitSize / 2}
       rotation={robotState.rotation}
     />
   );
@@ -27,8 +22,8 @@ const Table = ({ grid }: IProps) => {
   return (
     <section className="stage-wrapper">
       <Stage
-        width={grid.width * grid.unitSize}
-        height={grid.height * grid.unitSize}
+        width={gridState.height * gridState.unitSize}
+        height={gridState.width * gridState.unitSize}
         options={{ backgroundColor: 0xffffff }}
       >
         {robotState.visible === true ? robotWrapper : placeholderWrapper}

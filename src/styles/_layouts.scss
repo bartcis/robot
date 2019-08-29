@@ -34,4 +34,9 @@
     justify-content: center;
     margin: 1rem 0;
   }
+  &--selects {
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-around;
+  }
 }

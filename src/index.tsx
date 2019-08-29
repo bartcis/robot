@@ -3,6 +3,8 @@ import { render } from 'react-dom';
 
 import App from './App';
 import RobotContext from './components/context/RobotContext';
+import GridContext from './components/context/GridContext';
+import KeyContext from './components/context/KeyContext';
 
 function AppWrapper() {
   const robotHook = useState({
@@ -11,12 +13,25 @@ function AppWrapper() {
     yPosition: 0,
     rotation: 0,
   });
+  const gridHook = useState({
+    height: 5,
+    width: 5,
+    unitSize: 100,
+  });
+  const keyHook = useState({
+    key: '',
+    count: 0,
+  });
 
   return (
     <React.StrictMode>
-      <RobotContext.Provider value={robotHook}>
-        <App />
-      </RobotContext.Provider>
+      <KeyContext.Provider value={keyHook}>
+        <RobotContext.Provider value={robotHook}>
+          <GridContext.Provider value={gridHook}>
+            <App />
+          </GridContext.Provider>
+        </RobotContext.Provider>
+      </KeyContext.Provider>
     </React.StrictMode>
   );
 }

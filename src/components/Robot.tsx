@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sprite, withApp } from 'react-pixi-fiber';
-import RobotIcon from './robot.png';
+import RobotIcon from './assets/robot.png';
 import * as PIXI from 'pixi.js-legacy';
 
 interface IProps {
