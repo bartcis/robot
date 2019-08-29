@@ -1,7 +1,11 @@
 import React, { useContext } from 'react';
 import GridContext from './context/GridContext';
 
-const GridControler = () => {
+interface IProps {
+  tests: boolean;
+}
+
+const GridControler = ({ tests }: IProps) => {
   const [gridState, setGridState] = useContext(GridContext);
   const gridOptions = [3, 4, 5, 6, 7, 8, 9];
 
@@ -24,12 +28,25 @@ const GridControler = () => {
     }
   };
 
+  const testRender = (
+    <>
+      <div data-testid="gridHookTest">
+        {`h: ${String(gridState.height)}, w: ${String(gridState.width)}`}
+      </div>
+    </>
+  );
+
   return (
     <>
       <label>
         Set Grid Size (x, y)
         <div className="wrapper--selects">
-          <select name="x-axis" value={gridState.width} onChange={handleChange}>
+          <select
+            name="x-axis"
+            value={gridState.width}
+            onChange={handleChange}
+            data-testid="changeXsize"
+          >
             {gridOptions.map(size => (
               <option key={size} value={size}>
                 {size}
@@ -40,6 +57,7 @@ const GridControler = () => {
             name="y-axis"
             value={gridState.height}
             onChange={handleChange}
+            data-testid="changeYsize"
           >
             {gridOptions.map(size => (
               <option key={size} value={size}>
@@ -49,6 +67,7 @@ const GridControler = () => {
           </select>
         </div>
       </label>
+      {tests === true ? testRender : ''}
     </>
   );
 };

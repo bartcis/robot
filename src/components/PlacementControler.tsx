@@ -4,12 +4,12 @@ import GridContext from './context/GridContext';
 
 interface IProps {
   parentCallback: Function;
+  tests: boolean;
 }
 
-const PlacementControler = ({ parentCallback }: IProps) => {
+const PlacementControler = ({ parentCallback, tests }: IProps) => {
   const [robotState, setRobotState] = useContext(RobotContext);
   const [gridState] = useContext(GridContext);
-
   const [error, setError] = useState({
     errorX: false,
     errorY: false,
@@ -37,7 +37,14 @@ const PlacementControler = ({ parentCallback }: IProps) => {
   };
 
   const placeRobot = () => {
-    if (!error.errorX && !error.errorY && !error.errorDir) {
+    if (
+      !error.errorX &&
+      !error.errorY &&
+      !error.errorDir &&
+      position.setX &&
+      position.setY &&
+      position.setDirection
+    ) {
       parentCallback(true);
       setRobotState({
         visible: true,
@@ -92,11 +99,27 @@ const PlacementControler = ({ parentCallback }: IProps) => {
     }
   };
 
+  const testRender = (
+    <>
+      <div data-testid="errorHookTest">
+        {`x: ${String(error.errorX)}, y: ${String(error.errorY)}, d:${String(
+          error.errorDir
+        )}`}
+      </div>
+      <div data-testid="positionHookTest">
+        {`x: ${String(position.setX)}, y: ${String(position.setY)}, d:${String(
+          position.setDirection
+        )}`}
+      </div>
+    </>
+  );
+
   return (
     <>
       <label>
         Provide X coordinate
         <input
+          data-testid="xDataInput"
           className="input"
           value={position.setX}
           name="x_value"
@@ -108,6 +131,7 @@ const PlacementControler = ({ parentCallback }: IProps) => {
       <label>
         Provide Y coordinate
         <input
+          data-testid="yDataInput"
           className="input"
           value={position.setY}
           name="y_value"
@@ -119,6 +143,7 @@ const PlacementControler = ({ parentCallback }: IProps) => {
       <label>
         Provide Direction
         <input
+          data-testid="dirDataInput"
           className="input"
           value={position.setDirection}
           name="direction"
@@ -130,13 +155,20 @@ const PlacementControler = ({ parentCallback }: IProps) => {
       {error.errorDir === true ||
       error.errorY === true ||
       error.errorX === true ? (
-        <p className="error">Value/s you provided are not correct</p>
+        <p className="error" data-testid="placementError">
+          Value/s you provided are not correct
+        </p>
       ) : (
         ''
       )}
-      <button className="button" onClick={placeRobot}>
+      <button
+        data-testid="placementButton"
+        className="button"
+        onClick={placeRobot}
+      >
         Place
       </button>
+      {tests === true ? testRender : ''}
     </>
   );
 };

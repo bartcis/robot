@@ -3,12 +3,14 @@ import RobotContext from './context/RobotContext';
 import GridContext from './context/GridContext';
 import KeyContext from './context/KeyContext';
 
-const MovementControler = () => {
+interface IProps {
+  tests: boolean;
+}
+
+const MovementControler = ({ tests }: IProps) => {
   const [robotState, setRobotState] = useContext(RobotContext);
   const [currentKey] = useContext(KeyContext);
   const [gridState] = useContext(GridContext);
-
-  console.log(currentKey);
 
   const move = () => {
     switch (robotState.direction) {
@@ -99,17 +101,36 @@ const MovementControler = () => {
     }
   }, [currentKey.count]);
 
+  const testRender = (
+    <>
+      <div data-testid="robotHookTest">
+        {`y: ${String(robotState.yPosition)}, x: ${String(
+          robotState.xPosition
+        )}, d: ${String(robotState.direction)}`}
+      </div>
+    </>
+  );
+
   return (
     <div className="wrapper--buttons">
-      <button className="button" onClick={() => rotate('left')}>
+      <button
+        className="button"
+        onClick={() => rotate('left')}
+        data-testid="turnLeftTest"
+      >
         Left (A)
       </button>
-      <button className="button" onClick={move}>
+      <button className="button" onClick={move} data-testid="moveTest">
         Move (W)
       </button>
-      <button className="button" onClick={() => rotate('right')}>
+      <button
+        className="button"
+        onClick={() => rotate('right')}
+        data-testid="turnRightTest"
+      >
         Right (D)
       </button>
+      {tests === true ? testRender : ''}
     </div>
   );
 };

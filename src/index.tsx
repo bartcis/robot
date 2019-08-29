@@ -12,6 +12,7 @@ function AppWrapper() {
     xPosition: 0,
     yPosition: 0,
     rotation: 0,
+    direction: 'N',
   });
   const gridHook = useState({
     height: 5,

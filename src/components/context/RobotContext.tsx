@@ -13,7 +13,7 @@ const RobotContext = createContext<[any, (context: IProps) => void]>([
     visible: false,
     xPosition: 0,
     yPosition: 0,
-    direction: 0,
+    direction: 'N',
   },
   () => {},
 ]);

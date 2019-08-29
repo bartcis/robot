@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Controlers from '../components/Controlers';
+import Robot from '../components/Report';
 
 it('Renders without crashing', () => {
   const container = document.createElement('container');
-  ReactDOM.render(<Controlers />, container);
+  ReactDOM.render(<Robot />, container);
   ReactDOM.unmountComponentAtNode(container);
 });
